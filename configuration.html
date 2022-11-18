@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Literate Emacs Configuration</title>
 <meta name="generator" content="Org mode" />
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<link rel="stylesheet" href="css/site.css" type="text/css"/>
 </head>
 <body>
 <div id="content">
 <h1 class="title">Literate Emacs Configuration</h1>
 
-<div id="outline-container-org322edcb" class="outline-2">
-<h2 id="org322edcb"><span class="todo TODO">TODO</span> Early init</h2>
-<div class="outline-text-2" id="text-org322edcb">
+<div id="outline-container-org62bc0fe" class="outline-2">
+<h2 id="org62bc0fe"><span class="todo TODO">TODO</span> Early init</h2>
+<div class="outline-text-2" id="text-org62bc0fe">
 <p>
 This creates a file, <a href="file:///home/runner/.emacs.d/early-init.el"> <code>early-init.el</code> </a>, in <code>~/.emacs.d</code>. This was stolen
 from Protesilaos some time back. It still needs work - it's not
@@ -88,9 +88,9 @@ tangled (by default) yet.
 </div>
 
 
-<div id="outline-container-orgf5f630a" class="outline-2">
-<h2 id="orgf5f630a">Prerequisites</h2>
-<div class="outline-text-2" id="text-orgf5f630a">
+<div id="outline-container-orgfb2856c" class="outline-2">
+<h2 id="orgfb2856c">Prerequisites</h2>
+<div class="outline-text-2" id="text-orgfb2856c">
 <p>
 Lexical binding is required for a lot of stuff here
 </p>
@@ -105,9 +105,9 @@ Lexical binding is required for a lot of stuff here
 </div>
 </div>
 
-<div id="outline-container-org9b63ff6" class="outline-3">
-<h3 id="org9b63ff6">Reload Emacs configuration</h3>
-<div class="outline-text-3" id="text-org9b63ff6">
+<div id="outline-container-org86491f0" class="outline-3">
+<h3 id="org86491f0">Reload Emacs configuration</h3>
+<div class="outline-text-3" id="text-org86491f0">
 <p>
 I'm not sure I understand how this works entirely but <a href="https://github.com/joseph8th/literatemacs#tangle-and-reload">joseph8th's repo</a>
 suggests using <code>M-: (load-file user-init-file) RET</code> or evaluating that
@@ -117,7 +117,7 @@ first code block can be evaluated using <code>C-c C-c</code>:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgd717211">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">reload-config</span> ()
+<pre class="src src-emacs-lisp" id="org48d7d0b">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">reload-config</span> ()
   (<span style="font-weight: bold;">interactive</span>)
   (load-file user-init-file))
 </pre>
@@ -125,9 +125,9 @@ first code block can be evaluated using <code>C-c C-c</code>:
 </div>
 </div>
 
-<div id="outline-container-org362c497" class="outline-3">
-<h3 id="org362c497"><span class="todo TODO">TODO</span> Use-package v2 related changes</h3>
-<div class="outline-text-3" id="text-org362c497">
+<div id="outline-container-org940701b" class="outline-3">
+<h3 id="org940701b"><span class="todo TODO">TODO</span> Use-package v2 related changes</h3>
+<div class="outline-text-3" id="text-org940701b">
 <p>
 Need to figure this out - I think maybe <code>use-package</code> might not be updated
 </p>
@@ -142,9 +142,9 @@ Need to figure this out - I think maybe <code>use-package</code> might not be up
 </div>
 </div>
 
-<div id="outline-container-org050fc6d" class="outline-3">
-<h3 id="org050fc6d">Convert all org-keywords/block identifiers to lowercase</h3>
-<div class="outline-text-3" id="text-org050fc6d">
+<div id="outline-container-org03d0024" class="outline-3">
+<h3 id="org03d0024">Convert all org-keywords/block identifiers to lowercase</h3>
+<div class="outline-text-3" id="text-org03d0024">
 <p>
 It's always nice to see random people online that are crazy like you
 and are nice enough to write elisp code for the shit you need. Stolen
@@ -179,9 +179,9 @@ from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a>
 </div>
 
 
-<div id="outline-container-org3f1fa85" class="outline-2">
-<h2 id="org3f1fa85">Ensure UTF-8</h2>
-<div class="outline-text-2" id="text-org3f1fa85">
+<div id="outline-container-orgc358c59" class="outline-2">
+<h2 id="orgc358c59">Ensure UTF-8</h2>
+<div class="outline-text-2" id="text-orgc358c59">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(set-language-environment 'utf-8)
 (prefer-coding-system 'utf-8)
@@ -191,9 +191,9 @@ from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a>
 </div>
 
 
-<div id="outline-container-org3727764" class="outline-2">
-<h2 id="org3727764">Whoami</h2>
-<div class="outline-text-2" id="text-org3727764">
+<div id="outline-container-org55e8123" class="outline-2">
+<h2 id="org55e8123">Whoami</h2>
+<div class="outline-text-2" id="text-org55e8123">
 <p>
 Doh
 </p>
@@ -207,15 +207,15 @@ Doh
 </div>
 
 
-<div id="outline-container-orgef619e3" class="outline-2">
-<h2 id="orgef619e3">Performance enhancements</h2>
-<div class="outline-text-2" id="text-orgef619e3">
+<div id="outline-container-org0b74a34" class="outline-2">
+<h2 id="org0b74a34">Performance enhancements</h2>
+<div class="outline-text-2" id="text-org0b74a34">
 <p>
 Maybe I'll understand what this is about one day
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orge346d07"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">For performance</span>
+<pre class="src src-emacs-lisp" id="orgfa1f65c"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">For performance</span>
 (<span style="font-weight: bold;">setq</span> gc-cons-threshold 100000000)
 (<span style="font-weight: bold;">setq</span> read-process-output-max (* 1024 1024)) <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">1mb</span>
 
@@ -228,13 +228,13 @@ Maybe I'll understand what this is about one day
 </div>
 
 
-<div id="outline-container-orgccd5bca" class="outline-2">
-<h2 id="orgccd5bca">No more garbage</h2>
-<div class="outline-text-2" id="text-orgccd5bca">
+<div id="outline-container-orgd7cfa33" class="outline-2">
+<h2 id="orgd7cfa33">No more garbage</h2>
+<div class="outline-text-2" id="text-orgd7cfa33">
 </div>
-<div id="outline-container-org008174a" class="outline-3">
-<h3 id="org008174a">from customize API</h3>
-<div class="outline-text-3" id="text-org008174a">
+<div id="outline-container-org2775d06" class="outline-3">
+<h3 id="org2775d06">from customize API</h3>
+<div class="outline-text-3" id="text-org2775d06">
 <p>
 This keeps the init.el cleaner and without junk from <code>customize.el</code>
 API allows for an option to gitignore your <code>custom.el</code> cause it's
@@ -242,7 +242,7 @@ junk.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org36669ec"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">Offload the custom-set-variables to a separate file</span>
+<pre class="src src-emacs-lisp" id="orgd4ee217"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">Offload the custom-set-variables to a separate file</span>
 
     (<span style="font-weight: bold;">setq</span> custom-file <span style="font-style: italic;">"~/.emacs.d/custom.el"</span>)
     (<span style="font-weight: bold;">unless</span> (file-exists-p custom-file)
@@ -254,11 +254,11 @@ junk.
 </div>
 </div>
 
-<div id="outline-container-orge518e8b" class="outline-3">
-<h3 id="orge518e8b">from backups and autosaves(?)</h3>
-<div class="outline-text-3" id="text-orge518e8b">
+<div id="outline-container-orgbdab41c" class="outline-3">
+<h3 id="orgbdab41c">from backups and autosaves(?)</h3>
+<div class="outline-text-3" id="text-orgbdab41c">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgf95a497"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">Put Emacs auto-save and backup files to one folder</span>
+<pre class="src src-emacs-lisp" id="org8db0250"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">Put Emacs auto-save and backup files to one folder</span>
 (<span style="font-weight: bold;">defconst</span> <span style="font-weight: bold; font-style: italic;">emacs-tmp-dir</span> (expand-file-name (format <span style="font-style: italic;">"emacs%d"</span> (user-uid)) temporary-file-directory))
 
 (<span style="font-weight: bold;">setq</span>
@@ -280,13 +280,13 @@ junk.
 </div>
 
 
-<div id="outline-container-orgfdd2414" class="outline-2">
-<h2 id="orgfdd2414">Package management</h2>
-<div class="outline-text-2" id="text-orgfdd2414">
+<div id="outline-container-orgb5187dd" class="outline-2">
+<h2 id="orgb5187dd">Package management</h2>
+<div class="outline-text-2" id="text-orgb5187dd">
 </div>
-<div id="outline-container-orgf852d39" class="outline-3">
-<h3 id="orgf852d39">Setup <code>straight.el</code></h3>
-<div class="outline-text-3" id="text-orgf852d39">
+<div id="outline-container-org940515f" class="outline-3">
+<h3 id="org940515f">Setup <code>straight.el</code></h3>
+<div class="outline-text-3" id="text-org940515f">
 <p>
 I'll be using <code>use-package</code> to organise and configure individual
 packages into neater code blocks although the download will be handled
@@ -294,7 +294,7 @@ by <code>straight.el</code>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgaa73ca3"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">make all use-package instances use straight.el</span>
+<pre class="src src-emacs-lisp" id="org116164a"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">make all use-package instances use straight.el</span>
 (<span style="font-weight: bold;">setq</span> straight-use-package-by-default t)
 
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">fetch developmental version of straight.el</span>
@@ -324,9 +324,9 @@ by <code>straight.el</code>
 </div>
 </div>
 
-<div id="outline-container-org6fcb35d" class="outline-3">
-<h3 id="org6fcb35d">Install and configure <code>use-package</code></h3>
-<div class="outline-text-3" id="text-org6fcb35d">
+<div id="outline-container-orga822396" class="outline-3">
+<h3 id="orga822396">Install and configure <code>use-package</code></h3>
+<div class="outline-text-3" id="text-orga822396">
 <p>
 <code>use-package</code> is installed and managed by <code>straight.el</code> and in turn
 packages used in this config are managed/organized by
@@ -335,7 +335,7 @@ on the <a href="https://github.com/raxod502/straight.el/blob/develop/README.md#i
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgf9671ce">(straight-use-package 'use-package)
+<pre class="src src-emacs-lisp" id="org9bcf3ec">(straight-use-package 'use-package)
 (<span style="font-weight: bold;">setq</span> straight-host-usernames
       '((github . <span style="font-style: italic;">"brihadeesh"</span>)
         (gitlab . <span style="font-style: italic;">"peregrinator"</span>)
@@ -345,9 +345,9 @@ on the <a href="https://github.com/raxod502/straight.el/blob/develop/README.md#i
 </div>
 </div>
 
-<div id="outline-container-orgaa14ee8" class="outline-4">
-<h4 id="orgaa14ee8">Prevent older org-mode versions from being loaded</h4>
-<div class="outline-text-4" id="text-orgaa14ee8">
+<div id="outline-container-orgcf4e61b" class="outline-4">
+<h4 id="orgcf4e61b">Prevent older org-mode versions from being loaded</h4>
+<div class="outline-text-4" id="text-orgcf4e61b">
 <p>
 Check <a href="https://www.reddit.com/r/emacs/comments/qcj33a/problem_and_workaround_with_orgmode_function/hhmmskg/">this reddit post</a> which I found thankfully.
 </p>
@@ -360,9 +360,9 @@ Check <a href="https://www.reddit.com/r/emacs/comments/qcj33a/problem_and_workar
 </div>
 </div>
 
-<div id="outline-container-org61ebf5f" class="outline-3">
-<h3 id="org61ebf5f">Minimal <code>package.el</code> setup only to browse packages</h3>
-<div class="outline-text-3" id="text-org61ebf5f">
+<div id="outline-container-org98c70a5" class="outline-3">
+<h3 id="org98c70a5">Minimal <code>package.el</code> setup only to browse packages</h3>
+<div class="outline-text-3" id="text-org98c70a5">
 <p>
 Running <code>package-list-packages</code> includes them only for browsing
 </p>
@@ -376,9 +376,9 @@ Running <code>package-list-packages</code> includes them only for browsing
 </div>
 </div>
 
-<div id="outline-container-orgabae657" class="outline-3">
-<h3 id="orgabae657">Diminish for a cleaner modeline</h3>
-<div class="outline-text-3" id="text-orgabae657">
+<div id="outline-container-orga2057a0" class="outline-3">
+<h3 id="orga2057a0">Diminish for a cleaner modeline</h3>
+<div class="outline-text-3" id="text-orga2057a0">
 <p>
 <code>org-indent-mode</code> doesn't get disabled by the default method.
 </p>
@@ -402,20 +402,20 @@ Running <code>package-list-packages</code> includes them only for browsing
 </div>
 
 
-<div id="outline-container-orgd544346" class="outline-2">
-<h2 id="orgd544346">Sane Defaults</h2>
-<div class="outline-text-2" id="text-orgd544346">
+<div id="outline-container-org5a9cf4e" class="outline-2">
+<h2 id="org5a9cf4e">Sane Defaults</h2>
+<div class="outline-text-2" id="text-org5a9cf4e">
 <p>
 Primarily bootlegged from <a href="https://sanemacs.com">Sanemacs</a> and changed when appropriate (and
 when I thought I understood what I was doing)
 </p>
 </div>
 
-<div id="outline-container-org4f7eb93" class="outline-3">
-<h3 id="org4f7eb93">Make <b>scratch</b> buffer and <b>minibuffer</b> blank</h3>
-<div class="outline-text-3" id="text-org4f7eb93">
+<div id="outline-container-org73b5f96" class="outline-3">
+<h3 id="org73b5f96">Make <b>scratch</b> buffer and <b>minibuffer</b> blank</h3>
+<div class="outline-text-3" id="text-org73b5f96">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org27f8057">(<span style="font-weight: bold;">setq</span> initial-scratch-message <span style="font-style: italic;">""</span>)
+<pre class="src src-emacs-lisp" id="orge306b93">(<span style="font-weight: bold;">setq</span> initial-scratch-message <span style="font-style: italic;">""</span>)
 (<span style="font-weight: bold;">setq</span> inhibit-startup-echo-area-message t)
 (<span style="font-weight: bold;">setq</span> inhibit-startup-message t)
 (<span style="font-weight: bold;">setq</span> initial-scratch-message nil)
@@ -424,29 +424,29 @@ when I thought I understood what I was doing)
 </div>
 </div>
 
-<div id="outline-container-org971ed50" class="outline-3">
-<h3 id="org971ed50">Make "Emacs" the <b>window title</b></h3>
-<div class="outline-text-3" id="text-org971ed50">
+<div id="outline-container-org2c28ae5" class="outline-3">
+<h3 id="org2c28ae5">Make "Emacs" the <b>window title</b></h3>
+<div class="outline-text-3" id="text-org2c28ae5">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orga57a8d6">(<span style="font-weight: bold;">setq-default</span> frame-title-format '(<span style="font-style: italic;">"Emacs"</span>))
+<pre class="src src-emacs-lisp" id="org636ffb0">(<span style="font-weight: bold;">setq-default</span> frame-title-format '(<span style="font-style: italic;">"Emacs"</span>))
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org8ebbf25" class="outline-3">
-<h3 id="org8ebbf25">Org-mode as the <i>initial major mode</i></h3>
-<div class="outline-text-3" id="text-org8ebbf25">
+<div id="outline-container-org15cce49" class="outline-3">
+<h3 id="org15cce49">Org-mode as the <i>initial major mode</i></h3>
+<div class="outline-text-3" id="text-org15cce49">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org0fef131">(<span style="font-weight: bold;">setq</span> initial-major-mode 'org-mode)
+<pre class="src src-emacs-lisp" id="org994627b">(<span style="font-weight: bold;">setq</span> initial-major-mode 'org-mode)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org3267b05" class="outline-3">
-<h3 id="org3267b05"><span class="todo TODO">TODO</span> Disable native popups(?) and bell</h3>
-<div class="outline-text-3" id="text-org3267b05">
+<div id="outline-container-org3e02cbe" class="outline-3">
+<h3 id="org3e02cbe"><span class="todo TODO">TODO</span> Disable native popups(?) and bell</h3>
+<div class="outline-text-3" id="text-org3e02cbe">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">not sure what this is about</span>
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(setq-default indent-tabs-mode nil)</span>
@@ -459,9 +459,9 @@ when I thought I understood what I was doing)
 </div>
 </div>
 
-<div id="outline-container-orgf274fec" class="outline-3">
-<h3 id="orgf274fec">Only <b>y or n prompts</b> for speed</h3>
-<div class="outline-text-3" id="text-orgf274fec">
+<div id="outline-container-orge3253fe" class="outline-3">
+<h3 id="orge3253fe">Only <b>y or n prompts</b> for speed</h3>
+<div class="outline-text-3" id="text-orge3253fe">
 <p>
 Apparently there is a <code>short-answers</code> variable
 </p>
@@ -479,9 +479,9 @@ Apparently there is a <code>short-answers</code> variable
 </div>
 </div>
 
-<div id="outline-container-org622a2eb" class="outline-3">
-<h3 id="org622a2eb">Merge Emacs and system clipboards</h3>
-<div class="outline-text-3" id="text-org622a2eb">
+<div id="outline-container-org3bb22b8" class="outline-3">
+<h3 id="org3bb22b8">Merge Emacs and system clipboards</h3>
+<div class="outline-text-3" id="text-org3bb22b8">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Merge system's and Emacs' clipboard</span>
 (<span style="font-weight: bold;">setq-default</span> select-enable-clipboard t)
@@ -490,19 +490,19 @@ Apparently there is a <code>short-answers</code> variable
 </div>
 </div>
 
-<div id="outline-container-orgd490b33" class="outline-3">
-<h3 id="orgd490b33">Overwrite selected text</h3>
-<div class="outline-text-3" id="text-orgd490b33">
+<div id="outline-container-org4c525e2" class="outline-3">
+<h3 id="org4c525e2">Overwrite selected text</h3>
+<div class="outline-text-3" id="text-org4c525e2">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org9a76900">(delete-selection-mode 1)
+<pre class="src src-emacs-lisp" id="org1acf82d">(delete-selection-mode 1)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org6ba0a09" class="outline-3">
-<h3 id="org6ba0a09">Join line to following line</h3>
-<div class="outline-text-3" id="text-org6ba0a09">
+<div id="outline-container-orgbf95c22" class="outline-3">
+<h3 id="orgbf95c22">Join line to following line</h3>
+<div class="outline-text-3" id="text-orgbf95c22">
 <p>
 Plagiarised from <a href="https://pragmaticemacs.com/emacs/join-line-to-following-line/">pragmatic emacs</a>. For the reverse, emacs has a
 slightly obscurely named command <code>delete-indentation</code> which is bound
@@ -512,7 +512,7 @@ delete-indentation</code>)
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org0b900cd"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">join line to next line</span>
+<pre class="src src-emacs-lisp" id="orgffdf3a7"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">join line to next line</span>
 (global-set-key (kbd <span style="font-style: italic;">"C-j"</span>)
             (<span style="font-weight: bold;">lambda</span> ()
                   (<span style="font-weight: bold;">interactive</span>)
@@ -522,61 +522,61 @@ delete-indentation</code>)
 </div>
 </div>
 
-<div id="outline-container-org1282cc1" class="outline-3">
-<h3 id="org1282cc1">Delete blank lines and whitespace interactively</h3>
-<div class="outline-text-3" id="text-org1282cc1">
+<div id="outline-container-org0f72c83" class="outline-3">
+<h3 id="org0f72c83">Delete blank lines and whitespace interactively</h3>
+<div class="outline-text-3" id="text-org0f72c83">
 <p>
 Plagiarised from <a href="https://pragmaticemacs.com/emacs/delete-blank-lines-and-shrink-whitespace/">pragmatic emacs</a>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orga967720">(global-set-key (kbd <span style="font-style: italic;">"M-SPC"</span>) 'shrink-whitespace)
+<pre class="src src-emacs-lisp" id="org45e00f0">(global-set-key (kbd <span style="font-style: italic;">"M-SPC"</span>) 'shrink-whitespace)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbc5808f" class="outline-3">
-<h3 id="orgbc5808f">Multiple cursors</h3>
-<div class="outline-text-3" id="text-orgbc5808f">
+<div id="outline-container-org2515459" class="outline-3">
+<h3 id="org2515459">Multiple cursors</h3>
+<div class="outline-text-3" id="text-org2515459">
 <p>
 This is like <code>C-v</code>, a visual mode in vim/neovim. I stole this from
 <a href="https://pragmaticemacs.com/emacs/multiple-cursors/">pragmatic emacs</a>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org4a05913">(global-set-key (kbd <span style="font-style: italic;">"C-c m c"</span>) 'peremacs/edit-lines)
+<pre class="src src-emacs-lisp" id="org8c91487">(global-set-key (kbd <span style="font-style: italic;">"C-c m c"</span>) 'peremacs/edit-lines)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org54799d9" class="outline-3">
-<h3 id="org54799d9">Autoupdate buffer if files has changed on disk</h3>
-<div class="outline-text-3" id="text-org54799d9">
+<div id="outline-container-org1e474ad" class="outline-3">
+<h3 id="org1e474ad">Autoupdate buffer if files has changed on disk</h3>
+<div class="outline-text-3" id="text-org1e474ad">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgfa33681">(global-auto-revert-mode t)
+<pre class="src src-emacs-lisp" id="orgf83b968">(global-auto-revert-mode t)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb114aac" class="outline-3">
-<h3 id="orgb114aac">Whitespace mopup</h3>
-<div class="outline-text-3" id="text-orgb114aac">
+<div id="outline-container-org57c1e57" class="outline-3">
+<h3 id="org57c1e57">Whitespace mopup</h3>
+<div class="outline-text-3" id="text-org57c1e57">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org46c1db1">(add-hook 'before-save-hook
+<pre class="src src-emacs-lisp" id="org6e65709">(add-hook 'before-save-hook
           'delete-trailing-whitespace) <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Delete trailing whitespace on save</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbe092dc" class="outline-3">
-<h3 id="orgbe092dc">Simpler kill buffer behaviour</h3>
-<div class="outline-text-3" id="text-orgbe092dc">
+<div id="outline-container-org8e351e1" class="outline-3">
+<h3 id="org8e351e1">Simpler kill buffer behaviour</h3>
+<div class="outline-text-3" id="text-org8e351e1">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org9e7aee0">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">peremacs/kill-this-buffer</span> ()
+<pre class="src src-emacs-lisp" id="org7a93f68">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">peremacs/kill-this-buffer</span> ()
   (<span style="font-weight: bold;">interactive</span>) (kill-buffer (current-buffer)))
 (global-set-key (kbd <span style="font-style: italic;">"C-x k"</span>) 'peremacs/kill-this-buffer)
 </pre>
@@ -584,9 +584,9 @@ This is like <code>C-v</code>, a visual mode in vim/neovim. I stole this from
 </div>
 </div>
 
-<div id="outline-container-org0a6ada0" class="outline-3">
-<h3 id="org0a6ada0"><span class="todo TODO">TODO</span> Kill without accessing clipboard - reassess if this is really necessary</h3>
-<div class="outline-text-3" id="text-org0a6ada0">
+<div id="outline-container-orgefc1236" class="outline-3">
+<h3 id="orgefc1236"><span class="todo TODO">TODO</span> Kill without accessing clipboard - reassess if this is really necessary</h3>
+<div class="outline-text-3" id="text-orgefc1236">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">peremacs/backward-kill-word</span> ()
   (<span style="font-weight: bold;">interactive</span> <span style="font-style: italic;">"*"</span>)
@@ -601,34 +601,34 @@ This is like <code>C-v</code>, a visual mode in vim/neovim. I stole this from
 </div>
 </div>
 
-<div id="outline-container-org403cb55" class="outline-3">
-<h3 id="org403cb55">Return to last position in buffer</h3>
-<div class="outline-text-3" id="text-org403cb55">
+<div id="outline-container-org03ed7e3" class="outline-3">
+<h3 id="org03ed7e3">Return to last position in buffer</h3>
+<div class="outline-text-3" id="text-org03ed7e3">
 <p>
 Opens files at last position used. Something about this on <a href="https://www.emacswiki.org/emacs/SavePlace">Emacs Wiki</a>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgaa1193d">(save-place-mode 1)
+<pre class="src src-emacs-lisp" id="org6719318">(save-place-mode 1)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org75d76c3" class="outline-3">
-<h3 id="org75d76c3"><span class="todo TODO">TODO</span> Assorted keybindings - is this really necessary</h3>
-<div class="outline-text-3" id="text-org75d76c3">
+<div id="outline-container-orgd6fab1e" class="outline-3">
+<h3 id="orgd6fab1e"><span class="todo TODO">TODO</span> Assorted keybindings - is this really necessary</h3>
+<div class="outline-text-3" id="text-orgd6fab1e">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org83ef008">(global-set-key (kbd <span style="font-style: italic;">"C-&gt;"</span>) 'indent-rigidly-right-to-tab-stop) <span style="font-weight: bold; font-style: italic;">; </span><span style="font-weight: bold; font-style: italic;">Indent selection by one tab length</span>
+<pre class="src src-emacs-lisp" id="org56240fe">(global-set-key (kbd <span style="font-style: italic;">"C-&gt;"</span>) 'indent-rigidly-right-to-tab-stop) <span style="font-weight: bold; font-style: italic;">; </span><span style="font-weight: bold; font-style: italic;">Indent selection by one tab length</span>
 (global-set-key (kbd <span style="font-style: italic;">"C-&lt;"</span>) 'indent-rigidly-left-to-tab-stop)  <span style="font-weight: bold; font-style: italic;">; </span><span style="font-weight: bold; font-style: italic;">De-indent selection by one tab length</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org999ace6" class="outline-3">
-<h3 id="org999ace6">Pixel scroll precision mode (Emacs 29+)</h3>
-<div class="outline-text-3" id="text-org999ace6">
+<div id="outline-container-orgf6ec4c5" class="outline-3">
+<h3 id="orgf6ec4c5">Pixel scroll precision mode (Emacs 29+)</h3>
+<div class="outline-text-3" id="text-orgf6ec4c5">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(pixel-scroll-precision-mode +1)
 </pre>
@@ -636,9 +636,9 @@ Opens files at last position used. Something about this on <a href="https://www.
 </div>
 </div>
 
-<div id="outline-container-orgf67a009" class="outline-3">
-<h3 id="orgf67a009">Prompt before closing Emacs</h3>
-<div class="outline-text-3" id="text-orgf67a009">
+<div id="outline-container-org0821cd3" class="outline-3">
+<h3 id="org0821cd3">Prompt before closing Emacs</h3>
+<div class="outline-text-3" id="text-org0821cd3">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Confirm when killing Emacs</span>
 (<span style="font-weight: bold;">setq</span> confirm-kill-emacs (<span style="font-weight: bold;">lambda</span> (prompt)
@@ -648,9 +648,9 @@ Opens files at last position used. Something about this on <a href="https://www.
 </div>
 </div>
 
-<div id="outline-container-org31cc5c9" class="outline-3">
-<h3 id="org31cc5c9">Show keystrokes</h3>
-<div class="outline-text-3" id="text-org31cc5c9">
+<div id="outline-container-orge7961eb" class="outline-3">
+<h3 id="orge7961eb">Show keystrokes</h3>
+<div class="outline-text-3" id="text-orge7961eb">
 <p>
 Stolen from <a href="https://github.com/karthink/emacs.d">Karthik Chikmaglur's emacs.d</a>; shows what is typed immediately.
 </p>
@@ -664,9 +664,9 @@ Stolen from <a href="https://github.com/karthink/emacs.d">Karthik Chikmaglur's e
 </div>
 
 
-<div id="outline-container-org68bc6f0" class="outline-2">
-<h2 id="org68bc6f0"><span class="todo TODO">TODO</span> SSH for personal packages and magit</h2>
-<div class="outline-text-2" id="text-org68bc6f0">
+<div id="outline-container-org8a4c8d3" class="outline-2">
+<h2 id="org8a4c8d3"><span class="todo TODO">TODO</span> SSH for personal packages and magit</h2>
+<div class="outline-text-2" id="text-org8a4c8d3">
 <p>
 This needs a ton of work
 </p>
@@ -687,9 +687,9 @@ This needs a ton of work
 </div>
 
 
-<div id="outline-container-orgadafb9f" class="outline-2">
-<h2 id="orgadafb9f">Terminals with emacs-libvterm</h2>
-<div class="outline-text-2" id="text-orgadafb9f">
+<div id="outline-container-orgc1dcf23" class="outline-2">
+<h2 id="orgc1dcf23">Terminals with emacs-libvterm</h2>
+<div class="outline-text-2" id="text-orgc1dcf23">
 <p>
 Vterm ftw
 </p>
@@ -772,9 +772,9 @@ Make counsel use the correct function to yank in vterm buffers.
 </div>
 </div>
 
-<div id="outline-container-orgec2e63d" class="outline-3">
-<h3 id="orgec2e63d">IGNORE Eshell configuration</h3>
-<div class="outline-text-3" id="text-orgec2e63d">
+<div id="outline-container-org9ed36ff" class="outline-3">
+<h3 id="org9ed36ff">IGNORE Eshell configuration</h3>
+<div class="outline-text-3" id="text-org9ed36ff">
 <p>
 Make eshell pop under the main window and not create a window of it's
 own.
@@ -795,13 +795,13 @@ own.
 </div>
 
 
-<div id="outline-container-orga16e11e" class="outline-2">
-<h2 id="orga16e11e">Code utilities</h2>
-<div class="outline-text-2" id="text-orga16e11e">
+<div id="outline-container-org70bc584" class="outline-2">
+<h2 id="org70bc584">Code utilities</h2>
+<div class="outline-text-2" id="text-org70bc584">
 </div>
-<div id="outline-container-orga1c46c3" class="outline-3">
-<h3 id="orga1c46c3"><span class="todo TODO">TODO</span> Templates and snippets with minad's tempel</h3>
-<div class="outline-text-3" id="text-orga1c46c3">
+<div id="outline-container-orgfaf30cb" class="outline-3">
+<h3 id="orgfaf30cb"><span class="todo TODO">TODO</span> Templates and snippets with minad's tempel</h3>
+<div class="outline-text-3" id="text-orgfaf30cb">
 <p>
 Seems a lot simpler than yasnippet but will have to work on templates.
 </p>
@@ -870,9 +870,9 @@ Hooks
 </div>
 </div>
 
-<div id="outline-container-org148a9ed" class="outline-3">
-<h3 id="org148a9ed">Snippets</h3>
-<div class="outline-text-3" id="text-org148a9ed">
+<div id="outline-container-orgafbc23b" class="outline-3">
+<h3 id="orgafbc23b">Snippets</h3>
+<div class="outline-text-3" id="text-orgafbc23b">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package yasnippet
   <span style="font-weight: bold;">:disabled</span>
@@ -884,9 +884,9 @@ Hooks
 </div>
 </div>
 
-<div id="outline-container-org6ceda6c" class="outline-3">
-<h3 id="org6ceda6c"><span class="todo TODO">TODO</span> Syntax checking with Flycheck</h3>
-<div class="outline-text-3" id="text-org6ceda6c">
+<div id="outline-container-org55f5a95" class="outline-3">
+<h3 id="org55f5a95"><span class="todo TODO">TODO</span> Syntax checking with Flycheck</h3>
+<div class="outline-text-3" id="text-org55f5a95">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package flycheck
   <span style="font-weight: bold;">:defer</span> t
@@ -901,9 +901,9 @@ Hooks
 </div>
 </div>
 
-<div id="outline-container-org3798499" class="outline-3">
-<h3 id="org3798499">Bash - use tabs instead of spaces</h3>
-<div class="outline-text-3" id="text-org3798499">
+<div id="outline-container-org137087d" class="outline-3">
+<h3 id="org137087d">Bash - use tabs instead of spaces</h3>
+<div class="outline-text-3" id="text-org137087d">
 <p>
 Maybe this needs to be universal but this is especially annoying when
 I edit void-packages 'template's which specifically need tabs in the
@@ -921,9 +921,9 @@ custom functions below.
 </div>
 </div>
 
-<div id="outline-container-org03a3bcb" class="outline-3">
-<h3 id="org03a3bcb">Autopaired parens</h3>
-<div class="outline-text-3" id="text-org03a3bcb">
+<div id="outline-container-orgada6914" class="outline-3">
+<h3 id="orgada6914">Autopaired parens</h3>
+<div class="outline-text-3" id="text-orgada6914">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(electric-pair-mode 1)
 </pre>
@@ -931,9 +931,9 @@ custom functions below.
 </div>
 </div>
 
-<div id="outline-container-org9276ae3" class="outline-3">
-<h3 id="org9276ae3">Don't add C-x,C-c,C-v; dont ask why though</h3>
-<div class="outline-text-3" id="text-org9276ae3">
+<div id="outline-container-org6c2da68" class="outline-3">
+<h3 id="org6c2da68">Don't add C-x,C-c,C-v; dont ask why though</h3>
+<div class="outline-text-3" id="text-org6c2da68">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="font-weight: bold;">setq</span> cua-enable-cua-keys nil)
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">for rectangles, CUA is nice</span>
@@ -943,9 +943,9 @@ custom functions below.
 </div>
 </div>
 
-<div id="outline-container-orge9295c9" class="outline-3">
-<h3 id="orge9295c9">Aggressive <b>indentation</b> coz OCD</h3>
-<div class="outline-text-3" id="text-orge9295c9">
+<div id="outline-container-org3018c1e" class="outline-3">
+<h3 id="org3018c1e">Aggressive <b>indentation</b> coz OCD</h3>
+<div class="outline-text-3" id="text-org3018c1e">
 <p>
 &#x2026;and I hate doing it manually and Emacs usually refuses to do it by
 itself
@@ -960,9 +960,9 @@ itself
 </div>
 </div>
 
-<div id="outline-container-org8310515" class="outline-3">
-<h3 id="org8310515">I hate arthropods</h3>
-<div class="outline-text-3" id="text-org8310515">
+<div id="outline-container-orga30683d" class="outline-3">
+<h3 id="orga30683d">I hate arthropods</h3>
+<div class="outline-text-3" id="text-orga30683d">
 <p>
 &#x2026;except those that you can eat
 </p>
@@ -974,9 +974,9 @@ itself
 </div>
 </div>
 
-<div id="outline-container-org166fc82" class="outline-3">
-<h3 id="org166fc82">cl-libify</h3>
-<div class="outline-text-3" id="text-org166fc82">
+<div id="outline-container-orgc142fc6" class="outline-3">
+<h3 id="orgc142fc6">cl-libify</h3>
+<div class="outline-text-3" id="text-orgc142fc6">
 <p>
 Convert all (deperecated) <code>cl</code> symbols to <code>cl-lib</code>
 </p>
@@ -989,9 +989,9 @@ Convert all (deperecated) <code>cl</code> symbols to <code>cl-lib</code>
 </div>
 </div>
 
-<div id="outline-container-org0e3eab1" class="outline-3">
-<h3 id="org0e3eab1">Iedit</h3>
-<div class="outline-text-3" id="text-org0e3eab1">
+<div id="outline-container-org416c8b0" class="outline-3">
+<h3 id="org416c8b0">Iedit</h3>
+<div class="outline-text-3" id="text-org416c8b0">
 <p>
 A more intuitive way to alter all the occurrences of a word/keyword at once
 </p>
@@ -1003,11 +1003,11 @@ A more intuitive way to alter all the occurrences of a word/keyword at once
 </div>
 </div>
 
-<div id="outline-container-org6a029bf" class="outline-3">
-<h3 id="org6a029bf">Show line numbers in programming modes</h3>
-<div class="outline-text-3" id="text-org6a029bf">
+<div id="outline-container-orgf528ac1" class="outline-3">
+<h3 id="orgf528ac1">Show line numbers in programming modes</h3>
+<div class="outline-text-3" id="text-orgf528ac1">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgc167ab1">(add-hook 'prog-mode-hook
+<pre class="src src-emacs-lisp" id="orgb8732f1">(add-hook 'prog-mode-hook
                 (<span style="font-weight: bold;">if</span> (<span style="font-weight: bold;">and</span> (fboundp 'display-line-numbers-mode) (display-graphic-p))
                     #'display-line-numbers-mode
                   #'linum-mode))
@@ -1016,9 +1016,9 @@ A more intuitive way to alter all the occurrences of a word/keyword at once
 </div>
 </div>
 
-<div id="outline-container-orgb14cef7" class="outline-3">
-<h3 id="orgb14cef7">Open shell files from script directories in <code>sh-mode</code></h3>
-<div class="outline-text-3" id="text-orgb14cef7">
+<div id="outline-container-orgf68ddd0" class="outline-3">
+<h3 id="orgf68ddd0">Open shell files from script directories in <code>sh-mode</code></h3>
+<div class="outline-text-3" id="text-orgf68ddd0">
 <p>
 Scope for adding more such shit?
 </p>
@@ -1031,9 +1031,9 @@ Scope for adding more such shit?
 </div>
 </div>
 
-<div id="outline-container-org4ea734a" class="outline-3">
-<h3 id="org4ea734a">Show matching parens</h3>
-<div class="outline-text-3" id="text-org4ea734a">
+<div id="outline-container-orgf8ba886" class="outline-3">
+<h3 id="orgf8ba886">Show matching parens</h3>
+<div class="outline-text-3" id="text-orgf8ba886">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(show-paren-mode 1)
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Worst possible setting with this theme - it sucks balls</span>
@@ -1045,13 +1045,13 @@ Scope for adding more such shit?
 </div>
 
 
-<div id="outline-container-orgffbc237" class="outline-2">
-<h2 id="orgffbc237">Languages I (allegedly) use</h2>
-<div class="outline-text-2" id="text-orgffbc237">
+<div id="outline-container-org9dbfcec" class="outline-2">
+<h2 id="org9dbfcec">Languages I (allegedly) use</h2>
+<div class="outline-text-2" id="text-org9dbfcec">
 </div>
-<div id="outline-container-org0d4bdd6" class="outline-3">
-<h3 id="org0d4bdd6">Vimscript for editing neovim init</h3>
-<div class="outline-text-3" id="text-org0d4bdd6">
+<div id="outline-container-orgb81893a" class="outline-3">
+<h3 id="orgb81893a">Vimscript for editing neovim init</h3>
+<div class="outline-text-3" id="text-orgb81893a">
 <p>
 &#x2026;cause neovim sucks and I don't like leaving Emacs in the ideal
 case. I might end up replacing this with a <b>lua config</b>
@@ -1067,9 +1067,9 @@ case. I might end up replacing this with a <b>lua config</b>
 </div>
 </div>
 
-<div id="outline-container-orgb0229e2" class="outline-3">
-<h3 id="orgb0229e2">Lua mode?</h3>
-<div class="outline-text-3" id="text-orgb0229e2">
+<div id="outline-container-orgd51677d" class="outline-3">
+<h3 id="orgd51677d">Lua mode?</h3>
+<div class="outline-text-3" id="text-orgd51677d">
 <p>
 I intend to learn and use lua for my neovim config.
 </p>
@@ -1081,9 +1081,9 @@ I intend to learn and use lua for my neovim config.
 </div>
 </div>
 
-<div id="outline-container-orgcc3eb11" class="outline-3">
-<h3 id="orgcc3eb11">Emacs Speaks Statistics for <b>R</b> and python(?)</h3>
-<div class="outline-text-3" id="text-orgcc3eb11">
+<div id="outline-container-org3932ff8" class="outline-3">
+<h3 id="org3932ff8">Emacs Speaks Statistics for <b>R</b> and python(?)</h3>
+<div class="outline-text-3" id="text-org3932ff8">
 <p>
 Figure out babel/org-tangle or whatever because Emacs sucks for
 RMarkdown and org-mode is generally better (see next bit for RMarkdown)
@@ -1098,9 +1098,9 @@ RMarkdown and org-mode is generally better (see next bit for RMarkdown)
 </div>
 </div>
 
-<div id="outline-container-orge9836ac" class="outline-3">
-<h3 id="orge9836ac">Polymode for RMarkdown syntax</h3>
-<div class="outline-text-3" id="text-orge9836ac">
+<div id="outline-container-org18fefd6" class="outline-3">
+<h3 id="org18fefd6">Polymode for RMarkdown syntax</h3>
+<div class="outline-text-3" id="text-org18fefd6">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package poly-R)
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:ensure t</span>
@@ -1111,9 +1111,9 @@ RMarkdown and org-mode is generally better (see next bit for RMarkdown)
 </div>
 </div>
 
-<div id="outline-container-orgce46baf" class="outline-3">
-<h3 id="orgce46baf">C and C++ ???</h3>
-<div class="outline-text-3" id="text-orgce46baf">
+<div id="outline-container-orgfa9fe8b" class="outline-3">
+<h3 id="orgfa9fe8b">C and C++ ???</h3>
+<div class="outline-text-3" id="text-orgfa9fe8b">
 <p>
 Like really?
 </p>
@@ -1125,9 +1125,9 @@ Like really?
 </div>
 </div>
 
-<div id="outline-container-org6f113a1" class="outline-3">
-<h3 id="org6f113a1">AUCTex for LaTex editing + completion</h3>
-<div class="outline-text-3" id="text-org6f113a1">
+<div id="outline-container-org70503d5" class="outline-3">
+<h3 id="org70503d5">AUCTex for LaTex editing + completion</h3>
+<div class="outline-text-3" id="text-org70503d5">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">FIXME:</span>
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(use-package auctex</span>
@@ -1166,9 +1166,9 @@ Like really?
 </div>
 </div>
 
-<div id="outline-container-org17b58ed" class="outline-3">
-<h3 id="org17b58ed">Spellcheck</h3>
-<div class="outline-text-3" id="text-org17b58ed">
+<div id="outline-container-org7659fa6" class="outline-3">
+<h3 id="org7659fa6">Spellcheck</h3>
+<div class="outline-text-3" id="text-org7659fa6">
 <p>
 Finally figured this out from a <a href="https://redd.it/ahysvb">reddit post from 2019</a>.
 </p>
@@ -1193,9 +1193,9 @@ Finally figured this out from a <a href="https://redd.it/ahysvb">reddit post fro
 </div>
 </div>
 
-<div id="outline-container-orga73a2ba" class="outline-4">
-<h4 id="orga73a2ba">Trying something else&#x2026;</h4>
-<div class="outline-text-4" id="text-orga73a2ba">
+<div id="outline-container-org215084f" class="outline-4">
+<h4 id="org215084f">Trying something else&#x2026;</h4>
+<div class="outline-text-4" id="text-org215084f">
 <p>
 &#x2026; because Void linux keeps complaining about not being able to find
 a British English dictionary
@@ -1216,9 +1216,9 @@ a British English dictionary
 </div>
 </div>
 
-<div id="outline-container-org6e39808" class="outline-3">
-<h3 id="org6e39808">Something like scrivener from Mac</h3>
-<div class="outline-text-3" id="text-org6e39808">
+<div id="outline-container-org6e8b941" class="outline-3">
+<h3 id="org6e8b941">Something like scrivener from Mac</h3>
+<div class="outline-text-3" id="text-org6e8b941">
 <p>
 &#x2026;cause I'm gonna become a novelist and/or write large books in the
 near future
@@ -1232,9 +1232,9 @@ near future
 </div>
 </div>
 
-<div id="outline-container-org7a81dd0" class="outline-3">
-<h3 id="org7a81dd0">Brainfuck?</h3>
-<div class="outline-text-3" id="text-org7a81dd0">
+<div id="outline-container-org26ad8e6" class="outline-3">
+<h3 id="org26ad8e6">Brainfuck?</h3>
+<div class="outline-text-3" id="text-org26ad8e6">
 <p>
 Esoteric language which makes absolutely no sense for me considering
 ADHD and all.
@@ -1247,9 +1247,9 @@ ADHD and all.
 </div>
 </div>
 
-<div id="outline-container-orgd5f57f4" class="outline-3">
-<h3 id="orgd5f57f4">El Doc for help in echo area</h3>
-<div class="outline-text-3" id="text-orgd5f57f4">
+<div id="outline-container-org50e1180" class="outline-3">
+<h3 id="org50e1180">El Doc for help in echo area</h3>
+<div class="outline-text-3" id="text-org50e1180">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package eldoc
   <span style="font-weight: bold;">:straight</span> (<span style="font-weight: bold;">:type</span> built-in)
@@ -1264,9 +1264,9 @@ ADHD and all.
 </div>
 </div>
 
-<div id="outline-container-orgcdbdce3" class="outline-3">
-<h3 id="orgcdbdce3">Zig mode</h3>
-<div class="outline-text-3" id="text-orgcdbdce3">
+<div id="outline-container-orge476edc" class="outline-3">
+<h3 id="orge476edc">Zig mode</h3>
+<div class="outline-text-3" id="text-orge476edc">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package zig-mode
   <span style="font-weight: bold;">:config</span>
@@ -1277,11 +1277,11 @@ ADHD and all.
 </div>
 </div>
 
-<div id="outline-container-orgc1bca8a" class="outline-2">
-<h2 id="orgc1bca8a">Git with Magit and gists with <code>gist.el</code></h2>
-<div class="outline-text-2" id="text-orgc1bca8a">
+<div id="outline-container-org21990e7" class="outline-2">
+<h2 id="org21990e7">Git with Magit and gists with <code>gist.el</code></h2>
+<div class="outline-text-2" id="text-org21990e7">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org1157d63">(use-package magit
+<pre class="src src-emacs-lisp" id="org909fcd0">(use-package magit
   <span style="font-weight: bold;">:bind</span> (<span style="font-style: italic;">"C-x g"</span>    . magit-status))
 </pre>
 </div>
@@ -1291,16 +1291,16 @@ ADHD and all.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org82f383a">(use-package gist)
+<pre class="src src-emacs-lisp" id="orgf84db71">(use-package gist)
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orgf5a3384" class="outline-2">
-<h2 id="orgf5a3384">View ePubs and PDFs in Emacs</h2>
-<div class="outline-text-2" id="text-orgf5a3384">
+<div id="outline-container-org8a570f5" class="outline-2">
+<h2 id="org8a570f5">View ePubs and PDFs in Emacs</h2>
+<div class="outline-text-2" id="text-org8a570f5">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package nov
   <span style="font-weight: bold;">:mode</span> (<span style="font-style: italic;">"\\.epub\\'"</span> . nov-mode)
@@ -1330,16 +1330,16 @@ ADHD and all.
 </div>
 
 
-<div id="outline-container-org07a3536" class="outline-2">
-<h2 id="org07a3536">Ledger for finance</h2>
-<div class="outline-text-2" id="text-org07a3536">
+<div id="outline-container-org9996545" class="outline-2">
+<h2 id="org9996545">Ledger for finance</h2>
+<div class="outline-text-2" id="text-org9996545">
 <p>
 I'm not entirely sure I can start with this yet but I think I've gotta
 start working on paying of whatever debt I've accumulated.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org9cbea95">(use-package ledger-mode
+<pre class="src src-emacs-lisp" id="org3c72d09">(use-package ledger-mode
   <span style="font-weight: bold;">:mode</span> <span style="font-style: italic;">"\\.lgr\\'"</span>
 
   <span style="font-weight: bold;">:bind</span> (<span style="font-weight: bold;">:map</span> ledger-mode-map
@@ -1356,9 +1356,9 @@ start working on paying of whatever debt I've accumulated.
 </div>
 </div>
 
-<div id="outline-container-org15fa074" class="outline-3">
-<h3 id="org15fa074">IN-PROGRESS Prettier journaling for expenses</h3>
-<div class="outline-text-3" id="text-org15fa074">
+<div id="outline-container-org4b6c693" class="outline-3">
+<h3 id="org4b6c693">IN-PROGRESS Prettier journaling for expenses</h3>
+<div class="outline-text-3" id="text-org4b6c693">
 <p>
 This is more like an <code>org-mode</code>-like journal for personal expenses. I've
 stolen this configuration from the author under the <a href="https://github.com/narendraj9/hledger-mode#usage">usage header</a> of
@@ -1467,9 +1467,9 @@ doing here so I've disabled it for now.
 </div>
 
 
-<div id="outline-container-org53e8bdd" class="outline-2">
-<h2 id="org53e8bdd">IGNORE Company for completions</h2>
-<div class="outline-text-2" id="text-org53e8bdd">
+<div id="outline-container-org87bc760" class="outline-2">
+<h2 id="org87bc760">IGNORE Company for completions</h2>
+<div class="outline-text-2" id="text-org87bc760">
 <p>
 Transient: only until I can figure corfu out
 </p>
@@ -1493,9 +1493,9 @@ Transient: only until I can figure corfu out
 </div>
 
 
-<div id="outline-container-orgf2cfb15" class="outline-2">
-<h2 id="orgf2cfb15"><span class="todo TODO">TODO</span> Corfu for completion-at-point (non-minibuffer kind)</h2>
-<div class="outline-text-2" id="text-orgf2cfb15">
+<div id="outline-container-org6ffcd24" class="outline-2">
+<h2 id="org6ffcd24"><span class="todo TODO">TODO</span> Corfu for completion-at-point (non-minibuffer kind)</h2>
+<div class="outline-text-2" id="text-org6ffcd24">
 <p>
 This might need some more work - integration with <a href="https://github.com/minad/cape">minad's <code>cape</code></a> for
 various kinds of completions although he alleges this works well with
@@ -1503,7 +1503,7 @@ base Emacs.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org3653642">(use-package corfu
+<pre class="src src-emacs-lisp" id="org5af320a">(use-package corfu
   <span style="font-weight: bold;">:bind</span>
   (<span style="font-weight: bold;">:map</span> corfu-map
          <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">??? :states 'insert</span>
@@ -1578,9 +1578,9 @@ The following might need removal
 </div>
 </div>
 
-<div id="outline-container-orgfff08ae" class="outline-3">
-<h3 id="orgfff08ae">CAPE - extensions for corfu</h3>
-<div class="outline-text-3" id="text-orgfff08ae">
+<div id="outline-container-org5c23f49" class="outline-3">
+<h3 id="org5c23f49">CAPE - extensions for corfu</h3>
+<div class="outline-text-3" id="text-org5c23f49">
 <p>
 Corfu needs <code>cape</code> to provide completion backends because it's extremely
 stripped down. Will have to check what other backends I'll need to
@@ -1611,9 +1611,9 @@ enable.
 </div>
 
 
-<div id="outline-container-org6287f75" class="outline-2">
-<h2 id="org6287f75">Undo tree</h2>
-<div class="outline-text-2" id="text-org6287f75">
+<div id="outline-container-orgd911976" class="outline-2">
+<h2 id="orgd911976">Undo tree</h2>
+<div class="outline-text-2" id="text-orgd911976">
 <p>
 Helps revert to older versions of files in case I fuck up something
 somewhere. Hmm. I doubt I ever use it so disabling it now.
@@ -1632,9 +1632,9 @@ somewhere. Hmm. I doubt I ever use it so disabling it now.
 </div>
 
 
-<div id="outline-container-org40361ff" class="outline-2">
-<h2 id="org40361ff">Project management and navigation - projectile</h2>
-<div class="outline-text-2" id="text-org40361ff">
+<div id="outline-container-orgb0f57ee" class="outline-2">
+<h2 id="orgb0f57ee">Project management and navigation - projectile</h2>
+<div class="outline-text-2" id="text-orgb0f57ee">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">project management</span>
 (use-package projectile
@@ -1664,9 +1664,9 @@ somewhere. Hmm. I doubt I ever use it so disabling it now.
 </div>
 
 
-<div id="outline-container-org1c72996" class="outline-2">
-<h2 id="org1c72996">IGNORE Consistent and simpler keybinding assignment</h2>
-<div class="outline-text-2" id="text-org1c72996">
+<div id="outline-container-org090b313" class="outline-2">
+<h2 id="org090b313">IGNORE Consistent and simpler keybinding assignment</h2>
+<div class="outline-text-2" id="text-org090b313">
 <p>
 Disabled because I use <code>use-package</code> for keybinds
 </p>
@@ -1684,9 +1684,9 @@ Disabled because I use <code>use-package</code> for keybinds
 </div>
 
 
-<div id="outline-container-org65ba0c8" class="outline-2">
-<h2 id="org65ba0c8">ERC for IRC</h2>
-<div class="outline-text-2" id="text-org65ba0c8">
+<div id="outline-container-org75cdf70" class="outline-2">
+<h2 id="org75cdf70">ERC for IRC</h2>
+<div class="outline-text-2" id="text-org75cdf70">
 <p>
 SystemCrafters recommends this so here I am using it. <b>Long source
 block split into multiple ones</b>.
@@ -1779,13 +1779,13 @@ Update ERC modules
 </div>
 
 
-<div id="outline-container-org0cd8904" class="outline-2">
-<h2 id="org0cd8904">Window Management</h2>
-<div class="outline-text-2" id="text-org0cd8904">
+<div id="outline-container-orgf41b0a8" class="outline-2">
+<h2 id="orgf41b0a8">Window Management</h2>
+<div class="outline-text-2" id="text-orgf41b0a8">
 </div>
-<div id="outline-container-orgeaba8e0" class="outline-3">
-<h3 id="orgeaba8e0">EXWM</h3>
-<div class="outline-text-3" id="text-orgeaba8e0">
+<div id="outline-container-org2eac455" class="outline-3">
+<h3 id="org2eac455">EXWM</h3>
+<div class="outline-text-3" id="text-org2eac455">
 <p>
 This ofc <b>doesn't work</b> on wayland and <code>pgtk</code> emacs but am I willing
 to learn C++ and emacs-lisp well enough to contribute to porting this
@@ -1844,9 +1844,9 @@ to wayland/wlroots or something?
 </div>
 </div>
 
-<div id="outline-container-org6c97422" class="outline-3">
-<h3 id="org6c97422"><span class="todo TODO">TODO</span> Workspaces with perspective-el</h3>
-<div class="outline-text-3" id="text-org6c97422">
+<div id="outline-container-orga6a91f1" class="outline-3">
+<h3 id="orga6a91f1"><span class="todo TODO">TODO</span> Workspaces with perspective-el</h3>
+<div class="outline-text-3" id="text-orga6a91f1">
 <p>
 Independent workspaces for different projects like profiles on RStudio
 but perhaps a lot more dynamic. This might need more work hence adding
@@ -1877,9 +1877,9 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </div>
 </div>
 
-<div id="outline-container-orge1faf17" class="outline-4">
-<h4 id="orge1faf17">persp-projectile for proper workspace window management</h4>
-<div class="outline-text-4" id="text-orge1faf17">
+<div id="outline-container-orgc52fc2d" class="outline-4">
+<h4 id="orgc52fc2d">persp-projectile for proper workspace window management</h4>
+<div class="outline-text-4" id="text-orgc52fc2d">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package persp-projectile
   <span style="font-weight: bold;">:bind</span>
@@ -1890,9 +1890,9 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </div>
 </div>
 
-<div id="outline-container-org684ef43" class="outline-3">
-<h3 id="org684ef43">Undo disrupted window/frame arrangement after using some shit</h3>
-<div class="outline-text-3" id="text-org684ef43">
+<div id="outline-container-org5f1652d" class="outline-3">
+<h3 id="org5f1652d">Undo disrupted window/frame arrangement after using some shit</h3>
+<div class="outline-text-3" id="text-org5f1652d">
 <p>
 Stolen from <a href="https://github.com/karthink/emacs.d">Karthik Chikmaglur's emacs.d</a>
 </p>
@@ -1911,9 +1911,9 @@ Stolen from <a href="https://github.com/karthink/emacs.d">Karthik Chikmaglur's e
 </div>
 </div>
 
-<div id="outline-container-orgb3d8fb7" class="outline-3">
-<h3 id="orgb3d8fb7">Ace-window helps with navigation between multiple windows</h3>
-<div class="outline-text-3" id="text-orgb3d8fb7">
+<div id="outline-container-org3f8776a" class="outline-3">
+<h3 id="org3f8776a">Ace-window helps with navigation between multiple windows</h3>
+<div class="outline-text-3" id="text-org3f8776a">
 <p>
 Simpler navigation between open Emacs windows
 </p>
@@ -1957,9 +1957,9 @@ Other actions that <code>ace-window</code> handles:
 </div>
 </div>
 
-<div id="outline-container-org9d8230a" class="outline-3">
-<h3 id="org9d8230a"><span class="todo TODO">TODO</span> Sane native window management - needs work</h3>
-<div class="outline-text-3" id="text-org9d8230a">
+<div id="outline-container-org10b0e0c" class="outline-3">
+<h3 id="org10b0e0c"><span class="todo TODO">TODO</span> Sane native window management - needs work</h3>
+<div class="outline-text-3" id="text-org10b0e0c">
 <p>
 Focuses new windows when created.
 </p>
@@ -1988,9 +1988,9 @@ Focuses new windows when created.
 </div>
 </div>
 
-<div id="outline-container-org1952bc9" class="outline-3">
-<h3 id="org1952bc9">IN-PROGRESS Better popups with popper</h3>
-<div class="outline-text-3" id="text-org1952bc9">
+<div id="outline-container-orgb58d167" class="outline-3">
+<h3 id="orgb58d167">IN-PROGRESS Better popups with popper</h3>
+<div class="outline-text-3" id="text-orgb58d167">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package popper
     <span style="font-weight: bold;">:bind</span> ((<span style="font-style: italic;">"C-`"</span>   . popper-toggle-latest)
@@ -2034,9 +2034,9 @@ Focuses new windows when created.
 </div>
 
 
-<div id="outline-container-orgb2052cc" class="outline-2">
-<h2 id="orgb2052cc">Display keybinds following various prefixes such as <code>C-h</code></h2>
-<div class="outline-text-2" id="text-orgb2052cc">
+<div id="outline-container-orgf5f9650" class="outline-2">
+<h2 id="orgf5f9650">Display keybinds following various prefixes such as <code>C-h</code></h2>
+<div class="outline-text-2" id="text-orgf5f9650">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package which-key
   <span style="font-weight: bold;">:diminish</span> which-key-mode
@@ -2048,9 +2048,9 @@ Focuses new windows when created.
 </div>
 
 
-<div id="outline-container-org7c4ee94" class="outline-2">
-<h2 id="org7c4ee94">Editing root files &amp; privelege escalation for TRAMP if I ever use it</h2>
-<div class="outline-text-2" id="text-org7c4ee94">
+<div id="outline-container-org797a01d" class="outline-2">
+<h2 id="org797a01d">Editing root files &amp; privelege escalation for TRAMP if I ever use it</h2>
+<div class="outline-text-2" id="text-org797a01d">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package su
   <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:config</span>
@@ -2062,17 +2062,17 @@ Focuses new windows when created.
 </div>
 
 
-<div id="outline-container-orgeda0791" class="outline-2">
-<h2 id="orgeda0791">Minibuffer completions</h2>
-<div class="outline-text-2" id="text-orgeda0791">
+<div id="outline-container-org079b871" class="outline-2">
+<h2 id="org079b871">Minibuffer completions</h2>
+<div class="outline-text-2" id="text-org079b871">
 </div>
-<div id="outline-container-orgca97b37" class="outline-3">
-<h3 id="orgca97b37"><span class="todo TODO">TODO</span> Completion - is <a href="https://gitlab.com/protesilaos/mct">mct</a> worth using?</h3>
+<div id="outline-container-org0a02f9f" class="outline-3">
+<h3 id="org0a02f9f"><span class="todo TODO">TODO</span> Completion - is <a href="https://gitlab.com/protesilaos/mct">mct</a> worth using?</h3>
 </div>
 
-<div id="outline-container-org0880c2b" class="outline-3">
-<h3 id="org0880c2b">IGNORE Prescient command history with <code>M-x</code></h3>
-<div class="outline-text-3" id="text-org0880c2b">
+<div id="outline-container-org788a0b9" class="outline-3">
+<h3 id="org788a0b9">IGNORE Prescient command history with <code>M-x</code></h3>
+<div class="outline-text-3" id="text-org788a0b9">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package prescient
   <span style="font-weight: bold;">:config</span>
@@ -2083,9 +2083,9 @@ Focuses new windows when created.
 </div>
 </div>
 
-<div id="outline-container-orgf8b4a1a" class="outline-3">
-<h3 id="orgf8b4a1a">Access a list of recently edited files</h3>
-<div class="outline-text-3" id="text-orgf8b4a1a">
+<div id="outline-container-org7f6ce90" class="outline-3">
+<h3 id="org7f6ce90">Access a list of recently edited files</h3>
+<div class="outline-text-3" id="text-org7f6ce90">
 <p>
 Helps jump back into whatever I was doing before closing Emacs. Or my
 laptop more like it.
@@ -2103,9 +2103,9 @@ laptop more like it.
 </div>
 </div>
 
-<div id="outline-container-org45e9c3e" class="outline-3">
-<h3 id="org45e9c3e">IGNORE Selectrum for completions UI</h3>
-<div class="outline-text-3" id="text-org45e9c3e">
+<div id="outline-container-orgcc002b0" class="outline-3">
+<h3 id="orgcc002b0">IGNORE Selectrum for completions UI</h3>
+<div class="outline-text-3" id="text-orgcc002b0">
 <p>
 If I rememeber right, this is closer to the default completion
 behaviour in Emacs.
@@ -2128,9 +2128,9 @@ behaviour in Emacs.
 </div>
 </div>
 
-<div id="outline-container-orgd4d8f20" class="outline-3">
-<h3 id="orgd4d8f20">Vertico for completions UI</h3>
-<div class="outline-text-3" id="text-orgd4d8f20">
+<div id="outline-container-orgc466bbb" class="outline-3">
+<h3 id="orgc466bbb">Vertico for completions UI</h3>
+<div class="outline-text-3" id="text-orgc466bbb">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Enable vertico</span>
 (use-package vertico
@@ -2212,15 +2212,15 @@ at Vertico header.
 </div>
 </div>
 
-<div id="outline-container-orgb44b7a8" class="outline-4">
-<h4 id="orgb44b7a8"><span class="todo TODO">TODO</span> Vertico extensions</h4>
-<div class="outline-text-4" id="text-orgb44b7a8">
+<div id="outline-container-org82b2f8a" class="outline-4">
+<h4 id="org82b2f8a"><span class="todo TODO">TODO</span> Vertico extensions</h4>
+<div class="outline-text-4" id="text-org82b2f8a">
 <p>
 Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org4a4f765">(use-package vertico-multiform
+<pre class="src src-emacs-lisp" id="orgbf674e3">(use-package vertico-multiform
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
   <span style="font-weight: bold;">:commands</span> vertico-multiform-mode
   <span style="font-weight: bold;">:after</span> vertico-flat
@@ -2267,7 +2267,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org72d1674">(use-package vertico-unobtrusive
+<pre class="src src-emacs-lisp" id="org8b2c0a1">(use-package vertico-unobtrusive
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.local/share/git/vertico/extensions/"</span>
   <span style="font-weight: bold;">:after</span> vertico-flat)
 </pre>
@@ -2299,7 +2299,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org8088b18">(use-package vertico-quick
+<pre class="src src-emacs-lisp" id="orgbfa8802">(use-package vertico-quick
       <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
       <span style="font-weight: bold;">:after</span> vertico
       <span style="font-weight: bold;">:bind</span> (<span style="font-weight: bold;">:map</span> vertico-map
@@ -2316,7 +2316,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org555c037">(use-package vertico-directory
+<pre class="src src-emacs-lisp" id="orgb6d5d21">(use-package vertico-directory
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
   <span style="font-weight: bold;">:hook</span> (rfn-eshadow-update-overlay vertico-directory-tidy)
   <span style="font-weight: bold;">:after</span> vertico
@@ -2329,7 +2329,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org412128c">(use-package vertico-repeat
+<pre class="src src-emacs-lisp" id="org9cd78a6">(use-package vertico-repeat
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
   <span style="font-weight: bold;">:after</span> vertico
   <span style="font-weight: bold;">:bind</span> ((<span style="font-style: italic;">"C-x ."</span> . vertico-repeat)))
@@ -2337,7 +2337,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgcc8335b">(use-package vertico-reverse
+<pre class="src src-emacs-lisp" id="org3d1cb52">(use-package vertico-reverse
   <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:disabled</span>
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
   <span style="font-weight: bold;">:after</span> vertico)
@@ -2345,7 +2345,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgb564000">(use-package vertico-flat
+<pre class="src src-emacs-lisp" id="org03fcbe8">(use-package vertico-flat
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
   <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:bind (:map vertico-map</span>
   <span style="font-weight: bold; font-style: italic;">;;             </span><span style="font-weight: bold; font-style: italic;">("M-q" . vertico-flat-mode))</span>
@@ -2354,7 +2354,7 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgcf2b083">(use-package vertico-buffer
+<pre class="src src-emacs-lisp" id="orged341ee">(use-package vertico-buffer
       <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/.emacs.d/lisp/vertico-extensions/"</span>
       <span style="font-weight: bold;">:after</span> vertico
       <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:hook (vertico-buffer-mode . vertico-buffer-setup)</span>
@@ -2366,9 +2366,9 @@ Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled
 </div>
 </div>
 
-<div id="outline-container-org92c25cb" class="outline-3">
-<h3 id="org92c25cb">Orderless completion</h3>
-<div class="outline-text-3" id="text-org92c25cb">
+<div id="outline-container-org11b35e3" class="outline-3">
+<h3 id="org11b35e3">Orderless completion</h3>
+<div class="outline-text-3" id="text-org11b35e3">
 <p>
 Search for commands, buffers, etc with vertico without having to match
 the order of words in the command. Adding spaces between keywords can
@@ -2462,9 +2462,9 @@ bootlegged from <a href="https://github.com/minad/consult/wiki#minads-orderless-
 </div>
 </div>
 
-<div id="outline-container-org76d1b73" class="outline-3">
-<h3 id="org76d1b73">Persistent command history</h3>
-<div class="outline-text-3" id="text-org76d1b73">
+<div id="outline-container-org6dc10b3" class="outline-3">
+<h3 id="org6dc10b3">Persistent command history</h3>
+<div class="outline-text-3" id="text-org6dc10b3">
 <p>
 Persist history over Emacs restarts. Vertico sorts by history position.
 </p>
@@ -2478,9 +2478,9 @@ Persist history over Emacs restarts. Vertico sorts by history position.
 </div>
 </div>
 
-<div id="outline-container-orgaef61d5" class="outline-3">
-<h3 id="orgaef61d5">A few more useful configurations</h3>
-<div class="outline-text-3" id="text-orgaef61d5">
+<div id="outline-container-org2c425d5" class="outline-3">
+<h3 id="org2c425d5">A few more useful configurations</h3>
+<div class="outline-text-3" id="text-org2c425d5">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(use-package emacs</span>
   <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:init</span>
@@ -2508,9 +2508,9 @@ Persist history over Emacs restarts. Vertico sorts by history position.
 </div>
 </div>
 
-<div id="outline-container-orge0a5cd1" class="outline-3">
-<h3 id="orge0a5cd1">Richer annotations in minubuffer</h3>
-<div class="outline-text-3" id="text-orge0a5cd1">
+<div id="outline-container-orgc462318" class="outline-3">
+<h3 id="orgc462318">Richer annotations in minubuffer</h3>
+<div class="outline-text-3" id="text-orgc462318">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package marginalia
   <span style="font-weight: bold;">:after</span> vertico
@@ -2538,9 +2538,9 @@ Persist history over Emacs restarts. Vertico sorts by history position.
 </div>
 </div>
 
-<div id="outline-container-org4a890b3" class="outline-3">
-<h3 id="org4a890b3">Consult adds more minibuffer functionality</h3>
-<div class="outline-text-3" id="text-org4a890b3">
+<div id="outline-container-orgad62b54" class="outline-3">
+<h3 id="orgad62b54">Consult adds more minibuffer functionality</h3>
+<div class="outline-text-3" id="text-orgad62b54">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package consult
   <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Replace bindings. Lazily loaded due by `</span><span style="font-weight: bold; font-style: italic; text-decoration: underline;">use-package</span><span style="font-weight: bold; font-style: italic;">'.</span>
@@ -2602,9 +2602,9 @@ Persist history over Emacs restarts. Vertico sorts by history position.
 </div>
 </div>
 
-<div id="outline-container-org7ef2c0a" class="outline-3">
-<h3 id="org7ef2c0a"><span class="todo TODO">TODO</span> Embark - actions; reorganise</h3>
-<div class="outline-text-3" id="text-org7ef2c0a">
+<div id="outline-container-orgbe9385d" class="outline-3">
+<h3 id="orgbe9385d"><span class="todo TODO">TODO</span> Embark - actions; reorganise</h3>
+<div class="outline-text-3" id="text-orgbe9385d">
 <p>
 This I've not used yet but makes a lot of stuff easier like
 searchingfor the <code>definition</code> or the <code>help/info</code> page a highlighted
@@ -2647,9 +2647,9 @@ completion list.
 </div>
 </div>
 
-<div id="outline-container-org0ed87de" class="outline-3">
-<h3 id="org0ed87de"><span class="todo TODO">TODO</span> Imenu-list?</h3>
-<div class="outline-text-3" id="text-org0ed87de">
+<div id="outline-container-org63bb758" class="outline-3">
+<h3 id="org63bb758"><span class="todo TODO">TODO</span> Imenu-list?</h3>
+<div class="outline-text-3" id="text-org63bb758">
 <p>
 See <a href="https://www.reddit.com/r/emacs/comments/ujuokl/my_take_on_dotemacsorg/">Nicolas Rougier's reddit post</a>, primarily the screenshot which has
 an outline for his literate Emacs configuration.
@@ -2710,9 +2710,9 @@ an outline for his literate Emacs configuration.
 </div>
 
 
-<div id="outline-container-org9a64de3" class="outline-2">
-<h2 id="org9a64de3">IN-PROGRESS org-mode setup</h2>
-<div class="outline-text-2" id="text-org9a64de3">
+<div id="outline-container-orge8be03b" class="outline-2">
+<h2 id="orge8be03b">IN-PROGRESS org-mode setup</h2>
+<div class="outline-text-2" id="text-orge8be03b">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Get the damn thing first</li>
 <li class="off"><code>[&#xa0;]</code> Organise the thing - needs splitting into multiple code blocks.</li>
@@ -2829,9 +2829,9 @@ an outline for his literate Emacs configuration.
 </div>
 </div>
 
-<div id="outline-container-org836f7e1" class="outline-4">
-<h4 id="org836f7e1">Better commenting in org-mode code-blocks</h4>
-<div class="outline-text-4" id="text-org836f7e1">
+<div id="outline-container-org28cde22" class="outline-4">
+<h4 id="org28cde22">Better commenting in org-mode code-blocks</h4>
+<div class="outline-text-4" id="text-org28cde22">
 <p>
 Got this from a <a href="https://emacs.stackexchange.com/a/19741/23936">Stack Exchange answer</a> to work around messed up
 commenting using the default <code>C-x C-;</code> command. The older/default
@@ -2853,9 +2853,9 @@ command messes up lines, undos, and sometimes comment syntax as well.
 </div>
 </div>
 
-<div id="outline-container-org84eb182" class="outline-4">
-<h4 id="org84eb182">IGNORE Better spacing between org-levels with org-padding</h4>
-<div class="outline-text-4" id="text-org84eb182">
+<div id="outline-container-org84ccdaf" class="outline-4">
+<h4 id="org84ccdaf">IGNORE Better spacing between org-levels with org-padding</h4>
+<div class="outline-text-4" id="text-org84ccdaf">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package org-padding
 
@@ -2881,9 +2881,9 @@ command messes up lines, undos, and sometimes comment syntax as well.
 </div>
 </div>
 
-<div id="outline-container-org8223492" class="outline-4">
-<h4 id="org8223492">Sources for agenda tasks</h4>
-<div class="outline-text-4" id="text-org8223492">
+<div id="outline-container-orgb386b15" class="outline-4">
+<h4 id="orgb386b15">Sources for agenda tasks</h4>
+<div class="outline-text-4" id="text-orgb386b15">
 <p>
 Generates an agenda from wildcarded org files from the specified
 directory
@@ -2897,13 +2897,13 @@ directory
 </div>
 </div>
 
-<div id="outline-container-org9d65cc4" class="outline-4">
-<h4 id="org9d65cc4">Display features</h4>
+<div id="outline-container-org23ef7e1" class="outline-4">
+<h4 id="org23ef7e1">Display features</h4>
 </div>
 
-<div id="outline-container-org1596d63" class="outline-4">
-<h4 id="org1596d63">Autoindent/autofill turned on automatically</h4>
-<div class="outline-text-4" id="text-org1596d63">
+<div id="outline-container-org5550f62" class="outline-4">
+<h4 id="org5550f62">Autoindent/autofill turned on automatically</h4>
+<div class="outline-text-4" id="text-org5550f62">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(add-hook 'org-mode-hook 'org-indent-mode)
 (<span style="font-weight: bold;">setq</span> org-startup-indented t)
@@ -2915,9 +2915,9 @@ directory
 </div>
 </div>
 
-<div id="outline-container-orgf90259b" class="outline-4">
-<h4 id="orgf90259b">Tags and todo-keywords config</h4>
-<div class="outline-text-4" id="text-orgf90259b">
+<div id="outline-container-orge2ebc3c" class="outline-4">
+<h4 id="orge2ebc3c">Tags and todo-keywords config</h4>
+<div class="outline-text-4" id="text-orge2ebc3c">
 <p>
 Todo-keywords are things like <code>TODO</code> and <code>DONE</code> and so on. Tags are for
 classifying stuff by the general theme of what's being talked about.
@@ -2926,8 +2926,8 @@ classifying stuff by the general theme of what's being talked about.
 
 
 <ul class="org-ul">
-<li><a id="orgbfd4102"></a>todo-keywords<br />
-<div class="outline-text-5" id="text-orgbfd4102">
+<li><a id="orga47e3dc"></a>todo-keywords<br />
+<div class="outline-text-5" id="text-orga47e3dc">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="font-weight: bold;">setq</span> org-todo-keywords
       '((sequence <span style="font-style: italic;">"TODO(t)"</span> <span style="font-style: italic;">"IN-PROGRESS(i@/!)"</span> <span style="font-style: italic;">"CHECK(c!)"</span> <span style="font-style: italic;">"|"</span> <span style="font-style: italic;">"DONE(d!)"</span> <span style="font-style: italic;">"IGNORE(f!)"</span>)))
@@ -2937,8 +2937,8 @@ classifying stuff by the general theme of what's being talked about.
 </li>
 
 
-<li><a id="org514e3ad"></a><span class="todo TODO">TODO</span> tags<br />
-<div class="outline-text-5" id="text-org514e3ad">
+<li><a id="orgc95ba58"></a><span class="todo TODO">TODO</span> tags<br />
+<div class="outline-text-5" id="text-orgc95ba58">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="font-weight: bold;">setq</span> org-tag-alist '(((<span style="font-style: italic;">"misc"</span> . ?m)
                       (<span style="font-style: italic;">"emacs"</span> . ?e)
@@ -2954,9 +2954,9 @@ classifying stuff by the general theme of what's being talked about.
 </ul>
 </div>
 
-<div id="outline-container-orgf137072" class="outline-4">
-<h4 id="orgf137072"><span class="todo TODO">TODO</span> Capture templates</h4>
-<div class="outline-text-4" id="text-orgf137072">
+<div id="outline-container-org3918527" class="outline-4">
+<h4 id="org3918527"><span class="todo TODO">TODO</span> Capture templates</h4>
+<div class="outline-text-4" id="text-org3918527">
 <p>
 This will need to be looked at carefully. Roughly, I need to work out
 if I'm going to be using <code>org-agenda</code> and if so, how will I be using
@@ -2969,9 +2969,9 @@ post in my <a href="person_el/sample-org-setup.el">unused local elisp libs</a> t
 </div>
 </div>
 
-<div id="outline-container-orgfaadb17" class="outline-4">
-<h4 id="orgfaadb17">Bullets for non ordered list</h4>
-<div class="outline-text-4" id="text-orgfaadb17">
+<div id="outline-container-orgf52e709" class="outline-4">
+<h4 id="orgf52e709">Bullets for non ordered list</h4>
+<div class="outline-text-4" id="text-orgf52e709">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(font-lock-add-keywords 'org-mode
                         '((<span style="font-style: italic;">"^ +</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">(</span><span style="font-style: italic;">[-*]</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">)</span><span style="font-style: italic;"> "</span>
@@ -2989,9 +2989,9 @@ post in my <a href="person_el/sample-org-setup.el">unused local elisp libs</a> t
 </div>
 </div>
 
-<div id="outline-container-org4c0d9d6" class="outline-4">
-<h4 id="org4c0d9d6"><code>Table of contents</code> for org-mode files</h4>
-<div class="outline-text-4" id="text-org4c0d9d6">
+<div id="outline-container-org3527421" class="outline-4">
+<h4 id="org3527421"><code>Table of contents</code> for org-mode files</h4>
+<div class="outline-text-4" id="text-org3527421">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package toc-org
     <span style="font-weight: bold;">:after</span> org
@@ -3011,9 +3011,9 @@ Alternatively
 </div>
 </div>
 
-<div id="outline-container-org113cc59" class="outline-4">
-<h4 id="org113cc59">IGNORE Rougier's svg-tag-mode</h4>
-<div class="outline-text-4" id="text-org113cc59">
+<div id="outline-container-orgdc443dd" class="outline-4">
+<h4 id="orgdc443dd">IGNORE Rougier's svg-tag-mode</h4>
+<div class="outline-text-4" id="text-orgdc443dd">
 <p>
 &#x2026;to replace janky font-related issues with org-modern
 </p>
@@ -3107,9 +3107,9 @@ Alternatively
 </div>
 </div>
 
-<div id="outline-container-org58672ce" class="outline-4">
-<h4 id="org58672ce">Hide all stars</h4>
-<div class="outline-text-4" id="text-org58672ce">
+<div id="outline-container-org4a013db" class="outline-4">
+<h4 id="org4a013db">Hide all stars</h4>
+<div class="outline-text-4" id="text-org4a013db">
 <p>
 Leading or otherwise; procured from <a href="https://www.reddit.com/r/emacs/comments/9wukv8/hide_all_stars_in_org_mode/e9pkggv/">this answer on reddit</a>.
 </p>
@@ -3135,9 +3135,9 @@ Leading or otherwise; procured from <a href="https://www.reddit.com/r/emacs/comm
 </div>
 </div>
 
-<div id="outline-container-org625a5d5" class="outline-4">
-<h4 id="org625a5d5">Minad's modern UI for org-mode (fork)</h4>
-<div class="outline-text-4" id="text-org625a5d5">
+<div id="outline-container-org67670da" class="outline-4">
+<h4 id="org67670da">Minad's modern UI for org-mode (fork)</h4>
+<div class="outline-text-4" id="text-org67670da">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package org-modern
   <span style="font-weight: bold;">:straight</span> (<span style="font-weight: bold;">:host</span> github <span style="font-weight: bold;">:repo</span> <span style="font-style: italic;">"brihadeesh/org-modern"</span>)
@@ -3177,9 +3177,9 @@ Leading or otherwise; procured from <a href="https://www.reddit.com/r/emacs/comm
 </div>
 </div>
 
-<div id="outline-container-org7cdc19b" class="outline-4">
-<h4 id="org7cdc19b">Org-superstar</h4>
-<div class="outline-text-4" id="text-org7cdc19b">
+<div id="outline-container-org96fe596" class="outline-4">
+<h4 id="org96fe596">Org-superstar</h4>
+<div class="outline-text-4" id="text-org96fe596">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package org-superstar
   <span style="font-weight: bold;">:after</span> org
@@ -3193,9 +3193,9 @@ Leading or otherwise; procured from <a href="https://www.reddit.com/r/emacs/comm
 </div>
 </div>
 
-<div id="outline-container-org0675f81" class="outline-4">
-<h4 id="org0675f81">Display emphasis markers on hover</h4>
-<div class="outline-text-4" id="text-org0675f81">
+<div id="outline-container-org25d882f" class="outline-4">
+<h4 id="org25d882f">Display emphasis markers on hover</h4>
+<div class="outline-text-4" id="text-org25d882f">
 <p>
 This package makes it much easier to edit Org documents when
 org-hide-emphasis-markers is turned on. It temporarily shows the
@@ -3212,9 +3212,9 @@ characters!
 </div>
 </div>
 
-<div id="outline-container-orgbab0882" class="outline-3">
-<h3 id="orgbab0882"><span class="todo TODO">TODO</span> Org-Babel for literate programming</h3>
-<div class="outline-text-3" id="text-orgbab0882">
+<div id="outline-container-orga2edb3e" class="outline-3">
+<h3 id="orga2edb3e"><span class="todo TODO">TODO</span> Org-Babel for literate programming</h3>
+<div class="outline-text-3" id="text-orga2edb3e">
 <p>
 Org-mode needs org-babel, ob-tangle, live pdf/html preview within
 Emacs, hooks to enable auto-fill, linum-mode (?)
@@ -3222,9 +3222,9 @@ Emacs, hooks to enable auto-fill, linum-mode (?)
 </div>
 </div>
 
-<div id="outline-container-orga4c6c75" class="outline-3">
-<h3 id="orga4c6c75">IN-PROGRESS Denote for note-taking</h3>
-<div class="outline-text-3" id="text-orga4c6c75">
+<div id="outline-container-org5ff5f13" class="outline-3">
+<h3 id="org5ff5f13">IN-PROGRESS Denote for note-taking</h3>
+<div class="outline-text-3" id="text-org5ff5f13">
 <p>
 I hope this is considerably simpler than org-roam and easier to
 setup. I don't particularly like the way org-roam is unnecessarily
@@ -3341,9 +3341,9 @@ cluttered and excruciatingly tedious to even get started with.
 </div>
 </div>
 
-<div id="outline-container-org49d8870" class="outline-3">
-<h3 id="org49d8870">IN-PROGRESS org-roam</h3>
-<div class="outline-text-3" id="text-org49d8870">
+<div id="outline-container-org005d82d" class="outline-3">
+<h3 id="org005d82d">IN-PROGRESS org-roam</h3>
+<div class="outline-text-3" id="text-org005d82d">
 <p>
 Start off with networked note-taking in the hope that this <b>GTD</b> thing
 really works for me. I'll still have to find something to schedule
@@ -3359,9 +3359,9 @@ I'm sure this reaches some tangible stage of completion.
 </div>
 </div>
 
-<div id="outline-container-orgc97e764" class="outline-3">
-<h3 id="orgc97e764"><span class="todo TODO">TODO</span> Journaling requirements</h3>
-<div class="outline-text-3" id="text-orgc97e764">
+<div id="outline-container-orgc5dff2a" class="outline-3">
+<h3 id="orgc5dff2a"><span class="todo TODO">TODO</span> Journaling requirements</h3>
+<div class="outline-text-3" id="text-orgc5dff2a">
 <p>
 This needs better setting up and integration with either <code>Orgzly</code> or
 <code>GitJournal</code> for android. iOS seems to have better apps though. Or
@@ -3395,9 +3395,9 @@ just make this workable with the termux version of Emacs.
 </div>
 </div>
 
-<div id="outline-container-orgefa8cd7" class="outline-3">
-<h3 id="orgefa8cd7"><span class="todo TODO">TODO</span> <a href="https://github.com/bdarcus/citar">Citar</a> for reference management?</h3>
-<div class="outline-text-3" id="text-orgefa8cd7">
+<div id="outline-container-orgd51e266" class="outline-3">
+<h3 id="orgd51e266"><span class="todo TODO">TODO</span> <a href="https://github.com/bdarcus/citar">Citar</a> for reference management?</h3>
+<div class="outline-text-3" id="text-orgd51e266">
 <p>
 If I ever get down to writing papers, of course, I'd write them in
 <code>org-mode</code> or LaTeX so this should be useful considering <code>Mendeley
@@ -3428,9 +3428,9 @@ simpler</i>. <a href="https://www.youtube.com/watch?v=2t925KRBbFc">Introduction 
 </div>
 </div>
 
-<div id="outline-container-orgfc79aea" class="outline-3">
-<h3 id="orgfc79aea">org-present for presentations</h3>
-<div class="outline-text-3" id="text-orgfc79aea">
+<div id="outline-container-org7d0497c" class="outline-3">
+<h3 id="org7d0497c">org-present for presentations</h3>
+<div class="outline-text-3" id="text-org7d0497c">
 <p>
 See <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org#presentations">dawiwil's section on this</a> from his literate init for more about
 this.
@@ -3440,13 +3440,13 @@ this.
 </div>
 
 
-<div id="outline-container-org4d26b5a" class="outline-2">
-<h2 id="org4d26b5a">Multimedia</h2>
-<div class="outline-text-2" id="text-org4d26b5a">
+<div id="outline-container-orgae7c3d9" class="outline-2">
+<h2 id="orgae7c3d9">Multimedia</h2>
+<div class="outline-text-2" id="text-orgae7c3d9">
 </div>
-<div id="outline-container-org0b6007a" class="outline-3">
-<h3 id="org0b6007a">EMMS for music</h3>
-<div class="outline-text-3" id="text-org0b6007a">
+<div id="outline-container-org11b48b6" class="outline-3">
+<h3 id="org11b48b6">EMMS for music</h3>
+<div class="outline-text-3" id="text-org11b48b6">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package emms
   <span style="font-weight: bold;">:commands</span> emms
@@ -3466,9 +3466,9 @@ this.
 </div>
 </div>
 
-<div id="outline-container-orge881c5b" class="outline-3">
-<h3 id="orge881c5b">mpv for video</h3>
-<div class="outline-text-3" id="text-orge881c5b">
+<div id="outline-container-orgd993f91" class="outline-3">
+<h3 id="orgd993f91">mpv for video</h3>
+<div class="outline-text-3" id="text-orgd993f91">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package mpv)
 </pre>
@@ -3478,17 +3478,17 @@ this.
 </div>
 
 
-<div id="outline-container-orgf9a14ad" class="outline-2">
-<h2 id="orgf9a14ad">Web surfing and more</h2>
-<div class="outline-text-2" id="text-orgf9a14ad">
+<div id="outline-container-org4ae6318" class="outline-2">
+<h2 id="org4ae6318">Web surfing and more</h2>
+<div class="outline-text-2" id="text-org4ae6318">
 <p>
 Got most of these from <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org">daviwil</a>'s literate configuration
 </p>
 </div>
 
-<div id="outline-container-orgd4f2e9c" class="outline-3">
-<h3 id="orgd4f2e9c">Gemini</h3>
-<div class="outline-text-3" id="text-orgd4f2e9c">
+<div id="outline-container-org98450d3" class="outline-3">
+<h3 id="org98450d3">Gemini</h3>
+<div class="outline-text-3" id="text-org98450d3">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package elpher)
 </pre>
@@ -3496,22 +3496,22 @@ Got most of these from <a href="https://github.com/daviwil/dotfiles/blob/9776d65
 </div>
 </div>
 
-<div id="outline-container-orgd3340cd" class="outline-3">
-<h3 id="orgd3340cd"><span class="todo TODO">TODO</span> mail with mu4e</h3>
-<div class="outline-text-3" id="text-orgd3340cd">
+<div id="outline-container-orge5020c4" class="outline-3">
+<h3 id="orge5020c4"><span class="todo TODO">TODO</span> mail with mu4e</h3>
+<div class="outline-text-3" id="text-orge5020c4">
 <p>
 see <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Mail.org">daviwil's mail.org</a> and the configuration in his <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org#mail">literate config</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org27a2bbf" class="outline-3">
-<h3 id="org27a2bbf"><span class="todo TODO">TODO</span> Browser</h3>
+<div id="outline-container-org5217bf6" class="outline-3">
+<h3 id="org5217bf6"><span class="todo TODO">TODO</span> Browser</h3>
 </div>
 
-<div id="outline-container-orgf199fc8" class="outline-3">
-<h3 id="orgf199fc8">Elfeed for RSS</h3>
-<div class="outline-text-3" id="text-orgf199fc8">
+<div id="outline-container-orge245bf3" class="outline-3">
+<h3 id="orge245bf3">Elfeed for RSS</h3>
+<div class="outline-text-3" id="text-orge245bf3">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package elfeed
   <span style="font-weight: bold;">:commands</span> elfeed
@@ -3530,24 +3530,24 @@ see <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e
 </div>
 
 
-<div id="outline-container-org33c8373" class="outline-2">
-<h2 id="org33c8373">UI configuration</h2>
-<div class="outline-text-2" id="text-org33c8373">
+<div id="outline-container-orgb4de26b" class="outline-2">
+<h2 id="orgb4de26b">UI configuration</h2>
+<div class="outline-text-2" id="text-orgb4de26b">
 </div>
-<div id="outline-container-orga5faf69" class="outline-3">
-<h3 id="orga5faf69">Highlighted line-mode</h3>
-<div class="outline-text-3" id="text-orga5faf69">
+<div id="outline-container-org0254e97" class="outline-3">
+<h3 id="org0254e97">Highlighted line-mode</h3>
+<div class="outline-text-3" id="text-org0254e97">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org0de5008"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">cursorline</span>
+<pre class="src src-emacs-lisp" id="orgfec2739"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">cursorline</span>
 (global-hl-line-mode 1)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgd33ad44" class="outline-3">
-<h3 id="orgd33ad44">Solid window dividers</h3>
-<div class="outline-text-3" id="text-orgd33ad44">
+<div id="outline-container-orge1683f2" class="outline-3">
+<h3 id="orge1683f2">Solid window dividers</h3>
+<div class="outline-text-3" id="text-orge1683f2">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(setq window-divider-default-right-width 1)</span>
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(setq window-divider-default-bottom-width 1)</span>
@@ -3562,9 +3562,9 @@ see <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e
 </div>
 </div>
 
-<div id="outline-container-org5569bbe" class="outline-3">
-<h3 id="org5569bbe">Something about underlines</h3>
-<div class="outline-text-3" id="text-org5569bbe">
+<div id="outline-container-orgff12251" class="outline-3">
+<h3 id="orgff12251">Something about underlines</h3>
+<div class="outline-text-3" id="text-orgff12251">
 <p>
 Underline line at descent position, not baseline position
 </p>
@@ -3576,9 +3576,9 @@ Underline line at descent position, not baseline position
 </div>
 </div>
 
-<div id="outline-container-org3dc2649" class="outline-3">
-<h3 id="org3dc2649">IGNORE figure this out too - No ugly button for checkboxes</h3>
-<div class="outline-text-3" id="text-org3dc2649">
+<div id="outline-container-org9c6448f" class="outline-3">
+<h3 id="org9c6448f">IGNORE figure this out too - No ugly button for checkboxes</h3>
+<div class="outline-text-3" id="text-org9c6448f">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="font-weight: bold;">setq</span> widget-image-enable nil)
 </pre>
@@ -3586,9 +3586,9 @@ Underline line at descent position, not baseline position
 </div>
 </div>
 
-<div id="outline-container-org2de6ec6" class="outline-3">
-<h3 id="org2de6ec6">Cursor configuration</h3>
-<div class="outline-text-3" id="text-org2de6ec6">
+<div id="outline-container-orgb4a70fd" class="outline-3">
+<h3 id="orgb4a70fd">Cursor configuration</h3>
+<div class="outline-text-3" id="text-orgb4a70fd">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(set-default 'cursor-type  '(bar . 2))
 (blink-cursor-mode 1)
@@ -3597,9 +3597,9 @@ Underline line at descent position, not baseline position
 </div>
 </div>
 
-<div id="outline-container-org58656ac" class="outline-3">
-<h3 id="org58656ac">Line-number format</h3>
-<div class="outline-text-3" id="text-org58656ac">
+<div id="outline-container-org55f1030" class="outline-3">
+<h3 id="org55f1030">Line-number format</h3>
+<div class="outline-text-3" id="text-org55f1030">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="font-weight: bold;">setq</span> linum-format <span style="font-style: italic;">"%4d "</span>)
 </pre>
@@ -3607,9 +3607,9 @@ Underline line at descent position, not baseline position
 </div>
 </div>
 
-<div id="outline-container-orgd24c5b5" class="outline-3">
-<h3 id="orgd24c5b5">Visual not audible bell</h3>
-<div class="outline-text-3" id="text-orgd24c5b5">
+<div id="outline-container-org5636987" class="outline-3">
+<h3 id="org5636987">Visual not audible bell</h3>
+<div class="outline-text-3" id="text-org5636987">
 <p>
 Flashes modeline for warnings from <a href="https://github.com/purcell/mode-line-bell">purcell</a>
 </p>
@@ -3626,9 +3626,9 @@ Flashes modeline for warnings from <a href="https://github.com/purcell/mode-line
 </div>
 </div>
 
-<div id="outline-container-org7f948ef" class="outline-3">
-<h3 id="org7f948ef">No Tooltips</h3>
-<div class="outline-text-3" id="text-org7f948ef">
+<div id="outline-container-orgf92171a" class="outline-3">
+<h3 id="orgf92171a">No Tooltips</h3>
+<div class="outline-text-3" id="text-orgf92171a">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(tooltip-mode 0)
 </pre>
@@ -3636,9 +3636,9 @@ Flashes modeline for warnings from <a href="https://github.com/purcell/mode-line
 </div>
 </div>
 
-<div id="outline-container-org5933d2b" class="outline-3">
-<h3 id="org5933d2b">Minibuffer appearance?</h3>
-<div class="outline-text-3" id="text-org5933d2b">
+<div id="outline-container-org23d0460" class="outline-3">
+<h3 id="org23d0460">Minibuffer appearance?</h3>
+<div class="outline-text-3" id="text-org23d0460">
 <p>
 As per <a href="https://www.reddit.com/r/emacs/comments/rxa29k/is_it_possible_to_have_a_window_which_is_just_the/hrhvrqw/">Hamilton9508's comment</a> he makes a single minibuffer-only frame
 across the bottom of the Emacs window and so the rest of the frames
@@ -3664,9 +3664,9 @@ perhaps give it a shot.
 </div>
 </div>
 
-<div id="outline-container-orga9eb3d5" class="outline-3">
-<h3 id="orga9eb3d5">Fringe</h3>
-<div class="outline-text-3" id="text-orga9eb3d5">
+<div id="outline-container-orgce211f8" class="outline-3">
+<h3 id="orgce211f8">Fringe</h3>
+<div class="outline-text-3" id="text-orgce211f8">
 <p>
 No fringe but nice glyphs for truncated and wrapped lines
 </p>
@@ -3678,9 +3678,9 @@ No fringe but nice glyphs for truncated and wrapped lines
 </div>
 </div>
 
-<div id="outline-container-org8ecf44b" class="outline-3">
-<h3 id="org8ecf44b">Minimalist and ordered mode-line</h3>
-<div class="outline-text-3" id="text-org8ecf44b">
+<div id="outline-container-org036a188" class="outline-3">
+<h3 id="org036a188">Minimalist and ordered mode-line</h3>
+<div class="outline-text-3" id="text-org036a188">
 <p>
 People seem to use packages for this. I've considered using the
 <a href="https://github.com/seagle0128/doom-modeline">doom-modeline</a> but it seems to be pretty heavy in terms of dependencies
@@ -3691,11 +3691,11 @@ configure. I'm also considering <a href="https://github.com/gexplorer/simple-mod
 </div>
 </div>
 
-<div id="outline-container-org1899dc1" class="outline-3">
-<h3 id="org1899dc1">IN-PROGRESS Lambda modeline</h3>
-<div class="outline-text-3" id="text-org1899dc1">
+<div id="outline-container-orgb7a807f" class="outline-3">
+<h3 id="orgb7a807f">IN-PROGRESS Lambda modeline</h3>
+<div class="outline-text-3" id="text-orgb7a807f">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgfbe00b8">(use-package lambda-line
+<pre class="src src-emacs-lisp" id="org064852d">(use-package lambda-line
   <span style="font-weight: bold;">:straight</span> (<span style="font-weight: bold;">:type</span> git <span style="font-weight: bold;">:host</span> github <span style="font-weight: bold;">:repo</span> <span style="font-style: italic;">"lambda-emacs/lambda-line"</span>)
 
   <span style="font-weight: bold;">:custom</span>
@@ -3741,9 +3741,9 @@ configure. I'm also considering <a href="https://github.com/gexplorer/simple-mod
 </div>
 </div>
 
-<div id="outline-container-org4afda03" class="outline-4">
-<h4 id="org4afda03">IN-PROGRESS Mood-line because I'm fucking tired</h4>
-<div class="outline-text-4" id="text-org4afda03">
+<div id="outline-container-orgbe573cf" class="outline-4">
+<h4 id="orgbe573cf">IN-PROGRESS Mood-line because I'm fucking tired</h4>
+<div class="outline-text-4" id="text-orgbe573cf">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package mood-line
   <span style="font-weight: bold;">:config</span>
@@ -3755,15 +3755,15 @@ configure. I'm also considering <a href="https://github.com/gexplorer/simple-mod
 </div>
 </div>
 
-<div id="outline-container-orgf476f3f" class="outline-3">
-<h3 id="orgf476f3f">Font configuration</h3>
-<div class="outline-text-3" id="text-orgf476f3f">
+<div id="outline-container-org4ea54e1" class="outline-3">
+<h3 id="org4ea54e1">Font configuration</h3>
+<div class="outline-text-3" id="text-org4ea54e1">
 </div>
-<div id="outline-container-orgebad7b3" class="outline-4">
-<h4 id="orgebad7b3">Setting a font</h4>
-<div class="outline-text-4" id="text-orgebad7b3">
+<div id="outline-container-orge1e0092" class="outline-4">
+<h4 id="orge1e0092">Setting a font</h4>
+<div class="outline-text-4" id="text-orge1e0092">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgd5911d3"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(set-face-attribute 'default nil :font "Unifont Medium 8")</span>
+<pre class="src src-emacs-lisp" id="org68137e0"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(set-face-attribute 'default nil :font "Unifont Medium 8")</span>
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(set-face-attribute 'default nil :font "Sudo 9")</span>
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(set-face-attribute 'default nil :font "Roboto Mono-7.5")</span>
 <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">(set-face-attribute 'default nil :font "Anka/Coder:pixelsize=10")</span>
@@ -3786,7 +3786,7 @@ configure. I'm also considering <a href="https://github.com/gexplorer/simple-mod
 </div>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgb7df970">(set-face-attribute 'variable-pitch nil <span style="font-weight: bold;">:font</span> <span style="font-style: italic;">"Iosevka Aile:size=7"</span>)
+<pre class="src src-emacs-lisp" id="org144b9a9">(set-face-attribute 'variable-pitch nil <span style="font-weight: bold;">:font</span> <span style="font-style: italic;">"Iosevka Aile:size=7"</span>)
 
 
 </pre>
@@ -3794,9 +3794,9 @@ configure. I'm also considering <a href="https://github.com/gexplorer/simple-mod
 </div>
 </div>
 
-<div id="outline-container-org2f079d6" class="outline-4">
-<h4 id="org2f079d6">Line spacing</h4>
-<div class="outline-text-4" id="text-org2f079d6">
+<div id="outline-container-orgab2a6bd" class="outline-4">
+<h4 id="orgab2a6bd">Line spacing</h4>
+<div class="outline-text-4" id="text-orgab2a6bd">
 <p>
 Usually 0, less if possible but Emacs doesn't allow for that.
 </p>
@@ -3810,13 +3810,13 @@ Usually 0, less if possible but Emacs doesn't allow for that.
 </div>
 </div>
 
-<div id="outline-container-orgea6f999" class="outline-3">
-<h3 id="orgea6f999">Editor theme</h3>
-<div class="outline-text-3" id="text-orgea6f999">
+<div id="outline-container-orge4bc032" class="outline-3">
+<h3 id="orge4bc032">Editor theme</h3>
+<div class="outline-text-3" id="text-orge4bc032">
 </div>
-<div id="outline-container-org5f5e751" class="outline-4">
-<h4 id="org5f5e751">IGNORE Initial config for moody I guess</h4>
-<div class="outline-text-4" id="text-org5f5e751">
+<div id="outline-container-org55bb65b" class="outline-4">
+<h4 id="org55bb65b">IGNORE Initial config for moody I guess</h4>
+<div class="outline-text-4" id="text-org55bb65b">
 <p>
 Something to do with cleaner modeline for <code>moody.el</code> although I'm not
 sure it works this way.
@@ -3835,13 +3835,13 @@ sure it works this way.
 </div>
 </div>
 
-<div id="outline-container-orgc90ac76" class="outline-4">
-<h4 id="orgc90ac76">Externally sourced</h4>
-<div class="outline-text-4" id="text-orgc90ac76">
+<div id="outline-container-org647fa28" class="outline-4">
+<h4 id="org647fa28">Externally sourced</h4>
+<div class="outline-text-4" id="text-org647fa28">
 </div>
 <ul class="org-ul">
-<li><a id="org5c19332"></a>Modus themes from Protesilaos!<br />
-<div class="outline-text-5" id="text-org5c19332">
+<li><a id="org6bd5572"></a>Modus themes from Protesilaos!<br />
+<div class="outline-text-5" id="text-org6bd5572">
 <p>
 This might need additional setting since modus themes are now included
 within Emacs
@@ -3908,8 +3908,8 @@ within Emacs
 </li>
 
 
-<li><a id="org5688c70"></a>IN-PROGRESS Wilmersdorf for dark theme<br />
-<div class="outline-text-5" id="text-org5688c70">
+<li><a id="org44ee760"></a>IN-PROGRESS Wilmersdorf for dark theme<br />
+<div class="outline-text-5" id="text-org44ee760">
 <p>
 I saw this on <a href="https://github.com/hlissner/emacs-doom-themes">doom-themes</a> but I don't want to pull all of those just
 for this, so installing from it's <a href="https://github.com/ianyepan/wilmersdorf-emacs-theme">GitHub</a> using <code>straight.el</code>. But it
@@ -3949,8 +3949,8 @@ wget https://raw.githubusercontent.com/ianyepan/wilmersdorf-emacs-theme/master/w
 </li>
 
 
-<li><a id="org5bf4a67"></a><span class="todo TODO">TODO</span> Elegant Emacs from Nicolas Rougier<br />
-<div class="outline-text-5" id="text-org5bf4a67">
+<li><a id="orge715f60"></a><span class="todo TODO">TODO</span> Elegant Emacs from Nicolas Rougier<br />
+<div class="outline-text-5" id="text-orge715f60">
 <p>
 Somehow figure out how to incorporate my edits into this - they were
 definitely a lot better for my workflow (doh)
@@ -3981,8 +3981,8 @@ This is my fork
 
 
 
-<li><a id="org4017275"></a>Tao themes<br />
-<div class="outline-text-5" id="text-org4017275">
+<li><a id="org28371a4"></a>Tao themes<br />
+<div class="outline-text-5" id="text-org28371a4">
 <p>
 Monochrome theme with minimal bold highlights and boxes?
 </p>
@@ -4000,8 +4000,8 @@ Monochrome theme with minimal bold highlights and boxes?
 </li>
 
 
-<li><a id="orgabb46fc"></a>Expresso theme<br />
-<div class="outline-text-5" id="text-orgabb46fc">
+<li><a id="org141d28a"></a>Expresso theme<br />
+<div class="outline-text-5" id="text-org141d28a">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package espresso-theme
     <span style="font-weight: bold;">:straight</span> (<span style="font-weight: bold;">:host</span> github <span style="font-weight: bold;">:repo</span> <span style="font-style: italic;">"dgutov/espresso-theme"</span>)
@@ -4014,8 +4014,8 @@ Monochrome theme with minimal bold highlights and boxes?
 </li>
 
 
-<li><a id="org86ea4b3"></a>Github dark<br />
-<div class="outline-text-5" id="text-org86ea4b3">
+<li><a id="orge99ed09"></a>Github dark<br />
+<div class="outline-text-5" id="text-orge99ed09">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package github-dark-vscode-theme
   <span style="font-weight: bold;">:config</span>
@@ -4029,8 +4029,8 @@ Monochrome theme with minimal bold highlights and boxes?
 </li>
 
 
-<li><a id="org42eca42"></a>Github modern theme (light)<br />
-<div class="outline-text-5" id="text-org42eca42">
+<li><a id="org2c94687"></a>Github modern theme (light)<br />
+<div class="outline-text-5" id="text-org2c94687">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package github-modern-theme
   <span style="font-weight: bold;">:config</span>
@@ -4042,8 +4042,8 @@ Monochrome theme with minimal bold highlights and boxes?
 </li>
 
 
-<li><a id="org711e766"></a>Vale theme<br />
-<div class="outline-text-5" id="text-org711e766">
+<li><a id="org6ce5fb1"></a>Vale theme<br />
+<div class="outline-text-5" id="text-org6ce5fb1">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package vale
   <span style="font-weight: bold;">:straight</span> (<span style="font-weight: bold;">:type</span> git <span style="font-weight: bold;">:repo</span> <span style="font-style: italic;">"https://codeberg.org/ext0l/vale.el"</span>)
@@ -4056,8 +4056,8 @@ Monochrome theme with minimal bold highlights and boxes?
 </li>
 
 
-<li><a id="orgc89cdc6"></a>IN-PROGRESS Parchment theme<br />
-<div class="outline-text-5" id="text-orgc89cdc6">
+<li><a id="org911b192"></a>IN-PROGRESS Parchment theme<br />
+<div class="outline-text-5" id="text-org911b192">
 <p>
 Based on the screenshot of Haskell code on the <a href="https://fsd.it/shop/fonts/pragmatapro/#tab-fb289adf-7c14-8">Pragmata Pro website</a>.
 </p>
@@ -4074,8 +4074,8 @@ Based on the screenshot of Haskell code on the <a href="https://fsd.it/shop/font
 </li>
 
 
-<li><a id="org61b9898"></a>Almost mono theme<br />
-<div class="outline-text-5" id="text-org61b9898">
+<li><a id="orga780649"></a>Almost mono theme<br />
+<div class="outline-text-5" id="text-orga780649">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package almost-mono-themes
   <span style="font-weight: bold;">:config</span>
@@ -4090,8 +4090,8 @@ Based on the screenshot of Haskell code on the <a href="https://fsd.it/shop/font
 </li>
 
 
-<li><a id="org22de73a"></a>Stimmung themes for nearly monochrome appearance<br />
-<div class="outline-text-5" id="text-org22de73a">
+<li><a id="orgf2c7f0c"></a>Stimmung themes for nearly monochrome appearance<br />
+<div class="outline-text-5" id="text-orgf2c7f0c">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package stimmung-themes
   <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">:straight (stimmung-themes :host github :repo "motform/stimmung-themes") ; if you are a straight shooter</span>
@@ -4104,8 +4104,8 @@ Based on the screenshot of Haskell code on the <a href="https://fsd.it/shop/font
 </li>
 
 
-<li><a id="orgf0501ff"></a>Commentary<br />
-<div class="outline-text-5" id="text-orgf0501ff">
+<li><a id="orgcee3acc"></a>Commentary<br />
+<div class="outline-text-5" id="text-orgcee3acc">
 <p>
 An elegant theme highlighting comments only
 </p>
@@ -4122,9 +4122,9 @@ An elegant theme highlighting comments only
 </ul>
 </div>
 
-<div id="outline-container-orge0db44b" class="outline-4">
-<h4 id="orge0db44b">IN-PROGRESS My themes (LOL)</h4>
-<div class="outline-text-4" id="text-orge0db44b">
+<div id="outline-container-org4775643" class="outline-4">
+<h4 id="org4775643">IN-PROGRESS My themes (LOL)</h4>
+<div class="outline-text-4" id="text-org4775643">
 <p>
 Neither of these work using <code>straight.el</code> or <code>use-package</code>, together
 or separately (afaik). If these work, I could maybe add some more of
@@ -4148,9 +4148,9 @@ themes of my own that use this macro.
 </div>
 </div>
 
-<div id="outline-container-org70918b8" class="outline-4">
-<h4 id="org70918b8">Pulse to locate cursor with Protesilaos's pulsar</h4>
-<div class="outline-text-4" id="text-org70918b8">
+<div id="outline-container-org2117311" class="outline-4">
+<h4 id="org2117311">Pulse to locate cursor with Protesilaos's pulsar</h4>
+<div class="outline-text-4" id="text-org2117311">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(use-package pulsar
   <span style="font-weight: bold;">:straight</span> (<span style="font-weight: bold;">:host</span> gitlab <span style="font-weight: bold;">:repo</span> <span style="font-style: italic;">"protesilaos/pulsar"</span>)

@@ -1,70 +1,83 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="collected thoughts on ecology, politics and mental health"><link rel="shortcut icon" href=https://brihadeesh.github.io/favicon.ico><link rel=stylesheet href=../../css/style.min.css><link rel=canonical href=https://brihadeesh.github.io/emacs/emacs-literate-config/><title>Literate Emacs Configuration</title></head><body><header id=banner><h2><a href=https://brihadeesh.github.io/>home</a></h2><nav><ul><li><a href=../../tags/ title=tags>tags</a></li><li><a href=../../posts/ title=blog>blog</a></li><li><a href=../../emacs/ title=emacs>emacs</a></li><li><a href=../../publications/ title=publications>publications</a></li><li><a href=../../about/ title=about>about</a></li></ul></nav></header><main id=content><article><header id=post-header><h1>Literate Emacs Configuration</h1><div><time>November 23, 2022</time></div></header><div class="ox-hugo-toc toc"><div class=heading>Table of Contents</div><ul><li><a href=#other-config-files>Other config files</a></li><li><a href=#package-management><span class="org-todo done DISABLED">DISABLED</span> Package management</a></li><li><a href=#org-mode-setup>Org-mode setup</a></li><li><a href=#citar-for-reference-management><span class="org-todo todo TODO">TODO</span> Citar for reference management?</a></li><li><a href=#org-present-for-presentations>org-present for presentations</a></li><li><a href=#denote-for-note-taking><span class="org-todo todo TODO">TODO</span> Denote for note-taking</a></li><li><a href=#static-website-blogging-with-hugo>Static website / blogging with Hugo</a></li><li><a href=#org-journal-for-journaling-requirements><span class="org-todo todo TODO">TODO</span> <code>org-journal</code> for journaling requirements</a></li><li><a href=#editor-theme>Editor theme</a></li><li><a href=#prerequisites>Prerequisites</a></li><li><a href=#ensure-utf-8>Ensure UTF-8</a></li><li><a href=#whoami>Whoami</a></li><li><a href=#no-more-garbage>No more garbage</a></li><li><a href=#sane-defaults>Sane Defaults</a></li><li><a href=#ssh-for-personal-packages-and-magit><span class="org-todo todo TODO">TODO</span> SSH for personal packages and magit</a></li><li><a href=#terminals-with-emacs-libvterm>Terminals with emacs-libvterm</a></li><li><a href=#code-utilities>Code utilities</a></li><li><a href=#languages-i--allegedly--use>Languages I (allegedly) use</a></li><li><a href=#git-with-magit-and-gists-with-gist-dot-el>Git with Magit and gists with <code>gist.el</code></a></li><li><a href=#view-epubs-and-pdfs-in-emacs><span class="org-todo todo TODO">TODO</span> View ePubs and PDFs in Emacs</a></li><li><a href=#corfu-for-completion-at-point--non-minibuffer-kind><span class="org-todo todo TODO">TODO</span> Corfu for completion-at-point (non-minibuffer kind)</a></li><li><a href=#undo-tree>Undo tree</a></li><li><a href=#project-management-and-navigation-projectile>Project management and navigation - projectile</a></li><li><a href=#window-management>Window Management</a></li><li><a href=#display-keybinds-following-various-prefixes-such-as-c-h>Display keybinds following various prefixes such as <code>C-h</code></a></li><li><a href=#editing-root-files-and-privelege-escalation-for-tramp-if-i-ever-use-it>Editing root files & privelege escalation for TRAMP if I ever use it</a></li><li><a href=#minibuffer-completions>Minibuffer completions</a></li><li><a href=#multimedia>Multimedia</a></li><li><a href=#web-surfing-and-more>Web surfing and more</a></li><li><a href=#ui-configuration>UI configuration</a></li><li><a href=#font-configuration>Font configuration</a></li></ul></div><h2 id=other-config-files>Other config files</h2><p>These are in my <code>~/.emacs.d</code> and help load this main configuration.</p><h3 id=early-init>Early init</h3><p>This creates a file, <a href=~/.emacs.d/early-init.el><code>early-init.el</code> </a>, in <code>~/.emacs.d</code>. This was stolen
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="collected thoughts on ecology, politics and mental health"><link rel="shortcut icon" href=https://brihadeesh.github.io/favicon.ico><link rel=stylesheet href=../../css/style.min.css><link rel=canonical href=https://brihadeesh.github.io/emacs/emacs-literate-config/><title>Literate Emacs Configuration</title></head><body><header id=banner><h2><a href=https://brihadeesh.github.io/>home</a></h2><nav><ul><li><a href=../../posts/ title=blog>blog</a></li><li><a href=../../emacs/ title=emacs>emacs</a></li><li><a href=../../publications/ title=publications>publications</a></li><li><a href=../../about/ title=about>about</a></li></ul></nav></header><main id=content><article><header id=post-header><h1>Literate Emacs Configuration</h1><div><time>Updated November 25, 2022</time></div></header><h2 id=other-config-files>Other config files</h2><p>These are in my <code>~/.emacs.d</code> and help load this main configuration.</p><h3 id=early-init>Early init</h3><p>This creates a file, <a href=~/.emacs.d/early-init.el><code>early-init.el</code> </a>, in <code>~/.emacs.d</code>. This was stolen
 from Protesilaos some time back. It still needs work - it&rsquo;s not
-tangled (by default) yet.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl>    <span class=c1>;;; early-init.el --- Early Init File -*- lexical-binding: t -*-</span>
+tangled (by default) yet.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;;; early-init.el --- Early initialisation -*- lexical-binding: t -*-</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; Copyright (c) 2021-2022 pereginator</span>
+</span></span><span class=line><span class=cl><span class=c1>;; Copyright (c) 2021-2022 pereginator</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; Author: peregrinator &lt;brihadeesh@protonmail.com&gt;</span>
-</span></span><span class=line><span class=cl>  <span class=c1>;; URL: https://git.sr.ht/~peregrinator/dotfiles Version: 0.1.0</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; Package-Requires: ((emacs &#34;28.1&#34;))</span>
+</span></span><span class=line><span class=cl><span class=c1>;; URL: https://git.sr.ht/~peregrinator/dotfiles</span>
+</span></span><span class=line><span class=cl><span class=c1>;; Package-Requires: ((emacs &#34;28.1&#34;))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; This file is NOT part of GNU Emacs.</span>
+</span></span><span class=line><span class=cl><span class=c1>;; This file is NOT part of GNU Emacs.</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; This file is free software: you can redistribute it and/or modify</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; it under the terms of the GNU General Public License as published</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; by the Free Software Foundation, either version 3 of the License,</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; or (at your option) any later version.  This file is distributed in</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; the hope that it will be useful, but WITHOUT ANY WARRANTY; without</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; even the implied warranty of MERCHANTABILITY or FITNESS FOR A</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; PARTICULAR PURPOSE.  See the GNU General Public License for more</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; details.  You should have received a copy of the GNU General Public</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; License along with this file.  If not, see</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; &lt;http://www.gnu.org/licenses/&gt;.</span>
+</span></span><span class=line><span class=cl><span class=c1>;; This file is free software: you can redistribute it and/or modify</span>
+</span></span><span class=line><span class=cl><span class=c1>;; it under the terms of the GNU General Public License as published</span>
+</span></span><span class=line><span class=cl><span class=c1>;; by the Free Software Foundation, either version 3 of the License,</span>
+</span></span><span class=line><span class=cl><span class=c1>;; or (at your option) any later version.  This file is distributed in</span>
+</span></span><span class=line><span class=cl><span class=c1>;; the hope that it will be useful, but WITHOUT ANY WARRANTY; without</span>
+</span></span><span class=line><span class=cl><span class=c1>;; even the implied warranty of MERCHANTABILITY or FITNESS FOR A</span>
+</span></span><span class=line><span class=cl><span class=c1>;; PARTICULAR PURPOSE.  See the GNU General Public License for more</span>
+</span></span><span class=line><span class=cl><span class=c1>;; details.  You should have received a copy of the GNU General Public</span>
+</span></span><span class=line><span class=cl><span class=c1>;; License along with this file.  If not, see</span>
+</span></span><span class=line><span class=cl><span class=c1>;; &lt;http://www.gnu.org/licenses/&gt;.</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1>;;; Commentary:</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; Prior to Emacs 27, the `init.el&#39; was supposed to handle the</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; initialisation of the package manager, by means of calling</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; `package-initialize&#39;.  Starting with Emacs 27, the default</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; behaviour is to start the package manager before loading the init</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;; file.</span>
+</span></span><span class=line><span class=cl><span class=c1>;; Prior to Emacs 27, the `init.el&#39; was supposed to handle the</span>
+</span></span><span class=line><span class=cl><span class=c1>;; initialisation of the package manager, by means of calling</span>
+</span></span><span class=line><span class=cl><span class=c1>;; `package-initialize&#39;.  Starting with Emacs 27, the default</span>
+</span></span><span class=line><span class=cl><span class=c1>;; behaviour is to start the package manager before loading the init</span>
+</span></span><span class=line><span class=cl><span class=c1>;; file.</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1>;;; Code:</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; Don&#39;t initialise installed packages cause package.el sucks balls</span>
-</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nb>setq</span> <span class=nv>package-enable-at-startup</span> <span class=no>nil</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>;; Don&#39;t initialise installed packages cause package.el sucks balls</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>package-enable-at-startup</span> <span class=no>nil</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; Do not resize the frame at this early stage.  (setq</span>
-</span></span><span class=line><span class=cl>    <span class=nv>frame-inhibit-implied-resize</span> <span class=no>t</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>;; Do not resize the frame at this early stage.  (setq</span>
+</span></span><span class=line><span class=cl><span class=nv>frame-inhibit-implied-resize</span> <span class=no>t</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; Disable GUI elements ; Disable menu-bar, tool-bar, and scroll-bar.</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;;(if (fboundp &#39;menu-bar-mode) (menu-bar-mode -1)) (if (fboundp</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;;&#39;tool-bar-mode) (tool-bar-mode -1)) (if (fboundp &#39;scroll-bar-mode)</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;;(scroll-bar-mode -1)) (setq inhibit-splash-screen t) (setq</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;;use-dialog-box nil) ; only for mouse events (setq use-file-dialog</span>
-</span></span><span class=line><span class=cl>    <span class=c1>;;nil)</span>
+</span></span><span class=line><span class=cl><span class=c1>;; Disable GUI elements ; Disable menu-bar, tool-bar, and scroll-bar.</span>
+</span></span><span class=line><span class=cl><span class=c1>;;(if (fboundp &#39;menu-bar-mode) (menu-bar-mode -1)) (if (fboundp</span>
+</span></span><span class=line><span class=cl><span class=c1>;;&#39;tool-bar-mode) (tool-bar-mode -1)) (if (fboundp &#39;scroll-bar-mode)</span>
+</span></span><span class=line><span class=cl><span class=c1>;;(scroll-bar-mode -1)) (setq inhibit-splash-screen t) (setq</span>
+</span></span><span class=line><span class=cl><span class=c1>;;use-dialog-box nil) ; only for mouse events (setq use-file-dialog</span>
+</span></span><span class=line><span class=cl><span class=c1>;;nil)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nb>setq</span> <span class=nv>inhibit-startup-screen</span> <span class=no>t</span><span class=p>)</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>inhibit-startup-buffer-menu</span> <span class=no>t</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>inhibit-startup-screen</span> <span class=no>t</span><span class=p>)</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>inhibit-startup-buffer-menu</span> <span class=no>t</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=c1>;; for when I upgrade to emacs28 with native compilation (setq</span>
-</span></span><span class=line><span class=cl>    <span class=nv>native-comp-async-report-warnings-errors</span> <span class=no>nil</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>;; for when I upgrade to emacs28 with native compilation (setq</span>
+</span></span><span class=line><span class=cl><span class=nv>native-comp-async-report-warnings-errors</span> <span class=no>nil</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1>;;; early-init.el ends here</span>
 </span></span></code></pre></div><h3 id=init-dot-el>init.el</h3><p>I&rsquo;ve changed things up a little - this now includes the package
-management code and the code for <code>org</code> installation.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;;; init.el --- Initialization. -*- lexical-binding: t; -*-</span>
+management code and the code for <code>org</code> installation.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl>    <span class=c1>;;; init.el --- Initialisation. -*- lexical-binding: t; -*-</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; Copyright (C) 2022 peregrinator</span>
-</span></span><span class=line><span class=cl><span class=c1>;; This file is NOT part of GNU Emacs.</span>
-</span></span><span class=line><span class=cl><span class=c1>;; This file is free software.</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; Author: peregrinator &lt;brihadeesh@protonmail.com&gt;</span>
 </span></span><span class=line><span class=cl><span class=c1>;; URL: https://git.sr.ht/~peregrinator/.emacs.d</span>
 </span></span><span class=line><span class=cl><span class=c1>;; Package-Requires: ((emacs &#34;28.1&#34;))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>;;; Commentary:</span>
+</span></span><span class=line><span class=cl><span class=c1>;; This file is NOT part of GNU Emacs.</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>;; This file is free software: you can redistribute it and/or modify</span>
+</span></span><span class=line><span class=cl><span class=c1>;; it under the terms of the GNU General Public License as published</span>
+</span></span><span class=line><span class=cl><span class=c1>;; by the Free Software Foundation, either version 3 of the License,</span>
+</span></span><span class=line><span class=cl><span class=c1>;; or (at your option) any later version.  This file is distributed in</span>
+</span></span><span class=line><span class=cl><span class=c1>;; the hope that it will be useful, but WITHOUT ANY WARRANTY; without</span>
+</span></span><span class=line><span class=cl><span class=c1>;; even the implied warranty of MERCHANTABILITY or FITNESS FOR A</span>
+</span></span><span class=line><span class=cl><span class=c1>;; PARTICULAR PURPOSE.  See the GNU General Public License for more</span>
+</span></span><span class=line><span class=cl><span class=c1>;; details.  You should have received a copy of the GNU General Public</span>
+</span></span><span class=line><span class=cl><span class=c1>;; License along with this file.  If not, see</span>
+</span></span><span class=line><span class=cl><span class=c1>;; &lt;http://www.gnu.org/licenses/&gt;.</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>;;; Commentary:</span>
 </span></span><span class=line><span class=cl><span class=c1>;; This file provides the initialization configuration.</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>;;; Code:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>;;; Code:</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; Make emacs startup faster</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>defvar</span> <span class=nv>startup/file-name-handler-alist</span> <span class=nv>file-name-handler-alist</span><span class=p>)</span>
@@ -82,7 +95,7 @@ management code and the code for <code>org</code> installation.</p><div class=hi
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>load-prefer-newer</span> <span class=no>t</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>;;; Configure `straight.el&#39;</span>
+</span></span><span class=line><span class=cl>    <span class=c1>;;; Configure `straight.el&#39;</span>
 </span></span><span class=line><span class=cl><span class=c1>;; fetch developmental version of `straight.el&#39;</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>straight-repository-branch</span> <span class=s>&#34;develop&#34;</span>
 </span></span><span class=line><span class=cl>
@@ -104,7 +117,9 @@ management code and the code for <code>org</code> installation.</p><div class=hi
 </span></span><span class=line><span class=cl>      <span class=p>(</span><span class=nv>eval-print-last-sexp</span><span class=p>)))</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nf>load</span> <span class=nv>bootstrap-file</span> <span class=no>nil</span> <span class=ss>&#39;nomessage</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>;;; Configure straight.el (contd.)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>;;; Configure straight.el (contd.)</span>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; make all use-package instances use straight.el</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>straight-use-package-by-default</span> <span class=no>t</span>
 </span></span><span class=line><span class=cl>
@@ -134,7 +149,7 @@ management code and the code for <code>org</code> installation.</p><div class=hi
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; Load configuration.org</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nf>file-readable-p</span>
-</span></span><span class=line><span class=cl>           <span class=p>(</span><span class=nf>concat</span> <span class=nv>user-emacs-directory</span> <span class=s>&#34;configuration.org&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>       <span class=p>(</span><span class=nf>concat</span> <span class=nv>user-emacs-directory</span> <span class=s>&#34;configuration.org&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nv>org-babel-load-file</span>
 </span></span><span class=line><span class=cl>   <span class=p>(</span><span class=nf>concat</span> <span class=nv>user-emacs-directory</span> <span class=s>&#34;configuration.org&#34;</span><span class=p>)))</span>
 </span></span><span class=line><span class=cl>
@@ -145,7 +160,7 @@ management code and the code for <code>org</code> installation.</p><div class=hi
 </span></span><span class=line><span class=cl><span class=c1>;; 			(setq gc-cons-threshold gc-cons-threshold-original)</span>
 </span></span><span class=line><span class=cl><span class=c1>;; 			(setq gc-cons-percentage gc-cons-percentage-original)))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c1>;;; init.el ends here</span>
+</span></span><span class=line><span class=cl>    <span class=c1>;;; init.el ends here</span>
 </span></span></code></pre></div><h2 id=package-management><span class="org-todo done DISABLED">DISABLED</span> Package management</h2><p>Update: <span class=timestamp-wrapper><span class=timestamp>&lt;2022-11-21 Mon></span></span>
 I&rsquo;ve moved all of this and some other stuff (garbage collection etc) to the <code>init.el</code></p><h3 id=setup-straight-dot-el>Setup <code>straight.el</code></h3><p>I&rsquo;ll be using <code>use-package</code> to organise and configure individual
 packages into neater code blocks although the download will be handled
@@ -1866,4 +1881,4 @@ configure. I&rsquo;m also considering <a href=https://github.com/gexplorer/simpl
 </span></span></code></pre></div><p><a id=code-snippet--variable-pitch-fonts></a></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>set-face-attribute</span> <span class=ss>&#39;variable-pitch</span> <span class=no>nil</span> <span class=nb>:font</span> <span class=s>&#34;Iosevka Aile:size=7&#34;</span><span class=p>)</span>
 </span></span></code></pre></div><h3 id=line-spacing>Line spacing</h3><p>Usually 0, less if possible but Emacs doesn&rsquo;t allow for that.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; Line spacing, can be 0 for code and 1 or 2 for text</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nb>setq-default</span> <span class=nv>line-spacing</span> <span class=mf>0.1</span><span class=p>)</span>
-</span></span></code></pre></div></article></main><footer id=footer>Copyright © 2022 peregrinator</footer></body></html>
+</span></span></code></pre></div></article></main><footer id=footer>Copyright © 2016-2022 peregrinator</footer></body></html>

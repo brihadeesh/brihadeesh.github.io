@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>peregrinator's sourcehut site on home</title><link>https://brihadeesh.github.io/</link><description>Recent content in peregrinator's sourcehut site on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo, Org and starting over at a new job</title><link>https://brihadeesh.github.io/posts/2020/12/hugo-org-and-starting-over-at-a-new-job/</link><pubDate>Sat, 05 Dec 2020 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2020/12/hugo-org-and-starting-over-at-a-new-job/</guid><description>&lt;p>I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogging with Emacs on home</title><link>https://brihadeesh.github.io/series/blogging-with-emacs/</link><description>Recent content in Blogging with Emacs on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/series/blogging-with-emacs/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo, Org and starting over at a new job</title><link>https://brihadeesh.github.io/posts/2020/12/hugo-org-and-starting-over-at-a-new-job/</link><pubDate>Sat, 05 Dec 2020 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2020/12/hugo-org-and-starting-over-at-a-new-job/</guid><description>&lt;p>I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
 having watched a SystemCrafters &lt;a href="https://youtu.be/AfkrzFodoNw">video&lt;/a> on how to blog from Emacs (&lt;em>d&amp;rsquo;oh&lt;/em>,
 I just &lt;em>have&lt;/em> to do everything from Emacs). Of course, daviwil only
 covered the basics of writing and exporting using Emacs&amp;rsquo; built-in
@@ -15,7 +15,7 @@ was a lot more to that minimalism than one could see.&lt;/p>
 &lt;h2 id="basic-setup">
 &lt;a href="#basic-setup">&lt;small># &lt;/small>&lt;/a>Basic setup
 &lt;/h2>
-&lt;p>This has come through fairly well, so far. I&amp;rsquo;ve got an &lt;a href="./emacs/emacs-literate-configuration/#ox-hugo-since-the-go-org-keep-wrecking-up-links">org-capture
+&lt;p>This has come through fairly well, so far. I&amp;rsquo;ve got an &lt;a href="../../emacs/emacs-literate-configuration/#ox-hugo-since-the-go-org-keep-wrecking-up-links">org-capture
 setup&lt;/a> for this that links up every new entry captured into a master
 posts file, adding all the relevant info.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-emacs-lisp" data-lang="emacs-lisp">&lt;span class="line">&lt;span class="cl">
@@ -117,7 +117,7 @@ invasive animals than others.&lt;/p>
 &lt;h2 id="introduction">
 &lt;a href="#introduction">&lt;small># &lt;/small>&lt;/a>Introduction
 &lt;/h2>
-&lt;p>For those of you that haven&amp;rsquo;t read my &lt;a href="./posts/2016/01/a-dark-side-to-pets/">earlier article&lt;/a> on the issues
+&lt;p>For those of you that haven&amp;rsquo;t read my &lt;a href="../../posts/2016/01/a-dark-side-to-pets/">earlier article&lt;/a> on the issues
 with keeping free ranging pets and having stray carnivores, I would
 recommend going through it first although it is not an absolute
 necessity to understand the concepts explained here. Also, some
@@ -573,7 +573,7 @@ kills was that not a single one took place in daylight. Felids are
 nocturnal and hence most of the hunting takes place in the
 dark. Similarly, most feral and domesticated cats are active at night
 and that&amp;rsquo;s when most of the hunting happens.&lt;/p>
-&lt;figure>&lt;a href="./images/20161201_goose_catsnake.jpg">&lt;img src="./images/20161201_goose_catsnake.jpg"/>&lt;/a>
+&lt;figure>&lt;a href="../../images/20161201_goose_catsnake.jpg">&lt;img src="../../images/20161201_goose_catsnake.jpg"/>&lt;/a>
 &lt;/figure>
 &lt;p>On the first of December 2016, I was sitting at home in. My father
 said something which at first I ignored. Then, realising that he&amp;rsquo;d

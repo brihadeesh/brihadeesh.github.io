@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on home</title><link>https://brihadeesh.github.io/categories/</link><description>Recent content in Categories on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Pets, put in context</title><link>https://brihadeesh.github.io/posts/2017/06/pets-put-in-context/</link><pubDate>Thu, 15 Jun 2017 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2017/06/pets-put-in-context/</guid><description>&lt;p>Pets and feral animals have been shown to cause great amounts of
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on home</title><link>https://brihadeesh.github.io/categories/</link><description>Recent content in Categories on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo, Org and starting over at a new job</title><link>https://brihadeesh.github.io/posts/2020/12/hugo-org-and-starting-over-at-a-new-job/</link><pubDate>Sat, 05 Dec 2020 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2020/12/hugo-org-and-starting-over-at-a-new-job/</guid><description>&lt;p>I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
+having watched a SystemCrafters &lt;a href="https://youtu.be/AfkrzFodoNw">video&lt;/a> on how to blog from Emacs (&lt;em>d&amp;rsquo;oh&lt;/em>,
+I just &lt;em>have&lt;/em> to do everything from Emacs). Of course, daviwil only
+covered the basics of writing and exporting using Emacs&amp;rsquo; built-in
+packages and later for deploying it on GitHub / Sourcehut pages. And
+it took me a good year to get down to making the switch but apparently
+moving to a new place for work is the motivation it required. It felt
+like cheating to use Jekyll on GitHub and I wanted something that
+could be deployed to a Sourcehut site easily too (Sourcehut blocks any
+CDN-based CSS loaded into the site&amp;rsquo;s HTML) and I wanted something
+extremely minimal, like Drew Devault&amp;rsquo;s &lt;a href="https://dredevault.com/">blog&lt;/a> but with even fewer
+frills - no images anywhere except for if a blog post required
+them. Looking at his blog source, however, made me realise that there
+was a lot more to that minimalism than one could see.&lt;/p>
+&lt;h2 id="basic-setup">
+&lt;a href="#basic-setup">&lt;small># &lt;/small>&lt;/a>Basic setup
+&lt;/h2>
+&lt;p>This has come through fairly well, so far. I&amp;rsquo;ve got an &lt;a href="../emacs/emacs-literate-configuration/#ox-hugo-since-the-go-org-keep-wrecking-up-links">org-capture
+setup&lt;/a> for this that links up every new entry captured into a master
+posts file, adding all the relevant info.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-emacs-lisp" data-lang="emacs-lisp">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">with-eval-after-load&lt;/span> &lt;span class="ss">&amp;#39;org-capture&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">defun&lt;/span> &lt;span class="nv">org-hugo-new-subtree-post-capture-template&lt;/span> &lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;Returns &lt;/span>&lt;span class="ss">`org-capture&amp;#39;&lt;/span>&lt;span class="s"> template string for new Hugo post.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> See &lt;/span>&lt;span class="ss">`org-capture-templates&amp;#39;&lt;/span>&lt;span class="s"> for more information.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">let*&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="nv">title&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">read-from-minibuffer&lt;/span> &lt;span class="s">&amp;#34;Post Title: &amp;#34;&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="c1">;Prompt to enter the post title&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nv">fname&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">org-hugo-slug&lt;/span> &lt;span class="nv">title&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">mapconcat&lt;/span> &lt;span class="nf">#&amp;#39;identity&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">`&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">,&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">concat&lt;/span> &lt;span class="s">&amp;#34;* TODO &amp;#34;&lt;/span> &lt;span class="nv">title&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;:PROPERTIES:&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">,&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">concat&lt;/span> &lt;span class="s">&amp;#34;:EXPORT_HUGO_BUNDLE: &amp;#34;&lt;/span> &lt;span class="nv">fname&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;:EXPORT_FILE_NAME: index&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;:EXPORT_HUGO_AUTO_SET_LASTMOD: t&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;:END:&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;%?\n&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">;Place the cursor here finally&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;\n&amp;#34;&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nv">add-to-list&lt;/span> &lt;span class="ss">&amp;#39;org-capture-templates&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">&amp;#39;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;h&amp;#34;&lt;/span> &lt;span class="c1">;`org-capture&amp;#39; binding + h&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;Hugo blog post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">entry&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nv">file+olp&lt;/span> &lt;span class="s">&amp;#34;~/my_gits/brihadeesh.github.io/content-org/blog/posts.org&amp;#34;&lt;/span> &lt;span class="s">&amp;#34;Posts&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">function&lt;/span> &lt;span class="nv">org-hugo-new-subtree-post-capture-template&lt;/span>&lt;span class="p">))))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Exporting to markdown (Org just doesn&amp;rsquo;t have a good enough support
+yet), tags and organisation of pages into bundles is handled by
+&lt;a href="https://ox-hugo.scripter.co">ox-hugo&lt;/a>, a wonderful package for Emacs written by Kaushal Modi
+(&lt;a href="https:scripter.co">website&lt;/a>). The header arguments in the capture template cover
+everything. With Emacs&amp;rsquo;s &lt;code>.dir-locals.el&lt;/code> feature, a file of that name
+in the home directory of the blog ensures every new entry or
+modification into the master posts file gets auto-exported to markdown
+on save. The contents are quite simple.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-emacs-lisp" data-lang="emacs-lisp">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;; ~/.dir-locals.el&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">((&lt;/span>&lt;span class="s">&amp;#34;content-org/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">.&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="nv">org-mode&lt;/span> &lt;span class="o">.&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="nf">eval&lt;/span> &lt;span class="o">.&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">org-hugo-auto-export-mode&lt;/span>&lt;span class="p">)))))))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>With Emacs&amp;rsquo;s Org mode, this posts file has subheadings under a
+&lt;em>Posts&lt;/em> header, each of which is a blog post and is exported to a
+sub-directory under &lt;code>~/content/posts/&lt;/code> as a lone &lt;code>index.md&lt;/code> keeping with
+the page-bundle kind of organisation.&lt;/p>
+&lt;p>A &lt;code>tree&lt;/code> run for the content directory shows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ tree content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── about
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── emacs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── emacs-literate-configuration
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── _index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── posts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── a-dark-side-to-pets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── introduction
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── misunderstanding-evolution
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── pets-put-in-context
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── publications
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── index.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>where every sub-directory in the top-level directory has a page of its
+own while the home-page is the sole &lt;code>_index.md&lt;/code> in the same. What I&amp;rsquo;ve
+got going feels a little hacky but I&amp;rsquo;ll figure this out.&lt;/p>
+&lt;h2 id="issues">
+&lt;a href="#issues">&lt;small># &lt;/small>&lt;/a>Issues
+&lt;/h2>
+&lt;p>There&amp;rsquo;s still a lot to fix&lt;/p>
+&lt;ol>
+&lt;li>heading anchors on top-level pages are superfluous&lt;/li>
+&lt;li>maybe consider switching to a theme-agnostic setup like Drew&amp;rsquo;s&lt;/li>
+&lt;li>get rid of unnecessary indentation like in the table of contents and headings&lt;/li>
+&lt;li>add anchors even to lower level headers&lt;/li>
+&lt;li>switch to a Sourcehut site (eventually and when I can afford it)&lt;/li>
+&lt;/ol>
+&lt;h2 id="further-reading">
+&lt;a href="#further-reading">&lt;small># &lt;/small>&lt;/a>Further reading
+&lt;/h2>
+&lt;p>This is but a blog post written, and edited, within half an hour so I
+haven&amp;rsquo;t likely covered a lot of important bridging information. I&amp;rsquo;ll
+add some links to others&amp;rsquo; blog posts or documentation as I come across
+them.&lt;/p>
+&lt;ol>
+&lt;li>ox-hugo: &lt;a href="https://ox-hugo.scripter.co">website&lt;/a> and &lt;a href="https://github.com/kaushalmodi/ox-hugo">GitHub&lt;/a>&lt;/li>
+&lt;li>(alternatively) &lt;a href="https://github.com/niklasfasching/go-org">go-org&lt;/a>, the native Org backend for Hugo&lt;/li>
+&lt;/ol></description></item><item><title>Pets, put in context</title><link>https://brihadeesh.github.io/posts/2017/06/pets-put-in-context/</link><pubDate>Thu, 15 Jun 2017 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2017/06/pets-put-in-context/</guid><description>&lt;p>Pets and feral animals have been shown to cause great amounts of
 destruction to native wildlife, but since very little research has
 been done in that field, things remain unclear. Most of the cases
 where the extreme case of extinction occurred were on islands, but

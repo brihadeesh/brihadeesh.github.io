@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on home</title><link>https://brihadeesh.github.io/posts/</link><description>Recent content in Posts on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Having to use Windows, reluctantly</title><link>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</guid><description>&lt;p>Since my laptop is an ancient clay tablet that can barely run Emacs
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>adhd on home</title><link>https://brihadeesh.github.io/tags/adhd/</link><description>Recent content in adhd on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Tue, 06 Dec 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/tags/adhd/index.xml" rel="self" type="application/rss+xml"/><item><title>Having to use Windows, reluctantly</title><link>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</guid><description>&lt;p>Since my laptop is an ancient clay tablet that can barely run Emacs
 and a couple of other things without everything crashing, I&amp;rsquo;ve had to
 use a lab workstation with about 128 GB RAM and a fairly new Intel
 processor for running some of my analyses. It&amp;rsquo;s phenomenally fast for
@@ -118,7 +118,7 @@ was a lot more to that minimalism than one could see.&lt;/p>
 &lt;h2 id="basic-setup">
 &lt;a href="#basic-setup">&lt;small># &lt;/small>&lt;/a>Basic setup
 &lt;/h2>
-&lt;p>This has come through fairly well, so far. I&amp;rsquo;ve got an &lt;a href="../emacs/emacs-literate-configuration/#ox-hugo-since-the-go-org-keep-wrecking-up-links">org-capture
+&lt;p>This has come through fairly well, so far. I&amp;rsquo;ve got an &lt;a href="../../emacs/emacs-literate-configuration/#ox-hugo-since-the-go-org-keep-wrecking-up-links">org-capture
 setup&lt;/a> for this that links up every new entry captured into a master
 posts file, adding all the relevant info.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-emacs-lisp" data-lang="emacs-lisp">&lt;span class="line">&lt;span class="cl">
@@ -267,7 +267,7 @@ invasive animals than others.&lt;/p>
 &lt;h2 id="introduction">
 &lt;a href="#introduction">&lt;small># &lt;/small>&lt;/a>Introduction
 &lt;/h2>
-&lt;p>For those of you that haven&amp;rsquo;t read my &lt;a href="../posts/2016/01/a-dark-side-to-pets/">earlier article&lt;/a> on the issues
+&lt;p>For those of you that haven&amp;rsquo;t read my &lt;a href="../../posts/2016/01/a-dark-side-to-pets/">earlier article&lt;/a> on the issues
 with keeping free ranging pets and having stray carnivores, I would
 recommend going through it first although it is not an absolute
 necessity to understand the concepts explained here. Also, some
@@ -723,7 +723,7 @@ kills was that not a single one took place in daylight. Felids are
 nocturnal and hence most of the hunting takes place in the
 dark. Similarly, most feral and domesticated cats are active at night
 and that&amp;rsquo;s when most of the hunting happens.&lt;/p>
-&lt;figure>&lt;a href="../images/20161201_goose_catsnake.jpg">&lt;img src="../images/20161201_goose_catsnake.jpg"/>&lt;/a>
+&lt;figure>&lt;a href="../../images/20161201_goose_catsnake.jpg">&lt;img src="../../images/20161201_goose_catsnake.jpg"/>&lt;/a>
 &lt;/figure>
 &lt;p>On the first of December 2016, I was sitting at home in. My father
 said something which at first I ignored. Then, realising that he&amp;rsquo;d

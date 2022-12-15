@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>emacs on home</title><link>https://brihadeesh.github.io/tags/emacs/</link><description>Recent content in emacs on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml"/><item><title>Having to use Windows, reluctantly</title><link>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</guid><description>&lt;p>Since my laptop is an ancient clay tablet that can barely run Emacs
-and a couple of other things without everything crashing, I&amp;rsquo;ve had to
-use a lab workstation with about 128 GB RAM and a fairly new Intel
-processor for running some of my analyses. It&amp;rsquo;s phenomenally fast for
-a computer that runs Windows and gets most things done easily. It&amp;rsquo;s
-only when I run something that&amp;rsquo;s something memory intensive when
-things really start to get muddled up. I could just be incredibly bad
-at R programming but boy, it hit 105 GB of the RAM and slowed the hell
-down. It&amp;rsquo;s been like this since last night and now there&amp;rsquo;s nothing I
-can do but wait. Surely a Linux or FreeBSD system would have had lower
-core functioning thresholds for all of this.&lt;/p>
-&lt;p>Another fairly weird detail was that it was set to use a UK keyboard
-layout unlike almost any PC that&amp;rsquo;s made in these parts. It was so easy
-to change but almost no-one had it figured until I got here.&lt;/p></description></item><item><title>Finding the right groove with Death metal</title><link>https://brihadeesh.github.io/posts/2022/12/finding-the-right-groove-with-death-metal/</link><pubDate>Tue, 06 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/finding-the-right-groove-with-death-metal/</guid><description>&lt;p>I&amp;rsquo;ve been into a &lt;em>lot&lt;/em> of metal for the last 10-odd years of my
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>emacs on home</title><link>https://brihadeesh.github.io/tags/emacs/</link><description>Recent content in emacs on home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>brihadeesh@protonmail.com (peregrinator)</managingEditor><webMaster>brihadeesh@protonmail.com (peregrinator)</webMaster><lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml"/><item><title>Finding the right groove with Death metal</title><link>https://brihadeesh.github.io/posts/2022/12/finding-the-right-groove-with-death-metal/</link><pubDate>Fri, 16 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/finding-the-right-groove-with-death-metal/</guid><description>&lt;p>I&amp;rsquo;ve been into a &lt;em>lot&lt;/em> of metal for the last 10-odd years of my
 life. It&amp;rsquo;s played the part of coping mechanism for a lot of what I
 went through as a teenager and has had a way of making some of the
 most mundane or depressive phases bearable, it&amp;rsquo;s sometimes even
@@ -101,7 +88,20 @@ great!&lt;/p>
 shuffling though Spotify&amp;rsquo;s &amp;ldquo;Fans also like&amp;rdquo; or the abomination this is
 their landing screen, on my phone, that I feel like that discomfort
 returns. This must be a neurodivergent thing because no-one else I&amp;rsquo;ve
-met has ever shared anything even remotely similar.&lt;/p></description></item><item><title>Hugo, Org and starting over at a new job</title><link>https://brihadeesh.github.io/posts/2022/12/hugo-org-and-starting-over-at-a-new-job/</link><pubDate>Mon, 05 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/hugo-org-and-starting-over-at-a-new-job/</guid><description>&lt;p>I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
+met has ever shared anything even remotely similar.&lt;/p></description></item><item><title>Having to use Windows, reluctantly</title><link>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/having-to-use-windows-reluctantly/</guid><description>&lt;p>Since my laptop is an ancient clay tablet that can barely run Emacs
+and a couple of other things without everything crashing, I&amp;rsquo;ve had to
+use a lab workstation with about 128 GB RAM and a fairly new Intel
+processor for running some of my analyses. It&amp;rsquo;s phenomenally fast for
+a computer that runs Windows and gets most things done easily. It&amp;rsquo;s
+only when I run something that&amp;rsquo;s something memory intensive when
+things really start to get muddled up. I could just be incredibly bad
+at R programming but boy, it hit 105 GB of the RAM and slowed the hell
+down. It&amp;rsquo;s been like this since last night and now there&amp;rsquo;s nothing I
+can do but wait. Surely a Linux or FreeBSD system would have had lower
+core functioning thresholds for all of this.&lt;/p>
+&lt;p>Another fairly weird detail was that it was set to use a UK keyboard
+layout unlike almost any PC that&amp;rsquo;s made in these parts. It was so easy
+to change but almost no-one had it figured until I got here.&lt;/p></description></item><item><title>Hugo, Org and starting over at a new job</title><link>https://brihadeesh.github.io/posts/2022/12/hugo-org-and-starting-over-at-a-new-job/</link><pubDate>Mon, 05 Dec 2022 00:00:00 +0530</pubDate><author>brihadeesh@protonmail.com (peregrinator)</author><guid>https://brihadeesh.github.io/posts/2022/12/hugo-org-and-starting-over-at-a-new-job/</guid><description>&lt;p>I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
 having watched a SystemCrafters &lt;a href="https://youtu.be/AfkrzFodoNw">video&lt;/a> on how to blog from Emacs (&lt;em>d&amp;rsquo;oh&lt;/em>,
 I just &lt;em>have&lt;/em> to do everything from Emacs). Of course, daviwil only
 covered the basics of writing and exporting using Emacs&amp;rsquo; built-in

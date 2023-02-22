@@ -19,7 +19,7 @@
   Literate Emacs Configuration
   <small>
     Last updated
-    <span class="date">Feb 21, 2023</span>
+    <span class="date">Feb 23, 2023</span>
     <br>
     <span class="date">Dec 04, 2021</span>
     on
@@ -291,7 +291,8 @@ first code block can be evaluated using <code>C-c C-c</code>:</p>
 to avoid conflicts with the bundled version of the package. I think
 this can go back to being a regular <code>use-package</code> function but I&rsquo;m
 desperately avoiding having to debug init any further.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">initial-major-mode</span> <span class="ss">&#39;org-mode</span>
 </span></span><span class="line"><span class="cl">      <span class="nv">org-display-inline-images</span> <span class="no">t</span>
 </span></span><span class="line"><span class="cl">      <span class="nv">org-redisplay-inline-images</span> <span class="no">t</span>
@@ -314,7 +315,8 @@ desperately avoiding having to debug init any further.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">     <span class="c1">;; org-edit-src-content-indentation 2</span>
 </span></span><span class="line"><span class="cl">     <span class="nv">org-hide-block-startup</span> <span class="no">nil</span>
-</span></span><span class="line"><span class="cl">     <span class="c1">;; org-src-preserve-indentation nil</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">org-src-preserve-indentation</span> <span class="no">nil</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">org-edit-src-content-indentation</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">     <span class="c1">;; allow for increased space between org</span>
 </span></span><span class="line"><span class="cl">     <span class="c1">;; org-cycle-separator-lines -1</span>
@@ -333,7 +335,7 @@ desperately avoiding having to debug init any further.</p>
 </span></span><span class="line"><span class="cl">     <span class="nv">org-tags-column</span> <span class="mi">-80</span>
 </span></span><span class="line"><span class="cl">     <span class="nv">org-ellipsis</span> <span class="s">&#34; ▾&#34;</span>
 </span></span><span class="line"><span class="cl">     <span class="nv">org-special-ctrl-a/e</span> <span class="no">t</span>
-</span></span><span class="line"><span class="cl">     <span class="nv">org-insert-heading-respect-content</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; org-insert-heading-respect-content t</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">     <span class="c1">;; display numbers instead of bullets for headings</span>
 </span></span><span class="line"><span class="cl">     <span class="c1">;; org-num-mode t</span>
@@ -366,59 +368,87 @@ desperately avoiding having to debug init any further.</p>
 </span></span><span class="line"><span class="cl">    <span class="c1">;; (font-lock-add-keywords &#39;org-mode</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;                         &#39;((&#34;^ *\\([-]\\) &#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) &#34;•&#34;))))))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">;; Make sure org-indent face is available</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-indent</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">;; Ensure that anything that should be fixed-pitch in Org files appears that way</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-block</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-table</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-formula</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-code</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">shadow</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-indent</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">org-hide</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-verbatim</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">shadow</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-special-keyword</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font-lock-comment-face</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-meta-line</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font-lock-comment-face</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-checkbox</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">;; block templates</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">;; This is needed as of Org 9.2</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-tempo</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;sh&#34;</span> <span class="o">.</span> <span class="s">&#34;src sh&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;el&#34;</span> <span class="o">.</span> <span class="s">&#34;src emacs-lisp&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;li&#34;</span> <span class="o">.</span> <span class="s">&#34;src lisp&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;sc&#34;</span> <span class="o">.</span> <span class="s">&#34;src scheme&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;rr&#34;</span> <span class="o">.</span> <span class="s">&#34;src R&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;py&#34;</span> <span class="o">.</span> <span class="s">&#34;src python&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;lua&#34;</span> <span class="o">.</span> <span class="s">&#34;src lua&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;yaml&#34;</span> <span class="o">.</span> <span class="s">&#34;src yaml&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;json&#34;</span> <span class="o">.</span> <span class="s">&#34;src json&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">;; disable electric pairing for angle bracket</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">;; (add-hook &#39;org-mode-hook (lambda ()</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">;; 	   (setq-local electric-pair-inhibit-predicate</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">;; 		   `(lambda (c)</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">;; 		  (if (char-equal c ?&lt;) t (,electric-pair-inhibit-predicate c)))))))</span>
 </span></span></code></pre></div><!--list-separator-->
 <ul>
 <li>
+<p>Fixed pitch for everything code</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; Make sure org-indent face is available</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-indent</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; Ensure that anything that should be fixed-pitch in Org files appears that way</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-block</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-table</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-formula</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-code</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">shadow</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-indent</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">org-hide</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-verbatim</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">shadow</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-special-keyword</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font-lock-comment-face</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-meta-line</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font-lock-comment-face</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-checkbox</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
+</span></span></code></pre></div></li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Quick source block templates</p>
+<p>These can be run by typing an angle bracket with the shortcut and
+hitting <code>&lt;TAB&gt;</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; block templates</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;; This is needed as of Org 9.2</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-tempo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;sh&#34;</span> <span class="o">.</span> <span class="s">&#34;src sh&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;el&#34;</span> <span class="o">.</span> <span class="s">&#34;src emacs-lisp&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;li&#34;</span> <span class="o">.</span> <span class="s">&#34;src lisp&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;sc&#34;</span> <span class="o">.</span> <span class="s">&#34;src scheme&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;r&#34;</span> <span class="o">.</span> <span class="s">&#34;src R&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;py&#34;</span> <span class="o">.</span> <span class="s">&#34;src python&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;lua&#34;</span> <span class="o">.</span> <span class="s">&#34;src lua&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;yml&#34;</span> <span class="o">.</span> <span class="s">&#34;src yaml&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;json&#34;</span> <span class="o">.</span> <span class="s">&#34;src json&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-structure-template-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;aw&#34;</span> <span class="o">.</span> <span class="s">&#34;src awk&#34;</span><span class="p">))</span>
+</span></span></code></pre></div><p>This creates a unique problem wherein the auto-pairing functionality
+(<code>electric-pair-mode</code>) creates matching right angle bracket at the end
+of the block, messing with Org syntax. This doesn&rsquo;t work as intended
+and needs some debugging.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; disable electric pairing for angle bracket</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nb">setq-local</span> <span class="nv">electric-pair-inhibit-predicate</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">`</span><span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">char-equal</span> <span class="nv">c</span> <span class="sc">?&lt;</span><span class="p">)</span> <span class="no">t</span> <span class="p">(</span><span class="o">,</span><span class="nv">electric-pair-inhibit-predicate</span> <span class="nv">c</span><span class="p">)))))))</span>
+</span></span></code></pre></div></li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
 <p><span class="org-todo todo TODO">TODO</span>  Babel</p>
-<p>It&rsquo;s gotta be one of these</p>
+<p>This might require <code>org-contrib</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">org-babel-do-load-languages</span>
 </span></span><span class="line"><span class="cl">         <span class="ss">&#39;org-babel-load-languages</span>
 </span></span><span class="line"><span class="cl">         <span class="o">&#39;</span><span class="p">((</span><span class="nv">emacs-lisp</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">R</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">           <span class="p">))</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-babel-load-languages</span>
-</span></span><span class="line"><span class="cl">                  <span class="o">&#39;</span><span class="p">((</span><span class="nv">emacs-lisp</span>  <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="nv">lisp</span>        <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="nv">org</span>         <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="nv">sh</span>          <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="nv">R</span>           <span class="o">.</span> <span class="no">t</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">lisp</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">shell</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">org</span> <span class="o">.</span><span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">awk</span> <span class="o">.</span> <span class="no">t</span><span class="p">)))</span>
+</span></span></code></pre></div></li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>New folding backend</p>
+<p>This came with the Org 9.6 release on <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-29 Tue&gt; </span></span> and I got the
+tea from the Org <a href="https://orgmode.org/Changes.html">changes</a> post. This is optimised for files that are
+large, and usually more than a few MB in size. I know this file is
+only a few kilobytes but I kinda feel it lagging once in a
+while. Probably some unrelated issue.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-fold-core-style</span> <span class="ss">&#39;overlays</span><span class="p">)</span>
 </span></span></code></pre></div></li>
 </ul>
 <!--list-separator-->
@@ -438,9 +468,7 @@ directory</p>
 <p>Tags and todo-keywords config</p>
 <p>Todo-keywords are things like <code>TODO</code> and <code>DONE</code> and so on. Tags are for
 classifying stuff by the general theme of what&rsquo;s being talked about.</p>
-</li>
-</ul>
-<!--list-separator-->
+ <!--list-separator-->
 <ul>
 <li>
 <p>todo-keywords</p>
@@ -448,7 +476,7 @@ classifying stuff by the general theme of what&rsquo;s being talked about.</p>
 </span></span><span class="line"><span class="cl">      <span class="o">&#39;</span><span class="p">((</span><span class="nv">sequence</span> <span class="s">&#34;TODO(t)&#34;</span> <span class="s">&#34;|&#34;</span> <span class="s">&#34;DONE(d!)&#34;</span> <span class="s">&#34;DISABLED(f!)&#34;</span><span class="p">)))</span>
 </span></span></code></pre></div></li>
 </ul>
-<!--list-separator-->
+ <!--list-separator-->
 <ul>
 <li>
 <p><span class="org-todo done DISABLED">DISABLED</span>  tags</p>
@@ -461,11 +489,16 @@ classifying stuff by the general theme of what&rsquo;s being talked about.</p>
 </span></span><span class="line"><span class="cl">                      <span class="p">)))</span>
 </span></span></code></pre></div></li>
 </ul>
+</li>
+</ul>
 <!--list-separator-->
 <ul>
 <li>
-<p><span class="org-todo todo TODO">TODO</span>  Capture templates</p>
-<p>This will need to be looked at carefully. Roughly, I need to work out
+<p>Org-capture</p>
+<p>Global keybinding for org-capture</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c c&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">org-capture</span><span class="p">)</span>
+</span></span></code></pre></div><p>This will need to be looked at carefully. Roughly, I need to work out
 if I&rsquo;m going to be using <code>org-agenda</code> and if so, how will I be using
 it. Adding tasks can be made much easier with this. I can also use
 this for entering entries into <code>org-journal</code>, making it a whole deal
@@ -478,6 +511,10 @@ post in my <a href="person_el/sample-org-setup.el">unused local elisp libs</a> t
 <ul>
 <li>
 <p>Display features</p>
+<p>In the spirit of reclaiming some semblance of organisation in this
+file, I&rsquo;ve tried to group settings by the what aspect they
+change. Hopefully this continues and the rest of the Org mode
+configuration can be split up.</p>
  <!--list-separator-->
 <ul>
 <li>
@@ -571,9 +608,10 @@ command messes up lines, undos, and sometimes comment syntax as well.</p>
 </span></span><span class="line"><span class="cl">  <span class="nb">:hook</span> <span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">org-make-toc-mode</span><span class="p">))</span>
 </span></span></code></pre></div></li>
 </ul>
-</li>
-</ul>
-<h4 id="convert-all-org-keywords-block-identifiers-to-lowercase">Convert all org-keywords/block identifiers to lowercase<a href="#convert-all-org-keywords-block-identifiers-to-lowercase" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Convert all org-keywords/block identifiers to lowercase</p>
 <p>It&rsquo;s always nice to see random people online that are crazy like you
 and are nice enough to write elisp code for the shit you need. Stolen
 from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
@@ -597,32 +635,34 @@ from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">setq</span> <span class="nv">count</span> <span class="p">(</span><span class="nf">1+</span> <span class="nv">count</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nf">replace-match</span> <span class="p">(</span><span class="nf">downcase</span> <span class="p">(</span><span class="nv">match-string-no-properties</span> <span class="mi">1</span><span class="p">))</span> <span class="nb">:fixedcase</span> <span class="no">nil</span> <span class="no">nil</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">message</span> <span class="s">&#34;Lower-cased %d matches&#34;</span> <span class="nv">count</span><span class="p">))))</span>
-</span></span></code></pre></div><h3 id="org-journal-for-journaling-requirements"><span class="org-todo todo TODO">TODO</span> <code>org-journal</code> for journaling requirements<a href="#org-journal-for-journaling-requirements" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
-<p>This needs better setting up and integration with either <code>Orgzly</code> or
-<code>GitJournal</code> for android. iOS seems to have better apps though. Or
-just make this workable with the termux version of Emacs.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">org-journal</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">:init</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">;; Change default prefix key; needs to be set before loading org-journal</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-journal-prefix-key</span> <span class="s">&#34;C-c j &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nb">:bind</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">;; ((&#34;C-c t&#34; . journal-file-today)</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">;;  (&#34;C-c y&#34; . journal-file-yesterday))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">;; Journal directory and files</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-journal-dir</span> <span class="s">&#34;~/journal/entries/&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-format</span> <span class="s">&#34;%Y/%m/%Y%m%d.org&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-type</span> <span class="ss">&#39;daily</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-find-file</span> <span class="ss">&#39;find-file</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">;; Journal file content</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-journal-date-format</span> <span class="s">&#34;%e %b %Y (%A)&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-time-format</span> <span class="s">&#34;(%R)&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-header</span> <span class="s">&#34;#+title: Daily Journal\n#+startup: showeverything&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="auctex-for-latex-editing-plus-completion">AUCTex for LaTex editing + completion<a href="#auctex-for-latex-editing-plus-completion" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><p>It&rsquo;s always nice to see random people online that are crazy like you
+and are nice enough to write elisp code for the shit you need. Stolen
+from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">peremacs/lower-case-org-keywords</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Lower case Org keywords and block identifiers.
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">Example: \&#34;#+TITLE\&#34; -&gt; \&#34;#+title\&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">         \&#34;#+BEGIN_EXAMPLE\&#34; -&gt; \&#34;#+begin_example\&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">Inspiration:
+</span></span></span><span class="line"><span class="cl"><span class="s">https://code.orgmode.org/bzg/org-mode/commit/13424336a6f30c50952d291e7a82906c1210daf0.&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">save-excursion</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">goto-char</span> <span class="p">(</span><span class="nf">point-min</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">case-fold-search</span> <span class="no">nil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">count</span> <span class="mi">0</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">;; Match examples: &#34;#+foo bar&#34;, &#34;#+foo:&#34;, &#34;=#+foo=&#34;, &#34;~#+foo~&#34;,</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">;;                 &#34;‘#+foo’&#34;, &#34;“#+foo”&#34;, &#34;,#+foo bar&#34;,</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">;;                 &#34;#+FOO_bar&lt;eol&gt;&#34;, &#34;#+FOO&lt;eol&gt;&#34;.</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">while</span> <span class="p">(</span><span class="nf">re-search-forward</span> <span class="s">&#34;\\(?1:#\\+[A-Z_]+\\(?:_[[:alpha:]]+\\)*\\)\\(?:[ :=~’”]\\|$\\)&#34;</span> <span class="no">nil</span> <span class="nb">:noerror</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">setq</span> <span class="nv">count</span> <span class="p">(</span><span class="nf">1+</span> <span class="nv">count</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nf">replace-match</span> <span class="p">(</span><span class="nf">downcase</span> <span class="p">(</span><span class="nv">match-string-no-properties</span> <span class="mi">1</span><span class="p">))</span> <span class="nb">:fixedcase</span> <span class="no">nil</span> <span class="no">nil</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">message</span> <span class="s">&#34;Lower-cased %d matches&#34;</span> <span class="nv">count</span><span class="p">))))</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h3 id="auctex-for-latex-editing-plus-completion">AUCTex for LaTex editing + completion<a href="#auctex-for-latex-editing-plus-completion" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; FIXME:</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (use-package auctex</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   :init</span>
@@ -709,7 +749,7 @@ but then I hope to eventually move everything to sourcehut or atleast
 using it to host a website on my own domain.</p>
 <p>This source block continues into the next section.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-hugo</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">ox</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">ox</span><span class="p">)</span>
 </span></span></code></pre></div><p>Additional setup for streamlining writing posts on the static site:</p>
 <!--list-separator-->
 <ul>
@@ -721,32 +761,6 @@ section). This particular function adds a date below the header marked
 field by ox-hugo and is included in the single page view/posts list on
 the final export. It also changes the <code>TODO</code> tag to <code>DONE</code>. I&rsquo;m still
 trying to figure out bundles so this might change soon.</p>
-<p>This source block continues into the next section.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">:config</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;org-capture</span>
-</span></span><span class="line"><span class="cl">     <span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span> <span class="p">()</span>
-</span></span><span class="line"><span class="cl">       <span class="s">&#34;Returns </span><span class="ss">`org-capture&#39;</span><span class="s"> template string for new Hugo post.
-</span></span></span><span class="line"><span class="cl"><span class="s">   See </span><span class="ss">`org-capture-templates&#39;</span><span class="s"> for more information.&#34;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">title</span> <span class="p">(</span><span class="nf">read-from-minibuffer</span> <span class="s">&#34;Post Title: &#34;</span><span class="p">))</span> <span class="c1">;Prompt to enter the post title</span>
-</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">fname</span> <span class="p">(</span><span class="nv">org-hugo-slug</span> <span class="nv">title</span><span class="p">)))</span>
-</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nf">mapconcat</span> <span class="nf">#&#39;identity</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">`</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">                      <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;* TODO &#34;</span> <span class="nv">title</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                      <span class="s">&#34;:PROPERTIES:&#34;</span>
-</span></span><span class="line"><span class="cl">                      <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;:EXPORT_HUGO_BUNDLE: &#34;</span> <span class="nv">fname</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                      <span class="s">&#34;:EXPORT_FILE_NAME: index&#34;</span>
-</span></span><span class="line"><span class="cl">                      <span class="s">&#34;:EXPORT_HUGO_AUTO_SET_LASTMOD: t&#34;</span>
-</span></span><span class="line"><span class="cl">                      <span class="s">&#34;:END:&#34;</span>
-</span></span><span class="line"><span class="cl">                      <span class="s">&#34;%?\n&#34;</span><span class="p">)</span>          <span class="c1">;Place the cursor here finally</span>
-</span></span><span class="line"><span class="cl">                    <span class="s">&#34;\n&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div></li>
-</ul>
-<!--list-separator-->
-<ul>
-<li>
-<p>Add capture template</p>
 <p>Since the provided template runs independent of my git repo for the
 website, I&rsquo;ll have to figure out the <code>file</code> variable and how to point it
 to the <code>/content-org/blog/posts.org</code> file in the repo. From the original
@@ -760,25 +774,50 @@ the actual location of all-posts.org!</p>
 <p>So I&rsquo;ll change the <code>target</code> to point to my file in the repo directly
 until I can assign specific (programmatic ?) definitions for the repo
 in this configuration somewhere.</p>
-<p>Capture for blog posts</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-capture-templates</span>
-</span></span><span class="line"><span class="cl">              <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;h&#34;</span>                <span class="c1">;`org-capture&#39; binding + h</span>
-</span></span><span class="line"><span class="cl">                <span class="s">&#34;Hugo blog post&#34;</span>
-</span></span><span class="line"><span class="cl">                <span class="nv">entry</span>
-</span></span><span class="line"><span class="cl">                <span class="p">(</span><span class="nv">file+olp</span> <span class="s">&#34;~/my_gits/brihadeesh.github.io/content-org/blog/posts.org&#34;</span> <span class="s">&#34;Posts&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span><span class="p">)))))</span>
-</span></span></code></pre></div><p>Capture for posts on eBird analyses</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-capture-templates</span>
-</span></span><span class="line"><span class="cl">                <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;r&#34;</span>                <span class="c1">;`org-capture&#39; binding + r</span>
-</span></span><span class="line"><span class="cl">                  <span class="s">&#34;eBird analysis&#34;</span>
-</span></span><span class="line"><span class="cl">                  <span class="nv">entry</span>
-</span></span><span class="line"><span class="cl">                  <span class="p">(</span><span class="nv">file+olp</span> <span class="s">&#34;~/work/iiser_tpt-SOIB/ebd_biases_2/content-org/analyses.org&#34;</span> <span class="s">&#34;Analyses&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                  <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span><span class="p">)))))</span>
-</span></span></code></pre></div><p>This is the end of the <code>use-package</code> source block for <code>ox-hugo</code>, the
-parent header in this section.</p>
-</li>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;org-capture</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo-new-post-capture</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Returns </span><span class="ss">`org-capture&#39;</span><span class="s"> template string for new Hugo post.
+</span></span></span><span class="line"><span class="cl"><span class="s">See </span><span class="ss">`org-capture-templates&#39;</span><span class="s"> for more information.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">let*</span> <span class="p">(</span><span class="c1">;; http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">date</span> <span class="p">(</span><span class="nf">format-time-string</span> <span class="p">(</span><span class="nv">org-time-stamp-format</span> <span class="nb">:long</span> <span class="nb">:inactive</span><span class="p">)</span> <span class="p">(</span><span class="nv">org-current-time</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">title</span> <span class="p">(</span><span class="nf">read-from-minibuffer</span> <span class="s">&#34;Post Title: &#34;</span><span class="p">))</span> <span class="c1">;Prompt to enter the post title</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">fname</span> <span class="p">(</span><span class="nv">org-hugo-slug</span> <span class="nv">title</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">section</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">org-capture-plist</span> <span class="nb">:section</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">lastmod</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">org-capture-alist</span> <span class="nb">:lastmod</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">mapconcat</span> <span class="nf">#&#39;identity</span>
+</span></span><span class="line"><span class="cl">                 <span class="o">`</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;* DRAFT &#34;</span> <span class="nv">title</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                   <span class="s">&#34;:PROPERTIES:&#34;</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;&#34;</span> <span class="nv">section</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;:EXPORT_FILE_NAME: &#34;</span> <span class="nv">fname</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;:EXPORT_HUGO_AUTO_SET_LASTMOD: &#34;</span> <span class="nv">lastmod</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                   <span class="c1">;; Enter current date and time</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;:EXPORT_DATE: &#34;</span> <span class="nv">date</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                   <span class="s">&#34;:END:&#34;</span>
+</span></span><span class="line"><span class="cl">                   <span class="c1">;; Place the cursor here finally</span>
+</span></span><span class="line"><span class="cl">                   <span class="s">&#34;%?\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                 <span class="s">&#34;\n&#34;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-capture-templates</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">;;`org-capture&#39; binding + h</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">((</span><span class="s">&#34;h&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="s">&#34;Hugo blog post&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file+olp</span> <span class="s">&#34;~/my_gits/brihadeesh.github.io/content-org/blog/posts.org&#34;</span> <span class="s">&#34;Posts&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-post-capture</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:section</span> <span class="s">&#34;:EXPORT_HUGO_SECTION: blog&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:lastmod</span> <span class="s">&#34;t&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="c1">;; `org-capture&#39; binding + m</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;m&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="s">&#34;Hugo miscellaneous blog post&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file+olp</span> <span class="s">&#34;~/my_gits/brihadeesh.github.io/content-org/blog/posts.org&#34;</span> <span class="s">&#34;Miscellaneous&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-post-capture</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:section</span> <span class="s">&#34;:EXPORT_HUGO_SECTION: misc&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:lastmod</span> <span class="s">&#34;f&#34;</span><span class="p">))))</span>
+</span></span></code></pre></div></li>
 </ul>
 <h2 id="work">Work<a href="#work" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
 <h3 id="emacs-speaks-statistics-for-r-and-python">Emacs Speaks Statistics for <strong>R</strong> and python(?)<a href="#emacs-speaks-statistics-for-r-and-python" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
@@ -947,41 +986,83 @@ cluttered and excruciatingly tedious to even get started with.</p>
 </span></span><span class="line"><span class="cl">  <span class="c1">;;</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; OR if only want it in `denote-dired-directories&#39;:</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;dired-mode-hook</span> <span class="nf">#&#39;</span><span class="nv">denote-dired-mode-in-directories</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="capture-template--s--for-denote"><span class="org-todo todo TODO">TODO</span> Capture template(s) for Denote<a href="#capture-template--s--for-denote" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
-<p><code>org-capture</code> template for denote - I might want to add some more header
-arguments (?). I should probably define the user-level command first
-so I can call it with org-capture. Going by the way it automatically
-adds dates and tags, I could even switch to this for journaling and
-completely replace <code>org-journal</code> because it&rsquo;s clunky. If I were to do
-that I would have to maybe write a script that renames and organises
-everything in that repo to a denote-like format.</p>
-<p>Prot in the documentation</p>
-<blockquote>
-<p>Read this manual for how to specify `denote-templates&rsquo;.  We do not
-include an example here to avoid potential confusion.</p>
-</blockquote>
-<p>So perhaps one template per source block?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; Here is a custom, user-level command from one of the examples we</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;; showed in this manual.  We define it here and add it to a key binding</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;; below.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;; (defun my-denote-journal ()</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;;   &#34;Create an entry tagged &#39;journal&#39;, while prompting for a title.&#34;</span>
+</span></span></code></pre></div><h3 id="denote-templates"><span class="org-todo todo TODO">TODO</span> Denote templates<a href="#denote-templates" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<p>This should replace capture templates because the interactive <code>denote</code>
+call seems a lot more flexible and versatile. Still WIP</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">denote-templates</span>
+</span></span><span class="line"><span class="cl">      <span class="o">`</span><span class="p">((</span><span class="nv">note</span> <span class="o">.</span> <span class="s">&#34;* Some heading\n\n* Another heading&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">memo</span> <span class="o">.</span> <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;* Some heading&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;\n\n&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;* Another heading&#34;</span>
+</span></span><span class="line"><span class="cl">                         <span class="s">&#34;\n\n&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">journal-entry</span> <span class="o">.</span> <span class="s">&#34;* Date\n\n** Time&#34;</span><span class="p">)))</span>
+</span></span></code></pre></div><h3 id="convenience-commands-for-journal-entries"><span class="org-todo todo TODO">TODO</span> &ldquo;convenience commands&rdquo; for journal entries<a href="#convenience-commands-for-journal-entries" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; (defun peremacs/denote-journal-entry ()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;   &#34;Create journal entry and prompt for a subdirectory.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; This is equivalent to calling `denote&#39; when `denote-prompts&#39; is</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;; set to &#39;(template subdirectory title keywords).&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;   (declare (interactive-only t))</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   (interactive)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;;   (denote</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;;    (denote--title-prompt)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">;;    &#39;(&#34;journal&#34;)))</span>
-</span></span></code></pre></div><p>Finally, defining the key each of these templates are bound and
-referencing the templates for <code>org-capture</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;org-capture</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">denote-org-capture-specifiers</span> <span class="s">&#34;%l\n%i\n%?&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-capture-templates</span>
-</span></span><span class="line"><span class="cl">               <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;n&#34;</span> <span class="s">&#34;New note (with denote.el)&#34;</span> <span class="nv">plain</span>
-</span></span><span class="line"><span class="cl">                 <span class="p">(</span><span class="nv">file</span> <span class="nv">denote-last-path</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                 <span class="nf">#&#39;</span><span class="nv">denote-org-capture</span>
-</span></span><span class="line"><span class="cl">                 <span class="nb">:no-save</span> <span class="no">t</span>
-</span></span><span class="line"><span class="cl">                 <span class="nb">:immediate-finish</span> <span class="no">nil</span>
-</span></span><span class="line"><span class="cl">                 <span class="nb">:kill-buffer</span> <span class="no">t</span>
-</span></span><span class="line"><span class="cl">                 <span class="nb">:jump-to-captured</span> <span class="no">t</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;   (let ((denote-prompts &#39;(subdirectory keywords)))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;     (denote-)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;;     (call-interactively #&#39;denote)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">peremacs/denote-journal-entry</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="s">&#34;Create an entry tagged &#39;journal&#39; with the date as its title.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">denote</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">;; format title like Tuesday 14 June 2022</span>
+</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%A %e %B %Y&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">;; add &#39;journal&#39; keywords; multiple is a list of strings: &#39;(&#34;one&#34; &#34;two&#34;)</span>
+</span></span><span class="line"><span class="cl"> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;journal&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">;; prompt for subdirectory (?)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">(</span><span class="nv">denote--subdirectory-prompt</span><span class="p">)))</span>
+</span></span></code></pre></div><p>Stolen from somewhere</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">journal-day-exists-p</span> <span class="p">(</span> <span class="nv">target</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;check if journal for a day already exists&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">file-expand-wildcards</span> <span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;~/journal/entries/&#34;</span> <span class="nv">target</span> <span class="s">&#34;*.org&#34;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">find-previous-journal</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Find most recent journal&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">today</span> <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%Y%m%d&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">all_journals</span> <span class="p">(</span><span class="nf">sort</span> <span class="p">(</span><span class="nf">directory-files</span> <span class="s">&#34;~/journal/entries&#34;</span> <span class="no">nil</span> <span class="s">&#34;^[0-9].*.*org$&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">string&gt;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">journal</span> <span class="nv">all_journals</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">string&lt;</span> <span class="p">(</span><span class="nf">substring</span> <span class="nv">journal</span> <span class="mi">0</span> <span class="mi">8</span><span class="p">)</span> <span class="nv">today</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">return</span> <span class="nv">journal</span><span class="p">)))))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-denote-journal-today</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Create an entry tagged &#39;journal&#39; with the date as its title.&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">today</span> <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%Y%m%d&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">filename</span> <span class="p">(</span><span class="nf">car</span> <span class="p">(</span><span class="nv">journal-day-exists-p</span> <span class="nv">today</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">prev</span> <span class="p">(</span><span class="nv">find-previous-journal</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">if</span> <span class="nv">filename</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">find-file</span> <span class="nv">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">progn</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">denote</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%a %d %m %Y (%H:%M)&#34;</span><span class="p">)</span>   <span class="c1">; format like Tuesday 14 Jun 2022</span>
+</span></span><span class="line"><span class="cl">         <span class="no">nil</span>
+</span></span><span class="line"><span class="cl">         <span class="s">&#34;~/journal/entries&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;* THOUGHTS\n\n* IDEAS\n\n* CODE\n\n* TASKS\n\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">save-buffer</span><span class="p">)))))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-denote-journal-date</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">declare</span> <span class="p">(</span><span class="nv">interactive-only</span> <span class="no">t</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">date</span> <span class="p">(</span><span class="nv">org-read-date</span> <span class="no">nil</span> <span class="no">t</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">filename</span> <span class="p">(</span><span class="nf">car</span> <span class="p">(</span><span class="nv">journal-day-exists-p</span> <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%Y%m%d&#34;</span> <span class="nv">date</span><span class="p">)))))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">if</span> <span class="nv">filename</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">find-file</span> <span class="nv">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">progn</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">denote</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%a %d %m %Y&#34;</span> <span class="nv">date</span><span class="p">)</span>   <span class="c1">; format like Tuesday 14 June 2022</span>
+</span></span><span class="line"><span class="cl">         <span class="no">nil</span>
+</span></span><span class="line"><span class="cl">         <span class="s">&#34;~/journal/entries&#34;</span><span class="p">)))))</span>
 </span></span></code></pre></div><h3 id="keybindings"><span class="org-todo todo TODO">TODO</span> Keybindings<a href="#keybindings" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
 <p>Denote DOES NOT define any key bindings. It requires arguments
 acceptable to the <code>bind-keys</code> macro. I&rsquo;m not entirely sure some of these
@@ -1015,6 +1096,31 @@ are necessary since I&rsquo;m using a capture template.</p>
 </span></span><span class="line"><span class="cl"><span class="c1">;; )</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><h3 id="org-journal-for-journaling-requirements"><span class="org-todo todo TODO">TODO</span> <code>org-journal</code> for journaling requirements<a href="#org-journal-for-journaling-requirements" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<p>This needs better setting up and integration with either <code>Orgzly</code> or
+<code>GitJournal</code> for android. iOS seems to have better apps though. Or
+just make this workable with the termux version of Emacs.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">org-journal</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:init</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Change default prefix key; needs to be set before loading org-journal</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-journal-prefix-key</span> <span class="s">&#34;C-c j &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nb">:bind</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; ((&#34;C-c t&#34; . journal-file-today)</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;;  (&#34;C-c y&#34; . journal-file-yesterday))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Journal directory and files</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-journal-dir</span> <span class="s">&#34;~/journal/entries/&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-format</span> <span class="s">&#34;%Y/%m/%Y%m%d.org&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-type</span> <span class="ss">&#39;daily</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-find-file</span> <span class="ss">&#39;find-file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Journal file content</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-journal-date-format</span> <span class="s">&#34;%e %b %Y (%A)&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-time-format</span> <span class="s">&#34;(%R)&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-header</span> <span class="s">&#34;#+title: Daily Journal\n#+startup: showeverything&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
 </span></span></code></pre></div><h2 id="version-control">Version control<a href="#version-control" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
 <h4 id="git-with-magit-and-gists-with-gist-dot-el">Git with Magit and gists with <code>gist.el</code><a href="#git-with-magit-and-gists-with-gist-dot-el" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
 <p><a id="code-snippet--magit-config"></a></p>
@@ -1410,6 +1516,16 @@ bootlegged from <a href="https://github.com/minad/consult/wiki#minads-orderless-
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">consult-flycheck</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:bind</span> <span class="p">(</span><span class="nb">:map</span> <span class="nv">flycheck-command-map</span>
 </span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="s">&#34;!&#34;</span> <span class="o">.</span> <span class="nv">consult-flycheck</span><span class="p">)))</span>
+</span></span></code></pre></div><h3 id="consult-interface-for-denote"><span class="org-todo todo TODO">TODO</span> Consult interface for denote<a href="#consult-interface-for-denote" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<p>I haven&rsquo;t really figured out how to programmatically add additional
+functionality/features for consult, nor have I figured out denote.  I
+got this from one random <a href="https://whhone.com/posts/denote-with-subdirectories/">blog post</a> about denote while looking for how
+people use denote to work with sub-directories. I&rsquo;ve just grabbed the
+files from their <a href="https://codeberg.org/whhone/consult-denote/">package</a> for now but I might need to extend this if I
+end up switching to using denote for journaling.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">consult-denote</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">:straight</span> <span class="p">(</span><span class="nv">consult-denote</span> <span class="nb">:type</span> <span class="nv">git</span> <span class="nb">:host</span> <span class="nv">codeberg</span> <span class="nb">:repo</span> <span class="s">&#34;whhone/consult-denote&#34;</span><span class="p">))</span>
 </span></span></code></pre></div><h3 id="embark-actions-reorganise"><span class="org-todo todo TODO">TODO</span> Embark - actions; reorganise<a href="#embark-actions-reorganise" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
 <p>This I&rsquo;ve not used yet but makes a lot of stuff easier like
 searchingfor the <code>definition</code> or the <code>help/info</code> page a highlighted
@@ -1533,7 +1649,56 @@ enable.</p>
 error with Modus themes: <code>Debugger entered--Lisp error: (wrong-number-of-arguments (1 . 2) 8)</code> This is based on <a href="https://gitlab.com/protesilaos/modus-themes/-/issues/306#note_1147003189">Adam Spiers&rsquo;s comment</a> - the theme should be
 loaded before <code>custom.el</code> is pulled in to avoid issues with version
 mismatch like the shit with the <code>org</code> package.</p>
-<h4 id="modus-from-protesilaos">Modus from Protesilaos!<a href="#modus-from-protesilaos" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+<h4 id="ef-themes">ef-themes<a href="#ef-themes" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ef-themes</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; If you like two specific themes and want to switch between them, you</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; can specify them in `ef-themes-to-toggle&#39; and then invoke the command</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; `ef-themes-toggle&#39;.  All the themes are included in the variable</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; `ef-themes-collection&#39;.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">ef-themes-to-toggle</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ef-night</span> <span class="nv">ef-duo-dark</span> <span class="nv">ef-winter</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">ef-themes-headings</span> <span class="c1">; read the manual&#39;s entry or the doc string</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">((</span><span class="mi">0</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="nv">light</span> <span class="mf">1.2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">1</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="nv">light</span> <span class="mf">1.1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">2</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="nv">regular</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">3</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="nv">regular</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">4</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="nv">regular</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">5</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span><span class="p">))</span> <span class="c1">; absence of weight means `bold&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">6</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">7</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="no">t</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; They are nil by default...</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">ef-themes-mixed-fonts</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">ef-themes-variable-pitch-ui</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Read the doc string or manual for this one.  The symbols can be</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; combined in any order.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">ef-themes-region</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">intense</span> <span class="nv">no-extend</span> <span class="nv">neutral</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Disable all other themes to avoid awkward blending:</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nf">mapc</span> <span class="nf">#&#39;</span><span class="nv">disable-theme</span> <span class="nv">custom-enabled-themes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Load the theme of choice:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;ef-summer :no-confirm)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; OR use this to load the theme which also calls `ef-themes-post-load-hook&#39;:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; (ef-themes-select &#39;ef-winter)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; The themes we provide are recorded in the `ef-themes-dark-themes&#39;,</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; `ef-themes-light-themes&#39;.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; We also provide these commands, but do not assign them to any key:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-toggle&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-select&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-load-random&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-preview-colors&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-preview-colors-current&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span></code></pre></div><h4 id="modus-from-protesilaos">Modus from Protesilaos!<a href="#modus-from-protesilaos" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
 <p>This might need additional setting since modus themes are now included
 within Emacs</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">modus-themes</span>
@@ -1787,60 +1952,60 @@ configure. I&rsquo;m also considering <a href="https://github.com/gexplorer/simp
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">mood-line-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
 </span></span></code></pre></div><h3 id="pulse-to-locate-cursor-with-protesilaos-s-pulsar">Pulse to locate cursor with Protesilaos&rsquo;s pulsar<a href="#pulse-to-locate-cursor-with-protesilaos-s-pulsar" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">pulsar</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">pulsar</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:host</span> <span class="nv">gitlab</span> <span class="nb">:repo</span> <span class="s">&#34;protesilaos/pulsar&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nb">:custom</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">pulsar-pulse-functions</span> <span class="c1">; Read the doc string for why not `setq&#39;</span>
 </span></span><span class="line"><span class="cl">   <span class="o">&#39;</span><span class="p">(</span><span class="nv">recenter-top-bottom</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">move-to-window-line-top-bottom</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">reposition-window</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; bookmark-jump</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; other-window</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; delete-window</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; delete-other-windows</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">forward-page</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">backward-page</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">scroll-up-command</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">scroll-down-command</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-right</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-left</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-up</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-down</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-swap-states-right</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-swap-states-left</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-swap-states-up</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; windmove-swap-states-down</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; tab-new</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; tab-close</span>
-</span></span><span class="line"><span class="cl">      <span class="c1">;; tab-next</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">org-next-visible-heading</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">org-previous-visible-heading</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">org-forward-heading-same-level</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">org-backward-heading-same-level</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">outline-backward-same-level</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">outline-forward-same-level</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">outline-next-visible-heading</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">outline-previous-visible-heading</span>
-</span></span><span class="line"><span class="cl">      <span class="nv">outline-up-heading</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">move-to-window-line-top-bottom</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">reposition-window</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; bookmark-jump</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; other-window</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; delete-window</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; delete-other-windows</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">forward-page</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">backward-page</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">scroll-up-command</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">scroll-down-command</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-right</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-left</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-up</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-down</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-swap-states-right</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-swap-states-left</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-swap-states-up</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; windmove-swap-states-down</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; tab-new</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; tab-close</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">;; tab-next</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">org-next-visible-heading</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">org-previous-visible-heading</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">org-forward-heading-same-level</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">org-backward-heading-same-level</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">outline-backward-same-level</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">outline-forward-same-level</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">outline-next-visible-heading</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">outline-previous-visible-heading</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">outline-up-heading</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">   <span class="nb">:config</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nb">setq</span> <span class="nv">pulsar-pulse-on-window-change</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nb">setq</span> <span class="nv">pulsar-pulse</span> <span class="no">t</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nb">setq</span> <span class="nv">pulsar-delay</span> <span class="mf">0.055</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nb">setq</span> <span class="nv">pulsar-iterations</span> <span class="mi">10</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nb">setq</span> <span class="nv">pulsar-face</span> <span class="ss">&#39;pulsar-yellow</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">pulsar-pulse-on-window-change</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">pulsar-pulse</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">pulsar-delay</span> <span class="mf">0.055</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">pulsar-iterations</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">pulsar-face</span> <span class="ss">&#39;pulsar-cyan</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">pulsar-global-mode</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">pulsar-global-mode</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">   <span class="nb">:bind</span> <span class="p">((</span><span class="s">&#34;C-c l&#34;</span> <span class="o">.</span> <span class="nv">pulsar-pulse-line</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;C-c h l&#34;</span> <span class="o">.</span> <span class="nv">pulsar-highlight-line</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;C-l&#34;</span> <span class="o">.</span> <span class="nv">pulsar-recenter-middle</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:bind</span>
+</span></span><span class="line"><span class="cl">  <span class="p">((</span><span class="s">&#34;C-c l&#34;</span> <span class="o">.</span> <span class="nv">pulsar-pulse-line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="s">&#34;C-c h l&#34;</span> <span class="o">.</span> <span class="nv">pulsar-highlight-line</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">   <span class="nb">:hook</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">consult-after-jump-hook</span> <span class="o">.</span> <span class="nv">pulsar-recenter-middle</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">consult-after-jump-hook</span> <span class="o">.</span> <span class="nv">pulsar-reveal-entry</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">imenu-list-after-jump</span> <span class="o">.</span> <span class="nv">pulsar-pulse-line</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:hook</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">consult-after-jump</span> <span class="o">.</span> <span class="nv">pulsar-recenter-top</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">consult-after-jump</span> <span class="o">.</span> <span class="nv">pulsar-reveal-entry</span><span class="p">))</span>
 </span></span></code></pre></div><h3 id="display-complex-key-binding-suggestions">Display complex key-binding suggestions<a href="#display-complex-key-binding-suggestions" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">which-key</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">which-key-mode</span>
@@ -2297,6 +2462,18 @@ case. I might end up replacing this with a <strong>lua config</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">zig-mode</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;\\.zig\\&#39;&#34;</span> <span class="o">.</span> <span class="nv">zig-mode</span><span class="p">)))</span>
+</span></span></code></pre></div><h3 id="yaml">Yaml<a href="#yaml" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">yaml-mode</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;;autoloads</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;\\.yml\\&#39;&#34;</span> <span class="o">.</span> <span class="nv">yaml-mode</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; indent and new-line on return; the mode enforces spaces instead</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; of tabs</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;yaml-mode-hook</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nf">define-key</span> <span class="nv">yaml-mode-map</span> <span class="s">&#34;\C-m&#34;</span> <span class="ss">&#39;newline-and-indent</span><span class="p">))))</span>
 </span></span></code></pre></div><h2 id="terminal">Terminal<a href="#terminal" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
 <p>Vterm ftw</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">vterm</span>
@@ -2435,12 +2612,7 @@ buffer to vterm so it sticks to the window it was launched with.</p>
     </li>
     <li><a href="#writing">Writing</a>
       <ol>
-        <li><a href="#org-mode">Org-mode</a>
-          <ol>
-            <li><a href="#convert-all-org-keywords-block-identifiers-to-lowercase">Convert all org-keywords/block identifiers to lowercase</a></li>
-          </ol>
-        </li>
-        <li><a href="#org-journal-for-journaling-requirements"><span class="org-todo todo TODO">TODO</span> <code>org-journal</code> for journaling requirements</a></li>
+        <li><a href="#org-mode">Org-mode</a></li>
         <li><a href="#auctex-for-latex-editing-plus-completion">AUCTex for LaTex editing + completion</a></li>
         <li><a href="#spellcheck">Spellcheck</a>
           <ol>
@@ -2473,8 +2645,10 @@ buffer to vterm so it sticks to the window it was launched with.</p>
     <li><a href="#denote-for-note-taking">Denote for note-taking</a>
       <ol>
         <li><a href="#basic-setup">Basic setup</a></li>
-        <li><a href="#capture-template--s--for-denote"><span class="org-todo todo TODO">TODO</span> Capture template(s) for Denote</a></li>
+        <li><a href="#denote-templates"><span class="org-todo todo TODO">TODO</span> Denote templates</a></li>
+        <li><a href="#convenience-commands-for-journal-entries"><span class="org-todo todo TODO">TODO</span> &ldquo;convenience commands&rdquo; for journal entries</a></li>
         <li><a href="#keybindings"><span class="org-todo todo TODO">TODO</span> Keybindings</a></li>
+        <li><a href="#org-journal-for-journaling-requirements"><span class="org-todo todo TODO">TODO</span> <code>org-journal</code> for journaling requirements</a></li>
       </ol>
     </li>
     <li><a href="#version-control">Version control</a>
@@ -2501,6 +2675,7 @@ buffer to vterm so it sticks to the window it was launched with.</p>
         <li><a href="#a-few-more-useful-configurations">A few more useful configurations</a></li>
         <li><a href="#richer-annotations-in-minubuffer">Richer annotations in minubuffer</a></li>
         <li><a href="#consult-adds-more-minibuffer-functionality">Consult adds more minibuffer functionality</a></li>
+        <li><a href="#consult-interface-for-denote"><span class="org-todo todo TODO">TODO</span> Consult interface for denote</a></li>
         <li><a href="#embark-actions-reorganise"><span class="org-todo todo TODO">TODO</span> Embark - actions; reorganise</a></li>
       </ol>
     </li>
@@ -2519,6 +2694,7 @@ buffer to vterm so it sticks to the window it was launched with.</p>
         </li>
         <li><a href="#editor-theme">Editor theme</a>
           <ol>
+            <li><a href="#ef-themes">ef-themes</a></li>
             <li><a href="#modus-from-protesilaos">Modus from Protesilaos!</a></li>
             <li><a href="#commentary">Commentary</a></li>
             <li><a href="#my-themes">My themes</a></li>
@@ -2615,6 +2791,7 @@ buffer to vterm so it sticks to the window it was launched with.</p>
         <li><a href="#c-and-c-plus-plus">C and C++ ???</a></li>
         <li><a href="#el-doc-for-help-in-echo-area">El Doc for help in echo area</a></li>
         <li><a href="#zig-mode">Zig mode</a></li>
+        <li><a href="#yaml">Yaml</a></li>
       </ol>
     </li>
     <li><a href="#terminal">Terminal</a></li>

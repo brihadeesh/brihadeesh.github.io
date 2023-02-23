@@ -9,7 +9,16 @@
     <managingEditor>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</managingEditor>
     <webMaster>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 16:24:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog revamp and starting to understand Hugo better</title>
+      <link>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
+      <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
+      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
+      <guid>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
+      <description>I&amp;rsquo;d decided to make the switch to a blogging workflow that I could use with Emacs back in December and wrote about setting it up from scratch. Since I wasn&amp;rsquo;t yet acquainted with writing original layout templates, style-sheets or with organising content into sections in as simple and sane a manner as I wanted to, I&amp;rsquo;d settled for outsourcing most of this to a fairly basic theme. Over time, I grew dissatisfied with how the site looked and how it organised my content and so I spent some time customising the theme, which took a while to figure out.</description>
+    </item>
+    
     <item>
       <title>Having to use Windows, reluctantly</title>
       <link>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</link>
@@ -92,15 +101,6 @@ Have any of you wondered what feral cats and many domestic cats do at night?</de
       <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
       <guid>https://brihadeesh.github.io/fiction/2012/05/ahab.html</guid>
       <description>The disturbed man woke from violent sleep. He wondered to himself of the soundness of his reasons for absence from the deck. His illness. The numerous days that were spent in solitude were of good use to him but wasn&amp;rsquo;t there a better and simpler way of achieving such a thing as confidence? One evasive whale and a megalomaniac at its ghostly tail. If there existed such means, could he have employed it?</description>
-    </item>
-    
-    <item>
-      <title>about me</title>
-      <link>https://brihadeesh.github.io/about.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/about.html</guid>
-      <description>I&amp;rsquo;m a 27 year old, neurodivergent cat supremacist that sometimes cosplays as an ecologist. I&amp;rsquo;m big on F(L)OSS and currently run a Void Linux installation with a manually compiled version of Emacs 29. I also play the guitar, listen to typically a lot of metal and try to make my own music occasionally. I currently use Ardour 7.0 for audio production, which I&amp;rsquo;m very new to, and hope to get started with the Sonic Pi as both a standalone instrument as well as a synth for instruments I don&amp;rsquo;t play myself.</description>
     </item>
     
   </channel>

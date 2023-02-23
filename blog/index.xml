@@ -9,11 +9,126 @@
     <managingEditor>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</managingEditor>
     <webMaster>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 23 Feb 2023 16:24:00 +0530</lastBuildDate>
     
 	<atom:link href="https://brihadeesh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Blog revamp and starting to understand Hugo better</title>
+      <link>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
+      <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
+      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
+      <guid>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d decided to make the switch to a blogging workflow that I could use
+with Emacs back in December and &lt;a href=&#34;../blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html&#34;&gt;wrote about&lt;/a&gt; setting it up from
+scratch. Since I wasn&amp;rsquo;t yet acquainted with writing original layout
+templates, style-sheets or with organising content into sections in as
+simple and sane a manner as I wanted to, I&amp;rsquo;d settled for outsourcing
+most of this to a fairly &lt;a href=&#34;https://github.com/LukasJoswiak/etch&#34;&gt;basic theme&lt;/a&gt;. Over time, I grew dissatisfied
+with how the site looked and how it organised my content and so I
+spent some time customising the theme, which took a while to figure
+out. I wasn&amp;rsquo;t happy with it still. I then tried changing themes a few
+times but couldn&amp;rsquo;t find anything that really worked for me. That I
+didn&amp;rsquo;t want any JavaScript I didn&amp;rsquo;t understand, or could understand
+for that matter, effectively eliminated a lot of the options I had
+considered.&lt;/p&gt;
+&lt;p&gt;It then dawned on me that I could maybe attempt writing a theme for
+myself from (nearly) scratch when I found two themes that seemed to
+check out most of my requirements. The first of these was &lt;a href=&#34;https://github.com/mavidser/hugo-rocinante/&#34;&gt;rocinante&lt;/a&gt; by
+&lt;a href=&#34;https://github.com/mavidser&#34;&gt;Sid Verma&lt;/a&gt;, a great and adequately minimal theme with added support for
+photo albums as posts. My only qualms with it were the somewhat messy
+style sheets and cryptic templates that made personalising a bit of an
+ordeal. The second, however, was simply genius and it took me close to
+no time to figure it out, despite thinking it to be too advanced for
+me - there was no theme sub-module and everything was in the home
+directory it was from somebody&amp;rsquo;s personal website.&lt;/p&gt;
+&lt;p&gt;Needless to say, it was Drew DeVault&amp;rsquo;s and I&amp;rsquo;d seen it as something of
+an inspiration from the start. A quick glance at &lt;a href=&#34;https://drewdevault.com&#34;&gt;Drew Devault&amp;rsquo;s blog&lt;/a&gt;
+should convey what I mean by minimal and functional. I jumped right
+into a local clone of his &lt;a href=&#34;https://git.sr.ht/~sircmpwn/drewdevault.com&#34;&gt;sourcehut repo&lt;/a&gt; and got down to making it my
+own. I added some minor spice to the &lt;code&gt;single.html&lt;/code&gt; layout under &lt;code&gt;blog&lt;/code&gt; and
+made an additional few for&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;posts from my Wordpress blog I didn&amp;rsquo;t want listed on the homepage&lt;/li&gt;
+&lt;li&gt;a section index that listed the above&lt;/li&gt;
+&lt;li&gt;fiction (just the one post)&lt;/li&gt;
+&lt;li&gt;an &lt;em&gt;About me&lt;/em&gt; page (not a section, unlike before)&lt;/li&gt;
+&lt;li&gt;the browser friendly copy of my &lt;a href=&#34;../emacs/literate-emacs-configuration.html&#34;&gt;Literate Emacs Configuration&lt;/a&gt; with a
+table of contents in the sidebar and heading anchors.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I realised I didn&amp;rsquo;t want unnecessary taxonomy pages like before or
+like those from the rocinante theme and that all my regular blog
+posts, Emacs configuration and fiction on the homepage. The prospect
+of having to write descriptions for each of these - had I maintained
+separate sections for each like before - was daunting, to say the
+least.&lt;/p&gt;
+&lt;p&gt;I also loved the idea of displaying &amp;ldquo;featured posts&amp;rdquo; from the blogs I
+follow through Drew&amp;rsquo;s own &lt;a href=&#34;https://git.sr.ht/~sircmpwn/openring&#34;&gt;openring&lt;/a&gt;, written in Go. The only issue I
+encountered was with adding this to the Github actions workflows since
+it&amp;rsquo;s not as straightforward as the one Sourcehut uses and the absurdly
+large number of modules is mind-boggling. Until I find a way of
+getting this automated, I&amp;rsquo;ll have to keep at running the command
+manually every few days before committing/pushing changes.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openring &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -s https://drewdevault.com/blog/index.xml &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -s https://sourcehut.org/blog/index.xml &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    -s https://ambikamath.com/feed/ &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &amp;lt; webring-in.template &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &amp;gt; layouts/partials/webring-out.html
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There were also some issues with date handling in the ox-hugo setup
+and I ended up rewriting the org-capture template to allow for entries
+into both the main blog section and the miscellaneous one. The capture
+template now looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;with-eval-after-load&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;org-capture&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;defun&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-hugo-new-post-capture&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s&#34;&gt;&amp;#34;Returns &lt;/span&gt;&lt;span class=&#34;ss&#34;&gt;`org-capture&amp;#39;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; template string for new Hugo post.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;See &lt;/span&gt;&lt;span class=&#34;ss&#34;&gt;`org-capture-templates&amp;#39;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; for more information.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;let*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;;; http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;format-time-string&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;org-time-stamp-format&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;:long&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;:inactive&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;org-current-time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;read-from-minibuffer&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Post Title: &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;;Prompt to enter the post title&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;fname&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;org-hugo-slug&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;plist-get&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-capture-plist&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;:section&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;lastmod&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;plist-get&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-capture-alist&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;:lastmod&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;mapconcat&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;#&amp;#39;identity&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                 &lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;* DRAFT &amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;s&#34;&gt;&amp;#34;:PROPERTIES:&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;section&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;:EXPORT_FILE_NAME: &amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;fname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;:EXPORT_HUGO_AUTO_SET_LASTMOD: &amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;lastmod&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;c1&#34;&gt;;; Enter current date and time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;:EXPORT_DATE: &amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;s&#34;&gt;&amp;#34;:END:&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;c1&#34;&gt;;; Place the cursor here finally&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                   &lt;span class=&#34;s&#34;&gt;&amp;#34;%?\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                 &lt;span class=&#34;s&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;setq&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-capture-templates&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;;;`org-capture&amp;#39; binding + h&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;o&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;h&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;s&#34;&gt;&amp;#34;Hugo blog post&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nv&#34;&gt;entry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;file+olp&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;~/my_gits/brihadeesh.github.io/content-org/blog/posts.org&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Posts&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-hugo-new-post-capture&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;:section&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;:EXPORT_HUGO_SECTION: blog&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;:lastmod&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;c1&#34;&gt;;; `org-capture&amp;#39; binding + m&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;m&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;s&#34;&gt;&amp;#34;Hugo miscellaneous blog post&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nv&#34;&gt;entry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;file+olp&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;~/my_gits/brihadeesh.github.io/content-org/blog/posts.org&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Miscellaneous&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-hugo-new-post-capture&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;:section&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;:EXPORT_HUGO_SECTION: misc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;:lastmod&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;f&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s about it for now. I deliberately kept this brief and avoided
+discussing a bunch of tangential points like design choices and the
+&amp;ldquo;criteria&amp;rdquo; for making this the best starting point for my blog. I&amp;rsquo;ll
+perhaps cover those in later articles.&lt;/p&gt;
+</description>
+    </item><item>
       <title>Having to use Windows, reluctantly</title>
       <link>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate>

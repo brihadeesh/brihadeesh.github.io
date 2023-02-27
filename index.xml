@@ -9,7 +9,16 @@
     <managingEditor>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</managingEditor>
     <webMaster>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Thu, 23 Feb 2023 16:24:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Feb 2023 23:28:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Albums of the Year (2022)</title>
+      <link>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</link>
+      <pubDate>Mon, 27 Feb 2023 23:28:00 +0530</pubDate>
+      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
+      <guid>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</guid>
+      <description>I dread publishing lists of this kind especially because ranking things was never something I enjoyed and since I have a tendency to forget artists and albums, often even those that I listen to regularly. I also remember bands by sound and almost inevitably refuse to keep track of when artists I like release new music. This is in no sense complete nor could I get myself to write about each of the albums - I&amp;rsquo;ll perhaps get down to this sometime later.</description>
+    </item>
+    
     <item>
       <title>Blog revamp and starting to understand Hugo better</title>
       <link>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
@@ -92,15 +101,6 @@
       <guid>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</guid>
       <description>We all love cats, but are they really what we believe them to be? A common perception is that cats are lazy animals and prefer sleeping though most of the day. But has anyone actually seen a cat hunt? Their feline agility coupled with a primal necessity to kill make for an extremely dangerous animal to keep.
 Have any of you wondered what feral cats and many domestic cats do at night?</description>
-    </item>
-    
-    <item>
-      <title>Ahab</title>
-      <link>https://brihadeesh.github.io/fiction/2012/05/ahab.html</link>
-      <pubDate>Tue, 01 May 2012 21:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/fiction/2012/05/ahab.html</guid>
-      <description>The disturbed man woke from violent sleep. He wondered to himself of the soundness of his reasons for absence from the deck. His illness. The numerous days that were spent in solitude were of good use to him but wasn&amp;rsquo;t there a better and simpler way of achieving such a thing as confidence? One evasive whale and a megalomaniac at its ghostly tail. If there existed such means, could he have employed it?</description>
     </item>
     
   </channel>

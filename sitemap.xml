@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</loc>
-    <lastmod>2023-02-23T16:24:00+05:30</lastmod>
+    <loc>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</loc>
+    <lastmod>2023-02-27T23:28:00+05:30</lastmod>
   </url><url>
     <loc>https://brihadeesh.github.io/blog.html</loc>
-    <lastmod>2023-02-23T16:24:00+05:30</lastmod>
+    <lastmod>2023-02-27T23:28:00+05:30</lastmod>
   </url><url>
     <loc>https://brihadeesh.github.io/</loc>
-    <lastmod>2023-02-25T19:40:23+05:30</lastmod>
+    <lastmod>2023-02-27T23:28:00+05:30</lastmod>
+  </url><url>
+    <loc>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</loc>
+    <lastmod>2023-02-23T16:24:00+05:30</lastmod>
   </url><url>
     <loc>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</loc>
     <lastmod>2022-12-09T00:00:00+05:30</lastmod>

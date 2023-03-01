@@ -3,11 +3,24 @@ oauth: pages.sr.ht/PAGES:RW
 packages:
 - hut
 - hugo
+- go
+sources:
+  - https://git.sr.ht/~sircmpwn/openring
 environment:
   site: peregrinator.srht.site
 tasks:
+- openring: |
+    cd openring
+    go build -o openring
+    sudo cp openring /usr/local/bin/
 - build: |
     cd $site
+    /usr/local/bin/openring \
+    -s https://drewdevault.com/blog/index.xml \
+    -s https://sourcehut.org/blog/index.xml \
+    -s https://ambikamath.com/feed/ \
+    < webring-in.template \
+    > layouts/partials/webring-out.html
     hugo
 - package: |
     tar -C public -cvz . > ../site.tar.gz

@@ -23,6 +23,6 @@ tasks:
     > layouts/partials/webring-out.html
     hugo
 - package: |
-    tar -C public -cvz . > ../site.tar.gz
+    tar -C public -cvz . > site.tar.gz
 - upload: |
     hut pages publish -d $site site.tar.gz

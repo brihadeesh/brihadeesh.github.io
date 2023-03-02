@@ -3,12 +3,15 @@
 #+HUGO_URL: /emacs/literate_emacs_configuration.html
 #+HUGO_PUBLISHDATE: 2021-12-04 Sat
 #+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_CUSTOM_FRONT_MATTER: :autonumbering true
+#+options: h:7 num:6
+#+STARTUP: oddeven overview
 
 #+title: Literate Emacs Configuration
 
 This is a copy of my literate configuration for Emacs and if you're
 viewing this anywhere else, don't! Because you can find a readable
-version on my [[https://brihadeesh.github.io/emacs/literate-emacs-configuration.html][website]]. You can also find a source-based version with
+version on my [[https://peregrinator.srht.site/emacs/literate-emacs-configuration.html][website]]. You can also find a source-based version with
 the rest of my =~/.emacs.d= on my [[https:git.sr.ht/~peregrinator/.emacs.d][sourcehut]].
 
 
@@ -301,7 +304,7 @@ about.
 
 * Prerequisites
 
-*** Reload Emacs configuration
+** Reload Emacs configuration
 
   I'm not sure I understand how this works entirely but [[https://github.com/joseph8th/literatemacs#tangle-and-reload][joseph8th's repo]]
   suggests using =M-: (load-file user-init-file) RET= or evaluating that
@@ -317,7 +320,7 @@ about.
   #+end_src
 
 
-*** Ensure UTF-8
+** Ensure UTF-8
 
   #+begin_src emacs-lisp
     (set-language-environment 'utf-8)
@@ -327,7 +330,7 @@ about.
 
 
 
-*** Whoami
+** Whoami
 
   #+begin_src emacs-lisp
     (setq user-full-name "peregrinator"
@@ -429,7 +432,7 @@ about.
 
     #+end_src
 
-**** Fixed pitch for everything code
+*** Fixed pitch for everything code
 
 #+begin_src emacs-lisp
 
@@ -449,7 +452,7 @@ about.
 
 #+end_src
 
-**** Quick source block templates
+*** Quick source block templates
 
 These can be run by typing an angle bracket with the shortcut and
 hitting =<TAB>=.
@@ -490,7 +493,7 @@ and needs some debugging.
 
 #+end_src
 
-**** TODO Babel
+*** TODO Babel
 
 This might require =org-contrib=.
 
@@ -507,7 +510,7 @@ This might require =org-contrib=.
 
 #+end_src
 
-**** New folding backend
+*** New folding backend
 
 This came with the Org 9.6 release on <2022-11-29 Tue> and I got the
 tea from the Org [[https://orgmode.org/Changes.html][changes]] post. This is optimised for files that are
@@ -521,7 +524,7 @@ while. Probably some unrelated issue.
 
 #+end_src
 
-**** TODO Sources for agenda tasks
+*** TODO Sources for agenda tasks
 
 Generates an agenda from wildcarded org files from the specified
 directory
@@ -533,19 +536,19 @@ directory
 
 #+end_src
 
-**** Tags and todo-keywords config
+*** Tags and todo-keywords config
 
  Todo-keywords are things like ~TODO~ and ~DONE~ and so on. Tags are for
  classifying stuff by the general theme of what's being talked about.
 
-***** todo-keywords
+**** todo-keywords
 
 #+begin_src emacs-lisp
   (setq org-todo-keywords
         '((sequence "TODO(t)" "|" "DONE(d!)" "DISABLED(f!)")))
 #+end_src
 
-***** DISABLED tags
+**** DISABLED tags
 :PROPERTIES:
 :HEADER-ARGS: tangle no
 :VISIBILITY: folded
@@ -561,7 +564,7 @@ directory
                         )))
 #+end_src
 
-**** Org-capture
+*** Org-capture
 
 Global keybinding for org-capture
 
@@ -580,14 +583,14 @@ easier. Perhaps to start off, [[https://orgmode.org/worg/org-tutorials/index.htm
 place to start. I've also got a simple enough config from a reddit
 post in my [[file:person_el/sample-org-setup.el][unused local elisp libs]] too.
 
-**** Display features
+*** Display features
 
 In the spirit of reclaiming some semblance of organisation in this
 file, I've tried to group settings by the what aspect they
 change. Hopefully this continues and the rest of the Org mode
 configuration can be split up.
 
-***** Autoindent/autofill turned on automatically
+**** Autoindent/autofill turned on automatically
 
 #+begin_src emacs-lisp
 
@@ -599,7 +602,7 @@ configuration can be split up.
 
 #+end_src
 
-***** Minad's modern UI for org-mode
+**** Minad's modern UI for org-mode
 
 Was maintaining a [[https://github.com/brihadeesh/org-modern][fork]] but I guess it's too much work - should
 considering getting back at it sometime. I was having issues with =TODO=
@@ -637,7 +640,7 @@ code segments in text.
 
 #+end_src
 
-***** DISABLED Rougier's svg-tag-mode                                 :noexport:
+**** DISABLED Rougier's svg-tag-mode                                  :noexport:
 :PROPERTIES:
 :header-args: :tangle no
 :VISIBILITY: folded
@@ -731,7 +734,7 @@ code segments in text.
     )
 #+end_src
 
-***** Display emphasis markers on hover
+**** Display emphasis markers on hover
 
 This package makes it much easier to edit Org documents when
 org-hide-emphasis-markers is turned on. It temporarily shows the
@@ -744,7 +747,7 @@ characters!
     :hook (org-mode . org-appear-mode))
 #+end_src
 
-***** Better commenting in org-mode code-blocks
+**** Better commenting in org-mode code-blocks
 
 Got this from a [[https://emacs.stackexchange.com/a/19741/23936][Stack Exchange answer]] to work around messed up
 commenting using the default ~C-x C-;~ command. The older/default
@@ -764,7 +767,7 @@ command messes up lines, undos, and sometimes comment syntax as well.
 
 #+end_src
 
-***** TOC for org-mode files
+**** TOC for org-mode files
 
 #+begin_src emacs-lisp
   (use-package toc-org
@@ -779,39 +782,7 @@ Alternatively
   :hook (org-mode . org-make-toc-mode))
 #+end_src
 
-***** Convert all org-keywords/block identifiers to lowercase
-
-
-  It's always nice to see random people online that are crazy like you
-  and are nice enough to write elisp code for the shit you need. Stolen
-  from [[https://scripter.co/org-keywords-lower-case/][Kaushal Modi]]
-
-  #+begin_src emacs-lisp
-  (defun peremacs/lower-case-org-keywords ()
-    "Lower case Org keywords and block identifiers.
-
-  Example: \"#+TITLE\" -> \"#+title\"
-           \"#+BEGIN_EXAMPLE\" -> \"#+begin_example\"
-
-  Inspiration:
-  https://code.orgmode.org/bzg/org-mode/commit/13424336a6f30c50952d291e7a82906c1210daf0."
-    (interactive)
-    (save-excursion
-      (goto-char (point-min))
-      (let ((case-fold-search nil)
-            (count 0))
-        ;; Match examples: "#+foo bar", "#+foo:", "=#+foo=", "~#+foo~",
-        ;;                 "‘#+foo’", "“#+foo”", ",#+foo bar",
-        ;;                 "#+FOO_bar<eol>", "#+FOO<eol>".
-        (while (re-search-forward "\\(?1:#\\+[A-Z_]+\\(?:_[[:alpha:]]+\\)*\\)\\(?:[ :=~’”]\\|$\\)" nil :noerror)
-          (setq count (1+ count))
-          (replace-match (downcase (match-string-no-properties 1)) :fixedcase nil nil 1))
-        (message "Lower-cased %d matches" count))))
-  #+end_src
-
-
-
-
+**** Convert all org-keywords/block identifiers to lowercase
 
   It's always nice to see random people online that are crazy like you
   and are nice enough to write elisp code for the shit you need. Stolen
@@ -976,7 +947,9 @@ This source block continues into the next section.
 Additional setup for streamlining writing posts on the static site:
 
 
-**** Blogging flow based on the [[https://ox-hugo.scripter.co/doc/org-capture-setup/][capture templates]] in the documentation
+**** Blogging flow
+
+Based on the capture templates [[https://ox-hugo.scripter.co/doc/org-capture-setup/][documentation]].
 
 This function is called on invoking the org-capture (see next
 section). This particular function adds a date below the header marked
@@ -1050,7 +1023,7 @@ See `org-capture-templates' for more information."
 
 
 
-*** DISABLED go-org based workflow                                    :noexport:
+*** DISABLED go-org based workflow                                  :noexport:
 :PROPERTIES:
 :header-args: :tangle no
 :VISIBILITY: folded
@@ -1490,7 +1463,7 @@ just make this workable with the termux version of Emacs.
 
 * Version control
 
-*** Git with Magit and gists with =gist.el=
+** Git with Magit and gists with =gist.el=
 
   #+name: magit-config
   #+begin_src emacs-lisp
@@ -1506,7 +1479,7 @@ just make this workable with the termux version of Emacs.
   #+end_src
 
 
-*** Undo tree
+** Undo tree
 
   Helps revert to older versions of files in case I fuck up something
   somewhere. Hmm. I doubt I ever use it so disabling it now.
@@ -1544,7 +1517,7 @@ This needs a ton of work
 * Minibuffer completion
 
 
-** DISABLED Prescient command history with =M-x= :noexport:
+** DISABLED Prescient command history with =M-x=                        :noexport:
 :PROPERTIES:
 :header-args: :tangle no
 :VISIBILITY: folded
@@ -1573,7 +1546,7 @@ laptop more like it.
   #+end_src
 
 
-** DISABLED Selectrum for completions UI :noexport:
+** DISABLED Selectrum for completions UI                             :noexport:
 :PROPERTIES:
 :header-args: :tangle no
 :VISIBILITY: folded
@@ -3597,7 +3570,7 @@ see [[https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d
 
 
 
-** DISABLED ERC for IRC                                             :noexport:
+** DISABLED ERC for IRC                                               :noexport:
 :PROPERTIES:
 :header-args: :tangle no
 :VISIBILITY: folded

@@ -2,7 +2,6 @@
 title = "Hugo, Org and starting over at a new blog"
 author = ["peregrinator"]
 date = 2022-12-05T00:00:00+05:30
-lastmod = 2022-12-05T00:00:00+05:30
 draft = false
 series = "Blogging with Emacs"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Moved to Sourcehut!"
 author = ["peregrinator"]
-date = 2023-03-04T03:43:00+05:30
+date = 2023-03-04T03:47:00+05:30
 draft = false
 +++
 
@@ -41,7 +41,7 @@ and I'm starting to get more confident around git.
 ## Content restrictions {#content-restrictions}
 
 The biggest "hit" I've taken is the restrictions on third-party
-content - see [Albulms of the Year](/blog/2023/02/albums-of-the-year-2022.html), my last post for example. The
+content - see [Albums of the Year](/blog/2023/02/albums-of-the-year-2022.html), my last post for example. The
 Sourcehut site documentation states that they disallow external
 style-sheets, especially those accessed via CDNs but crucially
 third-party embedded content[^fn:1]. This shouldn't mean

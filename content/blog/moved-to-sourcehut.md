@@ -1,8 +1,8 @@
 +++
 title = "Moved to Sourcehut!"
 author = ["peregrinator"]
-date = 2023-03-04T03:16:00+05:30
-draft = true
+date = 2023-03-04T03:30:00+05:30
+draft = false
 +++
 
 I wrote to Drew DeVault a couple of days back, after much deliberation

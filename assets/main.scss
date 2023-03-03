@@ -144,24 +144,19 @@ article {
     }
 
     h3 {
-	font-size: 1.25rem;
+	font-size: 1.2rem;
     }
 
     h4 {
-	font-size: 1.17rem;
+	font-size: 1.13rem;
     }
 
     h5 {
-	font-size: 1.1rem;
-    }
-
-    h6 {
 	font-size: 1rem;
     }
 
     .org-todo {
-	font-size: 0.8em;
-	font-weight: 700;
+	font-size: 80%;
     }
     /* *** Org TODO set to TODO state */
     .org-todo.todo {
@@ -177,26 +172,37 @@ article {
 	text-decoration: none;
 	visibility: hidden;
 	font-size: 85%;
-	color:#888;
+	color: #888;
 	transition: color 0.1s ease-in-out;
+
+	&:hover {
+	    color: #5544FF;
+	}
     }
 
-    h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+    h2:hover a, h3:hover a, h4:hover a, h5:hover a {
 	visibility: visible;
-	text-decoration: none;
-	color: #5544FF;
+	color: #888;
     }
 
     .comment {
-	margin: 4rem auto;
-	max-width: 60%;
+	margin: 4rem auto 0;
+	width: 620px;
 	color: #888;
-	font-size: 0.8rem;
+    }
+
+    .comment p {
+	font-size: 80%;
+	line-height: 1.1;
     }
 }
 
 .footnotes {
     font-size: 0.85rem;
+}
+
+.footnote-ref {
+    text-decoration: underline;
 }
 
 footer {
@@ -224,11 +230,10 @@ footer {
 
 pre {
     background-color: #eee;
-    margin-right: -1rem;
+    margin: 0 -1rem;
     padding: 0 1rem 1rem 1rem;
     max-width: 100%;
-    overflow-x: auto;
-    font-size: 0.9rem;
+    font-size: 90%;
     overflow-x: auto;
 
     .cp {

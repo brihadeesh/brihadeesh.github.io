@@ -1,7 +1,7 @@
 +++
 title = "Moved to Sourcehut!"
 author = ["peregrinator"]
-date = 2023-03-04T03:30:00+05:30
+date = 2023-03-04T03:43:00+05:30
 draft = false
 +++
 
@@ -13,7 +13,7 @@ access. And I've finally done it! The blog that started off titled
 _peregrinator's sourcehut site_ along with an explanation on why it was
 called that while hosted on Github-pages. In any case, this brings me
 closer to what I've got planned for my internet presence - minimal and
-without javascript.
+without JavaScript.
 
 Although I'm pleased with how this has _simplified_ a lot of things,
 this also means a few new things to keep in mind for me and this is
@@ -41,9 +41,10 @@ and I'm starting to get more confident around git.
 ## Content restrictions {#content-restrictions}
 
 The biggest "hit" I've taken is the restrictions on third-party
-content. The Sourcehut site documentation states that they disallow
-external style-sheets, especially those accessed via CDNs but
-crucially third-party embedded content[^fn:1]. This shouldn't mean
+content - see [Albulms of the Year](/blog/2023/02/albums-of-the-year-2022.html), my last post for example. The
+Sourcehut site documentation states that they disallow external
+style-sheets, especially those accessed via CDNs but crucially
+third-party embedded content[^fn:1]. This shouldn't mean
 much to most - especially if the content of blog posts is text and
 some code - but since some of my posts are about music, I find that
 this restriction gets in my way. I cannot add embedded albums or
@@ -59,12 +60,13 @@ the embedded Bandcamp content.
 
 ```html+
 
+Find them on <a href="{{ .Get "url" }}">Bandcamp</a>
 <iframe style="border: 0; width: 400px; height: 42px;"
     src="https://bandcamp.com/EmbeddedPlayer/album={{ .Get "id" }}/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless>
 </iframe>
-Find them <a href="{{ .Get "url" }}">on Bandcamp</a>
 ```
 
 [^fn:1]: See the documentation for
-    _Limitations_ with Sourcehut sites at [srht.site](https://srht.site/limitations)
-[^fn:2]: **ADD CITATION?**
+    _Limitations_ with Sourcehut sites at [https://srht.site](https://srht.site/limitations); the rest don't
+    affect me as much
+[^fn:2]: _Citation?_

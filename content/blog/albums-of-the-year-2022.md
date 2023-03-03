@@ -1,7 +1,7 @@
 +++
 title = "Albums of the Year (2022)"
 author = ["peregrinator"]
-date = 2023-02-03T17:24:00+05:30
+date = 2023-02-27T17:24:00+05:30
 draft = false
 +++
 
@@ -118,7 +118,7 @@ dark but it’s really hard to describe them without sounding insane.
 ## Meshuggah - Immutable {#meshuggah-immutable}
 
 I came to realise they had a new release out when I saw and absurd
-“meme” video on Youtube. It’s got the usual sick groove but I could
+“meme” [video](https://www.youtube.com/watch?v=eX4GOltUDdA) on Youtube. It’s got the usual sick groove but I could
 have sworn a pronounced blackening to their riffs.
 
 {{< youtube id="eX4GOltUDdA" title="Your Coworker hates Meshuggah" >}}

@@ -1218,7 +1218,7 @@ indicates.
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog
 :EXPORT_FILE_NAME: moved-to-sourcehut
-:EXPORT_DATE: [2023-03-04 Sat 03:47]
+:EXPORT_DATE: [2023-03-04 Sat 03:51]
 :END:
 
 I wrote to Drew DeVault a couple of days back, after much deliberation
@@ -1496,6 +1496,8 @@ shuffling though Spotify's "Fans also like" or the abomination this is
 their landing screen, on my phone, that I feel like that discomfort
 returns. This must be a neurodivergent thing because no-one else I've
 met has ever shared anything even remotely similar.
+
+
 * Miscellaneous
 ** DONE Sustainability and the Common Man
 :PROPERTIES:

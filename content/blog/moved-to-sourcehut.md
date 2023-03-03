@@ -1,7 +1,7 @@
 +++
 title = "Moved to Sourcehut!"
 author = ["peregrinator"]
-date = 2023-03-04T03:47:00+05:30
+date = 2023-03-04T03:51:00+05:30
 draft = false
 +++
 

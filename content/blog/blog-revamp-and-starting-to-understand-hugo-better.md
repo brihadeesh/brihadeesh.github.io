@@ -3,7 +3,6 @@ title = "Blog revamp and starting to understand Hugo better"
 author = ["peregrinator"]
 date = 2023-02-23T16:24:00+05:30
 draft = false
-series = "Blogging with Emacs"
 +++
 
 I'd decided to make the switch to a blogging workflow that I could use
@@ -11,7 +10,7 @@ with Emacs back in December and [wrote about](/blog/2022/12/hugo-org-and-startin
 scratch. Since I wasn't yet acquainted with writing original layout
 templates, style-sheets or with organising content into sections in as
 simple and sane a manner as I wanted to, I'd settled for outsourcing
-most of this to a fairly [basic theme](https://github.com/LukasJoswiak/etch). Over time, I grew dissatisfied
+most of this to a fairly [basic theme](https:/github.com/LukasJoswiak/etch). Over time, I grew dissatisfied
 with how the site looked and how it organised my content and so I
 spent some time customising the theme, which took a while to figure
 out. I wasn't happy with it still. I then tried changing themes a few
@@ -35,15 +34,15 @@ Needless to say, it was Drew DeVault's and I'd seen it as something of
 an inspiration from the start. A quick glance at [Drew Devault's blog](https://drewdevault.com)
 should convey what I mean by minimal and functional. I jumped right
 into a local clone of his [sourcehut repo](https://git.sr.ht/~sircmpwn/drewdevault.com) and got down to making it my
-own. I added some minor spice to the `single.html` layout under `blog` and
-made an additional few for
+own. I added some minor spice to the \`single.html\` layout under \`blog\`
+and made an additional few for
 
 1.  posts from my Wordpress blog I didn't want listed on the homepage
 2.  a section index that listed the above
 3.  fiction (just the one post)
 4.  an _About me_ page (not a section, unlike before)
-5.  the browser friendly copy of my [Literate Emacs Configuration](/emacs/literate_emacs_configuration.html) with a
-    table of contents in the sidebar and heading anchors.
+5.  the browser friendly copy of my [Literate Emacs Configuration](/emacs/literate_emacs_configuration.html) with
+    a table of contents in the sidebar and heading anchors.
 
 I realised I didn't want unnecessary taxonomy pages like before or
 like those from the rocinante theme and that all my regular blog

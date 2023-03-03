@@ -1218,7 +1218,7 @@ indicates.
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog
 :EXPORT_FILE_NAME: moved-to-sourcehut
-:EXPORT_DATE: [2023-03-04 Sat 03:30]
+:EXPORT_DATE: [2023-03-04 Sat 03:43]
 :END:
 
 I wrote to Drew DeVault a couple of days back, after much deliberation
@@ -1229,7 +1229,7 @@ access. And I've finally done it! The blog that started off titled
 /peregrinator's sourcehut site/ along with an explanation on why it was
 called that while hosted on Github-pages. In any case, this brings me
 closer to what I've got planned for my internet presence - minimal and
-without javascript.
+without JavaScript.
 
 
 Although I'm pleased with how this has /simplified/ a lot of things,
@@ -1256,16 +1256,18 @@ and I'm starting to get more confident around git.
 *** Content restrictions
 
 The biggest "hit" I've taken is the restrictions on third-party
-content. The Sourcehut site documentation states that they disallow
-external style-sheets, especially those accessed via CDNs but
-crucially third-party embedded content[fn:1: See the documentation for
-/Limitations/ with Sourcehut sites at [[https://srht.site/limitations][srht.site]]]. This shouldn't mean
+content - see [[file:/blog/2023/02/albums-of-the-year-2022.html][Albulms of the Year]], my last post for example. The
+Sourcehut site documentation states that they disallow external
+style-sheets, especially those accessed via CDNs but crucially
+third-party embedded content[fn:1: See the documentation for
+/Limitations/ with Sourcehut sites at [[https://srht.site/limitations][https://srht.site]]; the rest don't
+affect me as much]. This shouldn't mean
 much to most - especially if the content of blog posts is text and
 some code - but since some of my posts are about music, I find that
 this restriction gets in my way. I cannot add embedded albums or
 tracks Bandcamp. Bandcamp is what I prefer when it comes to music
 since they're the most artist-friendly amongst streaming
-platforms[fn:2: *ADD CITATION?* ].
+platforms[fn:2: /Citation?/].
 
 I've since changed my Bandcamp shortcode from a minimal, single
 positional argument based kind to one that uses an additional URL
@@ -1275,10 +1277,10 @@ the embedded Bandcamp content.
 
 #+begin_src html+
 
+Find them on <a href="{{ .Get "url" }}">Bandcamp</a>
 <iframe style="border: 0; width: 400px; height: 42px;"
     src="https://bandcamp.com/EmbeddedPlayer/album={{ .Get "id" }}/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless>
 </iframe>
-Find them <a href="{{ .Get "url" }}">on Bandcamp</a>
 
 #+end_src
 

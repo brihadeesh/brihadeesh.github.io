@@ -14,7 +14,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>peregrinator's blog</title>
-    <link>https://brihadeesh.github.io</link>
+    <link>https://peregrinator.srht.site</link>
     <description>Recent content posts on {{ .Site.Title }}</description>
     <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}

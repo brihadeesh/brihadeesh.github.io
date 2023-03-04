@@ -42,7 +42,7 @@ h1 {
       style: regular;
       display: block;
       font-size: 1rem;
-      color: #888;
+      color: #555;
 
       .date {
 	  text-transform: uppercase;
@@ -78,8 +78,8 @@ h1 {
 
 	.date {
 	    display: block;
-	    color: #333;
-	    text-transform: uppercase;
+	    color: #555;
+	    // text-transform: uppercase;
 	}
     }
 
@@ -184,32 +184,36 @@ article {
 	visibility: visible;
 	color: #888;
     }
+}
 
-    .comment {
-	margin: 4rem auto 0;
-	width: 620px;
-	color: #888;
-    }
+.comment {
+    margin: 4rem auto 0;
+}
 
-    .comment p {
-	font-size: 80%;
-	line-height: 1.1;
-    }
+.muted {
+    color: #555;
+    font-style: italic;
+    font-size: 95%;
+    width: 90%;
 }
 
 .footnotes {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
-.footnote-ref {
-    text-decoration: underline;
+a.footnote-ref::before {
+    content: '[';
+}
+
+a.footnote-ref::after {
+    content: ']';
 }
 
 footer {
     margin-top: 2rem;
     text-align: center;
     font-size: 0.8rem;
-    color: #333;
+    color: #555;
 
     a, a:hover {
 	text-decoration: none
@@ -329,7 +333,7 @@ pre {
     }
 
     .date {
-	color: black;
+	color: #555;
     }
 }
 

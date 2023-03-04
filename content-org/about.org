@@ -23,10 +23,8 @@ exported to markdown via [[https://github.com/kaushalmodi/ox-hugo][ox-hugo]] for
 default [[https://github.com/niklasfasching/go-org][go-org]] parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html][post]] about it.
 
+The source for this website is on my [[https://git.sr.ht/~peregrinator/peregrinator.srht.site][Sourcehut]].
+
 * Publications
 
 This will be updated shortly.
-
-* Links
-
-[[https://github.com/brihadeesh/brihadeesh.github.io][Source]] for this website:

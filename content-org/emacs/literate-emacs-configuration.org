@@ -3559,13 +3559,14 @@ see [[https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d
 ** Elfeed for RSS
 
 #+begin_src emacs-lisp
-  (use-package elfeed
-    :commands elfeed
-    :config
-    (setq elfeed-feeds
-          '("https://drewdevault.com/blog/index.xml"
-            "https://sourcehut.org/blog/index.xml"
-            "https://ambikamath.com/feed/")))
+(use-package elfeed
+  :commands elfeed
+  :config
+  (setq elfeed-feeds
+        '("https://drewdevault.com/blog/index.xml"
+          "https://sourcehut.org/blog/index.xml"
+          "https://ambikamath.com/feed/"
+	  "https://emersion.fr/blog/atom.xml")))
 #+end_src
 
 

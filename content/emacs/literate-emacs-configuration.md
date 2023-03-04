@@ -2,7 +2,7 @@
 title = "Literate Emacs Configuration"
 author = ["peregrinator"]
 publishDate = 2021-12-04T00:00:00+05:30
-lastmod = 2023-03-03T00:56:23+05:30
+lastmod = 2023-03-04T21:24:15+05:30
 url = "/emacs/literate_emacs_configuration.html"
 draft = false
 autonumbering = true
@@ -3349,7 +3349,8 @@ see [daviwil's mail.org](https://github.com/daviwil/dotfiles/blob/9776d65c4486f2
   (setq elfeed-feeds
         '("https://drewdevault.com/blog/index.xml"
           "https://sourcehut.org/blog/index.xml"
-          "https://ambikamath.com/feed/")))
+          "https://ambikamath.com/feed/"
+          "https://emersion.fr/blog/atom.xml")))
 ```
 
 

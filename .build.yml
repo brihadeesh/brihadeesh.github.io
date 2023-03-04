@@ -19,6 +19,7 @@ tasks:
     -s https://drewdevault.com/blog/index.xml \
     -s https://sourcehut.org/blog/index.xml \
     -s https://ambikamath.com/feed/ \
+    -s https://emersion.fr/blog/atom.xml \
     < webring-in.template \
     > layouts/partials/webring-out.html
     hugo

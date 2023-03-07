@@ -9,14 +9,23 @@
     <managingEditor>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</managingEditor>
     <webMaster>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Mon, 27 Feb 2023 23:28:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Mar 2023 03:51:00 +0530</lastBuildDate><atom:link href="https://brihadeesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moved to Sourcehut!</title>
+      <link>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</link>
+      <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
+      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
+      <guid>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</guid>
+      <description>I wrote to Drew DeVault a couple of days back, after much deliberation on whether I should really bother him and the like, about free access to Sourcehut builds so I could move away from Github and Gitlab. He responded soon after that saying that he&amp;rsquo;d given me a year&amp;rsquo;s access. And I&amp;rsquo;ve finally done it! The blog that started off titled peregrinator&amp;rsquo;s sourcehut site along with an explanation on why it was called that while hosted on Github-pages is finally here!</description>
+    </item>
+    
     <item>
       <title>Albums of the Year (2022)</title>
       <link>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</link>
-      <pubDate>Mon, 27 Feb 2023 23:28:00 +0530</pubDate>
+      <pubDate>Mon, 27 Feb 2023 17:24:00 +0530</pubDate>
       <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
       <guid>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</guid>
-      <description>I dread publishing lists of this kind especially because ranking things was never something I enjoyed and since I have a tendency to forget artists and albums, often even those that I listen to regularly. I also remember bands by sound and almost inevitably refuse to keep track of when artists I like release new music. This is in no sense complete nor could I get myself to write about each of the albums - I&amp;rsquo;ll perhaps get down to this sometime later.</description>
+      <description>I dread publishing lists of this kind especially because ranking things was never something I enjoyed and since I have a tendency to forget artists and albums, often even those that I listen to regularly. I also remember bands by sound and almost inevitably refuse to keep track of when artists I like release new music. This is in no sense complete nor could I get myself to write about each of the albums - I’ll perhaps get down to this sometime later.</description>
     </item>
     
     <item>
@@ -63,7 +72,7 @@
       <pubDate>Tue, 06 Mar 2018 18:49:00 +0530</pubDate>
       <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
       <guid>https://brihadeesh.github.io/misc/2018/03/how-culture-has-affected-natural-selection-in-man.html</guid>
-      <description>Culture is arguably unique to humans. It possibly arose from the need to manage larger groups of people that congregated near agricultural fields as Jared Diamond suggests in Guns, Germs and Steel (Diamond 1998) although it may have originated in tribal or hunter-gatherer societies. It is strongly linked with religion which can viewed as a cement holding together larger population masses. Recent developments in its research suggests two perspectives of culture: an outcome of natural selection which considers humans part of “nature” and culture as a purely human construct which arose as a consequence of advanced emotional intelligence which natural selection (according to believers of this theory) cannot explain.</description>
+      <description>Culture is arguably unique to humans. It possibly arose from the need to manage larger groups of people that congregated near agricultural fields as Jared Diamond suggests in Guns, Germs and Steel1 although it may have originated in tribal or hunter-gatherer societies. It is strongly linked with religion which can viewed as a cement holding together larger population masses. Recent developments in its research suggests two perspectives of culture: an outcome of natural selection which considers humans part of “nature” and culture as a purely human construct which arose as a consequence of advanced emotional intelligence which natural selection (according to believers of this theory) cannot explain.</description>
     </item>
     
     <item>
@@ -91,16 +100,6 @@
       <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
       <guid>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution.html</guid>
       <description>Who does really understand evolution? (Wait, is it even true?!) Even if it is, who really has the better idea? What the hell did Darwin really do on the Beagle? Well, I have some answers. In this two-part essay, I will be discussing how to understand evolution as a concept and will be touching upon the babble behind the scenes. This part is a general background to the concept of evolution, dealing with the &amp;ldquo;story&amp;rdquo; behind it rather than the concepts themselves.</description>
-    </item>
-    
-    <item>
-      <title>A dark side to pets</title>
-      <link>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</link>
-      <pubDate>Fri, 15 Jan 2016 00:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</guid>
-      <description>We all love cats, but are they really what we believe them to be? A common perception is that cats are lazy animals and prefer sleeping though most of the day. But has anyone actually seen a cat hunt? Their feline agility coupled with a primal necessity to kill make for an extremely dangerous animal to keep.
-Have any of you wondered what feral cats and many domestic cats do at night?</description>
     </item>
     
   </channel>

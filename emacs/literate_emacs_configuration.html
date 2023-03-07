@@ -8,18 +8,18 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="https://brihadeesh.github.io/blog/index.xml">
   <link rel="icon" type="image/jpg" href="../avatar.jpg">
   
-  <link rel="stylesheet" href="../main.min.443740b376e152aac2b4c439ac4f9bb9e24847b749ec0693544c4035c8f5e2cf.css">
+  <link rel="stylesheet" href="../main.min.f1badf852a6bf35cb02fdf9088c8892f6b24ec7673712e905aba073dd3a39954.css">
 </head>
 
 
 
-<link rel="stylesheet" href="../nav.min.8aa8416a76b63190d2d61dc18db08e8f7a83dae137d4e4d5e70571e0c886ec10.css">
+<link rel="stylesheet" href="../nav.min.674cdd4d93665249988212eafae14094a770ae1e63238a118a4cff2c33b4dd7a.css">
 
 <h1>
   Literate Emacs Configuration
   <small>
     Last updated
-    <span class="date">Feb 25, 2023</span>
+    <span class="date">Mar 04, 2023</span>
     <br>
     <span class="date">Dec 04, 2021</span>
     on
@@ -30,11 +30,11 @@
 <main>
   <article><p>This is a copy of my literate configuration for Emacs and if you&rsquo;re
 viewing this anywhere else, don&rsquo;t! Because you can find a readable
-version on my <a href="https://brihadeesh.github.io/emacs/literate-emacs-configuration.html">website</a>. You can also find a source-based version with
+version on my <a href="https://peregrinator.srht.site/emacs/literate-emacs-configuration.html">website</a>. You can also find a source-based version with
 the rest of my <code>~/.emacs.d</code> on my <a href="https:git.sr.ht/~peregrinator/.emacs.d">sourcehut</a>.</p>
-<h2 id="other-init-files"><span class="section-num">1</span> Other init files<a href="#other-init-files" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+<h2 id="other-init-files"><span class="section-num">1</span> Other init files&nbsp;<a class="hanchor" href="#other-init-files">#</a> </h2>
 <p>These are in my <code>~/.emacs.d</code> and help load this main configuration.</p>
-<h3 id="early-init"><span class="section-num">1.1</span> Early init<a href="#early-init" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<h3 id="early-init"><span class="section-num">1.1</span> Early init&nbsp;<a class="hanchor" href="#early-init">#</a> </h3>
 <p>This creates a file, <a href="~/.emacs.d/early-init.el"> <code>early-init.el</code> </a>, in <code>~/.emacs.d</code>. This was stolen
 from Protesilaos some time back. It still needs work - it&rsquo;s not
 tangled (by default) yet.</p>
@@ -89,7 +89,7 @@ tangled (by default) yet.</p>
 </span></span><span class="line"><span class="cl"><span class="nv">native-comp-async-report-warnings-errors</span> <span class="no">nil</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">;;; early-init.el ends here</span>
-</span></span></code></pre></div><h3 id="init-dot-el"><span class="section-num">1.2</span> init.el<a href="#init-dot-el" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="init-dot-el"><span class="section-num">1.2</span> init.el&nbsp;<a class="hanchor" href="#init-dot-el">#</a> </h3>
 <p>I&rsquo;ve changed things up a little - this now includes the package
 management code and the code for <code>org</code> installation.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
@@ -122,12 +122,12 @@ management code and the code for <code>org</code> installation.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; Load newer .elc or .el</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">load-prefer-newer</span> <span class="no">t</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="package-management"><span class="section-num">1.2.1</span> Package management<a href="#package-management" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="package-management"><span class="section-num">1.2.1</span> Package management&nbsp;<a class="hanchor" href="#package-management">#</a> </h4>
 <p>Update: <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-21 Mon&gt;</span></span>
 I&rsquo;ve moved all of this and some other stuff (garbage collection etc)
 to the <code>init.el</code>. See the initial org-mode installation section below
 for more.</p>
-<h5 id="setup-straight-dot-el"><span class="section-num">1.2.1.1</span> Setup <code>straight.el</code><a href="#setup-straight-dot-el" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+<h5 id="setup-straight-dot-el"><span class="section-num">1.2.1.1</span> Setup <code>straight.el</code>&nbsp;<a class="hanchor" href="#setup-straight-dot-el">#</a> </h5>
 <p>I&rsquo;ll be using <code>use-package</code> to organise and configure individual
 packages into neater code blocks although the download will be handled
 by <code>straight.el</code>. I&rsquo;ve included the org-installation here since there&rsquo;s somehow always
@@ -172,7 +172,7 @@ an issue with version mismatch.</p>
 </span></span><span class="line"><span class="cl">      <span class="nv">straight-host-usernames</span>
 </span></span><span class="line"><span class="cl">      <span class="o">&#39;</span><span class="p">((</span><span class="nv">github</span> <span class="o">.</span> <span class="s">&#34;brihadeesh&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">gitlab</span> <span class="o">.</span> <span class="s">&#34;peregrinator&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div><h5 id="install-and-configure-use-package"><span class="section-num">1.2.1.2</span> Install and configure <code>use-package</code><a href="#install-and-configure-use-package" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="install-and-configure-use-package"><span class="section-num">1.2.1.2</span> Install and configure <code>use-package</code>&nbsp;<a class="hanchor" href="#install-and-configure-use-package">#</a> </h5>
 <p><code>use-package</code> is installed and managed by <code>straight.el</code> and in turn
 packages used in this config are managed/organized by
 <code>use-package</code>. There&rsquo;s something to do with integration with <code>use-package</code>
@@ -180,20 +180,20 @@ on the <a href="https://github.com/raxod502/straight.el/blob/develop/README.md#i
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; Install use-package with straight.el</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">straight-use-package</span> <span class="ss">&#39;use-package</span><span class="p">)</span>
-</span></span></code></pre></div><h5 id="use-package-v2-related-changes"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">1.2.1.3</span> Use-package v2 related changes<a href="#use-package-v2-related-changes" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="use-package-v2-related-changes"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">1.2.1.3</span> Use-package v2 related changes&nbsp;<a class="hanchor" href="#use-package-v2-related-changes">#</a> </h5>
 <p>Need to figure this out - I think maybe <code>use-package</code> might not be updated</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">eval-when-compile</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;use-package</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;diminish</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;bind-key</span><span class="p">)</span>
-</span></span></code></pre></div><h5 id="minimal-package-dot-el-setup-only-to-browse-packages"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">1.2.1.4</span> Minimal <code>package.el</code> setup only to browse packages<a href="#minimal-package-dot-el-setup-only-to-browse-packages" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="minimal-package-dot-el-setup-only-to-browse-packages"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">1.2.1.4</span> Minimal <code>package.el</code> setup only to browse packages&nbsp;<a class="hanchor" href="#minimal-package-dot-el-setup-only-to-browse-packages">#</a> </h5>
 <p>Running <code>package-list-packages</code> includes them only for browsing</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;package</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;package-archives</span>
 </span></span><span class="line"><span class="cl">             <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;melpa&#34;</span> <span class="o">.</span> <span class="s">&#34;https://melpa.org/packages/&#34;</span><span class="p">))</span>
-</span></span></code></pre></div><h4 id="initial-org-mode-installation"><span class="section-num">1.2.2</span> Initial Org-mode installation<a href="#initial-org-mode-installation" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="initial-org-mode-installation"><span class="section-num">1.2.2</span> Initial Org-mode installation&nbsp;<a class="hanchor" href="#initial-org-mode-installation">#</a> </h4>
 <p>I use the latest version of Org, pulled from the <code>gnu-elpa</code> repositories
 and have to install it early on so <code>straight.el</code> / <code>use-package</code> don&rsquo;t
 give me trouble with version conflicts because it loads the built in
@@ -210,10 +210,10 @@ give me trouble with version conflicts because it loads the built in
 </span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nf">concat</span> <span class="nv">user-emacs-directory</span> <span class="s">&#34;configuration.org&#34;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">org-babel-load-file</span>
 </span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nf">concat</span> <span class="nv">user-emacs-directory</span> <span class="s">&#34;configuration.org&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div><h4 id="end"><span class="section-num">1.2.3</span> End<a href="#end" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="end"><span class="section-num">1.2.3</span> End&nbsp;<a class="hanchor" href="#end">#</a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;;; init.el ends here</span>
-</span></span></code></pre></div><h2 id="header"><span class="section-num">2</span> Header<a href="#header" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="header"><span class="section-num">2</span> Header&nbsp;<a class="hanchor" href="#header">#</a> </h2>
 <p>Just the usual header for elisp files that Emacs keeps complaining
 about.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">    <span class="c1">;;; configuration.el --- Initialisation. -*- lexical-binding: t; -*-</span>
@@ -244,8 +244,8 @@ about.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1">;;; Code:</span>
-</span></span></code></pre></div><h2 id="prerequisites"><span class="section-num">3</span> Prerequisites<a href="#prerequisites" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="reload-emacs-configuration"><span class="section-num">3.1</span> Reload Emacs configuration<a href="#reload-emacs-configuration" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="prerequisites"><span class="section-num">3</span> Prerequisites&nbsp;<a class="hanchor" href="#prerequisites">#</a> </h2>
+<h3 id="reload-emacs-configuration"><span class="section-num">3.1</span> Reload Emacs configuration&nbsp;<a class="hanchor" href="#reload-emacs-configuration">#</a> </h3>
 <p>I&rsquo;m not sure I understand how this works entirely but <a href="https://github.com/joseph8th/literatemacs#tangle-and-reload">joseph8th&rsquo;s repo</a>
 suggests using <code>M-: (load-file user-init-file) RET</code> or evaluating that
 same function interactively. I&rsquo;ve modified the sanemacs reload config
@@ -255,14 +255,14 @@ first code block can be evaluated using <code>C-c C-c</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">reload-config</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-file</span> <span class="nv">user-init-file</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="ensure-utf-8"><span class="section-num">3.2</span> Ensure UTF-8<a href="#ensure-utf-8" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="ensure-utf-8"><span class="section-num">3.2</span> Ensure UTF-8&nbsp;<a class="hanchor" href="#ensure-utf-8">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-language-environment</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">prefer-coding-system</span> <span class="ss">&#39;utf-8</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="whoami"><span class="section-num">3.3</span> Whoami<a href="#whoami" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="whoami"><span class="section-num">3.3</span> Whoami&nbsp;<a class="hanchor" href="#whoami">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nf">user-full-name</span> <span class="s">&#34;peregrinator&#34;</span>
 </span></span><span class="line"><span class="cl">      <span class="nv">user-mail-address</span> <span class="s">&#34;brihadeesh@protonmail.com&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="writing"><span class="section-num">4</span> Writing<a href="#writing" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="org-mode"><span class="section-num">4.1</span> Org-mode<a href="#org-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="writing"><span class="section-num">4</span> Writing&nbsp;<a class="hanchor" href="#writing">#</a> </h2>
+<h3 id="org-mode"><span class="section-num">4.1</span> Org-mode&nbsp;<a class="hanchor" href="#org-mode">#</a> </h3>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> Get the damn thing first</li>
 <li><input disabled="" type="checkbox"> Organise the thing - needs splitting into multiple code blocks.</li>
@@ -348,7 +348,7 @@ desperately avoiding having to debug init any further.</p>
 </span></span><span class="line"><span class="cl">    <span class="c1">;; (font-lock-add-keywords &#39;org-mode</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;                         &#39;((&#34;^ *\\([-]\\) &#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) &#34;•&#34;))))))</span>
-</span></span></code></pre></div><h4 id="fixed-pitch-for-everything-code"><span class="section-num">4.1.1</span> Fixed pitch for everything code<a href="#fixed-pitch-for-everything-code" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="fixed-pitch-for-everything-code"><span class="section-num">4.1.1</span> Fixed pitch for everything code&nbsp;<a class="hanchor" href="#fixed-pitch-for-everything-code">#</a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; Make sure org-indent face is available</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-indent</span><span class="p">)</span>
@@ -363,7 +363,7 @@ desperately avoiding having to debug init any further.</p>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-special-keyword</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font-lock-comment-face</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-meta-line</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font-lock-comment-face</span> <span class="nv">fixed-pitch</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-checkbox</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="quick-source-block-templates"><span class="section-num">4.1.2</span> Quick source block templates<a href="#quick-source-block-templates" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="quick-source-block-templates"><span class="section-num">4.1.2</span> Quick source block templates&nbsp;<a class="hanchor" href="#quick-source-block-templates">#</a> </h4>
 <p>These can be run by typing an angle bracket with the shortcut and
 hitting <code>&lt;TAB&gt;</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
@@ -392,7 +392,7 @@ and needs some debugging.</p>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nb">setq-local</span> <span class="nv">electric-pair-inhibit-predicate</span>
 </span></span><span class="line"><span class="cl">                   <span class="o">`</span><span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">c</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">char-equal</span> <span class="nv">c</span> <span class="sc">?&lt;</span><span class="p">)</span> <span class="no">t</span> <span class="p">(</span><span class="o">,</span><span class="nv">electric-pair-inhibit-predicate</span> <span class="nv">c</span><span class="p">)))))))</span>
-</span></span></code></pre></div><h4 id="babel"><span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.3</span> Babel<a href="#babel" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="babel"><span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.3</span> Babel&nbsp;<a class="hanchor" href="#babel">#</a> </h4>
 <p>This might require <code>org-contrib</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">org-babel-do-load-languages</span>
@@ -403,7 +403,7 @@ and needs some debugging.</p>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">shell</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">org</span> <span class="o">.</span><span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">awk</span> <span class="o">.</span> <span class="no">t</span><span class="p">)))</span>
-</span></span></code></pre></div><h4 id="new-folding-backend"><span class="section-num">4.1.4</span> New folding backend<a href="#new-folding-backend" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="new-folding-backend"><span class="section-num">4.1.4</span> New folding backend&nbsp;<a class="hanchor" href="#new-folding-backend">#</a> </h4>
 <p>This came with the Org 9.6 release on <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-29 Tue&gt; </span></span> and I got the
 tea from the Org <a href="https://orgmode.org/Changes.html">changes</a> post. This is optimised for files that are
 large, and usually more than a few MB in size. I know this file is
@@ -411,19 +411,19 @@ only a few kilobytes but I kinda feel it lagging once in a
 while. Probably some unrelated issue.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-fold-core-style</span> <span class="ss">&#39;overlays</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="sources-for-agenda-tasks"><span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.5</span> Sources for agenda tasks<a href="#sources-for-agenda-tasks" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="sources-for-agenda-tasks"><span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.5</span> Sources for agenda tasks&nbsp;<a class="hanchor" href="#sources-for-agenda-tasks">#</a> </h4>
 <p>Generates an agenda from wildcarded org files from the specified
 directory</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; (setq org-agenda-files</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;       (file-expand-wildcards &#34;~/org/*.org&#34;))</span>
-</span></span></code></pre></div><h4 id="tags-and-todo-keywords-config"><span class="section-num">4.1.6</span> Tags and todo-keywords config<a href="#tags-and-todo-keywords-config" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="tags-and-todo-keywords-config"><span class="section-num">4.1.6</span> Tags and todo-keywords config&nbsp;<a class="hanchor" href="#tags-and-todo-keywords-config">#</a> </h4>
 <p>Todo-keywords are things like <code>TODO</code> and <code>DONE</code> and so on. Tags are for
 classifying stuff by the general theme of what&rsquo;s being talked about.</p>
-<h5 id="todo-keywords"><span class="section-num">4.1.6.1</span> todo-keywords<a href="#todo-keywords" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+<h5 id="todo-keywords"><span class="section-num">4.1.6.1</span> todo-keywords&nbsp;<a class="hanchor" href="#todo-keywords">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-todo-keywords</span>
 </span></span><span class="line"><span class="cl">      <span class="o">&#39;</span><span class="p">((</span><span class="nv">sequence</span> <span class="s">&#34;TODO(t)&#34;</span> <span class="s">&#34;|&#34;</span> <span class="s">&#34;DONE(d!)&#34;</span> <span class="s">&#34;DISABLED(f!)&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div><h5 id="tags"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">4.1.6.2</span> tags<a href="#tags" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="tags"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">4.1.6.2</span> tags&nbsp;<a class="hanchor" href="#tags">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-tag-alist</span> <span class="o">&#39;</span><span class="p">(((</span><span class="s">&#34;misc&#34;</span> <span class="o">.</span> <span class="sc">?m</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="s">&#34;emacs&#34;</span> <span class="o">.</span> <span class="sc">?e</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="s">&#34;dotfiles&#34;</span> <span class="o">.</span> <span class="sc">?d</span><span class="p">)</span>
@@ -431,7 +431,7 @@ classifying stuff by the general theme of what&rsquo;s being talked about.</p>
 </span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="s">&#34;chore&#34;</span> <span class="o">.</span> <span class="sc">?c</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="s">&#34;blog&#34;</span> <span class="o">.</span> <span class="sc">?b</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                      <span class="p">)))</span>
-</span></span></code></pre></div><h4 id="org-capture"><span class="section-num">4.1.7</span> Org-capture<a href="#org-capture" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="org-capture"><span class="section-num">4.1.7</span> Org-capture&nbsp;<a class="hanchor" href="#org-capture">#</a> </h4>
 <p>Global keybinding for org-capture</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c c&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">org-capture</span><span class="p">)</span>
@@ -442,19 +442,19 @@ this for entering entries into <code>org-journal</code>, making it a whole deal
 easier. Perhaps to start off, <a href="https://orgmode.org/worg/org-tutorials/index.html">the org-mode tutorial</a> might be a good
 place to start. I&rsquo;ve also got a simple enough config from a reddit
 post in my <a href="person_el/sample-org-setup.el">unused local elisp libs</a> too.</p>
-<h4 id="display-features"><span class="section-num">4.1.8</span> Display features<a href="#display-features" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+<h4 id="display-features"><span class="section-num">4.1.8</span> Display features&nbsp;<a class="hanchor" href="#display-features">#</a> </h4>
 <p>In the spirit of reclaiming some semblance of organisation in this
 file, I&rsquo;ve tried to group settings by the what aspect they
 change. Hopefully this continues and the rest of the Org mode
 configuration can be split up.</p>
-<h5 id="autoindent-autofill-turned-on-automatically"><span class="section-num">4.1.8.1</span> Autoindent/autofill turned on automatically<a href="#autoindent-autofill-turned-on-automatically" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+<h5 id="autoindent-autofill-turned-on-automatically"><span class="section-num">4.1.8.1</span> Autoindent/autofill turned on automatically&nbsp;<a class="hanchor" href="#autoindent-autofill-turned-on-automatically">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span> <span class="ss">&#39;org-indent-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-startup-indented</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; organise paragraphs automatically</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span> <span class="ss">&#39;turn-on-auto-fill</span><span class="p">)</span>
-</span></span></code></pre></div><h5 id="minad-s-modern-ui-for-org-mode"><span class="section-num">4.1.8.2</span> Minad&rsquo;s modern UI for org-mode<a href="#minad-s-modern-ui-for-org-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="minad-s-modern-ui-for-org-mode"><span class="section-num">4.1.8.2</span> Minad&rsquo;s modern UI for org-mode&nbsp;<a class="hanchor" href="#minad-s-modern-ui-for-org-mode">#</a> </h5>
 <p>Was maintaining a <a href="https://github.com/brihadeesh/org-modern">fork</a> but I guess it&rsquo;s too much work - should
 considering getting back at it sometime. I was having issues with <code>TODO</code>
 keywords and tags/categories being rendered absurdly small but
@@ -486,7 +486,7 @@ code segments in text.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">;; enable the global mode</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-org-modern-mode</span> <span class="no">t</span><span class="p">))</span>
-</span></span></code></pre></div><h5 id="display-emphasis-markers-on-hover"><span class="section-num">4.1.8.3</span> Display emphasis markers on hover<a href="#display-emphasis-markers-on-hover" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="display-emphasis-markers-on-hover"><span class="section-num">4.1.8.3</span> Display emphasis markers on hover&nbsp;<a class="hanchor" href="#display-emphasis-markers-on-hover">#</a> </h5>
 <p>This package makes it much easier to edit Org documents when
 org-hide-emphasis-markers is turned on. It temporarily shows the
 emphasis markers around certain markup elements when you place your
@@ -494,7 +494,7 @@ cursor inside of them. No more fumbling around with = and *
 characters!</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">org-appear</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:hook</span> <span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">org-appear-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h5 id="better-commenting-in-org-mode-code-blocks"><span class="section-num">4.1.8.4</span> Better commenting in org-mode code-blocks<a href="#better-commenting-in-org-mode-code-blocks" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="better-commenting-in-org-mode-code-blocks"><span class="section-num">4.1.8.4</span> Better commenting in org-mode code-blocks&nbsp;<a class="hanchor" href="#better-commenting-in-org-mode-code-blocks">#</a> </h5>
 <p>Got this from a <a href="https://emacs.stackexchange.com/a/19741/23936">Stack Exchange answer</a> to work around messed up
 commenting using the default <code>C-x C-;</code> command. The older/default
 command messes up lines, undos, and sometimes comment syntax as well.</p>
@@ -508,14 +508,14 @@ command messes up lines, undos, and sometimes comment syntax as well.</p>
 </span></span><span class="line"><span class="cl"><span class="c1">;; make `C-c C-v C-x M-;&#39; more convenient</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nf">define-key</span> <span class="nv">org-mode-map</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;M-;&#34;</span><span class="p">)</span> <span class="ss">&#39;my-org-comment-dwim</span><span class="p">)</span>
-</span></span></code></pre></div><h5 id="toc-for-org-mode-files"><span class="section-num">4.1.8.5</span> TOC for org-mode files<a href="#toc-for-org-mode-files" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="toc-for-org-mode-files"><span class="section-num">4.1.8.5</span> TOC for org-mode files&nbsp;<a class="hanchor" href="#toc-for-org-mode-files">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">toc-org</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:after</span> <span class="nv">org</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:hook</span> <span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">toc-org-enable</span><span class="p">))</span>
 </span></span></code></pre></div><p>Alternatively</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">org-make-toc</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:hook</span> <span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">org-make-toc-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h5 id="convert-all-org-keywords-block-identifiers-to-lowercase"><span class="section-num">4.1.8.6</span> Convert all org-keywords/block identifiers to lowercase<a href="#convert-all-org-keywords-block-identifiers-to-lowercase" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="convert-all-org-keywords-block-identifiers-to-lowercase"><span class="section-num">4.1.8.6</span> Convert all org-keywords/block identifiers to lowercase&nbsp;<a class="hanchor" href="#convert-all-org-keywords-block-identifiers-to-lowercase">#</a> </h5>
 <p>It&rsquo;s always nice to see random people online that are crazy like you
 and are nice enough to write elisp code for the shit you need. Stolen
 from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
@@ -539,7 +539,7 @@ from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">setq</span> <span class="nv">count</span> <span class="p">(</span><span class="nf">1+</span> <span class="nv">count</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nf">replace-match</span> <span class="p">(</span><span class="nf">downcase</span> <span class="p">(</span><span class="nv">match-string-no-properties</span> <span class="mi">1</span><span class="p">))</span> <span class="nb">:fixedcase</span> <span class="no">nil</span> <span class="no">nil</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">message</span> <span class="s">&#34;Lower-cased %d matches&#34;</span> <span class="nv">count</span><span class="p">))))</span>
-</span></span></code></pre></div><h3 id="auctex-for-latex-editing-plus-completion"><span class="section-num">4.2</span> AUCTex for LaTex editing + completion<a href="#auctex-for-latex-editing-plus-completion" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="auctex-for-latex-editing-plus-completion"><span class="section-num">4.2</span> AUCTex for LaTex editing + completion&nbsp;<a class="hanchor" href="#auctex-for-latex-editing-plus-completion">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; FIXME:</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (use-package auctex</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   :init</span>
@@ -572,8 +572,8 @@ from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
 </span></span><span class="line"><span class="cl">            <span class="nf">#&#39;</span><span class="nv">TeX-revert-document-buffer</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; (use-package company-auctex)</span>
-</span></span></code></pre></div><h3 id="spellcheck"><span class="section-num">4.3</span> Spellcheck<a href="#spellcheck" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
-<h4 id="hunspell"><span class="section-num">4.3.1</span> Hunspell<a href="#hunspell" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h3 id="spellcheck"><span class="section-num">4.3</span> Spellcheck&nbsp;<a class="hanchor" href="#spellcheck">#</a> </h3>
+<h4 id="hunspell"><span class="section-num">4.3.1</span> Hunspell&nbsp;<a class="hanchor" href="#hunspell">#</a> </h4>
 <p>Finally figured this out from a <a href="https://redd.it/ahysvb">reddit post from 2019</a>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; flyspell + aspell??</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">ispell-dictionary</span> <span class="s">&#34;en_GB&#34;</span><span class="p">)</span>
@@ -590,7 +590,7 @@ from <a href="https://scripter.co/org-keywords-lower-case/">Kaushal Modi</a></p>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;text-mode-hook</span> <span class="ss">&#39;flyspell-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; hook to check spelling for comments in code</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;prog-mode-hook</span> <span class="ss">&#39;flyspell-prog-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="aspell-based-spellchecking"><span class="section-num">4.3.2</span> Aspell based spellchecking<a href="#aspell-based-spellchecking" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="aspell-based-spellchecking"><span class="section-num">4.3.2</span> Aspell based spellchecking&nbsp;<a class="hanchor" href="#aspell-based-spellchecking">#</a> </h4>
 <p>&hellip; because Void linux keeps complaining about not being able to find
 a British English dictionary</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">ispell-program-name</span> <span class="s">&#34;aspell&#34;</span><span class="p">)</span>
@@ -601,7 +601,7 @@ a British English dictionary</p>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;text-mode-hook</span> <span class="ss">&#39;flyspell-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; hook to check spelling for comments in code</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;prog-mode-hook</span> <span class="ss">&#39;flyspell-prog-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="flyspell-correct-provides-a-more-refines-ui-for-spelling-checking"><span class="section-num">4.3.3</span> flyspell-correct provides a more refines UI for spelling checking<a href="#flyspell-correct-provides-a-more-refines-ui-for-spelling-checking" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="flyspell-correct-provides-a-more-refines-ui-for-spelling-checking"><span class="section-num">4.3.3</span> flyspell-correct provides a more refines UI for spelling checking&nbsp;<a class="hanchor" href="#flyspell-correct-provides-a-more-refines-ui-for-spelling-checking">#</a> </h4>
 <p>This shows a popup like for completions when it finds a misspelled
 word which makes it somewhat more accessible when writing, rather than
 having to look down at the message area.</p>
@@ -611,15 +611,15 @@ having to look down at the message area.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">flyspell-correct-popup</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">flyspell-correct</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="something-like-scrivener-from-mac"><span class="section-num">4.4</span> Something like scrivener from Mac<a href="#something-like-scrivener-from-mac" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="something-like-scrivener-from-mac"><span class="section-num">4.4</span> Something like scrivener from Mac&nbsp;<a class="hanchor" href="#something-like-scrivener-from-mac">#</a> </h3>
 <p>&hellip;cause I&rsquo;m gonna become a novelist and/or write large books in the
 near future</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">binder</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (use-package binder-tutorial)</span>
-</span></span></code></pre></div><h3 id="blogging"><span class="section-num">4.5</span> Blogging<a href="#blogging" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="blogging"><span class="section-num">4.5</span> Blogging&nbsp;<a class="hanchor" href="#blogging">#</a> </h3>
 <p>I&rsquo;ve defined some stuff necessary to make editing a Hugo website
 easier.</p>
-<h4 id="ox-hugo-since-the-go-org-keep-wrecking-up-links"><span class="section-num">4.5.1</span> <code>ox-hugo</code> since the go-org keep wrecking up links<a href="#ox-hugo-since-the-go-org-keep-wrecking-up-links" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+<h4 id="ox-hugo-since-the-go-org-keep-wrecking-up-links"><span class="section-num">4.5.1</span> <code>ox-hugo</code> since the go-org keep wrecking up links&nbsp;<a class="hanchor" href="#ox-hugo-since-the-go-org-keep-wrecking-up-links">#</a> </h4>
 <p>My personal <a href="https://brihadeesh.github.io">static site</a> was/is written with this. I might have to add
 additional setup to add some of this functionality for project pages
 but then I hope to eventually move everything to sourcehut or atleast
@@ -628,7 +628,7 @@ using it to host a website on my own domain.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-hugo</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">ox</span><span class="p">)</span>
 </span></span></code></pre></div><p>Additional setup for streamlining writing posts on the static site:</p>
-<h5 id="blogging-flow"><span class="section-num">4.5.1.1</span> Blogging flow<a href="#blogging-flow" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+<h5 id="blogging-flow"><span class="section-num">4.5.1.1</span> Blogging flow&nbsp;<a class="hanchor" href="#blogging-flow">#</a> </h5>
 <p>Based on the capture templates <a href="https://ox-hugo.scripter.co/doc/org-capture-setup/">documentation</a>.</p>
 <p>This function is called on invoking the org-capture (see next
 section). This particular function adds a date below the header marked
@@ -692,14 +692,14 @@ in this configuration somewhere.</p>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-post-capture</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="nb">:section</span> <span class="s">&#34;:EXPORT_HUGO_SECTION: misc&#34;</span>
 </span></span><span class="line"><span class="cl">           <span class="nb">:lastmod</span> <span class="s">&#34;f&#34;</span><span class="p">))))</span>
-</span></span></code></pre></div><h2 id="work"><span class="section-num">5</span> Work<a href="#work" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="emacs-speaks-statistics-for-r-and-python"><span class="section-num">5.1</span> Emacs Speaks Statistics for <strong>R</strong> and python(?)<a href="#emacs-speaks-statistics-for-r-and-python" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="work"><span class="section-num">5</span> Work&nbsp;<a class="hanchor" href="#work">#</a> </h2>
+<h3 id="emacs-speaks-statistics-for-r-and-python"><span class="section-num">5.1</span> Emacs Speaks Statistics for <strong>R</strong> and python(?)&nbsp;<a class="hanchor" href="#emacs-speaks-statistics-for-r-and-python">#</a> </h3>
 <p>Figure out babel/org-tangle or whatever because Emacs sucks for
 RMarkdown and org-mode is generally better (see next bit for RMarkdown)</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ess</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; :ensure t</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="o">`</span><span class="nv">ess-r-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="polymodes-for-r"><span class="org-todo todo TODO">TODO</span> <span class="section-num">5.1.1</span> Polymodes for R<a href="#polymodes-for-r" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="polymodes-for-r"><span class="org-todo todo TODO">TODO</span> <span class="section-num">5.1.1</span> Polymodes for R&nbsp;<a class="hanchor" href="#polymodes-for-r">#</a> </h4>
 <p>This helps integrate ESS into markdown so editing RMarkdown files is
 easy. As an added benefit syntax for regular markdown files is
 supported. I won&rsquo;t have to install <code>polymode</code> itself explicitly since
@@ -715,7 +715,7 @@ have to</p>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">poly-markdown-mode</span> <span class="o">.</span> <span class="nv">flyspell-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">poly-markdown-mode</span> <span class="o">.</span> <span class="nv">visual-line-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">poly-markdown-mode</span> <span class="o">.</span> <span class="nv">auto-fill-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h4 id="defining-org-skeleton-for-org-babel-plus-r"><span class="org-todo todo TODO">TODO</span> <span class="section-num">5.1.2</span> defining org-skeleton for org-babel + R<a href="#defining-org-skeleton-for-org-babel-plus-r" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="defining-org-skeleton-for-org-babel-plus-r"><span class="org-todo todo TODO">TODO</span> <span class="section-num">5.1.2</span> defining org-skeleton for org-babel + R&nbsp;<a class="hanchor" href="#defining-org-skeleton-for-org-babel-plus-r">#</a> </h4>
 <p>Got this from <a href="https://orgmode.org/worg/org-contrib/babel/how-to-use-Org-Babel-for-R.html">worg documentation</a> but I vaguely remember reading about
 more options for individual source blocks so will have to change /
 append accordingly. This defines a skeleton or a format for an org
@@ -755,10 +755,10 @@ F4 key) is assigned to invoke this skeleton quickly.</li>
 </span></span><span class="line"><span class="cl"> <span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">[</span><span class="nv">C-S-f4</span><span class="p">]</span> <span class="ss">&#39;org-skeleton</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="org-present-for-presentations"><span class="section-num">5.2</span> org-present for presentations<a href="#org-present-for-presentations" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="org-present-for-presentations"><span class="section-num">5.2</span> org-present for presentations&nbsp;<a class="hanchor" href="#org-present-for-presentations">#</a> </h3>
 <p>See <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org#presentations">dawiwil&rsquo;s section on this</a> from his literate init for more about
 this.</p>
-<h3 id="citar-for-reference-management"><span class="org-todo todo TODO">TODO</span> <span class="section-num">5.3</span> Citar for reference management?<a href="#citar-for-reference-management" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<h3 id="citar-for-reference-management"><span class="org-todo todo TODO">TODO</span> <span class="section-num">5.3</span> Citar for reference management?&nbsp;<a class="hanchor" href="#citar-for-reference-management">#</a> </h3>
 <p><a href="https://github.com/bdarcus/citar">Citar</a></p>
 <p>If I ever get down to writing papers, of course, I&rsquo;d write them in
 <code>org-mode</code> or LaTeX so this should be useful considering <code>Mendeley desktop</code> is bloat and I haven&rsquo;t a clue if FreeBSD even has
@@ -777,7 +777,7 @@ simpler</em>. <a href="https://www.youtube.com/watch?v=2t925KRBbFc">Introduction
 </span></span><span class="line"><span class="cl">  <span class="c1">;; optional: org-cite-insert is also bound to C-c C-x C-@</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;;:bind</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;;(:map org-mode-map :package org (&#34;C-c b&#34; . #&#39;org-cite-insert)))</span>
-</span></span></code></pre></div><h2 id="project-management-and-navigation-projectile"><span class="section-num">6</span> Project management and navigation - projectile<a href="#project-management-and-navigation-projectile" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="project-management-and-navigation-projectile"><span class="section-num">6</span> Project management and navigation - projectile&nbsp;<a class="hanchor" href="#project-management-and-navigation-projectile">#</a> </h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; project management</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">projectile</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; :ensure t</span>
@@ -800,11 +800,11 @@ simpler</em>. <a href="https://www.youtube.com/watch?v=2t925KRBbFc">Introduction
 </span></span><span class="line"><span class="cl"><span class="c1">;;     (unless (eq ibuffer-sorting-mode &#39;alphabetic)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;       (ibuffer-do-sort-by-alphabetic)))</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   :hook (ibuffer . my/ibuffer-projectile))</span>
-</span></span></code></pre></div><h2 id="denote-for-note-taking"><span class="section-num">7</span> Denote for note-taking<a href="#denote-for-note-taking" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="denote-for-note-taking"><span class="section-num">7</span> Denote for note-taking&nbsp;<a class="hanchor" href="#denote-for-note-taking">#</a> </h2>
 <p>I hope this is considerably simpler than org-roam and easier to
 setup. I don&rsquo;t particularly like the way org-roam is unnecessarily
 cluttered and excruciatingly tedious to even get started with.</p>
-<h3 id="basic-setup"><span class="section-num">7.1</span> Basic setup<a href="#basic-setup" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<h3 id="basic-setup"><span class="section-num">7.1</span> Basic setup&nbsp;<a class="hanchor" href="#basic-setup">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">denote</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:source</span> <span class="nv">gnu-elpa-mirror</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
@@ -859,7 +859,7 @@ cluttered and excruciatingly tedious to even get started with.</p>
 </span></span><span class="line"><span class="cl">  <span class="c1">;;</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; OR if only want it in `denote-dired-directories&#39;:</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;dired-mode-hook</span> <span class="nf">#&#39;</span><span class="nv">denote-dired-mode-in-directories</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="denote-templates"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.2</span> Denote templates<a href="#denote-templates" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="denote-templates"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.2</span> Denote templates&nbsp;<a class="hanchor" href="#denote-templates">#</a> </h3>
 <p>This should replace capture templates because the interactive <code>denote</code>
 call seems a lot more flexible and versatile. Still WIP</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
@@ -870,7 +870,7 @@ call seems a lot more flexible and versatile. Still WIP</p>
 </span></span><span class="line"><span class="cl">                         <span class="s">&#34;* Another heading&#34;</span>
 </span></span><span class="line"><span class="cl">                         <span class="s">&#34;\n\n&#34;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">journal-entry</span> <span class="o">.</span> <span class="s">&#34;* Date\n\n** Time&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="convenience-commands-for-journal-entries"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.3</span> &ldquo;convenience commands&rdquo; for journal entries<a href="#convenience-commands-for-journal-entries" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="convenience-commands-for-journal-entries"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.3</span> &ldquo;convenience commands&rdquo; for journal entries&nbsp;<a class="hanchor" href="#convenience-commands-for-journal-entries">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; (defun peremacs/denote-journal-entry ()</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   &#34;Create journal entry and prompt for a subdirectory.</span>
@@ -936,7 +936,7 @@ call seems a lot more flexible and versatile. Still WIP</p>
 </span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nf">format-time-string</span> <span class="s">&#34;%a %d %m %Y&#34;</span> <span class="nv">date</span><span class="p">)</span>   <span class="c1">; format like Tuesday 14 June 2022</span>
 </span></span><span class="line"><span class="cl">         <span class="no">nil</span>
 </span></span><span class="line"><span class="cl">         <span class="s">&#34;~/journal/entries&#34;</span><span class="p">)))))</span>
-</span></span></code></pre></div><h3 id="keybindings"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.4</span> Keybindings<a href="#keybindings" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="keybindings"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.4</span> Keybindings&nbsp;<a class="hanchor" href="#keybindings">#</a> </h3>
 <p>Denote DOES NOT define any key bindings. It requires arguments
 acceptable to the <code>bind-keys</code> macro. I&rsquo;m not entirely sure some of these
 are necessary since I&rsquo;m using a capture template.</p>
@@ -969,7 +969,7 @@ are necessary since I&rsquo;m using a capture template.</p>
 </span></span><span class="line"><span class="cl"><span class="c1">;; )</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><h3 id="org-journal-for-journaling-requirements"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.5</span> <code>org-journal</code> for journaling requirements<a href="#org-journal-for-journaling-requirements" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="org-journal-for-journaling-requirements"><span class="org-todo todo TODO">TODO</span> <span class="section-num">7.5</span> <code>org-journal</code> for journaling requirements&nbsp;<a class="hanchor" href="#org-journal-for-journaling-requirements">#</a> </h3>
 <p>This needs better setting up and integration with either <code>Orgzly</code> or
 <code>GitJournal</code> for android. iOS seems to have better apps though. Or
 just make this workable with the termux version of Emacs.</p>
@@ -994,15 +994,15 @@ just make this workable with the termux version of Emacs.</p>
 </span></span><span class="line"><span class="cl">        <span class="nv">org-journal-time-format</span> <span class="s">&#34;(%R)&#34;</span>
 </span></span><span class="line"><span class="cl">        <span class="nv">org-journal-file-header</span> <span class="s">&#34;#+title: Daily Journal\n#+startup: showeverything&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h2 id="version-control"><span class="section-num">8</span> Version control<a href="#version-control" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="git-with-magit-and-gists-with-gist-dot-el"><span class="section-num">8.1</span> Git with Magit and gists with <code>gist.el</code><a href="#git-with-magit-and-gists-with-gist-dot-el" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="version-control"><span class="section-num">8</span> Version control&nbsp;<a class="hanchor" href="#version-control">#</a> </h2>
+<h3 id="git-with-magit-and-gists-with-gist-dot-el"><span class="section-num">8.1</span> Git with Magit and gists with <code>gist.el</code>&nbsp;<a class="hanchor" href="#git-with-magit-and-gists-with-gist-dot-el">#</a> </h3>
 <p><a id="code-snippet--magit-config"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">magit</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:bind</span> <span class="p">(</span><span class="s">&#34;C-x g&#34;</span>    <span class="o">.</span> <span class="nv">magit-status</span><span class="p">))</span>
 </span></span></code></pre></div><p><code>gist.el</code> to manage github gists from here</p>
 <p><a id="code-snippet--gists-config"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">gist</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="undo-tree"><span class="section-num">8.2</span> Undo tree<a href="#undo-tree" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="undo-tree"><span class="section-num">8.2</span> Undo tree&nbsp;<a class="hanchor" href="#undo-tree">#</a> </h3>
 <p>Helps revert to older versions of files in case I fuck up something
 somewhere. Hmm. I doubt I ever use it so disabling it now.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">undo-tree</span>
@@ -1011,7 +1011,7 @@ somewhere. Hmm. I doubt I ever use it so disabling it now.</p>
 </span></span><span class="line"><span class="cl">        <span class="nv">undo-tree-auto-save-history</span> <span class="no">nil</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-undo-tree-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">undo-tree-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="ssh-for-personal-packages-and-magit"><span class="org-todo todo TODO">TODO</span> <span class="section-num">8.3</span> SSH for personal packages and magit<a href="#ssh-for-personal-packages-and-magit" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="ssh-for-personal-packages-and-magit"><span class="org-todo todo TODO">TODO</span> <span class="section-num">8.3</span> SSH for personal packages and magit&nbsp;<a class="hanchor" href="#ssh-for-personal-packages-and-magit">#</a> </h3>
 <p>This needs a ton of work</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">keychain-environment</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
@@ -1022,8 +1022,8 @@ somewhere. Hmm. I doubt I ever use it so disabling it now.</p>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   :config</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   (exec-path-from-shell-copy-env &#34;SSH_AGENT_PID&#34;)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   (exec-path-from-shell-copy-env &#34;SSH_AUTH_SOCK&#34;))</span>
-</span></span></code></pre></div><h2 id="minibuffer-completion"><span class="section-num">9</span> Minibuffer completion<a href="#minibuffer-completion" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="access-a-list-of-recently-edited-files"><span class="section-num">9.1</span> Access a list of recently edited files<a href="#access-a-list-of-recently-edited-files" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="minibuffer-completion"><span class="section-num">9</span> Minibuffer completion&nbsp;<a class="hanchor" href="#minibuffer-completion">#</a> </h2>
+<h3 id="access-a-list-of-recently-edited-files"><span class="section-num">9.1</span> Access a list of recently edited files&nbsp;<a class="hanchor" href="#access-a-list-of-recently-edited-files">#</a> </h3>
 <p>Helps jump back into whatever I was doing before closing Emacs. Or my
 laptop more like it.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">recentf</span>
@@ -1032,7 +1032,7 @@ laptop more like it.</p>
 </span></span><span class="line"><span class="cl">        <span class="nv">recentf-auto-cleanup</span> <span class="ss">&#39;never</span>
 </span></span><span class="line"><span class="cl">        <span class="nv">recentf-keep</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">file-remote-p</span> <span class="nf">file-readable-p</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">recentf-mode</span> <span class="mi">1</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="vertico-for-completions-ui"><span class="section-num">9.2</span> Vertico for completions UI<a href="#vertico-for-completions-ui" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="vertico-for-completions-ui"><span class="section-num">9.2</span> Vertico for completions UI&nbsp;<a class="hanchor" href="#vertico-for-completions-ui">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; Enable vertico</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">vertico</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; pulls extensions as well?</span>
@@ -1083,7 +1083,7 @@ at Vertico header.</p>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;vertico-mode-hook</span> <span class="nf">#&#39;</span><span class="nv">minibuffer-vertico-setup</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;minibuffer-setup-hook</span> <span class="nf">#&#39;</span><span class="nv">minibuffer-vertico-setup</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><h4 id="vertico-extensions"><span class="org-todo todo TODO">TODO</span> <span class="section-num">9.2.1</span> Vertico extensions<a href="#vertico-extensions" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="vertico-extensions"><span class="org-todo todo TODO">TODO</span> <span class="section-num">9.2.1</span> Vertico extensions&nbsp;<a class="hanchor" href="#vertico-extensions">#</a> </h4>
 <p>Again stolen from Karthik Chikmaglur and needs heavy work, hence not enabled</p>
 <p><a id="code-snippet--vertico-multiform"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">vertico-multiform</span>
@@ -1199,7 +1199,7 @@ at Vertico header.</p>
 </span></span><span class="line"><span class="cl">      <span class="c1">;; :hook (vertico-buffer-mode . vertico-buffer-setup)</span>
 </span></span><span class="line"><span class="cl">      <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">setq</span> <span class="nv">vertico-buffer-display-action</span> <span class="ss">&#39;display-buffer-reuse-window</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="orderless-completion"><span class="section-num">9.3</span> Orderless completion<a href="#orderless-completion" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="orderless-completion"><span class="section-num">9.3</span> Orderless completion&nbsp;<a class="hanchor" href="#orderless-completion">#</a> </h3>
 <p>Search for commands, buffers, etc with vertico without having to match
 the order of words in the command. Adding spaces between keywords can
 match commands with those words anywhere in them. This config was
@@ -1284,12 +1284,12 @@ bootlegged from <a href="https://github.com/minad/consult/wiki#minads-orderless-
 </span></span><span class="line"><span class="cl">                                      <span class="p">(</span><span class="nv">symbol</span> <span class="p">(</span><span class="nv">styles</span> <span class="nv">+orderless-with-initialism</span><span class="p">)))</span>
 </span></span><span class="line"><span class="cl">      <span class="nv">orderless-component-separator</span> <span class="nf">#&#39;</span><span class="nv">orderless-escapable-split-on-space</span> <span class="c1">;; allow escaping space with backslash!</span>
 </span></span><span class="line"><span class="cl">      <span class="nv">orderless-style-dispatchers</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">+orderless-dispatch</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="persistent-command-history"><span class="section-num">9.4</span> Persistent command history<a href="#persistent-command-history" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="persistent-command-history"><span class="section-num">9.4</span> Persistent command history&nbsp;<a class="hanchor" href="#persistent-command-history">#</a> </h3>
 <p>Persist history over Emacs restarts. Vertico sorts by history position.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">savehist</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:init</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">savehist-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="a-few-more-useful-configurations"><span class="section-num">9.5</span> A few more useful configurations<a href="#a-few-more-useful-configurations" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="a-few-more-useful-configurations"><span class="section-num">9.5</span> A few more useful configurations&nbsp;<a class="hanchor" href="#a-few-more-useful-configurations">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; (use-package emacs</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; :init</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; Add prompt indicator to `completing-read-multiple&#39;.</span>
@@ -1311,7 +1311,7 @@ bootlegged from <a href="https://github.com/minad/consult/wiki#minads-orderless-
 </span></span><span class="line"><span class="cl">  <span class="c1">;; Enable recursive minibuffers</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">enable-recursive-minibuffers</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; )</span>
-</span></span></code></pre></div><h3 id="richer-annotations-in-minubuffer"><span class="section-num">9.6</span> Richer annotations in minubuffer<a href="#richer-annotations-in-minubuffer" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="richer-annotations-in-minubuffer"><span class="section-num">9.6</span> Richer annotations in minubuffer&nbsp;<a class="hanchor" href="#richer-annotations-in-minubuffer">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">marginalia</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">vertico</span>
 </span></span><span class="line"><span class="cl">
@@ -1333,7 +1333,7 @@ bootlegged from <a href="https://github.com/minad/consult/wiki#minads-orderless-
 </span></span><span class="line"><span class="cl">  <span class="c1">;; switch between the annotators.</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (setq marginalia-annotators &#39;(marginalia-annotators-heavy marginalia-annotators-light nil))</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="consult-adds-more-minibuffer-functionality"><span class="section-num">9.7</span> Consult adds more minibuffer functionality<a href="#consult-adds-more-minibuffer-functionality" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="consult-adds-more-minibuffer-functionality"><span class="section-num">9.7</span> Consult adds more minibuffer functionality&nbsp;<a class="hanchor" href="#consult-adds-more-minibuffer-functionality">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">consult</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; Replace bindings. Lazily loaded due by `use-package&#39;.</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:bind</span>
@@ -1389,7 +1389,7 @@ bootlegged from <a href="https://github.com/minad/consult/wiki#minads-orderless-
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">consult-flycheck</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:bind</span> <span class="p">(</span><span class="nb">:map</span> <span class="nv">flycheck-command-map</span>
 </span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="s">&#34;!&#34;</span> <span class="o">.</span> <span class="nv">consult-flycheck</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="consult-interface-for-denote"><span class="org-todo todo TODO">TODO</span> <span class="section-num">9.8</span> Consult interface for denote<a href="#consult-interface-for-denote" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="consult-interface-for-denote"><span class="org-todo todo TODO">TODO</span> <span class="section-num">9.8</span> Consult interface for denote&nbsp;<a class="hanchor" href="#consult-interface-for-denote">#</a> </h3>
 <p>I haven&rsquo;t really figured out how to programmatically add additional
 functionality/features for consult, nor have I figured out denote.  I
 got this from one random <a href="https://whhone.com/posts/denote-with-subdirectories/">blog post</a> about denote while looking for how
@@ -1399,7 +1399,7 @@ end up switching to using denote for journaling.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">consult-denote</span>
 </span></span><span class="line"><span class="cl">   <span class="nb">:straight</span> <span class="p">(</span><span class="nv">consult-denote</span> <span class="nb">:type</span> <span class="nv">git</span> <span class="nb">:host</span> <span class="nv">codeberg</span> <span class="nb">:repo</span> <span class="s">&#34;whhone/consult-denote&#34;</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="embark-actions-reorganise"><span class="org-todo todo TODO">TODO</span> <span class="section-num">9.9</span> Embark - actions; reorganise<a href="#embark-actions-reorganise" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="embark-actions-reorganise"><span class="org-todo todo TODO">TODO</span> <span class="section-num">9.9</span> Embark - actions; reorganise&nbsp;<a class="hanchor" href="#embark-actions-reorganise">#</a> </h3>
 <p>This I&rsquo;ve not used yet but makes a lot of stuff easier like
 searchingfor the <code>definition</code> or the <code>help/info</code> page a highlighted
 word from within the buffer or the minibuffer or even the minibuffer
@@ -1430,7 +1430,7 @@ completion list.</p>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; auto-updating embark collect buffer</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:hook</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">embark-collect-mode</span> <span class="o">.</span> <span class="nv">consult-preview-at-point-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h2 id="corfu-for-completion-in-buffer"><span class="section-num">10</span> Corfu for completion in buffer<a href="#corfu-for-completion-in-buffer" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="corfu-for-completion-in-buffer"><span class="section-num">10</span> Corfu for completion in buffer&nbsp;<a class="hanchor" href="#corfu-for-completion-in-buffer">#</a> </h2>
 <p>This might need some more work - integration with <a href="https://github.com/minad/cape">minad&rsquo;s <code>cape</code></a> for
 various kinds of completions although he alleges this works well with
 base Emacs.</p>
@@ -1481,7 +1481,7 @@ base Emacs.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nb">:init</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-corfu-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="cape-extensions-for-corfu"><span class="section-num">10.1</span> CAPE - extensions for corfu<a href="#cape-extensions-for-corfu" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="cape-extensions-for-corfu"><span class="section-num">10.1</span> CAPE - extensions for corfu&nbsp;<a class="hanchor" href="#cape-extensions-for-corfu">#</a> </h3>
 <p>Corfu needs <code>cape</code> to provide completion backends because it&rsquo;s extremely
 stripped down. Will have to check what other backends I&rsquo;ll need to
 enable.</p>
@@ -1501,9 +1501,9 @@ enable.</p>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;completion-at-point-functions</span> <span class="nf">#&#39;</span><span class="nv">cape-ispell</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;completion-at-point-functions</span> <span class="nf">#&#39;</span><span class="nv">cape-dict</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;completion-at-point-functions</span> <span class="nf">#&#39;</span><span class="nv">cape-symbol</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="look"><span class="section-num">11</span> Look<a href="#look" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="font-configuration"><span class="section-num">11.1</span> Font configuration<a href="#font-configuration" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
-<h4 id="setting-a-font"><span class="section-num">11.1.1</span> Setting a font<a href="#setting-a-font" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h2 id="look"><span class="section-num">11</span> Look&nbsp;<a class="hanchor" href="#look">#</a> </h2>
+<h3 id="font-configuration"><span class="section-num">11.1</span> Font configuration&nbsp;<a class="hanchor" href="#font-configuration">#</a> </h3>
+<h4 id="setting-a-font"><span class="section-num">11.1.1</span> Setting a font&nbsp;<a class="hanchor" href="#setting-a-font">#</a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; first set default</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="nb">:family</span> <span class="s">&#34;Hack&#34;</span> <span class="nb">:height</span> <span class="mi">70</span><span class="p">)</span>
@@ -1513,16 +1513,16 @@ enable.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; finally set fixed-pitch</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;fixed-pitch</span> <span class="no">nil</span> <span class="nb">:family</span> <span class="s">&#34;Hack&#34;</span> <span class="nb">:height</span> <span class="mf">1.0</span><span class="p">)</span>
-</span></span></code></pre></div><h4 id="line-spacing"><span class="section-num">11.1.2</span> Line spacing<a href="#line-spacing" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="line-spacing"><span class="section-num">11.1.2</span> Line spacing&nbsp;<a class="hanchor" href="#line-spacing">#</a> </h4>
 <p>Usually 0, less if possible but Emacs doesn&rsquo;t allow for that.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; Line spacing, can be 0 for code and 1 or 2 for text</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq-default</span> <span class="nv">line-spacing</span> <span class="mf">0.1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="editor-theme"><span class="section-num">11.2</span> Editor theme<a href="#editor-theme" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="editor-theme"><span class="section-num">11.2</span> Editor theme&nbsp;<a class="hanchor" href="#editor-theme">#</a> </h3>
 <p>Update: <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-21 Mon&gt; </span></span> Moved this up so it doesn&rsquo;t throw the cryptic
 error with Modus themes: <code>Debugger entered--Lisp error: (wrong-number-of-arguments (1 . 2) 8)</code> This is based on <a href="https://gitlab.com/protesilaos/modus-themes/-/issues/306#note_1147003189">Adam Spiers&rsquo;s comment</a> - the theme should be
 loaded before <code>custom.el</code> is pulled in to avoid issues with version
 mismatch like the shit with the <code>org</code> package.</p>
-<h4 id="ef-themes"><span class="section-num">11.2.1</span> ef-themes<a href="#ef-themes" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+<h4 id="ef-themes"><span class="section-num">11.2.1</span> ef-themes&nbsp;<a class="hanchor" href="#ef-themes">#</a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ef-themes</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
@@ -1571,7 +1571,7 @@ mismatch like the shit with the <code>org</code> package.</p>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-preview-colors&#39;</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; - `ef-themes-preview-colors-current&#39;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h4 id="modus-from-protesilaos"><span class="section-num">11.2.2</span> Modus from Protesilaos!<a href="#modus-from-protesilaos" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="modus-from-protesilaos"><span class="section-num">11.2.2</span> Modus from Protesilaos!&nbsp;<a class="hanchor" href="#modus-from-protesilaos">#</a> </h4>
 <p>This might need additional setting since modus themes are now included
 within Emacs</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">modus-themes</span>
@@ -1634,14 +1634,14 @@ within Emacs</p>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (peremacs/call-modus-operandi)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">peremacs/call-modus-vivendi</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><h4 id="commentary"><span class="section-num">11.2.3</span> Commentary<a href="#commentary" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="commentary"><span class="section-num">11.2.3</span> Commentary&nbsp;<a class="hanchor" href="#commentary">#</a> </h4>
 <p>An elegant theme highlighting comments only</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">commentary-theme</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;;:config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;;(load-theme &#39;commentary t)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h4 id="my-themes"><span class="section-num">11.2.4</span> My themes<a href="#my-themes" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="my-themes"><span class="section-num">11.2.4</span> My themes&nbsp;<a class="hanchor" href="#my-themes">#</a> </h4>
 <p>Neither of these work using <code>straight.el</code> or <code>use-package</code>, together
 or separately (afaik). If these work, I could maybe add some more of
 my own.</p>
@@ -1654,8 +1654,8 @@ themes of my own that use this macro.</p>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;:config</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;(load-theme &#39;beelzebub t)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
-</span></span></code></pre></div><h4 id="unused"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5</span> unused<a href="#unused" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
-<h5 id="wilmersdorf"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.1</span> Wilmersdorf<a href="#wilmersdorf" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h4 id="unused"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5</span> unused&nbsp;<a class="hanchor" href="#unused">#</a> </h4>
+<h5 id="wilmersdorf"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.1</span> Wilmersdorf&nbsp;<a class="hanchor" href="#wilmersdorf">#</a> </h5>
 <p>I saw this on <a href="https://github.com/hlissner/emacs-doom-themes">doom-themes</a> but I don&rsquo;t want to pull all of those just
 for this, so installing from it&rsquo;s <a href="https://github.com/ianyepan/wilmersdorf-emacs-theme">GitHub</a> using <code>straight.el</code>. But it
 fails to load with <code>use-package</code> so I&rsquo;m going to have to do it manually.</p>
@@ -1665,7 +1665,7 @@ fails to load with <code>use-package</code> so I&rsquo;m going to have to do it 
 </span></span><span class="line"><span class="cl">  <span class="c1">;; :config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;wilmersdorf t)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="tao"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.2</span> Tao<a href="#tao" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="tao"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.2</span> Tao&nbsp;<a class="hanchor" href="#tao">#</a> </h5>
 <p>Monochrome theme with minimal bold highlights and boxes?</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">tao-theme</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
@@ -1673,13 +1673,13 @@ fails to load with <code>use-package</code> so I&rsquo;m going to have to do it 
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;tao-yang</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;tao-yin t)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="expresso"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.3</span> Expresso<a href="#expresso" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="expresso"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.3</span> Expresso&nbsp;<a class="hanchor" href="#expresso">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">espresso-theme</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:host</span> <span class="nv">github</span> <span class="nb">:repo</span> <span class="s">&#34;dgutov/espresso-theme&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;:config</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;espresso</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
-</span></span></code></pre></div><h5 id="github-dark"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.4</span> Github dark<a href="#github-dark" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="github-dark"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.4</span> Github dark&nbsp;<a class="hanchor" href="#github-dark">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">github-dark-vscode-theme</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;github-dark-vscode</span> <span class="no">t</span><span class="p">)</span>
@@ -1688,25 +1688,25 @@ fails to load with <code>use-package</code> so I&rsquo;m going to have to do it 
 </span></span><span class="line"><span class="cl">  <span class="c1">;; unrelated but the cursor colour really needs improvement</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (set-cursor-color &#34;#ffffff&#34;)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="github-modern--light"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.5</span> Github modern (light)<a href="#github-modern--light" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="github-modern--light"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.5</span> Github modern (light)&nbsp;<a class="hanchor" href="#github-modern--light">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">github-modern-theme</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;github-modern</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="vale"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.6</span> Vale<a href="#vale" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="vale"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.6</span> Vale&nbsp;<a class="hanchor" href="#vale">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">vale</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:type</span> <span class="nv">git</span> <span class="nb">:repo</span> <span class="s">&#34;https://codeberg.org/ext0l/vale.el&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;vale t)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="parchment"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.7</span> Parchment<a href="#parchment" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="parchment"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.7</span> Parchment&nbsp;<a class="hanchor" href="#parchment">#</a> </h5>
 <p>Based on the screenshot of Haskell code on the <a href="https://fsd.it/shop/fonts/pragmatapro/#tab-fb289adf-7c14-8">Pragmata Pro website</a>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">Parchment-theme</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:host</span> <span class="nv">github</span> <span class="nb">:repo</span> <span class="s">&#34;brihadeesh/emacs-parchment-theme&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;Parchment t)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="almost-mono"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.8</span> Almost mono<a href="#almost-mono" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="almost-mono"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.8</span> Almost mono&nbsp;<a class="hanchor" href="#almost-mono">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">almost-mono-themes</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;almost-mono-black t)</span>
@@ -1714,17 +1714,17 @@ fails to load with <code>use-package</code> so I&rsquo;m going to have to do it 
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;almost-mono-cream t)</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (load-theme &#39;almost-mono-white t)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h5 id="stimmung-themes-for-nearly-monochrome-appearance"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.9</span> Stimmung themes for nearly monochrome appearance<a href="#stimmung-themes-for-nearly-monochrome-appearance" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="stimmung-themes-for-nearly-monochrome-appearance"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">11.2.5.9</span> Stimmung themes for nearly monochrome appearance&nbsp;<a class="hanchor" href="#stimmung-themes-for-nearly-monochrome-appearance">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">stimmung-themes</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; :straight (stimmung-themes :host github :repo &#34;motform/stimmung-themes&#34;) ; if you are a straight shooter</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (stimmung-themes-load-dark)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="highlighted-line-mode"><span class="section-num">11.3</span> Highlighted line-mode<a href="#highlighted-line-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="highlighted-line-mode"><span class="section-num">11.3</span> Highlighted line-mode&nbsp;<a class="hanchor" href="#highlighted-line-mode">#</a> </h3>
 <p><a id="code-snippet--cursorline"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; cursorline</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-hl-line-mode</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="solid-window-dividers"><span class="section-num">11.4</span> Solid window dividers<a href="#solid-window-dividers" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="solid-window-dividers"><span class="section-num">11.4</span> Solid window dividers&nbsp;<a class="hanchor" href="#solid-window-dividers">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; (setq window-divider-default-right-width 1)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (setq window-divider-default-bottom-width 1)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (setq window-divider-default-places &#39;all)</span>
@@ -1733,15 +1733,15 @@ fails to load with <code>use-package</code> so I&rsquo;m going to have to do it 
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">window-divider-default-bottom-width</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">window-divider-default-places</span> <span class="ss">&#39;right-only</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;after-init-hook</span> <span class="nf">#&#39;</span><span class="nv">window-divider-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="something-about-underlines"><span class="section-num">11.5</span> Something about underlines<a href="#something-about-underlines" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="something-about-underlines"><span class="section-num">11.5</span> Something about underlines&nbsp;<a class="hanchor" href="#something-about-underlines">#</a> </h3>
 <p>Underline line at descent position, not baseline position</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">x-underline-at-descent-line</span> <span class="no">t</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="cursor-configuration"><span class="section-num">11.6</span> Cursor configuration<a href="#cursor-configuration" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="cursor-configuration"><span class="section-num">11.6</span> Cursor configuration&nbsp;<a class="hanchor" href="#cursor-configuration">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nf">set-default</span> <span class="ss">&#39;cursor-type</span>  <span class="o">&#39;</span><span class="p">(</span><span class="nv">bar</span> <span class="o">.</span> <span class="mi">2</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">blink-cursor-mode</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="line-number-format"><span class="section-num">11.7</span> Line-number format<a href="#line-number-format" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="line-number-format"><span class="section-num">11.7</span> Line-number format&nbsp;<a class="hanchor" href="#line-number-format">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">linum-format</span> <span class="s">&#34;%4d &#34;</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="visual-not-audible-bell"><span class="section-num">11.8</span> Visual not audible bell<a href="#visual-not-audible-bell" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="visual-not-audible-bell"><span class="section-num">11.8</span> Visual not audible bell&nbsp;<a class="hanchor" href="#visual-not-audible-bell">#</a> </h3>
 <p>Flashes modeline for warnings from <a href="https://github.com/purcell/mode-line-bell">purcell</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; No sound</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">ring-bell-function</span> <span class="ss">&#39;ignore</span><span class="p">)</span>
@@ -1749,9 +1749,9 @@ fails to load with <code>use-package</code> so I&rsquo;m going to have to do it 
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">mode-line-bell</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">mode-line-bell-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="no-tooltips"><span class="section-num">11.9</span> No Tooltips<a href="#no-tooltips" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="no-tooltips"><span class="section-num">11.9</span> No Tooltips&nbsp;<a class="hanchor" href="#no-tooltips">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">tooltip-mode</span> <span class="mi">0</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="minibuffer-appearance"><span class="section-num">11.10</span> Minibuffer appearance?<a href="#minibuffer-appearance" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="minibuffer-appearance"><span class="section-num">11.10</span> Minibuffer appearance?&nbsp;<a class="hanchor" href="#minibuffer-appearance">#</a> </h3>
 <p>As per <a href="https://www.reddit.com/r/emacs/comments/rxa29k/is_it_possible_to_have_a_window_which_is_just_the/hrhvrqw/">Hamilton9508&rsquo;s comment</a> he makes a single minibuffer-only frame
 across the bottom of the Emacs window and so the rest of the frames
 have only a single buffer (i.e. the buffer being edited/used) and no
@@ -1768,18 +1768,18 @@ perhaps give it a shot.</p>
 </span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">height</span> <span class="o">.</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">internal-border-width</span> <span class="o">.</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">minibuffer</span> <span class="o">.</span> <span class="nv">only</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="minimalist-and-ordered-mode-line"><span class="section-num">11.11</span> Minimalist and ordered mode-line<a href="#minimalist-and-ordered-mode-line" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="minimalist-and-ordered-mode-line"><span class="section-num">11.11</span> Minimalist and ordered mode-line&nbsp;<a class="hanchor" href="#minimalist-and-ordered-mode-line">#</a> </h3>
 <p>People seem to use packages for this. I&rsquo;ve considered using the
 <a href="https://github.com/seagle0128/doom-modeline">doom-modeline</a> but it seems to be pretty heavy in terms of dependencies
 and I&rsquo;d like a mode-line with a much more fundamental interface
 although it&rsquo;s still a good contender considering it&rsquo;s very simple to
 configure. I&rsquo;m also considering <a href="https://github.com/gexplorer/simple-modeline">simple-mode-line</a>.</p>
-<h4 id="mood-line-because-i-m-fucking-tired"><span class="section-num">11.11.1</span> Mood-line because I&rsquo;m fucking tired<a href="#mood-line-because-i-m-fucking-tired" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+<h4 id="mood-line-because-i-m-fucking-tired"><span class="section-num">11.11.1</span> Mood-line because I&rsquo;m fucking tired&nbsp;<a class="hanchor" href="#mood-line-because-i-m-fucking-tired">#</a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">mood-line</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">mood-line-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="pulse-to-locate-cursor-with-protesilaos-s-pulsar"><span class="section-num">11.12</span> Pulse to locate cursor with Protesilaos&rsquo;s pulsar<a href="#pulse-to-locate-cursor-with-protesilaos-s-pulsar" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="pulse-to-locate-cursor-with-protesilaos-s-pulsar"><span class="section-num">11.12</span> Pulse to locate cursor with Protesilaos&rsquo;s pulsar&nbsp;<a class="hanchor" href="#pulse-to-locate-cursor-with-protesilaos-s-pulsar">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">pulsar</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:host</span> <span class="nv">gitlab</span> <span class="nb">:repo</span> <span class="s">&#34;protesilaos/pulsar&#34;</span><span class="p">)</span>
@@ -1834,12 +1834,12 @@ configure. I&rsquo;m also considering <a href="https://github.com/gexplorer/simp
 </span></span><span class="line"><span class="cl">  <span class="nb">:hook</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">consult-after-jump</span> <span class="o">.</span> <span class="nv">pulsar-recenter-top</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">consult-after-jump</span> <span class="o">.</span> <span class="nv">pulsar-reveal-entry</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="display-complex-key-binding-suggestions"><span class="section-num">11.13</span> Display complex key-binding suggestions<a href="#display-complex-key-binding-suggestions" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="display-complex-key-binding-suggestions"><span class="section-num">11.13</span> Display complex key-binding suggestions&nbsp;<a class="hanchor" href="#display-complex-key-binding-suggestions">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">which-key</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">which-key-mode</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">which-key-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="diminish-for-a-cleaner-modeline"><span class="section-num">11.14</span> Diminish for a cleaner modeline<a href="#diminish-for-a-cleaner-modeline" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="diminish-for-a-cleaner-modeline"><span class="section-num">11.14</span> Diminish for a cleaner modeline&nbsp;<a class="hanchor" href="#diminish-for-a-cleaner-modeline">#</a> </h3>
 <p><code>org-indent-mode</code> doesn&rsquo;t get disabled by the default method.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">diminish</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:diminish</span> <span class="nv">auto-fill-function</span>
@@ -1851,22 +1851,22 @@ configure. I&rsquo;m also considering <a href="https://github.com/gexplorer/simp
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">diminish</span> <span class="ss">&#39;org-indent-mode</span> <span class="s">&#34;&#34;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-indent-mode-hook</span> <span class="ss">&#39;peremacs/diminish-org-indent</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="pixel-scroll-precision-mode--emacs-29-plus"><span class="section-num">11.15</span> Pixel scroll precision mode (Emacs 29+)<a href="#pixel-scroll-precision-mode--emacs-29-plus" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="pixel-scroll-precision-mode--emacs-29-plus"><span class="section-num">11.15</span> Pixel scroll precision mode (Emacs 29+)&nbsp;<a class="hanchor" href="#pixel-scroll-precision-mode--emacs-29-plus">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">pixel-scroll-precision-mode</span> <span class="mi">+1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="make-emacs-the-window-title"><span class="section-num">11.16</span> Make &ldquo;Emacs&rdquo; the <strong>window title</strong><a href="#make-emacs-the-window-title" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="make-emacs-the-window-title"><span class="section-num">11.16</span> Make &ldquo;Emacs&rdquo; the <strong>window title</strong>&nbsp;<a class="hanchor" href="#make-emacs-the-window-title">#</a> </h3>
 <p><a id="code-snippet--set-window-title"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq-default</span> <span class="nv">frame-title-format</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;Emacs&#34;</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="make-scratch-buffer-and-minibuffer-blank"><span class="section-num">11.17</span> Make <strong>scratch</strong> buffer and <strong>minibuffer</strong> blank<a href="#make-scratch-buffer-and-minibuffer-blank" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="make-scratch-buffer-and-minibuffer-blank"><span class="section-num">11.17</span> Make <strong>scratch</strong> buffer and <strong>minibuffer</strong> blank&nbsp;<a class="hanchor" href="#make-scratch-buffer-and-minibuffer-blank">#</a> </h3>
 <p><a id="code-snippet--blank-startup"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">initial-scratch-message</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">inhibit-startup-echo-area-message</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">inhibit-startup-message</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">initial-scratch-message</span> <span class="no">nil</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="show-keystrokes"><span class="section-num">11.18</span> Show keystrokes<a href="#show-keystrokes" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="show-keystrokes"><span class="section-num">11.18</span> Show keystrokes&nbsp;<a class="hanchor" href="#show-keystrokes">#</a> </h3>
 <p>Stolen from <a href="https://github.com/karthink/emacs.d">Karthik Chikmaglur&rsquo;s emacs.d</a>; shows what is typed immediately.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">echo-keystrokes</span> <span class="mf">0.01</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="window-management"><span class="section-num">12</span> Window Management<a href="#window-management" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="exwm"><span class="section-num">12.1</span> EXWM<a href="#exwm" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="window-management"><span class="section-num">12</span> Window Management&nbsp;<a class="hanchor" href="#window-management">#</a> </h2>
+<h3 id="exwm"><span class="section-num">12.1</span> EXWM&nbsp;<a class="hanchor" href="#exwm">#</a> </h3>
 <p>This ofc <strong>doesn&rsquo;t work</strong> on wayland and <code>pgtk</code> emacs but am I willing
 to learn C++ and emacs-lisp well enough to contribute to porting this
 to wayland/wlroots or something?</p>
@@ -1915,7 +1915,7 @@ to wayland/wlroots or something?</p>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">exwm-input-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;s-k&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">windmove-up</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">exwm-input-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;s-l&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">windmove-right</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">exwm-input-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;s-w&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">exwm-workspace-switch</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="workspaces-with-perspective-el"><span class="section-num">12.2</span> Workspaces with perspective-el<a href="#workspaces-with-perspective-el" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="workspaces-with-perspective-el"><span class="section-num">12.2</span> Workspaces with perspective-el&nbsp;<a class="hanchor" href="#workspaces-with-perspective-el">#</a> </h3>
 <p>Independent workspaces for different projects like profiles on RStudio
 but perhaps a lot more dynamic. This might need more work hence adding
 <a href="https://github.com/nex3/perspective-el">a link to the project page</a> here.</p>
@@ -1938,11 +1938,11 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </span></span><span class="line"><span class="cl">  <span class="c1">;; Running `persp-mode&#39; multiple times resets the perspective list...</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nf">equal</span> <span class="p">(</span><span class="nf">default-value</span> <span class="ss">&#39;persp-mode</span><span class="p">)</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">persp-mode</span> <span class="mi">1</span><span class="p">)))</span>
-</span></span></code></pre></div><h4 id="persp-projectile-for-proper-workspace-window-management"><span class="section-num">12.2.1</span> persp-projectile for proper workspace window management<a href="#persp-projectile-for-proper-workspace-window-management" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="persp-projectile-for-proper-workspace-window-management"><span class="section-num">12.2.1</span> persp-projectile for proper workspace window management&nbsp;<a class="hanchor" href="#persp-projectile-for-proper-workspace-window-management">#</a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">persp-projectile</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:bind</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="s">&#34;C-x x s&#34;</span><span class="o">.</span> <span class="nv">persp-projectile-switch-project</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="undo-disrupted-window-frame-arrangement-after-using-some-shit"><span class="section-num">12.3</span> Undo disrupted window/frame arrangement after using some shit<a href="#undo-disrupted-window-frame-arrangement-after-using-some-shit" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="undo-disrupted-window-frame-arrangement-after-using-some-shit"><span class="section-num">12.3</span> Undo disrupted window/frame arrangement after using some shit&nbsp;<a class="hanchor" href="#undo-disrupted-window-frame-arrangement-after-using-some-shit">#</a> </h3>
 <p>Stolen from <a href="https://github.com/karthink/emacs.d">Karthik Chikmaglur&rsquo;s emacs.d</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">winner</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:disabled</span>
@@ -1952,7 +1952,7 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="s">&#34;s-S-/&#34;</span> <span class="o">.</span> <span class="nv">winner-redo</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">winner-mode</span> <span class="mi">+1</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="ace-window-helps-with-navigation-between-multiple-windows"><span class="section-num">12.4</span> Ace-window helps with navigation between multiple windows<a href="#ace-window-helps-with-navigation-between-multiple-windows" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="ace-window-helps-with-navigation-between-multiple-windows"><span class="section-num">12.4</span> Ace-window helps with navigation between multiple windows&nbsp;<a class="hanchor" href="#ace-window-helps-with-navigation-between-multiple-windows">#</a> </h3>
 <p>Simpler navigation between open Emacs windows</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ace-window</span>
 </span></span><span class="line"><span class="cl">
@@ -1964,7 +1964,7 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="s">&#34;M-o&#34;</span> <span class="o">.</span> <span class="nv">ace-window</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">ace-window-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h5 id="other-actions-that-ace-window-handles"><span class="org-todo todo TODO">TODO</span> <span class="section-num">12.4.0.1</span> Other actions that <code>ace-window</code> handles:<a href="#other-actions-that-ace-window-handles" class="hanchor" ariaLabel="Anchor"> #</a> </h5>
+</span></span></code></pre></div><h5 id="other-actions-that-ace-window-handles"><span class="org-todo todo TODO">TODO</span> <span class="section-num">12.4.0.1</span> Other actions that <code>ace-window</code> handles:&nbsp;<a class="hanchor" href="#other-actions-that-ace-window-handles">#</a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defvar</span> <span class="nv">aw-dispatch-alist</span>
 </span></span><span class="line"><span class="cl"><span class="o">&#39;</span><span class="p">((</span><span class="sc">?x</span> <span class="nv">aw-delete-window</span> <span class="s">&#34;Delete Window&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="sc">?m</span> <span class="nv">aw-swap-window</span> <span class="s">&#34;Swap Windows&#34;</span><span class="p">)</span>
@@ -1979,7 +1979,7 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="sc">?o</span> <span class="nv">delete-other-windows</span> <span class="s">&#34;Delete Other Windows&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="sc">??</span> <span class="nv">aw-show-dispatch-help</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="s">&#34;List of actions for </span><span class="ss">`aw-dispatch-default&#39;</span><span class="s">.&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="sane-native-window-management"><span class="org-todo todo TODO">TODO</span> <span class="section-num">12.5</span> Sane native window management<a href="#sane-native-window-management" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="sane-native-window-management"><span class="org-todo todo TODO">TODO</span> <span class="section-num">12.5</span> Sane native window management&nbsp;<a class="hanchor" href="#sane-native-window-management">#</a> </h3>
 <p>Focuses new windows when created.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; Window management</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; focus new windows once created</span>
@@ -1999,7 +1999,7 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">split-window-vertically</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">other-window</span> <span class="mi">1</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="better-popups-with-popper"><span class="section-num">12.6</span> Better popups with popper<a href="#better-popups-with-popper" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="better-popups-with-popper"><span class="section-num">12.6</span> Better popups with popper&nbsp;<a class="hanchor" href="#better-popups-with-popper">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">popper</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:bind</span> <span class="p">((</span><span class="s">&#34;C-`&#34;</span>   <span class="o">.</span> <span class="nv">popper-toggle-latest</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="s">&#34;M-`&#34;</span>   <span class="o">.</span> <span class="nv">popper-cycle</span><span class="p">)</span>
@@ -2041,8 +2041,8 @@ but perhaps a lot more dynamic. This might need more work hence adding
 </span></span><span class="line"><span class="cl">    <span class="c1">;; echo area hints?</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">popper-echo-mode</span> <span class="mi">+1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
-</span></span></code></pre></div><h2 id="garbage"><span class="section-num">13</span> Garbage<a href="#garbage" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h4 id="from-customize-api"><span class="section-num">13.0.1</span> from customize API<a href="#from-customize-api" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h2 id="garbage"><span class="section-num">13</span> Garbage&nbsp;<a class="hanchor" href="#garbage">#</a> </h2>
+<h4 id="from-customize-api"><span class="section-num">13.0.1</span> from customize API&nbsp;<a class="hanchor" href="#from-customize-api">#</a> </h4>
 <p>This keeps the init.el cleaner and without junk from <code>customize.el</code>
 API allows for an option to gitignore your <code>custom.el</code> cause it&rsquo;s
 junk.</p>
@@ -2057,7 +2057,7 @@ junk.</p>
 </span></span><span class="line"><span class="cl"><span class="c1">;; Load custom file. Don&#39;t hide errors. Hide success message</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; OR DON&#39;T EVEN BOTHER WITH IT</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (load custom-file nil t)</span>
-</span></span></code></pre></div><h4 id="from-backups-and-autosaves"><span class="section-num">13.0.2</span> from backups and autosaves(?)<a href="#from-backups-and-autosaves" class="hanchor" ariaLabel="Anchor"> #</a> </h4>
+</span></span></code></pre></div><h4 id="from-backups-and-autosaves"><span class="section-num">13.0.2</span> from backups and autosaves(?)&nbsp;<a class="hanchor" href="#from-backups-and-autosaves">#</a> </h4>
 <p><a id="code-snippet--organise-junk"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;;; Put Emacs auto-save and backup files to one folder</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defconst</span> <span class="nv">emacs-tmp-dir</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;emacs%d&#34;</span> <span class="p">(</span><span class="nf">user-uid</span><span class="p">))</span> <span class="nv">temporary-file-directory</span><span class="p">))</span>
@@ -2074,17 +2074,17 @@ junk.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;;; Lockfiles unfortunately cause more pain than benefit</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">create-lockfiles</span> <span class="no">nil</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="defaults"><span class="section-num">14</span> Defaults<a href="#defaults" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="defaults"><span class="section-num">14</span> Defaults&nbsp;<a class="hanchor" href="#defaults">#</a> </h2>
 <p>Primarily bootlegged from <a href="https://sanemacs.com">Sanemacs</a> and changed when appropriate (and
 when I thought I understood what I was doing)</p>
-<h3 id="disable-native-popups-----and-bell"><span class="section-num">14.1</span> Disable native popups(?) and bell<a href="#disable-native-popups-----and-bell" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<h3 id="disable-native-popups-----and-bell"><span class="section-num">14.1</span> Disable native popups(?) and bell&nbsp;<a class="hanchor" href="#disable-native-popups-----and-bell">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; not sure what this is about</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (setq-default indent-tabs-mode nil)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; disable popups?</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (setq pop-up-windows nil)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; Disable bell sound</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">ring-bell-function</span> <span class="ss">&#39;ignore</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="only-y-or-n-prompts-for-speed"><span class="section-num">14.2</span> Only <strong>y or n prompts</strong> for speed<a href="#only-y-or-n-prompts-for-speed" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="only-y-or-n-prompts-for-speed"><span class="section-num">14.2</span> Only <strong>y or n prompts</strong> for speed&nbsp;<a class="hanchor" href="#only-y-or-n-prompts-for-speed">#</a> </h3>
 <p>Apparently there is a <code>short-answers</code> variable</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; (fset &#39;yes-or-no-p &#39;y-or-n-p)</span>
 </span></span><span class="line"><span class="cl">
@@ -2093,13 +2093,13 @@ when I thought I understood what I was doing)</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"> <span class="c1">;; Ok to visit non existent files (no confirmation reqd)</span>
 </span></span><span class="line"><span class="cl"> <span class="nv">confirm-nonexistent-file-or-buffer</span> <span class="no">nil</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="merge-emacs-and-system-clipboards"><span class="section-num">14.3</span> Merge Emacs and system clipboards<a href="#merge-emacs-and-system-clipboards" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="merge-emacs-and-system-clipboards"><span class="section-num">14.3</span> Merge Emacs and system clipboards&nbsp;<a class="hanchor" href="#merge-emacs-and-system-clipboards">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; Merge system&#39;s and Emacs&#39; clipboard</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq-default</span> <span class="nv">select-enable-clipboard</span> <span class="no">t</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="overwrite-selected-text"><span class="section-num">14.4</span> Overwrite selected text<a href="#overwrite-selected-text" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="overwrite-selected-text"><span class="section-num">14.4</span> Overwrite selected text&nbsp;<a class="hanchor" href="#overwrite-selected-text">#</a> </h3>
 <p><a id="code-snippet--overwrite-active-region"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">delete-selection-mode</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="join-line-to-following-line"><span class="section-num">14.5</span> Join line to following line<a href="#join-line-to-following-line" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="join-line-to-following-line"><span class="section-num">14.5</span> Join line to following line&nbsp;<a class="hanchor" href="#join-line-to-following-line">#</a> </h3>
 <p>Plagiarised from <a href="https://pragmaticemacs.com/emacs/join-line-to-following-line/">pragmatic emacs</a>. For the reverse, emacs has a
 slightly obscurely named command <code>delete-indentation</code> which is bound
 to <code>M-^</code> which can be rather useful. From the help for the function
@@ -2110,12 +2110,12 @@ to <code>M-^</code> which can be rather useful. From the help for the function
 </span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">                  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                  <span class="p">(</span><span class="nv">join-line</span> <span class="mi">-1</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="simpler-kill-buffer-behaviour"><span class="section-num">14.6</span> Simpler kill buffer behaviour<a href="#simpler-kill-buffer-behaviour" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="simpler-kill-buffer-behaviour"><span class="section-num">14.6</span> Simpler kill buffer behaviour&nbsp;<a class="hanchor" href="#simpler-kill-buffer-behaviour">#</a> </h3>
 <p><a id="code-snippet--buffer-killer"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">peremacs/kill-this-buffer</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span> <span class="p">(</span><span class="nf">kill-buffer</span> <span class="p">(</span><span class="nf">current-buffer</span><span class="p">)))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-x k&#34;</span><span class="p">)</span> <span class="ss">&#39;peremacs/kill-this-buffer</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="kill-without-accessing-clipboard-reassess-if-this-is-really-necessary"><span class="section-num">14.7</span> Kill without accessing clipboard - reassess if this is really necessary<a href="#kill-without-accessing-clipboard-reassess-if-this-is-really-necessary" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="kill-without-accessing-clipboard-reassess-if-this-is-really-necessary"><span class="section-num">14.7</span> Kill without accessing clipboard - reassess if this is really necessary&nbsp;<a class="hanchor" href="#kill-without-accessing-clipboard-reassess-if-this-is-really-necessary">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">peremacs/backward-kill-word</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span> <span class="s">&#34;*&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">push-mark</span><span class="p">)</span>
@@ -2124,23 +2124,23 @@ to <code>M-^</code> which can be rather useful. From the help for the function
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;M-DEL&#34;</span><span class="p">)</span> <span class="ss">&#39;peremacs/backward-kill-word</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-DEL&#34;</span><span class="p">)</span> <span class="ss">&#39;peremacs/backward-kill-word</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="return-to-last-position-in-buffer"><span class="section-num">14.8</span> Return to last position in buffer<a href="#return-to-last-position-in-buffer" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="return-to-last-position-in-buffer"><span class="section-num">14.8</span> Return to last position in buffer&nbsp;<a class="hanchor" href="#return-to-last-position-in-buffer">#</a> </h3>
 <p>Opens files at last position used. Something about this on <a href="https://www.emacswiki.org/emacs/SavePlace">Emacs Wiki</a></p>
 <p><a id="code-snippet--save-place"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">save-place-mode</span> <span class="mi">1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="prompt-before-closing-emacs"><span class="section-num">14.9</span> Prompt before closing Emacs<a href="#prompt-before-closing-emacs" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="prompt-before-closing-emacs"><span class="section-num">14.9</span> Prompt before closing Emacs&nbsp;<a class="hanchor" href="#prompt-before-closing-emacs">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; Confirm when killing Emacs</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">confirm-kill-emacs</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">prompt</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                           <span class="p">(</span><span class="nv">y-or-n-p-with-timeout</span> <span class="nv">prompt</span> <span class="mi">2</span> <span class="no">nil</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="prevent-angle-braces-from-throwing-errors"><span class="section-num">14.10</span> Prevent angle braces from throwing errors<a href="#prevent-angle-braces-from-throwing-errors" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="prevent-angle-braces-from-throwing-errors"><span class="section-num">14.10</span> Prevent angle braces from throwing errors&nbsp;<a class="hanchor" href="#prevent-angle-braces-from-throwing-errors">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nf">modify-syntax-entry</span> <span class="sc">?&lt;</span> <span class="s">&#34;.&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nf">modify-syntax-entry</span> <span class="sc">?&gt;</span> <span class="s">&#34;.&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="don-t-follow-symlinks"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">14.11</span> Don&rsquo;t follow symlinks<a href="#don-t-follow-symlinks" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="don-t-follow-symlinks"><span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">14.11</span> Don&rsquo;t follow symlinks&nbsp;<a class="hanchor" href="#don-t-follow-symlinks">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; don&#39;t follow symlinks? hopefully this solves the</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; `symbols function definition is void: org-file-name-concat&#39; error</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">vc-follow-symlinks</span> <span class="no">nil</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="code-utilities"><span class="section-num">15</span> Code utilities<a href="#code-utilities" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="templates-and-snippets-with-minad-s-tempel"><span class="org-todo todo TODO">TODO</span> <span class="section-num">15.1</span> Templates and snippets with minad&rsquo;s tempel<a href="#templates-and-snippets-with-minad-s-tempel" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="code-utilities"><span class="section-num">15</span> Code utilities&nbsp;<a class="hanchor" href="#code-utilities">#</a> </h2>
+<h3 id="templates-and-snippets-with-minad-s-tempel"><span class="org-todo todo TODO">TODO</span> <span class="section-num">15.1</span> Templates and snippets with minad&rsquo;s tempel&nbsp;<a class="hanchor" href="#templates-and-snippets-with-minad-s-tempel">#</a> </h3>
 <p>Seems a lot simpler than yasnippet but will have to work on templates.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">tempel</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; Require trigger prefix before template name when completing.</span>
@@ -2176,13 +2176,13 @@ eventually switch to something like that.</p>
 </span></span><span class="line"><span class="cl">    <span class="c1">;; (add-hook &#39;prog-mode-hook #&#39;tempel-abbrev-mode)</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;; (global-tempel-abbrev-mode)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
-</span></span></code></pre></div><h3 id="snippets"><span class="section-num">15.2</span> Snippets<a href="#snippets" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="snippets"><span class="section-num">15.2</span> Snippets&nbsp;<a class="hanchor" href="#snippets">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">yasnippet</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:disabled</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">yas-global-mode</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">yas-minor-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="syntax-checking-with-flycheck"><span class="section-num">15.3</span> Syntax checking with Flycheck<a href="#syntax-checking-with-flycheck" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="syntax-checking-with-flycheck"><span class="section-num">15.3</span> Syntax checking with Flycheck&nbsp;<a class="hanchor" href="#syntax-checking-with-flycheck">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">flycheck</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:defer</span> <span class="no">t</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:hook</span>
@@ -2191,7 +2191,7 @@ eventually switch to something like that.</p>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">sh-mode</span> <span class="o">.</span> <span class="nv">flycheck-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">flycheck-mode</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="bash-use-tabs-instead-of-spaces"><span class="section-num">15.4</span> Bash - use tabs instead of spaces<a href="#bash-use-tabs-instead-of-spaces" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="bash-use-tabs-instead-of-spaces"><span class="section-num">15.4</span> Bash - use tabs instead of spaces&nbsp;<a class="hanchor" href="#bash-use-tabs-instead-of-spaces">#</a> </h3>
 <p>Maybe this needs to be universal but this is especially annoying when
 I edit void-packages &rsquo;template&rsquo;s which specifically need tabs in the
 custom functions below.</p>
@@ -2200,79 +2200,79 @@ custom functions below.</p>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">indent-tabs-mode</span> <span class="no">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">tab-width</span> <span class="mi">8</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;write-file-functions</span> <span class="ss">&#39;delete-trailing-whitespace</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="auto-paired-parens"><span class="section-num">15.5</span> Auto-paired parens<a href="#auto-paired-parens" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="auto-paired-parens"><span class="section-num">15.5</span> Auto-paired parens&nbsp;<a class="hanchor" href="#auto-paired-parens">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">electric-pair-mode</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">electric-pair-preserve-balance</span> <span class="no">nil</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="show-matching-parens"><span class="section-num">15.6</span> Show matching parens<a href="#show-matching-parens" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="show-matching-parens"><span class="section-num">15.6</span> Show matching parens&nbsp;<a class="hanchor" href="#show-matching-parens">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">show-paren-mode</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; Worst possible setting with this theme - it sucks balls</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; (setq show-paren-style &#39;expression)</span>
-</span></span></code></pre></div><h3 id="cua-mode"><span class="section-num">15.7</span> CUA mode<a href="#cua-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="cua-mode"><span class="section-num">15.7</span> CUA mode&nbsp;<a class="hanchor" href="#cua-mode">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">cua-enable-cua-keys</span> <span class="no">nil</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; for rectangles, CUA is nice</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">cua-mode</span> <span class="no">t</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="aggressive-indentation-coz-ocd"><span class="section-num">15.8</span> Aggressive <strong>indentation</strong> coz OCD<a href="#aggressive-indentation-coz-ocd" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="aggressive-indentation-coz-ocd"><span class="section-num">15.8</span> Aggressive <strong>indentation</strong> coz OCD&nbsp;<a class="hanchor" href="#aggressive-indentation-coz-ocd">#</a> </h3>
 <p>&hellip;and I hate doing it manually and Emacs usually refuses to do it by
 itself</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">aggressive-indent</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span> <span class="p">(</span><span class="nv">global-aggressive-indent-mode</span> <span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:diminish</span> <span class="nv">aggressive-indent-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="bug-hunter"><span class="section-num">15.9</span> Bug-hunter<a href="#bug-hunter" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="bug-hunter"><span class="section-num">15.9</span> Bug-hunter&nbsp;<a class="hanchor" href="#bug-hunter">#</a> </h3>
 <p>&hellip;except those that you can eat</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">bug-hunter</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="cl-libify"><span class="section-num">15.10</span> cl-libify<a href="#cl-libify" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="cl-libify"><span class="section-num">15.10</span> cl-libify&nbsp;<a class="hanchor" href="#cl-libify">#</a> </h3>
 <p>Convert all (deperecated) <code>cl</code> symbols to <code>cl-lib</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">cl-libify</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:disabled</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="iedit"><span class="section-num">15.11</span> Iedit<a href="#iedit" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="iedit"><span class="section-num">15.11</span> Iedit&nbsp;<a class="hanchor" href="#iedit">#</a> </h3>
 <p>A more intuitive way to alter all the occurrences of a word/keyword at once</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">iedit</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="show-line-numbers-in-programming-modes"><span class="section-num">15.12</span> Show line numbers in programming modes<a href="#show-line-numbers-in-programming-modes" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="show-line-numbers-in-programming-modes"><span class="section-num">15.12</span> Show line numbers in programming modes&nbsp;<a class="hanchor" href="#show-line-numbers-in-programming-modes">#</a> </h3>
 <p><a id="code-snippet--linum-for-progmode"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;prog-mode-hook</span>
 </span></span><span class="line"><span class="cl">                <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nb">and</span> <span class="p">(</span><span class="nf">fboundp</span> <span class="ss">&#39;display-line-numbers-mode</span><span class="p">)</span> <span class="p">(</span><span class="nv">display-graphic-p</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">                    <span class="nf">#&#39;</span><span class="nv">display-line-numbers-mode</span>
 </span></span><span class="line"><span class="cl">                  <span class="nf">#&#39;</span><span class="nv">linum-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="files-from-script-directories-default-to-shell-mode"><span class="section-num">15.13</span> Files from script directories default to shell-mode<a href="#files-from-script-directories-default-to-shell-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="files-from-script-directories-default-to-shell-mode"><span class="section-num">15.13</span> Files from script directories default to shell-mode&nbsp;<a class="hanchor" href="#files-from-script-directories-default-to-shell-mode">#</a> </h3>
 <p>Scope for adding more such shit?</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;/bin/&#34;</span> <span class="o">.</span> <span class="nv">sh-mode</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;/srcpkgs/[[:ascii:]]+/template&#34;</span> <span class="o">.</span> <span class="nv">sh-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="editing-root-files-and-privelege-escalation-for-tramp-if-i-ever-use-it"><span class="section-num">15.14</span> Editing root files &amp; privelege escalation for TRAMP if I ever use it<a href="#editing-root-files-and-privelege-escalation-for-tramp-if-i-ever-use-it" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="editing-root-files-and-privelege-escalation-for-tramp-if-i-ever-use-it"><span class="section-num">15.14</span> Editing root files &amp; privelege escalation for TRAMP if I ever use it&nbsp;<a class="hanchor" href="#editing-root-files-and-privelege-escalation-for-tramp-if-i-ever-use-it">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">su</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; :config</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; (su-mode +1)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="whitespace-mopup"><span class="section-num">15.15</span> Whitespace mopup<a href="#whitespace-mopup" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="whitespace-mopup"><span class="section-num">15.15</span> Whitespace mopup&nbsp;<a class="hanchor" href="#whitespace-mopup">#</a> </h3>
 <p><a id="code-snippet--del-whitespace"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;before-save-hook</span>
 </span></span><span class="line"><span class="cl">          <span class="ss">&#39;delete-trailing-whitespace</span><span class="p">)</span> <span class="c1">;; Delete trailing whitespace on save</span>
-</span></span></code></pre></div><h3 id="multiple-cursors"><span class="section-num">15.16</span> Multiple cursors<a href="#multiple-cursors" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="multiple-cursors"><span class="section-num">15.16</span> Multiple cursors&nbsp;<a class="hanchor" href="#multiple-cursors">#</a> </h3>
 <p>This is like <code>C-v</code>, a visual mode in vim/neovim. I stole this from
 <a href="https://pragmaticemacs.com/emacs/multiple-cursors/">pragmatic emacs</a>.</p>
 <p><a id="code-snippet--multiple-cursors"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c m c&#34;</span><span class="p">)</span> <span class="ss">&#39;peremacs/edit-lines</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="delete-blank-lines-and-whitespace-interactively"><span class="section-num">15.17</span> Delete blank lines and whitespace interactively<a href="#delete-blank-lines-and-whitespace-interactively" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="delete-blank-lines-and-whitespace-interactively"><span class="section-num">15.17</span> Delete blank lines and whitespace interactively&nbsp;<a class="hanchor" href="#delete-blank-lines-and-whitespace-interactively">#</a> </h3>
 <p>Plagiarised from <a href="https://pragmaticemacs.com/emacs/delete-blank-lines-and-shrink-whitespace/">pragmatic emacs</a></p>
 <p><a id="code-snippet--shrink-whitespace"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;M-SPC&#34;</span><span class="p">)</span> <span class="ss">&#39;shrink-whitespace</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="autoupdate-buffer-if-files-has-changed-on-disk"><span class="section-num">15.18</span> Autoupdate buffer if files has changed on disk<a href="#autoupdate-buffer-if-files-has-changed-on-disk" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="autoupdate-buffer-if-files-has-changed-on-disk"><span class="section-num">15.18</span> Autoupdate buffer if files has changed on disk&nbsp;<a class="hanchor" href="#autoupdate-buffer-if-files-has-changed-on-disk">#</a> </h3>
 <p><a id="code-snippet--reload-buffer-on-modification"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">global-auto-revert-mode</span> <span class="no">t</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="languages"><span class="section-num">16</span> Languages<a href="#languages" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="vimscript-for-editing-neovim-init"><span class="section-num">16.1</span> Vimscript for editing neovim init<a href="#vimscript-for-editing-neovim-init" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="languages"><span class="section-num">16</span> Languages&nbsp;<a class="hanchor" href="#languages">#</a> </h2>
+<h3 id="vimscript-for-editing-neovim-init"><span class="section-num">16.1</span> Vimscript for editing neovim init&nbsp;<a class="hanchor" href="#vimscript-for-editing-neovim-init">#</a> </h3>
 <p>&hellip;cause neovim sucks and I don&rsquo;t like leaving Emacs in the ideal
 case. I might end up replacing this with a <strong>lua config</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; vimrc syntax</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">vimrc-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;; :ensure t</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;\\.vim\\(rc\\)?\\&#39;&#34;</span> <span class="o">.</span> <span class="nv">vimrc-mode</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="lua-mode"><span class="section-num">16.2</span> Lua mode?<a href="#lua-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="lua-mode"><span class="section-num">16.2</span> Lua mode?&nbsp;<a class="hanchor" href="#lua-mode">#</a> </h3>
 <p>I intend to learn and use lua for my neovim config.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">lua-mode</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="c-and-c-plus-plus"><span class="section-num">16.3</span> C and C++ ???<a href="#c-and-c-plus-plus" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="c-and-c-plus-plus"><span class="section-num">16.3</span> C and C++ ???&nbsp;<a class="hanchor" href="#c-and-c-plus-plus">#</a> </h3>
 <p>Like really?</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;; (use-package cc-mode)</span>
-</span></span></code></pre></div><h3 id="el-doc-for-help-in-echo-area"><span class="section-num">16.4</span> El Doc for help in echo area<a href="#el-doc-for-help-in-echo-area" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="el-doc-for-help-in-echo-area"><span class="section-num">16.4</span> El Doc for help in echo area&nbsp;<a class="hanchor" href="#el-doc-for-help-in-echo-area">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">eldoc</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:type</span> <span class="nv">built-in</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
@@ -2281,11 +2281,11 @@ case. I might end up replacing this with a <strong>lua config</strong></p>
 </span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">lisp-interaction-mode-hook</span> <span class="o">.</span> <span class="nv">eldoc-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">ielm-mode-hook</span> <span class="o">.</span> <span class="nv">eldoc-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">eldoc-mode</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="zig-mode"><span class="section-num">16.5</span> Zig mode<a href="#zig-mode" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="zig-mode"><span class="section-num">16.5</span> Zig mode&nbsp;<a class="hanchor" href="#zig-mode">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">zig-mode</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;\\.zig\\&#39;&#34;</span> <span class="o">.</span> <span class="nv">zig-mode</span><span class="p">)))</span>
-</span></span></code></pre></div><h3 id="yaml"><span class="section-num">16.6</span> Yaml<a href="#yaml" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="yaml"><span class="section-num">16.6</span> Yaml&nbsp;<a class="hanchor" href="#yaml">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">yaml-mode</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
@@ -2297,7 +2297,7 @@ case. I might end up replacing this with a <strong>lua config</strong></p>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;yaml-mode-hook</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nf">define-key</span> <span class="nv">yaml-mode-map</span> <span class="s">&#34;\C-m&#34;</span> <span class="ss">&#39;newline-and-indent</span><span class="p">))))</span>
-</span></span></code></pre></div><h2 id="terminal"><span class="section-num">17</span> Terminal<a href="#terminal" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="terminal"><span class="section-num">17</span> Terminal&nbsp;<a class="hanchor" href="#terminal">#</a> </h2>
 <p>Vterm ftw</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">vterm</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">;; :ensure t</span>
@@ -2348,8 +2348,8 @@ buffer to vterm so it sticks to the window it was launched with.</p>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">apply</span> <span class="nv">orig-fun</span> <span class="nv">args</span><span class="p">)))</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">advice-add</span> <span class="ss">&#39;counsel-yank-pop-action</span> <span class="nb">:around</span> <span class="nf">#&#39;</span><span class="nv">vterm-counsel-yank-pop-action</span><span class="p">))</span>
-</span></span></code></pre></div><h2 id="multimedia"><span class="section-num">18</span> Multimedia<a href="#multimedia" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
-<h3 id="emms-for-music"><span class="section-num">18.1</span> EMMS for music<a href="#emms-for-music" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h2 id="multimedia"><span class="section-num">18</span> Multimedia&nbsp;<a class="hanchor" href="#multimedia">#</a> </h2>
+<h3 id="emms-for-music"><span class="section-num">18.1</span> EMMS for music&nbsp;<a class="hanchor" href="#emms-for-music">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">emms</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:commands</span> <span class="nv">emms</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
@@ -2363,7 +2363,7 @@ buffer to vterm so it sticks to the window it was launched with.</p>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;&#34;amp&#34; &#39;(emms-pause :which-key &#34;play / pause&#34;)</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">;;&#34;amf&#34; &#39;(emms-play-file :which-key &#34;play file&#34;))</span>
 </span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span></code></pre></div><h3 id="view-epubs-and-pdfs-in-emacs"><span class="org-todo todo TODO">TODO</span> <span class="section-num">18.2</span> View ePubs and PDFs in Emacs<a href="#view-epubs-and-pdfs-in-emacs" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="view-epubs-and-pdfs-in-emacs"><span class="org-todo todo TODO">TODO</span> <span class="section-num">18.2</span> View ePubs and PDFs in Emacs&nbsp;<a class="hanchor" href="#view-epubs-and-pdfs-in-emacs">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">nov</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:mode</span> <span class="p">(</span><span class="s">&#34;\\.epub\\&#39;&#34;</span> <span class="o">.</span> <span class="nv">nov-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span> <span class="p">(</span><span class="nv">nov-text-width</span> <span class="mi">75</span><span class="p">))</span>
@@ -2386,24 +2386,26 @@ buffer to vterm so it sticks to the window it was launched with.</p>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   (pdf-view-display-size &#39;fit-page)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   (pdf-view-resize-factor 1.1)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">;;   (pdf-view-use-unicode-ligther nil))</span>
-</span></span></code></pre></div><h2 id="web"><span class="section-num">19</span> Web<a href="#web" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span></code></pre></div><h2 id="web"><span class="section-num">19</span> Web&nbsp;<a class="hanchor" href="#web">#</a> </h2>
 <p>Got most of these from <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org">daviwil</a>&rsquo;s literate configuration</p>
-<h3 id="gemini"><span class="section-num">19.1</span> Gemini<a href="#gemini" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<h3 id="gemini"><span class="section-num">19.1</span> Gemini&nbsp;<a class="hanchor" href="#gemini">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">elpher</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="mail-with-mu4e"><span class="org-todo todo TODO">TODO</span> <span class="section-num">19.2</span> mail with mu4e<a href="#mail-with-mu4e" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+</span></span></code></pre></div><h3 id="mail-with-mu4e"><span class="org-todo todo TODO">TODO</span> <span class="section-num">19.2</span> mail with mu4e&nbsp;<a class="hanchor" href="#mail-with-mu4e">#</a> </h3>
 <p>see <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Mail.org">daviwil&rsquo;s mail.org</a> and the configuration in his <a href="https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org#mail">literate config</a>.</p>
-<h3 id="browser"><span class="org-todo todo TODO">TODO</span> <span class="section-num">19.3</span> Browser<a href="#browser" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
-<h3 id="elfeed-for-rss"><span class="section-num">19.4</span> Elfeed for RSS<a href="#elfeed-for-rss" class="hanchor" ariaLabel="Anchor"> #</a> </h3>
+<h3 id="browser"><span class="org-todo todo TODO">TODO</span> <span class="section-num">19.3</span> Browser&nbsp;<a class="hanchor" href="#browser">#</a> </h3>
+<h3 id="elfeed-for-rss"><span class="section-num">19.4</span> Elfeed for RSS&nbsp;<a class="hanchor" href="#elfeed-for-rss">#</a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">elfeed</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:commands</span> <span class="nv">elfeed</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">elfeed-feeds</span>
 </span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;https://drewdevault.com/blog/index.xml&#34;</span>
 </span></span><span class="line"><span class="cl">          <span class="s">&#34;https://sourcehut.org/blog/index.xml&#34;</span>
-</span></span><span class="line"><span class="cl">          <span class="s">&#34;https://ambikamath.com/feed/&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div><h2 id="footer"><span class="section-num">20</span> Footer<a href="#footer" class="hanchor" ariaLabel="Anchor"> #</a> </h2>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;https://ambikamath.com/feed/&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;https://emersion.fr/blog/atom.xml&#34;</span><span class="p">)))</span>
+</span></span></code></pre></div><h2 id="footer"><span class="section-num">20</span> Footer&nbsp;<a class="hanchor" href="#footer">#</a> </h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="c1">;;; configuration.el ends here</span>
-</span></span></code></pre></div></article>
+</span></span></code></pre></div>
+</article>
 
   <nav class="toc">
     <h4> Sections </h4>
@@ -2686,86 +2688,16 @@ buffer to vterm so it sticks to the window it was launched with.</p>
   </nav>
 </main>
 
-<section class="comment">
-  
-  <p>
-    Have a comment on one of my posts? Start a discussion on
-    Mastodon mentioning my handle
-    <a href="https://fosstodon.org/~peregrinator">@peregrinator@fosstodon.org</a> or on
-    <a href="https://lists.sr.ht/~peregrinator/public_inbox">my public inbox</a>
-    by sending an email to
-    <a href="mailto:~peregrinator/public_inbox@lists.sr.ht">~peregrinator/public_inbox@lists.sr.ht</a>.
-    Make sure to go through sourcehut <a href="https://man.sr.ht/lists.sr.ht/etiquette.md">mailing list etiquette</a>
-    if you haven&#39;t already.
-  </p>
-  
-</section>
-
-<section class="webring">
-  <h2>
-    Articles from blogs I follow
-    <small class="attribution">
-      Generated by
-      <a href="https://git.sr.ht/~sircmpwn/openring">openring</a>
-    </small>
-  </h2>
-  <section class="articles">
-    
-    <div class="article">
-      <h4 class="title">
-        <a href="https://drewdevault.com/2023/02/20/2023-02-20-Helios-aarch64.html" target="_blank" rel="noopener">Porting Helios to aarch64 for my FOSDEM talk, part one</a>
-      </h4>
-      <p class="summary">Helios is a microkernel written in the Hare programming language, and the
-subject of a talk I did at FOSDEM earlier this month. You can watch the talk
-here if you like:
-
-A while ago I promised someone that I would not do any talks on Helios until I
-could prese…</p>
-      <small class="source">
-        via <a href="https://drewdevault.com">Drew DeVault&#39;s blog</a>
-      </small>
-      <small class="date">February 20, 2023</small>
-    </div>
-    
-    <div class="article">
-      <h4 class="title">
-        <a href="https://sourcehut.org/blog/2023-01-09-gomodulemirror/" target="_blank" rel="noopener">SourceHut will (not) blacklist the Go module mirror</a>
-      </h4>
-      <p class="summary">Update 2023-01-31: Russ Cox of the Go team reached out to us to address this
-problem. After some discussion, an acceptable plan was worked out. The Go team
-is working on deploying an update to the “go” tool to add a -reuse flag, which
-should substantially re…</p>
-      <small class="source">
-        via <a href="https://sourcehut.org/blog/">Blogs on Sourcehut</a>
-      </small>
-      <small class="date">January 9, 2023</small>
-    </div>
-    
-    <div class="article">
-      <h4 class="title">
-        <a href="https://ambikamath.com/2022/08/15/a-column-in-catapult-and-book-plans/" target="_blank" rel="noopener">A Column in Catapult, and Book Plans</a>
-      </h4>
-      <p class="summary">I have a new essay out in Catapult! Those of you familiar with my lizard territoriality work will recognize a lot of the science in this piece, though I haven’t written about the personal elements much before. And the specific sociopolitical emphasis here…</p>
-      <small class="source">
-        via <a href="https://ambikamath.com">Ambika Kamath</a>
-      </small>
-      <small class="date">August 15, 2022</small>
-    </div>
-    
-  </section>
-</section>
-
-
 <footer>
   <div style="color: transparent">
-    <a rel="me" href="https://fosstoson.org/@peregrinator"> </a>
+    <a rel="me" href="https://fosstodon.org/@peregrinator"> </a>
     <a rel="me" href="https://mstdn.social/@periji"> </a>
   </div>
   <br>
 
   The content for this site is
   <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>.
-  The <a href="https://github.com/brihadeesh/brihadeesh.github.io">source for this site</a>
+  The <a href="https://git.sr.ht/~peregrinator/peregrinator.srht.site">source for this site</a>
   is <a href="https://opensource.org/licenses/MIT">MIT</a>.
 </footer>
 

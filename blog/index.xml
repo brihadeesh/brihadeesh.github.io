@@ -9,14 +9,84 @@
     <managingEditor>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</managingEditor>
     <webMaster>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Mon, 27 Feb 2023 23:28:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 04 Mar 2023 03:51:00 +0530</lastBuildDate>
     
 	<atom:link href="https://brihadeesh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Moved to Sourcehut!</title>
+      <link>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</link>
+      <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
+      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
+      <guid>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</guid>
+      <description>&lt;p&gt;I wrote to Drew DeVault a couple of days back, after much deliberation
+on whether I should really bother him and the like, about free access
+to Sourcehut builds so I could move away from Github and Gitlab. He
+responded soon after that saying that he&amp;rsquo;d given me a year&amp;rsquo;s
+access. And I&amp;rsquo;ve finally done it! The blog that started off titled
+&lt;em&gt;peregrinator&amp;rsquo;s sourcehut site&lt;/em&gt; along with an explanation on why it was
+called that while hosted on Github-pages is finally here! The next
+step would be to move to a personal or custom domain of my own, but
+that&amp;rsquo;s a long way into the future, yet.&lt;/p&gt;
+&lt;p&gt;In any case, this brings me closer to what I&amp;rsquo;ve got planned for my
+internet presence - minimal and without JavaScript. Although I&amp;rsquo;m
+pleased with how this has &lt;em&gt;simplified&lt;/em&gt; a lot of things, this also means
+a few new things to keep in mind for me and this is perhaps of most
+interest here.&lt;/p&gt;
+&lt;h2 id=&#34;git&#34;&gt;Git&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve been honing my command-line git skills over the last few years
+but since repository settings are threadbare on Sourcehut, I&amp;rsquo;ll have
+to really step up my game here. I&amp;rsquo;ve already faced some minor setbacks
+to my work, on this blog incidentally. I&amp;rsquo;d &lt;em&gt;gitignored&lt;/em&gt; the folder with
+the Org-mode sources for all of my blog posts and other pages and then
+checked out an older version of my blog posts source from the last
+commit with the file. Since this was from prior to adding &lt;code&gt;gitignore&lt;/code&gt;
+functionality, it was at-least an entry older with a bunch of crucial
+changes I&amp;rsquo;d made yesterday. I had to manually recover this eventually.&lt;/p&gt;
+&lt;p&gt;Maintaining multiple branches, juggling remotes - since this shares
+its files with those from my older Github-pages site - all was a bit
+overwhelming initially but I&amp;rsquo;ve managed to clean up most of the cruft
+and I&amp;rsquo;m starting to get more confident around git.&lt;/p&gt;
+&lt;h2 id=&#34;content-restrictions&#34;&gt;Content restrictions&lt;/h2&gt;
+&lt;p&gt;The biggest &amp;ldquo;hit&amp;rdquo; I&amp;rsquo;ve taken is the restrictions on third-party
+content - see &lt;a href=&#34;../blog/2023/02/albums-of-the-year-2022.html&#34;&gt;Albums of the Year&lt;/a&gt;, my last post for example. The
+Sourcehut site documentation states that they disallow external
+style-sheets, especially those accessed via CDNs but crucially
+third-party embedded content&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This shouldn&amp;rsquo;t mean
+much to most - especially if the content of blog posts is text and
+some code - but since some of my posts are about music, I find that
+this restriction gets in my way. I cannot add embedded albums or
+tracks Bandcamp. Bandcamp is what I prefer when it comes to music
+since they&amp;rsquo;re the most artist-friendly amongst streaming
+platforms&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve since changed my Bandcamp shortcode from a minimal, single
+positional argument based kind to one that uses an additional URL
+rendered as a simple link below the &lt;code&gt;iframe&lt;/code&gt;. Of course, with Sourcehut
+pages, the &lt;code&gt;iframe&lt;/code&gt; is just a blank rectangle of the same dimensions as
+the embedded Bandcamp content.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Find them on &amp;lt;a href=&amp;#34;{{ .Get &amp;#34;url&amp;#34; }}&amp;#34;&amp;gt;Bandcamp&amp;lt;/a&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;iframe style=&amp;#34;border: 0; width: 400px; height: 42px;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    src=&amp;#34;https://bandcamp.com/EmbeddedPlayer/album={{ .Get &amp;#34;id&amp;#34; }}/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&amp;#34; seamless&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/iframe&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;See the documentation for
+&lt;em&gt;Limitations&lt;/em&gt; with Sourcehut sites at &lt;a href=&#34;https://srht.site/limitations&#34;&gt;https://srht.site&lt;/a&gt;; the rest don&amp;rsquo;t
+affect me as much&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;em&gt;Citation?&lt;/em&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item><item>
       <title>Albums of the Year (2022)</title>
       <link>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</link>
-      <pubDate>Mon, 27 Feb 2023 23:28:00 +0530</pubDate>
+      <pubDate>Mon, 27 Feb 2023 17:24:00 +0530</pubDate>
       <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
       <guid>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</guid>
       <description>&lt;p&gt;I dread publishing lists of this kind especially because ranking
@@ -25,17 +95,18 @@ forget artists and albums, often even those that I listen to
 regularly. I also remember bands by sound and almost inevitably refuse
 to keep track of when artists I like release new music. This is in no
 sense complete nor could I get myself to write about each of the
-albums - I&amp;rsquo;ll perhaps get down to this sometime later. There is no
+albums - I’ll perhaps get down to this sometime later. There is no
 ranking within this list for the same reasons as before&lt;/p&gt;
 &lt;h2 id=&#34;ken-mode-null&#34;&gt;KEN mode - Null&lt;/h2&gt;
-&lt;p&gt;Exasperated with everything good in life going to dogs? &lt;em&gt;Throw Your
-Phone in the River&lt;/em&gt;! It&amp;rsquo;s noisy, ambient with an abundance of harsh
+&lt;p&gt;Exasperated with everything good in life going to dogs? Throw Your
+Phone in the River! It’s noisy, ambient with an abundance of harsh
 industrial sounds blended into the background, delivered with bleak,
-sludgy instrumentation. This time they&amp;rsquo;re a four piece, with the
+sludgy instrumentation. This time they’re a four piece, with the
 addition of Kathryn Kerr bringing in the saxophone and it expectedly
 sounds great with this brand of metal. This release also marks a
 stylistic shift from their typically outright angry sound to this
 tinge of despair in the way the vocals are delivered.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://kenmode.bandcamp.com/album/null&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=3317743233/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
@@ -49,102 +120,126 @@ have been perfected over the years into the combination of oppressive
 mammoth-like riffs, a loud menacing bass, copious amounts of guitar
 feedback and noise samples embedded into the background, and drums
 with the hint of a twang on the snare leaving the listener in an
-atmosphere dripping with tension and apprehension. McCarthy&amp;rsquo;s vocals
-are as wild as ever - there&amp;rsquo;s undertones of the sludge scream, the
+atmosphere dripping with tension and apprehension. McCarthy’s vocals
+are as wild as ever - there’s undertones of the sludge scream, the
 black metal snarl, alloyed with the Death-growl into guttural lows and
-highs. This album also includes a cover of &amp;ldquo;Quiet&amp;rdquo; by the Smashing
+highs. This album also includes a cover of “Quiet” by the Smashing
 Pumpkins.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://primitivemandoom.bandcamp.com/album/insurmountable&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1938079692/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
-&lt;p&gt;Ethan McCarthy&amp;rsquo;s other project - Vermin Womb - also saw a new release
-that I&amp;rsquo;d also recommend. It&amp;rsquo;s similar sounding in the instrumentation
-and overall feel but has songs played in a more blackened and Grindcore
-style.&lt;/p&gt;
+&lt;p&gt;Ethan McCarthy’s other project - Vermin Womb - also saw a new release
+that I’d also recommend. It’s similar sounding in the instrumentation
+and overall feel but has songs with a more blackened and chaotic
+Grindcore style.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://verminwomb.bandcamp.com/album/retaliation&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=428389777/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;drowse-wane-into-it&#34;&gt;Drowse - Wane into It&lt;/h2&gt;
 &lt;p&gt;I know no better words to describe this than lucid dream-like.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://drowse.bandcamp.com/album/wane-into-it&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=3404655629/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;kathryn-mohr-holly&#34;&gt;Kathryn Mohr - Holly&lt;/h2&gt;
 &lt;p&gt;Liminal perhaps describes the kind of music Kathryn Mohr makes
-accurately and in a single word but it&amp;rsquo;s got a lot more to it. I find
+accurately and in a single word but it’s got a lot more to it. I find
 that listening to this album when I need to unwind makes the process a
-lot easier and a great deal more enjoyable, but I&amp;rsquo;m inevitably left
-craving more. &lt;em&gt;Holly&lt;/em&gt; has droney chords strummed on a Jazzmaster (?),
-fuzzy and exclusively on neck pickups - and I feel like I shouldn&amp;rsquo;t
-have to describe this any further but I&amp;rsquo;ll just add that it takes the
+lot easier and a great deal more enjoyable, but I’m inevitably left
+craving more. Holly has droney chords strummed on a Jazzmaster (?),
+fuzzy and exclusively on neck pickups - and I feel like I shouldn’t
+have to describe this any further but I’ll just add that it takes the
 edge off the typical bright tone. This perfectly compliments haunting,
-layered vocals that sometimes sound off-key. The vocals don&amp;rsquo;t appear
+layered vocals that sometimes sound off-key. The vocals don’t appear
 to be too central to her sound and songs are often instrumental,
 overlaid with pretty synth riffs and crucially set in a brown-noise
 base. Also worth noting is the way tracks are arranged in the style of
 a cassette release - both sides have short instrumental introductory
 pieces and is available as a cassette on her Bandcamp!&lt;/p&gt;
+Find them on &lt;a href=&#34;https://kathrynmohr.bandcamp.com/album/holly&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=201745917/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
+&lt;h2 id=&#34;chat-pile-god-s-country&#34;&gt;Chat Pile - God&amp;rsquo;s Country&lt;/h2&gt;
+&lt;p&gt;What hasn’t been said about the Purple man that took the world by
+storm with their debut album, under the Flenser label, no less. Heavy
+guitars and skull numbing reverb laden drums thumping out slow and
+dark songs about despair and the anti-anthem “Why”. Needless to say,
+I’m sold on the Purple Man.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://chatpile.bandcamp.com/album/gods-country&#34;&gt;Bandcamp&lt;/a&gt;
+&lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
+    src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1845795607/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;miscreance-convergence&#34;&gt;Miscreance - Convergence&lt;/h2&gt;
+&lt;p&gt;I came across them when the Dead Neanderthals tweeted&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Not enough people are talking about this album. &lt;br&gt;&lt;br&gt;A perfect mix of Death (Human era), Pestilence (Consvming era) and Revenant!&lt;a href=&#34;https://t.co/LrJFPwEnBJ&#34;&gt;https://t.co/LrJFPwEnBJ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dead Neanderthals (@deadneanderthal) &lt;a href=&#34;https://twitter.com/deadneanderthal/status/1620492647025758210?ref_src=twsrc%5Etfw&#34;&gt;January 31, 2023&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;and I’m in full agreement. Being the dedicated Death fan (for life),
+this does indeed sound like Chuck Schuldiner performed the
+vocals. Both Pestilence and Death drips off their thrashy, bass-heavy
+minor key riffs.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://miscreance.bandcamp.com/album/convergence&#34;&gt;Bandcamp&lt;/a&gt;
+&lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
+    src=&#34;https://bandcamp.com/EmbeddedPlayer/album=2469012988/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
+&lt;/iframe&gt;
+
 &lt;h2 id=&#34;mamaleek-diner-coffee&#34;&gt;Mamaleek - Diner Coffee (?)&lt;/h2&gt;
-&lt;p&gt;As the Flenser repeatedly tweets, &lt;strong&gt;Who is Mamaleek?&lt;/strong&gt;. Weird noisey and
-dark but it&amp;rsquo;s really hard to describe them without sounding insane.&lt;/p&gt;
+&lt;p&gt;As the Flenser repeatedly tweets, Who is Mamaleek?. Weird noisey and
+dark but it’s really hard to describe them without sounding insane.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://mamaleek.bandcamp.com/album/diner-coffee&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=798925787/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;meshuggah-immutable&#34;&gt;Meshuggah - Immutable&lt;/h2&gt;
 &lt;p&gt;I came to realise they had a new release out when I saw and absurd
-&amp;ldquo;meme&amp;rdquo; video on Youtube. It&amp;rsquo;s got the usual &lt;em&gt;sick&lt;/em&gt; groove but I could
+“meme” &lt;a href=&#34;https://www.youtube.com/watch?v=eX4GOltUDdA&#34;&gt;video&lt;/a&gt; on Youtube. It’s got the usual sick groove but I could
 have sworn a pronounced blackening to their riffs.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/eX4GOltUDdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;Your Coworker hates Meshuggah&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;chat-pile-god-s-country&#34;&gt;Chat Pile - God&amp;rsquo;s Country&lt;/h2&gt;
-&lt;p&gt;What hasn&amp;rsquo;t been said about the Purple man that took the world by
-storm with their debut album, under the Flenser label, no less. Heavy
-guitars and skull numbing reverb laden drums thumping out slow and
-dark songs about despair and the anti-anthem &amp;ldquo;Why&amp;rdquo;. Needless to say,
-I&amp;rsquo;m sold on the Purple Man.&lt;/p&gt;
-&lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
-    src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1845795607/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
-&lt;/iframe&gt;
-
 &lt;h2 id=&#34;wormrot-hiss&#34;&gt;Wormrot - Hiss&lt;/h2&gt;
-&lt;p&gt;It&amp;rsquo;s got everything a Wormrot album promises in grindcore, but this
+&lt;p&gt;It’s got everything a Wormrot album promises in grindcore, but this
 release felt more mellow as compared to the brutally fast and precise
 riffing/drums from earlier releases.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://wormrot.bandcamp.com/album/hiss&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=4060129622/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;exhumed-to-the-dead&#34;&gt;Exhumed - To The Dead&lt;/h2&gt;
 &lt;p&gt;Morbidly groovy and detuned Death/Grind, often reminiscent of
-Carcass&amp;rsquo;s very old grindcore delivers human entrails yet again. 2022
+Carcass’s very old grindcore delivers human entrails yet again. 2022
 has been a prolonged fangirling moment for Doktor Ross Sewage and
-every &lt;a href=&#34;https://www.doktorsewage.com/about/&#34;&gt;band he&amp;rsquo;s played with&lt;/a&gt;. His twitter feed is never boring.&lt;/p&gt;
+every band he’s played with. His twitter feed is never boring.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://exhumed.bandcamp.com/album/to-the-dead&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=544623389/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;russian-circles-gnosis&#34;&gt;Russian Circles - Gnosis&lt;/h2&gt;
 &lt;p&gt;Post-metal but it often sounds black and heavy.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://russiancircles.bandcamp.com/album/gnosis&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=2146782469/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;wake-thought-form-descent&#34;&gt;Wake - Thought Form Descent&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s no words I can conjure to describe Wake humanly. It&amp;rsquo;s got
+&lt;p&gt;There’s no words I can conjure to describe Wake humanly. It’s got
 everything - sickeningly catchy riffs like grindcore, dark ambient
-black metal and post-metal - but then there&amp;rsquo;s so much more. It&amp;rsquo;s loud
+black metal and post-metal - but then there’s so much more. It’s loud
 and hits you like a tidal wave but is also meditative of sorts.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://wakegrind.bandcamp.com/album/thought-form-descent&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=2062431084/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
@@ -154,6 +249,7 @@ and hits you like a tidal wave but is also meditative of sorts.&lt;/p&gt;
 technical. There are mellow passages too but ultimately the album
 feels not as abstract as older Death metal and betrays a sort of
 sorrow.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://hathnj.bandcamp.com/album/all-that-was-promised&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1846091399/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
@@ -161,40 +257,38 @@ sorrow.&lt;/p&gt;
 &lt;h2 id=&#34;mares-of-thrace-the-exile&#34;&gt;Mares of Thrace - The Exile&lt;/h2&gt;
 &lt;p&gt;This was easily one of the most tension filled, deathy Doom metal
 records of my year.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://maresofthrace.bandcamp.com/album/the-exile&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1897908051/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;heriot-profound-mortality&#34;&gt;Heriot - Profound Mortality&lt;/h2&gt;
-&lt;p&gt;Hard to pin down but it&amp;rsquo;s black, hardcore and deranged.&lt;/p&gt;
+&lt;p&gt;Hard to pin down but it’s black, hardcore and deranged.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://heriotmetal.bandcamp.com/album/profound-morality&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=3401809514/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;hexis-aeturnum&#34;&gt;Hexis - Aeturnum&lt;/h2&gt;
 &lt;p&gt;Unabashedly Satanic, these black metallers deliver the loudest and
-fullest sounding black metal record I&amp;rsquo;ve heard in a while. The air is
+fullest sounding black metal record I’ve heard in a while. The air is
 heavy and icy but the vocals hit like a draft from a furnace.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://hexisband.bandcamp.com/album/aeternum&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=2425494646/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
-&lt;h2 id=&#34;miscreance-convergence&#34;&gt;Miscreance - Convergence&lt;/h2&gt;
-&lt;p&gt;I came across them when the Dead Neanderthals tweeted&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Not enough people are talking about this album. &lt;br&gt;&lt;br&gt;A perfect mix of Death (Human era), Pestilence (Consvming era) and Revenant!&lt;a href=&#34;https://t.co/LrJFPwEnBJ&#34;&gt;https://t.co/LrJFPwEnBJ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dead Neanderthals (@deadneanderthal) &lt;a href=&#34;https://twitter.com/deadneanderthal/status/1620492647025758210?ref_src=twsrc%5Etfw&#34;&gt;January 31, 2023&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;and I&amp;rsquo;m in full agreement. Being the dedicated Death fan (for life),
-this does indeed sound like Chuck Schuldiner performed the
-vocals. Both Pestilence and Death drips off their thrashy, bass-heavy
-minor key riffs.&lt;/p&gt;
+&lt;h2 id=&#34;cloud-rat-threshold&#34;&gt;Cloud Rat - Threshold&lt;/h2&gt;
+&lt;p&gt;Chaos!&lt;/p&gt;
+Find them on &lt;a href=&#34;https://cloudrat.bandcamp.com/album/threshold&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
-    src=&#34;https://bandcamp.com/EmbeddedPlayer/album=2469012988/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
+    src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1954585202/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;scarcity-aveilut&#34;&gt;Scarcity - Aveilut&lt;/h2&gt;
 &lt;p&gt;Bleak, just the way post-black metal should be. This was an early
 contender for the list.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://scarcity-nyc.bandcamp.com/album/aveilut&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=620818614/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
@@ -202,13 +296,16 @@ contender for the list.&lt;/p&gt;
 &lt;h2 id=&#34;thou-and-mizmor-myopia&#34;&gt;Thou &amp;amp; Mizmor - Myopia&lt;/h2&gt;
 &lt;p&gt;Trepidation and tension does make one myopic. Doom with a good deal of
 sludge mixed in, this is bleak and heavy.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://gileadmedia.bandcamp.com/album/myopia&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=3344058140/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
 &lt;h2 id=&#34;thoughtcrimes-altered-pasts&#34;&gt;thoughtcrimes - Altered Pasts&lt;/h2&gt;
 &lt;p&gt;Chaotic but with some vague semblance to the newer Alice in Chains -
-post Robert DuVall&amp;rsquo;s joining. Thoroughly noise like the label indicates.&lt;/p&gt;
+post Robert DuVall’s joining. Thoroughly noise like the label
+indicates.&lt;/p&gt;
+Find them on &lt;a href=&#34;https://purenoise.bandcamp.com/album/altered-pasts&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=498311509/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;

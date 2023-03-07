@@ -7,7 +7,7 @@ draft = false
 
 Culture is arguably unique to humans. It possibly arose from the need
 to manage larger groups of people that congregated near agricultural
-fields as Jared Diamond suggests in Guns, Germs and Steel&nbsp;[^fn:1] although it may
+fields as Jared Diamond suggests in Guns, Germs and Steel[^fn:1] although it may
 have originated in tribal or hunter-gatherer societies. It is strongly
 linked with religion which can viewed as a cement holding together
 larger population masses. Recent developments in its research suggests
@@ -18,7 +18,7 @@ intelligence which natural selection (according to believers of this
 theory) cannot explain. In order to see the effects on natural
 selection, one has to take a neutral stance.
 
-It is established that natural selection cannot be evaded&nbsp;[^fn:2] and as an
+It is established that natural selection cannot be evaded[^fn:2] and as an
            outcome of this culture can be viewed as a consequence of
            natural selection. In other words, culture, in the context
            of human evolution, was selected for since it subsidised

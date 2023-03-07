@@ -1227,14 +1227,15 @@ to Sourcehut builds so I could move away from Github and Gitlab. He
 responded soon after that saying that he'd given me a year's
 access. And I've finally done it! The blog that started off titled
 /peregrinator's sourcehut site/ along with an explanation on why it was
-called that while hosted on Github-pages. In any case, this brings me
-closer to what I've got planned for my internet presence - minimal and
-without JavaScript.
+called that while hosted on Github-pages is finally here! The next
+step would be to move to a personal or custom domain of my own, but
+that's a long way into the future, yet.
 
-
-Although I'm pleased with how this has /simplified/ a lot of things,
-this also means a few new things to keep in mind for me and this is
-perhaps of most interest here.
+In any case, this brings me closer to what I've got planned for my
+internet presence - minimal and without JavaScript. Although I'm
+pleased with how this has /simplified/ a lot of things, this also means
+a few new things to keep in mind for me and this is perhaps of most
+interest here.
 
 *** Git
 
@@ -1804,7 +1805,7 @@ articles that should be up later.
 
 Culture is arguably unique to humans. It possibly arose from the need
 to manage larger groups of people that congregated near agricultural
-fields as Jared Diamond suggests in Guns, Germs and Steel [fn:1:
+fields as Jared Diamond suggests in Guns, Germs and Steel[fn:1:
 Diamond, J. M. (1998). Guns, germs and steel: a short history of
 everybody for the last 13,000 years. Random House. ] although it may
 have originated in tribal or hunter-gatherer societies. It is strongly
@@ -1817,7 +1818,7 @@ intelligence which natural selection (according to believers of this
 theory) cannot explain. In order to see the effects on natural
 selection, one has to take a neutral stance.
 
-It is established that natural selection cannot be evaded [fn:2:
+It is established that natural selection cannot be evaded[fn:2:
            Dawkins, R. (1989). The Selfish Gene. Oxford University
            Press. New York: Oxford University Press. ] and as an
            outcome of this culture can be viewed as a consequence of

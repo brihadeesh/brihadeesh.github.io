@@ -11,13 +11,15 @@ to Sourcehut builds so I could move away from Github and Gitlab. He
 responded soon after that saying that he'd given me a year's
 access. And I've finally done it! The blog that started off titled
 _peregrinator's sourcehut site_ along with an explanation on why it was
-called that while hosted on Github-pages. In any case, this brings me
-closer to what I've got planned for my internet presence - minimal and
-without JavaScript.
+called that while hosted on Github-pages is finally here! The next
+step would be to move to a personal or custom domain of my own, but
+that's a long way into the future, yet.
 
-Although I'm pleased with how this has _simplified_ a lot of things,
-this also means a few new things to keep in mind for me and this is
-perhaps of most interest here.
+In any case, this brings me closer to what I've got planned for my
+internet presence - minimal and without JavaScript. Although I'm
+pleased with how this has _simplified_ a lot of things, this also means
+a few new things to keep in mind for me and this is perhaps of most
+interest here.
 
 
 ## Git {#git}

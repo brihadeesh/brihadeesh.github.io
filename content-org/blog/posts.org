@@ -86,7 +86,6 @@ killing a cat snake. Some days later my father told me that he'd seen
 Goose carrying a large mouse, and as usual, he "showed off" his
 (s)kill by dropping it at the doorstep.
 
-
 *** Hunting, but it doesn't stop there
 
 For three reasons, cats and dogs are more successful at establishing
@@ -692,7 +691,7 @@ like cheating to use Jekyll on GitHub and I wanted something that
 could be deployed to a Sourcehut site easily too (Sourcehut blocks any
 CDN-based CSS loaded into the site's HTML) and I wanted something
 extremely minimal, like Drew Devault's [[https://drewdevault.com/][blog]] but with even fewer
-frills - no images anywhere except for if a blog post required
+frills — no images anywhere except for if a blog post required
 them. Looking at his blog source, however, made me realise that there
 was a lot more to that minimalism than one could see.
 
@@ -734,12 +733,15 @@ posts file, adding all the relevant info.
 
 Exporting to markdown (Org just doesn't have a good enough support
 yet), tags and organisation of pages into bundles is handled by
-[[https://ox-hugo.scripter.co][ox-hugo]], a wonderful package for Emacs written by Kaushal Modi
-([[https:scripter.co][website]]). The header arguments in the capture template cover
-everything. With Emacs's =.dir-locals.el= feature, a file of that name
-in the home directory of the blog ensures every new entry or
-modification into the master posts file gets auto-exported to markdown
-on save. The contents are quite simple.
+ox-hugo [fn:1: Documentation is at [[https://ox-hugo.scripter.co][ox-hugo.scripter.co]]. This is a
+wonderful package for Emacs written by Kaushal Modi [[https:scripter.co][website]] and [[https://github.com/kaushalmodi/ox-hugo][GitHub]]
+][fn:2: I've opted for this over [[https://github.com/niklasfasching/go-org][go-org]], the native Org backend for
+Hugo since it doesn't support some basic Org syntax exports]. The
+header arguments in the capture template cover everything. With
+Emacs's =.dir-locals.el= feature, a file of that name in the home
+directory of the blog ensures every new entry or modification into the
+master posts file gets auto-exported to markdown on save. The contents
+are quite simple.
 
 
 #+begin_src emacs-lisp :tangle no
@@ -857,8 +859,6 @@ likely haven't covered a lot of important things. I'll add some links
 to others' blog posts that discuss using this or documentation as I
 come across them.
 
-1. ox-hugo: [[https://ox-hugo.scripter.co][website]] and [[https://github.com/kaushalmodi/ox-hugo][GitHub]]
-2. (alternatively) [[https://github.com/niklasfasching/go-org][go-org]], the native Org backend for Hugo
 ** DONE Having to use Windows, reluctantly
 :PROPERTIES:
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
@@ -910,7 +910,7 @@ photo albums as posts. My only qualms with it were the somewhat messy
 style sheets and cryptic templates that made personalising a bit of an
 ordeal. The second, however, was simply genius and it took me close to
 no time to figure it out, despite thinking it to be too advanced for
-me - there was no theme sub-module and everything was in the home
+me — there was no theme sub-module and everything was in the home
 directory it was from somebody's personal website.
 
 Needless to say, it was Drew DeVault's and I'd seen it as something of
@@ -930,8 +930,8 @@ and made an additional few for
 I realised I didn't want unnecessary taxonomy pages like before or
 like those from the rocinante theme and that all my regular blog
 posts, Emacs configuration and fiction on the homepage. The prospect
-of having to write descriptions for each of these - had I maintained
-separate sections for each like before - was daunting, to say the
+of having to write descriptions for each of these — had I maintained
+separate sections for each like before — was daunting, to say the
 least.
 
 I also loved the idea of displaying "featured posts" from the blogs I
@@ -1020,7 +1020,7 @@ forget artists and albums, often even those that I listen to
 regularly. I also remember bands by sound and almost inevitably refuse
 to keep track of when artists I like release new music. This is in no
 sense complete nor could I get myself to write about each of the
-albums - I’ll perhaps get down to this sometime later. There is no
+albums — I’ll perhaps get down to this sometime later. There is no
 ranking within this list for the same reasons as before
 
 
@@ -1048,14 +1048,14 @@ mammoth-like riffs, a loud menacing bass, copious amounts of guitar
 feedback and noise samples embedded into the background, and drums
 with the hint of a twang on the snare leaving the listener in an
 atmosphere dripping with tension and apprehension. McCarthy’s vocals
-are as wild as ever - there’s undertones of the sludge scream, the
+are as wild as ever — there’s undertones of the sludge scream, the
 black metal snarl, alloyed with the Death-growl into guttural lows and
 highs. This album also includes a cover of “Quiet” by the Smashing
 Pumpkins.
 
 #+hugo: {{< bandcamp id="1938079692" url="https://primitivemandoom.bandcamp.com/album/insurmountable" >}}
 
-Ethan McCarthy’s other project - Vermin Womb - also saw a new release
+Ethan McCarthy’s other project — Vermin Womb — also saw a new release
 that I’d also recommend. It’s similar sounding in the instrumentation
 and overall feel but has songs with a more blackened and chaotic
 Grindcore style.
@@ -1075,14 +1075,14 @@ accurately and in a single word but it’s got a lot more to it. I find
 that listening to this album when I need to unwind makes the process a
 lot easier and a great deal more enjoyable, but I’m inevitably left
 craving more. Holly has droney chords strummed on a Jazzmaster (?),
-fuzzy and exclusively on neck pickups - and I feel like I shouldn’t
+fuzzy and exclusively on neck pickups — and I feel like I shouldn’t
 have to describe this any further but I’ll just add that it takes the
 edge off the typical bright tone. This perfectly compliments haunting,
 layered vocals that sometimes sound off-key. The vocals don’t appear
 to be too central to her sound and songs are often instrumental,
 overlaid with pretty synth riffs and crucially set in a brown-noise
 base. Also worth noting is the way tracks are arranged in the style of
-a cassette release - both sides have short instrumental introductory
+a cassette release — both sides have short instrumental introductory
 pieces and is available as a cassette on her Bandcamp!
 
 #+hugo: {{< bandcamp id="201745917" url="https://kathrynmohr.bandcamp.com/album/holly" >}}
@@ -1151,8 +1151,8 @@ Post-metal but it often sounds black and heavy.
 *** Wake - Thought Form Descent
 
 There’s no words I can conjure to describe Wake humanly. It’s got
-everything - sickeningly catchy riffs like grindcore, dark ambient
-black metal and post-metal - but then there’s so much more. It’s loud
+everything — sickeningly catchy riffs like grindcore, dark ambient
+black metal and post-metal — but then there’s so much more. It’s loud
 and hits you like a tidal wave but is also meditative of sorts.
 
 #+hugo: {{< bandcamp id="2062431084" url="https://wakegrind.bandcamp.com/album/thought-form-descent" >}}
@@ -1232,7 +1232,7 @@ step would be to move to a personal or custom domain of my own, but
 that's a long way into the future, yet.
 
 In any case, this brings me closer to what I've got planned for my
-internet presence - minimal and without JavaScript. Although I'm
+internet presence — minimal and without JavaScript. Although I'm
 pleased with how this has /simplified/ a lot of things, this also means
 a few new things to keep in mind for me and this is perhaps of most
 interest here.
@@ -1250,7 +1250,7 @@ functionality, it was at-least an entry older with a bunch of crucial
 changes I'd made yesterday. I had to manually recover this eventually.
 
 Maintaining multiple branches, juggling remotes - since this shares
-its files with those from my older Github-pages site - all was a bit
+its files with those from my older Github-pages site — all was a bit
 overwhelming initially but I've managed to clean up most of the cruft
 and I'm starting to get more confident around git.
 
@@ -1497,8 +1497,6 @@ shuffling though Spotify's "Fans also like" or the abomination this is
 their landing screen, on my phone, that I feel like that discomfort
 returns. This must be a neurodivergent thing because no-one else I've
 met has ever shared anything even remotely similar.
-
-
 * Miscellaneous
 ** DONE Sustainability and the Common Man
 :PROPERTIES:

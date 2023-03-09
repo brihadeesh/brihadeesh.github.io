@@ -16,7 +16,7 @@ step would be to move to a personal or custom domain of my own, but
 that's a long way into the future, yet.
 
 In any case, this brings me closer to what I've got planned for my
-internet presence - minimal and without JavaScript. Although I'm
+internet presence — minimal and without JavaScript. Although I'm
 pleased with how this has _simplified_ a lot of things, this also means
 a few new things to keep in mind for me and this is perhaps of most
 interest here.
@@ -35,7 +35,7 @@ functionality, it was at-least an entry older with a bunch of crucial
 changes I'd made yesterday. I had to manually recover this eventually.
 
 Maintaining multiple branches, juggling remotes - since this shares
-its files with those from my older Github-pages site - all was a bit
+its files with those from my older Github-pages site — all was a bit
 overwhelming initially but I've managed to clean up most of the cruft
 and I'm starting to get more confident around git.
 

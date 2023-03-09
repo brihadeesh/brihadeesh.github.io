@@ -27,7 +27,7 @@ photo albums as posts. My only qualms with it were the somewhat messy
 style sheets and cryptic templates that made personalising a bit of an
 ordeal. The second, however, was simply genius and it took me close to
 no time to figure it out, despite thinking it to be too advanced for
-me - there was no theme sub-module and everything was in the home
+me — there was no theme sub-module and everything was in the home
 directory it was from somebody's personal website.
 
 Needless to say, it was Drew DeVault's and I'd seen it as something of
@@ -47,8 +47,8 @@ and made an additional few for
 I realised I didn't want unnecessary taxonomy pages like before or
 like those from the rocinante theme and that all my regular blog
 posts, Emacs configuration and fiction on the homepage. The prospect
-of having to write descriptions for each of these - had I maintained
-separate sections for each like before - was daunting, to say the
+of having to write descriptions for each of these — had I maintained
+separate sections for each like before — was daunting, to say the
 least.
 
 I also loved the idea of displaying "featured posts" from the blogs I

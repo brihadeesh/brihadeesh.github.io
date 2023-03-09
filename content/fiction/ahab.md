@@ -3,7 +3,6 @@ title = "Ahab"
 author = ["peregrinator"]
 date = 2012-05-01T21:00:00+05:30
 draft = false
-creator = "Emacs 29.0.50 (Org mode 9.6 + ox-hugo)"
 +++
 
 The disturbed man woke from violent sleep. He wondered to himself of

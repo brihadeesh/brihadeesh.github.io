@@ -11,7 +11,7 @@ forget artists and albums, often even those that I listen to
 regularly. I also remember bands by sound and almost inevitably refuse
 to keep track of when artists I like release new music. This is in no
 sense complete nor could I get myself to write about each of the
-albums - I’ll perhaps get down to this sometime later. There is no
+albums — I’ll perhaps get down to this sometime later. There is no
 ranking within this list for the same reasons as before
 
 
@@ -40,14 +40,14 @@ mammoth-like riffs, a loud menacing bass, copious amounts of guitar
 feedback and noise samples embedded into the background, and drums
 with the hint of a twang on the snare leaving the listener in an
 atmosphere dripping with tension and apprehension. McCarthy’s vocals
-are as wild as ever - there’s undertones of the sludge scream, the
+are as wild as ever — there’s undertones of the sludge scream, the
 black metal snarl, alloyed with the Death-growl into guttural lows and
 highs. This album also includes a cover of “Quiet” by the Smashing
 Pumpkins.
 
 {{< bandcamp id="1938079692" url="https://primitivemandoom.bandcamp.com/album/insurmountable" >}}
 
-Ethan McCarthy’s other project - Vermin Womb - also saw a new release
+Ethan McCarthy’s other project — Vermin Womb — also saw a new release
 that I’d also recommend. It’s similar sounding in the instrumentation
 and overall feel but has songs with a more blackened and chaotic
 Grindcore style.
@@ -69,14 +69,14 @@ accurately and in a single word but it’s got a lot more to it. I find
 that listening to this album when I need to unwind makes the process a
 lot easier and a great deal more enjoyable, but I’m inevitably left
 craving more. Holly has droney chords strummed on a Jazzmaster (?),
-fuzzy and exclusively on neck pickups - and I feel like I shouldn’t
+fuzzy and exclusively on neck pickups — and I feel like I shouldn’t
 have to describe this any further but I’ll just add that it takes the
 edge off the typical bright tone. This perfectly compliments haunting,
 layered vocals that sometimes sound off-key. The vocals don’t appear
 to be too central to her sound and songs are often instrumental,
 overlaid with pretty synth riffs and crucially set in a brown-noise
 base. Also worth noting is the way tracks are arranged in the style of
-a cassette release - both sides have short instrumental introductory
+a cassette release — both sides have short instrumental introductory
 pieces and is available as a cassette on her Bandcamp!
 
 {{< bandcamp id="201745917" url="https://kathrynmohr.bandcamp.com/album/holly" >}}
@@ -153,8 +153,8 @@ Post-metal but it often sounds black and heavy.
 ## Wake - Thought Form Descent {#wake-thought-form-descent}
 
 There’s no words I can conjure to describe Wake humanly. It’s got
-everything - sickeningly catchy riffs like grindcore, dark ambient
-black metal and post-metal - but then there’s so much more. It’s loud
+everything — sickeningly catchy riffs like grindcore, dark ambient
+black metal and post-metal — but then there’s so much more. It’s loud
 and hits you like a tidal wave but is also meditative of sorts.
 
 {{< bandcamp id="2062431084" url="https://wakegrind.bandcamp.com/album/thought-form-descent" >}}

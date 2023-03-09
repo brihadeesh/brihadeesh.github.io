@@ -17,7 +17,7 @@ like cheating to use Jekyll on GitHub and I wanted something that
 could be deployed to a Sourcehut site easily too (Sourcehut blocks any
 CDN-based CSS loaded into the site's HTML) and I wanted something
 extremely minimal, like Drew Devault's [blog](https://drewdevault.com/) but with even fewer
-frills - no images anywhere except for if a blog post required
+frills — no images anywhere except for if a blog post required
 them. Looking at his blog source, however, made me realise that there
 was a lot more to that minimalism than one could see.
 
@@ -57,12 +57,12 @@ posts file, adding all the relevant info.
 
 Exporting to markdown (Org just doesn't have a good enough support
 yet), tags and organisation of pages into bundles is handled by
-[ox-hugo](https://ox-hugo.scripter.co), a wonderful package for Emacs written by Kaushal Modi
-([website](https:scripter.co)). The header arguments in the capture template cover
-everything. With Emacs's `.dir-locals.el` feature, a file of that name
-in the home directory of the blog ensures every new entry or
-modification into the master posts file gets auto-exported to markdown
-on save. The contents are quite simple.
+ox-hugo&nbsp;[^fn:1]<sup>, </sup>[^fn:2]. The
+header arguments in the capture template cover everything. With
+Emacs's `.dir-locals.el` feature, a file of that name in the home
+directory of the blog ensures every new entry or modification into the
+master posts file gets auto-exported to markdown on save. The contents
+are quite simple.
 
 ```emacs-lisp
 
@@ -175,5 +175,7 @@ likely haven't covered a lot of important things. I'll add some links
 to others' blog posts that discuss using this or documentation as I
 come across them.
 
-1.  ox-hugo: [website](https://ox-hugo.scripter.co) and [GitHub](https://github.com/kaushalmodi/ox-hugo)
-2.  (alternatively) [go-org](https://github.com/niklasfasching/go-org), the native Org backend for Hugo
+[^fn:1]: Documentation is at [ox-hugo.scripter.co](https://ox-hugo.scripter.co). This is a
+    wonderful package for Emacs written by Kaushal Modi [website](https:scripter.co) and [GitHub](https://github.com/kaushalmodi/ox-hugo)
+[^fn:2]: I've opted for this over [go-org](https://github.com/niklasfasching/go-org), the native Org backend for
+    Hugo since it doesn't support some basic Org syntax exports

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>peregrinator's blog</title>
-    <link>https://brihadeesh.github.io</link>
+    <link>https://peregrinator.srht.site</link>
     <description>Recent content posts on peregrinator&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</managingEditor>
-    <webMaster>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</webMaster>
+    <managingEditor>brihadeesh.s@proton.me (Brihadeesh S)</managingEditor>
+    <webMaster>brihadeesh.s@proton.me (Brihadeesh S)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
     <lastBuildDate>Sat, 04 Mar 2023 03:51:00 +0530</lastBuildDate>
     
-	<atom:link href="https://brihadeesh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://peregrinator.srht.site/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Moved to Sourcehut!</title>
-      <link>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</link>
+      <link>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</link>
       <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</guid>
       <description>&lt;p&gt;I wrote to Drew DeVault a couple of days back, after much deliberation
 on whether I should really bother him and the like, about free access
 to Sourcehut builds so I could move away from Github and Gitlab. He
@@ -29,7 +29,7 @@ called that while hosted on Github-pages is finally here! The next
 step would be to move to a personal or custom domain of my own, but
 that&amp;rsquo;s a long way into the future, yet.&lt;/p&gt;
 &lt;p&gt;In any case, this brings me closer to what I&amp;rsquo;ve got planned for my
-internet presence - minimal and without JavaScript. Although I&amp;rsquo;m
+internet presence — minimal and without JavaScript. Although I&amp;rsquo;m
 pleased with how this has &lt;em&gt;simplified&lt;/em&gt; a lot of things, this also means
 a few new things to keep in mind for me and this is perhaps of most
 interest here.&lt;/p&gt;
@@ -44,7 +44,7 @@ commit with the file. Since this was from prior to adding &lt;code&gt;gitignore&
 functionality, it was at-least an entry older with a bunch of crucial
 changes I&amp;rsquo;d made yesterday. I had to manually recover this eventually.&lt;/p&gt;
 &lt;p&gt;Maintaining multiple branches, juggling remotes - since this shares
-its files with those from my older Github-pages site - all was a bit
+its files with those from my older Github-pages site — all was a bit
 overwhelming initially but I&amp;rsquo;ve managed to clean up most of the cruft
 and I&amp;rsquo;m starting to get more confident around git.&lt;/p&gt;
 &lt;h2 id=&#34;content-restrictions&#34;&gt;Content restrictions&lt;/h2&gt;
@@ -85,17 +85,17 @@ affect me as much&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-bac
 </description>
     </item><item>
       <title>Albums of the Year (2022)</title>
-      <link>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</link>
+      <link>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</link>
       <pubDate>Mon, 27 Feb 2023 17:24:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</guid>
       <description>&lt;p&gt;I dread publishing lists of this kind especially because ranking
 things was never something I enjoyed and since I have a tendency to
 forget artists and albums, often even those that I listen to
 regularly. I also remember bands by sound and almost inevitably refuse
 to keep track of when artists I like release new music. This is in no
 sense complete nor could I get myself to write about each of the
-albums - I’ll perhaps get down to this sometime later. There is no
+albums — I’ll perhaps get down to this sometime later. There is no
 ranking within this list for the same reasons as before&lt;/p&gt;
 &lt;h2 id=&#34;ken-mode-null&#34;&gt;KEN mode - Null&lt;/h2&gt;
 &lt;p&gt;Exasperated with everything good in life going to dogs? Throw Your
@@ -121,7 +121,7 @@ mammoth-like riffs, a loud menacing bass, copious amounts of guitar
 feedback and noise samples embedded into the background, and drums
 with the hint of a twang on the snare leaving the listener in an
 atmosphere dripping with tension and apprehension. McCarthy’s vocals
-are as wild as ever - there’s undertones of the sludge scream, the
+are as wild as ever — there’s undertones of the sludge scream, the
 black metal snarl, alloyed with the Death-growl into guttural lows and
 highs. This album also includes a cover of “Quiet” by the Smashing
 Pumpkins.&lt;/p&gt;
@@ -130,7 +130,7 @@ Find them on &lt;a href=&#34;https://primitivemandoom.bandcamp.com/album/insurmo
     src=&#34;https://bandcamp.com/EmbeddedPlayer/album=1938079692/size=small/tracklist=false/bgcol=ffffff/linkcol=0687f5/transparent=true/&#34; seamless&gt;
 &lt;/iframe&gt;
 
-&lt;p&gt;Ethan McCarthy’s other project - Vermin Womb - also saw a new release
+&lt;p&gt;Ethan McCarthy’s other project — Vermin Womb — also saw a new release
 that I’d also recommend. It’s similar sounding in the instrumentation
 and overall feel but has songs with a more blackened and chaotic
 Grindcore style.&lt;/p&gt;
@@ -152,14 +152,14 @@ accurately and in a single word but it’s got a lot more to it. I find
 that listening to this album when I need to unwind makes the process a
 lot easier and a great deal more enjoyable, but I’m inevitably left
 craving more. Holly has droney chords strummed on a Jazzmaster (?),
-fuzzy and exclusively on neck pickups - and I feel like I shouldn’t
+fuzzy and exclusively on neck pickups — and I feel like I shouldn’t
 have to describe this any further but I’ll just add that it takes the
 edge off the typical bright tone. This perfectly compliments haunting,
 layered vocals that sometimes sound off-key. The vocals don’t appear
 to be too central to her sound and songs are often instrumental,
 overlaid with pretty synth riffs and crucially set in a brown-noise
 base. Also worth noting is the way tracks are arranged in the style of
-a cassette release - both sides have short instrumental introductory
+a cassette release — both sides have short instrumental introductory
 pieces and is available as a cassette on her Bandcamp!&lt;/p&gt;
 Find them on &lt;a href=&#34;https://kathrynmohr.bandcamp.com/album/holly&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
@@ -236,8 +236,8 @@ Find them on &lt;a href=&#34;https://russiancircles.bandcamp.com/album/gnosis&#3
 
 &lt;h2 id=&#34;wake-thought-form-descent&#34;&gt;Wake - Thought Form Descent&lt;/h2&gt;
 &lt;p&gt;There’s no words I can conjure to describe Wake humanly. It’s got
-everything - sickeningly catchy riffs like grindcore, dark ambient
-black metal and post-metal - but then there’s so much more. It’s loud
+everything — sickeningly catchy riffs like grindcore, dark ambient
+black metal and post-metal — but then there’s so much more. It’s loud
 and hits you like a tidal wave but is also meditative of sorts.&lt;/p&gt;
 Find them on &lt;a href=&#34;https://wakegrind.bandcamp.com/album/thought-form-descent&#34;&gt;Bandcamp&lt;/a&gt;
 &lt;iframe style=&#34;border: 0; width: 400px; height: 42px;&#34;
@@ -313,16 +313,16 @@ Find them on &lt;a href=&#34;https://purenoise.bandcamp.com/album/altered-pasts&
 </description>
     </item><item>
       <title>Blog revamp and starting to understand Hugo better</title>
-      <link>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
+      <link>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
       <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to make the switch to a blogging workflow that I could use
 with Emacs back in December and &lt;a href=&#34;../blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html&#34;&gt;wrote about&lt;/a&gt; setting it up from
 scratch. Since I wasn&amp;rsquo;t yet acquainted with writing original layout
 templates, style-sheets or with organising content into sections in as
 simple and sane a manner as I wanted to, I&amp;rsquo;d settled for outsourcing
-most of this to a fairly &lt;a href=&#34;https://github.com/LukasJoswiak/etch&#34;&gt;basic theme&lt;/a&gt;. Over time, I grew dissatisfied
+most of this to a fairly &lt;a href=&#34;https:/github.com/LukasJoswiak/etch&#34;&gt;basic theme&lt;/a&gt;. Over time, I grew dissatisfied
 with how the site looked and how it organised my content and so I
 spent some time customising the theme, which took a while to figure
 out. I wasn&amp;rsquo;t happy with it still. I then tried changing themes a few
@@ -338,27 +338,27 @@ photo albums as posts. My only qualms with it were the somewhat messy
 style sheets and cryptic templates that made personalising a bit of an
 ordeal. The second, however, was simply genius and it took me close to
 no time to figure it out, despite thinking it to be too advanced for
-me - there was no theme sub-module and everything was in the home
+me — there was no theme sub-module and everything was in the home
 directory it was from somebody&amp;rsquo;s personal website.&lt;/p&gt;
 &lt;p&gt;Needless to say, it was Drew DeVault&amp;rsquo;s and I&amp;rsquo;d seen it as something of
 an inspiration from the start. A quick glance at &lt;a href=&#34;https://drewdevault.com&#34;&gt;Drew Devault&amp;rsquo;s blog&lt;/a&gt;
 should convey what I mean by minimal and functional. I jumped right
 into a local clone of his &lt;a href=&#34;https://git.sr.ht/~sircmpwn/drewdevault.com&#34;&gt;sourcehut repo&lt;/a&gt; and got down to making it my
-own. I added some minor spice to the &lt;code&gt;single.html&lt;/code&gt; layout under &lt;code&gt;blog&lt;/code&gt; and
-made an additional few for&lt;/p&gt;
+own. I added some minor spice to the `single.html` layout under `blog`
+and made an additional few for&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;posts from my Wordpress blog I didn&amp;rsquo;t want listed on the homepage&lt;/li&gt;
 &lt;li&gt;a section index that listed the above&lt;/li&gt;
 &lt;li&gt;fiction (just the one post)&lt;/li&gt;
 &lt;li&gt;an &lt;em&gt;About me&lt;/em&gt; page (not a section, unlike before)&lt;/li&gt;
-&lt;li&gt;the browser friendly copy of my &lt;a href=&#34;../emacs/literate_emacs_configuration.html&#34;&gt;Literate Emacs Configuration&lt;/a&gt; with a
-table of contents in the sidebar and heading anchors.&lt;/li&gt;
+&lt;li&gt;the browser friendly copy of my &lt;a href=&#34;../emacs/literate_emacs_configuration.html&#34;&gt;Literate Emacs Configuration&lt;/a&gt; with
+a table of contents in the sidebar and heading anchors.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I realised I didn&amp;rsquo;t want unnecessary taxonomy pages like before or
 like those from the rocinante theme and that all my regular blog
 posts, Emacs configuration and fiction on the homepage. The prospect
-of having to write descriptions for each of these - had I maintained
-separate sections for each like before - was daunting, to say the
+of having to write descriptions for each of these — had I maintained
+separate sections for each like before — was daunting, to say the
 least.&lt;/p&gt;
 &lt;p&gt;I also loved the idea of displaying &amp;ldquo;featured posts&amp;rdquo; from the blogs I
 follow through Drew&amp;rsquo;s own &lt;a href=&#34;https://git.sr.ht/~sircmpwn/openring&#34;&gt;openring&lt;/a&gt;, written in Go. The only issue I
@@ -428,10 +428,10 @@ perhaps cover those in later articles.&lt;/p&gt;
 </description>
     </item><item>
       <title>Having to use Windows, reluctantly</title>
-      <link>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</link>
+      <link>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
       <description>&lt;p&gt;Since my laptop is an ancient clay tablet that can barely run Emacs
 and a couple of other things without everything crashing, I&amp;rsquo;ve had to
 use a lab workstation with about 128 GB RAM and a fairly new Intel
@@ -449,10 +449,10 @@ to change but almost no-one had it figured until I got here.&lt;/p&gt;
 </description>
     </item><item>
       <title>Hugo, Org and starting over at a new blog</title>
-      <link>https://brihadeesh.github.io/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
+      <link>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
       <pubDate>Mon, 05 Dec 2022 00:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
 having watched a SystemCrafters &lt;a href=&#34;https://youtu.be/AfkrzFodoNw&#34;&gt;video&lt;/a&gt; on how to blog from Emacs (&lt;em&gt;d&amp;rsquo;oh&lt;/em&gt;,
 I just &lt;em&gt;have&lt;/em&gt; to do everything from Emacs). Of course, daviwil only
@@ -463,8 +463,8 @@ moving to a new place for work is the motivation it required. It felt
 like cheating to use Jekyll on GitHub and I wanted something that
 could be deployed to a Sourcehut site easily too (Sourcehut blocks any
 CDN-based CSS loaded into the site&amp;rsquo;s HTML) and I wanted something
-extremely minimal, like Drew DeVault&amp;rsquo;s &lt;a href=&#34;https://drewdevault.com/&#34;&gt;blog&lt;/a&gt; but with even fewer
-frills - no images anywhere except for if a blog post required
+extremely minimal, like Drew Devault&amp;rsquo;s &lt;a href=&#34;https://drewdevault.com/&#34;&gt;blog&lt;/a&gt; but with even fewer
+frills — no images anywhere except for if a blog post required
 them. Looking at his blog source, however, made me realise that there
 was a lot more to that minimalism than one could see.&lt;/p&gt;
 &lt;h2 id=&#34;basic-setup&#34;&gt;Basic setup&lt;/h2&gt;
@@ -497,12 +497,12 @@ posts file, adding all the relevant info.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;org-hugo-new-subtree-post-capture-template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Exporting to markdown (Org just doesn&amp;rsquo;t have a good enough support
 yet), tags and organisation of pages into bundles is handled by
-&lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt;, a wonderful package for Emacs written by Kaushal Modi
-(&lt;a href=&#34;https:scripter.co&#34;&gt;website&lt;/a&gt;). The header arguments in the capture template cover
-everything. With Emacs&amp;rsquo;s &lt;code&gt;.dir-locals.el&lt;/code&gt; feature, a file of that name
-in the home directory of the blog ensures every new entry or
-modification into the master posts file gets auto-exported to markdown
-on save. The contents are quite simple.&lt;/p&gt;
+ox-hugo &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup&gt;, &lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The
+header arguments in the capture template cover everything. With
+Emacs&amp;rsquo;s &lt;code&gt;.dir-locals.el&lt;/code&gt; feature, a file of that name in the home
+directory of the blog ensures every new entry or modification into the
+master posts file gets auto-exported to markdown on save. The contents
+are quite simple.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;;; ~/.dir-locals.el&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;content-org/&amp;#34;&lt;/span&gt;
@@ -594,17 +594,26 @@ they&amp;rsquo;re run automatically if you have a specific file in either&lt;/p&
 likely haven&amp;rsquo;t covered a lot of important things. I&amp;rsquo;ll add some links
 to others&amp;rsquo; blog posts that discuss using this or documentation as I
 come across them.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li&gt;ox-hugo: &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;website&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi/ox-hugo&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;(alternatively) &lt;a href=&#34;https://github.com/niklasfasching/go-org&#34;&gt;go-org&lt;/a&gt;, the native Org backend for Hugo&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Documentation is at &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo.scripter.co&lt;/a&gt;. This is a
+wonderful package for Emacs written by Kaushal Modi &lt;a href=&#34;https:scripter.co&#34;&gt;website&lt;/a&gt; and &lt;a href=&#34;https://github.com/kaushalmodi/ox-hugo&#34;&gt;GitHub&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve opted for this over &lt;a href=&#34;https://github.com/niklasfasching/go-org&#34;&gt;go-org&lt;/a&gt;, the native Org backend for
+Hugo since it doesn&amp;rsquo;t support some basic Org syntax exports&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item><item>
       <title>Pets, put in context</title>
-      <link>https://brihadeesh.github.io/blog/2017/06/pets-put-in-context.html</link>
+      <link>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2017/06/pets-put-in-context.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</guid>
       <description>&lt;p&gt;Pets and feral animals have been shown to cause great amounts of
 destruction to native wildlife, but since very little research has
 been done in that field, things remain unclear. Most of the cases
@@ -837,10 +846,10 @@ rapidly without fail.&lt;/p&gt;
 </description>
     </item><item>
       <title>Misunderstanding evolution</title>
-      <link>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution.html</link>
+      <link>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</link>
       <pubDate>Sat, 25 Feb 2017 00:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</guid>
       <description>&lt;p&gt;Who does really understand evolution? (Wait, is it even true?!) Even
 if it is, who really has the better idea? What the hell did Darwin
 really do on the &lt;em&gt;Beagle&lt;/em&gt;? Well, I have some answers. In this
@@ -1043,10 +1052,10 @@ dumb.&lt;/p&gt;
 </description>
     </item><item>
       <title>A dark side to pets</title>
-      <link>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</link>
+      <link>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0530</pubDate>
-      <author>~pereginator/public_inbox@lists.sr.ht (Brihadeesh)</author>
-      <guid>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</guid>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</guid>
       <description>&lt;p&gt;We all love cats, but are they really what we believe them to be? A
 common perception is that cats are lazy animals and prefer sleeping
 though most of the day. But has anyone actually seen a cat hunt? Their
@@ -1064,10 +1073,7 @@ kills was that not a single one took place in daylight. Felids are
 nocturnal and hence most of the hunting takes place in the
 dark. Similarly, most feral and domesticated cats are active at night
 and that&amp;rsquo;s when most of the hunting happens.&lt;/p&gt;
-&lt;figure&gt;&lt;a href=&#34;../images/20161201_goose_catsnake.jpg&#34;&gt;&lt;img src=&#34;../images/20161201_goose_catsnake.jpg&#34;
-         alt=&#34;Figure 1: Goose in the act of killing a cat-snake he captured&#34;/&gt;&lt;/a&gt;&lt;figcaption&gt;
-            &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Goose in the act of killing a cat-snake he captured&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;a href=&#34;../images/20161201_goose_catsnake.jpg&#34;&gt;&lt;img src=&#34;../images/20161201_goose_catsnake.jpg&#34;/&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;On the first of December 2016, I was sitting at home in. My father

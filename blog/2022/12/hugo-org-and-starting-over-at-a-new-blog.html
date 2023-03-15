@@ -17,7 +17,7 @@
   <small>
     <span class="date">December 5, 2022</span>
     on
-    <span class="site"><a href="https://brihadeesh.github.io/">peregrinator&#39;s blog</a></span>
+    <span class="site"><a href="https://peregrinator.srht.site/">peregrinator&#39;s blog</a></span>
   </small>
 </h1>
 
@@ -33,8 +33,8 @@ moving to a new place for work is the motivation it required. It felt
 like cheating to use Jekyll on GitHub and I wanted something that
 could be deployed to a Sourcehut site easily too (Sourcehut blocks any
 CDN-based CSS loaded into the site&rsquo;s HTML) and I wanted something
-extremely minimal, like Drew DeVault&rsquo;s <a href="https://drewdevault.com/">blog</a> but with even fewer
-frills - no images anywhere except for if a blog post required
+extremely minimal, like Drew Devault&rsquo;s <a href="https://drewdevault.com/">blog</a> but with even fewer
+frills — no images anywhere except for if a blog post required
 them. Looking at his blog source, however, made me realise that there
 was a lot more to that minimalism than one could see.</p>
 <h2 id="basic-setup">Basic setup</h2>
@@ -67,12 +67,12 @@ posts file, adding all the relevant info.</p>
 </span></span><span class="line"><span class="cl">                <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span><span class="p">))))</span>
 </span></span></code></pre></div><p>Exporting to markdown (Org just doesn&rsquo;t have a good enough support
 yet), tags and organisation of pages into bundles is handled by
-<a href="https://ox-hugo.scripter.co">ox-hugo</a>, a wonderful package for Emacs written by Kaushal Modi
-(<a href="https:scripter.co">website</a>). The header arguments in the capture template cover
-everything. With Emacs&rsquo;s <code>.dir-locals.el</code> feature, a file of that name
-in the home directory of the blog ensures every new entry or
-modification into the master posts file gets auto-exported to markdown
-on save. The contents are quite simple.</p>
+ox-hugo <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup>, </sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The
+header arguments in the capture template cover everything. With
+Emacs&rsquo;s <code>.dir-locals.el</code> feature, a file of that name in the home
+directory of the blog ensures every new entry or modification into the
+master posts file gets auto-exported to markdown on save. The contents
+are quite simple.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; ~/.dir-locals.el</span>
 </span></span><span class="line"><span class="cl"><span class="p">((</span><span class="s">&#34;content-org/&#34;</span>
@@ -164,10 +164,19 @@ they&rsquo;re run automatically if you have a specific file in either</p>
 likely haven&rsquo;t covered a lot of important things. I&rsquo;ll add some links
 to others&rsquo; blog posts that discuss using this or documentation as I
 come across them.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li>ox-hugo: <a href="https://ox-hugo.scripter.co">website</a> and <a href="https://github.com/kaushalmodi/ox-hugo">GitHub</a></li>
-<li>(alternatively) <a href="https://github.com/niklasfasching/go-org">go-org</a>, the native Org backend for Hugo</li>
+<li id="fn:1">
+<p>Documentation is at <a href="https://ox-hugo.scripter.co">ox-hugo.scripter.co</a>. This is a
+wonderful package for Emacs written by Kaushal Modi <a href="https:scripter.co">website</a> and <a href="https://github.com/kaushalmodi/ox-hugo">GitHub</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I&rsquo;ve opted for this over <a href="https://github.com/niklasfasching/go-org">go-org</a>, the native Org backend for
+Hugo since it doesn&rsquo;t support some basic Org syntax exports&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
+</div>
 
   </article>
 
@@ -246,7 +255,7 @@ should substantially re…</p>
 <footer>
   <div style="color: transparent">
     <a rel="me" href="https://fosstodon.org/@peregrinator"> </a>
-    <a rel="me" href="https://mstdn.social/@periji"> </a>
+    <a rel="me" href="https://mastodon.social/@peregrinator"> </a>
   </div>
   <br>
 

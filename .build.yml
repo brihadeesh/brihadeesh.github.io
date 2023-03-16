@@ -20,6 +20,7 @@ tasks:
     -s https://sourcehut.org/blog/index.xml \
     -s https://ambikamath.com/feed/ \
     -s https://emersion.fr/blog/atom.xml \
+    -s https://popagandhi.com/index.xml \
     < webring-in.template \
     > layouts/partials/webring-out.html
     hugo

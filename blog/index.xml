@@ -11,14 +11,14 @@
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
     <lastBuildDate>Thu, 16 Mar 2023 23:57:00 +0530</lastBuildDate>
     
-	<atom:link href="https://peregrinator.srht.site/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://brihadeesh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Notes from a withdrawal episode</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
+      <link>https://brihadeesh.github.io/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
       <pubDate>Thu, 16 Mar 2023 23:57:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
       <description>&lt;p&gt;I was reading Adrianna&amp;rsquo;s (or &amp;ldquo;&lt;a href=&#34;https://popagandhi.com/&#34;&gt;Pop22&lt;/a&gt;&amp;quot;&amp;rsquo;s) last blog post &amp;lsquo;&lt;a href=&#34;https://popagandhi.com/posts/2023-02-attention-span/&#34;&gt;I Now Have an
 Attention Span&lt;/a&gt;&amp;rsquo; after they asked for new blog feeds they could follow
 on the fediverse and I realised I wasn&amp;rsquo;t following their blog anywhere
@@ -52,10 +52,10 @@ in no way sustainable in the long term for myriad reasons.&lt;/p&gt;
 </description>
     </item><item>
       <title>Moved to Sourcehut!</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</link>
+      <link>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</link>
       <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut.html</guid>
       <description>&lt;p&gt;I wrote to Drew DeVault a couple of days back, after much deliberation
 on whether I should really bother him and the like, about free access
 to Sourcehut builds so I could move away from Github and Gitlab. He
@@ -122,10 +122,10 @@ affect me as much&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-bac
 </description>
     </item><item>
       <title>Albums of the Year (2022)</title>
-      <link>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</link>
+      <link>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</link>
       <pubDate>Mon, 27 Feb 2023 17:24:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022.html</guid>
       <description>&lt;p&gt;I dread publishing lists of this kind especially because ranking
 things was never something I enjoyed and since I have a tendency to
 forget artists and albums, often even those that I listen to
@@ -350,10 +350,10 @@ Find them on &lt;a href=&#34;https://purenoise.bandcamp.com/album/altered-pasts&
 </description>
     </item><item>
       <title>Blog revamp and starting to understand Hugo better</title>
-      <link>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
+      <link>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
       <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to make the switch to a blogging workflow that I could use
 with Emacs back in December and &lt;a href=&#34;../blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html&#34;&gt;wrote about&lt;/a&gt; setting it up from
 scratch. Since I wasn&amp;rsquo;t yet acquainted with writing original layout
@@ -465,10 +465,10 @@ perhaps cover those in later articles.&lt;/p&gt;
 </description>
     </item><item>
       <title>Having to use Windows, reluctantly</title>
-      <link>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</link>
+      <link>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
       <description>&lt;p&gt;Since my laptop is an ancient clay tablet that can barely run Emacs
 and a couple of other things without everything crashing, I&amp;rsquo;ve had to
 use a lab workstation with about 128 GB RAM and a fairly new Intel
@@ -486,10 +486,10 @@ to change but almost no-one had it figured until I got here.&lt;/p&gt;
 </description>
     </item><item>
       <title>Hugo, Org and starting over at a new blog</title>
-      <link>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
+      <link>https://brihadeesh.github.io/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
       <pubDate>Mon, 05 Dec 2022 00:00:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
 having watched a SystemCrafters &lt;a href=&#34;https://youtu.be/AfkrzFodoNw&#34;&gt;video&lt;/a&gt; on how to blog from Emacs (&lt;em&gt;d&amp;rsquo;oh&lt;/em&gt;,
 I just &lt;em&gt;have&lt;/em&gt; to do everything from Emacs). Of course, daviwil only
@@ -647,10 +647,10 @@ Hugo since it doesn&amp;rsquo;t support some basic Org syntax exports&amp;#160;&
 </description>
     </item><item>
       <title>Pets, put in context</title>
-      <link>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</link>
+      <link>https://brihadeesh.github.io/blog/2017/06/pets-put-in-context.html</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2017/06/pets-put-in-context.html</guid>
       <description>&lt;p&gt;Pets and feral animals have been shown to cause great amounts of
 destruction to native wildlife, but since very little research has
 been done in that field, things remain unclear. Most of the cases
@@ -883,10 +883,10 @@ rapidly without fail.&lt;/p&gt;
 </description>
     </item><item>
       <title>Misunderstanding evolution</title>
-      <link>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</link>
+      <link>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution.html</link>
       <pubDate>Sat, 25 Feb 2017 00:00:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution.html</guid>
       <description>&lt;p&gt;Who does really understand evolution? (Wait, is it even true?!) Even
 if it is, who really has the better idea? What the hell did Darwin
 really do on the &lt;em&gt;Beagle&lt;/em&gt;? Well, I have some answers. In this
@@ -1089,10 +1089,10 @@ dumb.&lt;/p&gt;
 </description>
     </item><item>
       <title>A dark side to pets</title>
-      <link>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</link>
+      <link>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0530</pubDate>
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</guid>
+      <guid>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets.html</guid>
       <description>&lt;p&gt;We all love cats, but are they really what we believe them to be? A
 common perception is that cats are lazy animals and prefer sleeping
 though most of the day. But has anyone actually seen a cat hunt? Their

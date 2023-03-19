@@ -9,7 +9,18 @@
     <managingEditor>brihadeesh.s@proton.me (Brihadeesh S)</managingEditor>
     <webMaster>brihadeesh.s@proton.me (Brihadeesh S)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0530</lastBuildDate><atom:link href="https://peregrinator.srht.site/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Mar 2023 00:00:00 +0530</lastBuildDate><atom:link href="https://peregrinator.srht.site/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colourless themes for Emacs</title>
+      <link>https://peregrinator.srht.site/emacs/colourless_themes.html</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0530</pubDate>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/emacs/colourless_themes.html</guid>
+      <description>This is a work in progress. You can browse the code on my sourcehut.
+1 Boring themes for the elitist colourless-themes is a collection of “primarily colourless themes&amp;quot;. This was forked from Tomas Letan&amp;rsquo;s macro of the same name.1
+1.1 Installation Install this how you would install a package from github - this varies with the flavour of Emacs or the setup in use. If you use a Frankenstein&amp;rsquo;s monster like I use, do:</description>
+    </item>
+    
     <item>
       <title>Literate Emacs Configuration</title>
       <link>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</link>

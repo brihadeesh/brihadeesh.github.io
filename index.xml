@@ -9,7 +9,27 @@
     <managingEditor>brihadeesh.s@proton.me (Brihadeesh S)</managingEditor>
     <webMaster>brihadeesh.s@proton.me (Brihadeesh S)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Sat, 04 Mar 2023 03:51:00 +0530</lastBuildDate><atom:link href="https://peregrinator.srht.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Mar 2023 00:00:00 +0530</lastBuildDate><atom:link href="https://peregrinator.srht.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colourless themes for Emacs</title>
+      <link>https://peregrinator.srht.site/emacs/colourless_themes.html</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0530</pubDate>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/emacs/colourless_themes.html</guid>
+      <description>This is a work in progress. You can browse the code on my sourcehut.
+1 Boring themes for the elitist colourless-themes is a collection of “primarily colourless themes&amp;quot;. This was forked from Tomas Letan&amp;rsquo;s macro of the same name.1
+1.1 Installation Install this how you would install a package from github - this varies with the flavour of Emacs or the setup in use. If you use a Frankenstein&amp;rsquo;s monster like I use, do:</description>
+    </item>
+    
+    <item>
+      <title>Notes from a withdrawal episode</title>
+      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
+      <pubDate>Thu, 16 Mar 2023 23:57:00 +0530</pubDate>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
+      <description>I was reading Adrianna&amp;rsquo;s (or &amp;ldquo;Pop22&amp;quot;&amp;rsquo;s) last blog post &amp;lsquo;I Now Have an Attention Span&amp;rsquo; after they asked for new blog feeds they could follow on the fediverse and I realised I wasn&amp;rsquo;t following their blog anywhere — I&amp;rsquo;ve since added it everywhere, including in my openring configuration — and got thinking about a thing or two about my own progress with ADHD over the last four-odd years since my diagnosis.</description>
+    </item>
+    
     <item>
       <title>Moved to Sourcehut!</title>
       <link>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</link>
@@ -82,24 +102,6 @@
       <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
       <guid>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</guid>
       <description>Pets and feral animals have been shown to cause great amounts of destruction to native wildlife, but since very little research has been done in that field, things remain unclear. Most of the cases where the extreme case of extinction occurred were on islands, but this does not indicate that the mainland is safe from this. A lack of visible evidence, either scientific or not, does not indicate that such animals are not killing wildlife regularly, or that the consequences of having them around are negligible.</description>
-    </item>
-    
-    <item>
-      <title>Sustainability and the Common Man</title>
-      <link>https://peregrinator.srht.site/misc/2017/03/sustainability-and-the-common-man.html</link>
-      <pubDate>Mon, 20 Mar 2017 10:43:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/misc/2017/03/sustainability-and-the-common-man.html</guid>
-      <description>Policy with respect to sustainability in India has never been top priority, until very recently. It has often been fraught with people&amp;rsquo;s predispositions that should never have come about in the first place. I will be talking about the ways of a singe man I know, let&amp;rsquo;s call him Devdas (original name withheld for various reasons) and how almost all of his actions were made knowing about the state of wildlife in India.</description>
-    </item>
-    
-    <item>
-      <title>Misunderstanding evolution</title>
-      <link>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</link>
-      <pubDate>Sat, 25 Feb 2017 00:00:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</guid>
-      <description>Who does really understand evolution? (Wait, is it even true?!) Even if it is, who really has the better idea? What the hell did Darwin really do on the Beagle? Well, I have some answers. In this two-part essay, I will be discussing how to understand evolution as a concept and will be touching upon the babble behind the scenes. This part is a general background to the concept of evolution, dealing with the &amp;ldquo;story&amp;rdquo; behind it rather than the concepts themselves.</description>
     </item>
     
   </channel>

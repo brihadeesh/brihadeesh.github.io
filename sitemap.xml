@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://peregrinator.srht.site/emacs/colourless_themes.html</loc>
+    <lastmod>2023-03-19T23:30:53+05:30</lastmod>
+  </url><url>
+    <loc>https://peregrinator.srht.site/emacs.html</loc>
+    <lastmod>2023-03-19T23:30:53+05:30</lastmod>
+  </url><url>
+    <loc>https://peregrinator.srht.site/</loc>
+    <lastmod>2023-03-19T23:30:53+05:30</lastmod>
+  </url><url>
     <loc>https://peregrinator.srht.site/blog.html</loc>
-    <lastmod>2023-03-09T22:12:34+05:30</lastmod>
+    <lastmod>2023-03-16T23:57:00+05:30</lastmod>
+  </url><url>
+    <loc>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</loc>
+    <lastmod>2023-03-16T23:57:00+05:30</lastmod>
   </url><url>
     <loc>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</loc>
     <lastmod>2023-03-04T03:51:00+05:30</lastmod>
-  </url><url>
-    <loc>https://peregrinator.srht.site/</loc>
-    <lastmod>2023-03-09T22:12:34+05:30</lastmod>
   </url><url>
     <loc>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</loc>
     <lastmod>2023-02-27T17:24:00+05:30</lastmod>
@@ -23,11 +32,8 @@
     <loc>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</loc>
     <lastmod>2022-12-05T00:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/emacs.html</loc>
-    <lastmod>2023-03-04T21:24:15+05:30</lastmod>
-  </url><url>
     <loc>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</loc>
-    <lastmod>2023-03-04T21:24:15+05:30</lastmod>
+    <lastmod>2023-03-19T23:05:33+05:30</lastmod>
   </url><url>
     <loc>https://peregrinator.srht.site/misc/2018/03/how-culture-has-affected-natural-selection-in-man.html</loc>
     <lastmod>2018-03-06T18:49:00+05:30</lastmod>

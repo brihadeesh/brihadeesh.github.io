@@ -9,11 +9,48 @@
     <managingEditor>brihadeesh.s@proton.me (Brihadeesh S)</managingEditor>
     <webMaster>brihadeesh.s@proton.me (Brihadeesh S)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Sat, 04 Mar 2023 03:51:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 16 Mar 2023 23:57:00 +0530</lastBuildDate>
     
 	<atom:link href="https://peregrinator.srht.site/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Notes from a withdrawal episode</title>
+      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
+      <pubDate>Thu, 16 Mar 2023 23:57:00 +0530</pubDate>
+      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
+      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
+      <description>&lt;p&gt;I was reading Adrianna&amp;rsquo;s (or &amp;ldquo;&lt;a href=&#34;https://popagandhi.com/&#34;&gt;Pop22&lt;/a&gt;&amp;quot;&amp;rsquo;s) last blog post &amp;lsquo;&lt;a href=&#34;https://popagandhi.com/posts/2023-02-attention-span/&#34;&gt;I Now Have an
+Attention Span&lt;/a&gt;&amp;rsquo; after they asked for new blog feeds they could follow
+on the fediverse and I realised I wasn&amp;rsquo;t following their blog anywhere
+— I&amp;rsquo;ve since added it everywhere, including in my openring
+configuration — and got thinking about a thing or two about my own
+progress with ADHD over the last four-odd years since my diagnosis. I
+do see something of an arc in my capacity for regular work and keeping
+at doing different kinds of work, similar to what they describe, but
+I&amp;rsquo;m not nearly there yet.&lt;/p&gt;
+&lt;p&gt;I find that there are some things I can stay focused on and work
+through. Sadly these have minimal overlap with what I&amp;rsquo;ve chosen for my
+career. I like working with computers — fooling around with R, trying
+to learn e-lisp an figure out Emacs, and well, setting up this blog
+too — and it&amp;rsquo;s startling to see how little there is in terms of job
+opportunities that involve any of these within ecology or wildlife
+science. I realise I&amp;rsquo;m digressing but the point I&amp;rsquo;m trying to make
+here is that I find that my attention span having improved applies
+only to a very limited kind of thing.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been roughly two weeks since I ran out of my medication
+(Methylphenidate — commonly known as Ritalin or Concerta) and I&amp;rsquo;ve
+been experiencing some withdrawal symptoms. This is the longest I&amp;rsquo;ve
+been off this since I got started some six months back. I&amp;rsquo;ve had
+disturbed sleep (I&amp;rsquo;m writing this at midnight!), heightened anxiety
+that often manifests as anxiety attacks, and in general rapid mood
+changes and more but I&amp;rsquo;ve also seen some things that were surprising.&lt;/p&gt;
+&lt;p&gt;The same kinds of work I thought I could do better has become a whole
+lot easier to do now, while I&amp;rsquo;m in this withdrawal state, for the most
+part. I also find my thoughts to be clearer and that I no longer miss
+out on important cues of various kinds. This is quite irregular but is
+in no way sustainable in the long term for myriad reasons.&lt;/p&gt;
+</description>
+    </item><item>
       <title>Moved to Sourcehut!</title>
       <link>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</link>
       <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
@@ -52,13 +89,13 @@ and I&amp;rsquo;m starting to get more confident around git.&lt;/p&gt;
 content - see &lt;a href=&#34;../blog/2023/02/albums-of-the-year-2022.html&#34;&gt;Albums of the Year&lt;/a&gt;, my last post for example. The
 Sourcehut site documentation states that they disallow external
 style-sheets, especially those accessed via CDNs but crucially
-third-party embedded content&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This shouldn&amp;rsquo;t mean
+third-party embedded content.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; This shouldn&amp;rsquo;t mean
 much to most - especially if the content of blog posts is text and
 some code - but since some of my posts are about music, I find that
 this restriction gets in my way. I cannot add embedded albums or
 tracks Bandcamp. Bandcamp is what I prefer when it comes to music
 since they&amp;rsquo;re the most artist-friendly amongst streaming
-platforms&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+platforms.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve since changed my Bandcamp shortcode from a minimal, single
 positional argument based kind to one that uses an additional URL
 rendered as a simple link below the &lt;code&gt;iframe&lt;/code&gt;. Of course, with Sourcehut

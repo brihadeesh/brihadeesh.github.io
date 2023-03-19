@@ -6,12 +6,12 @@
 <h1>
   {{$.Title}}
   <small>
-    Last updated
-    <span class="date">{{ .Params.Lastmod.Format "Jan 02, 2006" }}</span>
-    <br>
     <span class="date">{{ .Params.date.Format "Jan 02, 2006" }}</span>
     on
     <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+    / Last updated
+    <span class="date">{{ .Params.Lastmod.Format "Jan 02, 2006" }}</span>
+
   </small>
 </h1>
 

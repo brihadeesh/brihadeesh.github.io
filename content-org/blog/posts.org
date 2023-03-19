@@ -1260,15 +1260,15 @@ The biggest "hit" I've taken is the restrictions on third-party
 content - see [[file:/blog/2023/02/albums-of-the-year-2022.html][Albums of the Year]], my last post for example. The
 Sourcehut site documentation states that they disallow external
 style-sheets, especially those accessed via CDNs but crucially
-third-party embedded content[fn:1: See the documentation for
+third-party embedded content.[fn:1: See the documentation for
 /Limitations/ with Sourcehut sites at [[https://srht.site/limitations][https://srht.site]]; the rest don't
-affect me as much]. This shouldn't mean
+affect me as much] This shouldn't mean
 much to most - especially if the content of blog posts is text and
 some code - but since some of my posts are about music, I find that
 this restriction gets in my way. I cannot add embedded albums or
 tracks Bandcamp. Bandcamp is what I prefer when it comes to music
 since they're the most artist-friendly amongst streaming
-platforms[fn:2: /Citation?/].
+platforms.[fn:2: /Citation?/]
 
 I've since changed my Bandcamp shortcode from a minimal, single
 positional argument based kind to one that uses an additional URL
@@ -1285,6 +1285,45 @@ Find them on <a href="{{ .Get "url" }}">Bandcamp</a>
 
 #+end_src
 
+** DONE Notes from a withdrawal episode
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: blog
+:EXPORT_FILE_NAME: notes-from-a-withdrawal-episode
+:EXPORT_DATE: [2023-03-16 Thu 23:57]
+:END:
+I was reading Adrianna's (or "[[https://popagandhi.com/][Pop22]]"'s) last blog post '[[https://popagandhi.com/posts/2023-02-attention-span/][I Now Have an
+Attention Span]]' after they asked for new blog feeds they could follow
+on the fediverse and I realised I wasn't following their blog anywhere
+— I've since added it everywhere, including in my openring
+configuration — and got thinking about a thing or two about my own
+progress with ADHD over the last four-odd years since my diagnosis. I
+do see something of an arc in my capacity for regular work and keeping
+at doing different kinds of work, similar to what they describe, but
+I'm not nearly there yet.
+
+I find that there are some things I can stay focused on and work
+through. Sadly these have minimal overlap with what I've chosen for my
+career. I like working with computers — fooling around with R, trying
+to learn e-lisp an figure out Emacs, and well, setting up this blog
+too — and it's startling to see how little there is in terms of job
+opportunities that involve any of these within ecology or wildlife
+science. I realise I'm digressing but the point I'm trying to make
+here is that I find that my attention span having improved applies
+only to a very limited kind of thing.
+
+It's been roughly two weeks since I ran out of my medication
+(Methylphenidate — commonly known as Ritalin or Concerta) and I've
+been experiencing some withdrawal symptoms. This is the longest I've
+been off this since I got started some six months back. I've had
+disturbed sleep (I'm writing this at midnight!), heightened anxiety
+that often manifests as anxiety attacks, and in general rapid mood
+changes and more but I've also seen some things that were surprising.
+
+The same kinds of work I thought I could do better has become a whole
+lot easier to do now, while I'm in this withdrawal state, for the most
+part. I also find my thoughts to be clearer and that I no longer miss
+out on important cues of various kinds. This is quite irregular but is
+in no way sustainable in the long term for myriad reasons.
 ** DRAFT Finding Death metal
 :PROPERTIES:
 :EXPORT_FILE_NAME: finding-death-metal
@@ -1497,45 +1536,10 @@ shuffling though Spotify's "Fans also like" or the abomination this is
 their landing screen, on my phone, that I feel like that discomfort
 returns. This must be a neurodivergent thing because no-one else I've
 met has ever shared anything even remotely similar.
-** DONE Notes from a withdrawal episode
-:PROPERTIES:
-:EXPORT_HUGO_SECTION: blog
-:EXPORT_FILE_NAME: notes-from-a-withdrawal-episode
-:EXPORT_DATE: [2023-03-16 Thu 23:57]
-:END:
-I was reading Adrianna's (or "[[https://popagandhi.com/][Pop22]]"'s) last blog post '[[https://popagandhi.com/posts/2023-02-attention-span/][I Now Have an
-Attention Span]]' after they asked for new blog feeds they could follow
-on the fediverse and I realised I wasn't following their blog anywhere
-— I've since added it everywhere, including in my openring
-configuration — and got thinking about a thing or two about my own
-progress with ADHD over the last four-odd years since my diagnosis. I
-do see something of an arc in my capacity for regular work and keeping
-at doing different kinds of work, similar to what they describe, but
-I'm not nearly there yet.
 
-I find that there are some things I can stay focused on and work
-through. Sadly these have minimal overlap with what I've chosen for my
-career. I like working with computers — fooling around with R, trying
-to learn e-lisp an figure out Emacs, and well, setting up this blog
-too — and it's startling to see how little there is in terms of job
-opportunities that involve any of these within ecology or wildlife
-science. I realise I'm digressing but the point I'm trying to make
-here is that I find that my attention span having improved applies
-only to a very limited kind of thing.
 
-It's been roughly two weeks since I ran out of my medication
-(Methylphenidate — commonly known as Ritalin or Concerta) and I've
-been experiencing some withdrawal symptoms. This is the longest I've
-been off this since I got started some six months back. I've had
-disturbed sleep (I'm writing this at midnight!), heightened anxiety
-that often manifests as anxiety attacks, and in general rapid mood
-changes and more but I've also seen some things that were surprising.
 
-The same kinds of work I thought I could do better has become a whole
-lot easier to do now, while I'm in this withdrawal state, for the most
-part. I also find my thoughts to be clearer and that I no longer miss
-out on important cues of various kinds. This is quite irregular but is
-in no way sustainable in the long term for myriad reasons.
+
 * Miscellaneous
 ** DONE Sustainability and the Common Man
 :PROPERTIES:

@@ -2,7 +2,7 @@
 title = "Literate Emacs Configuration"
 author = ["peregrinator"]
 publishDate = 2021-12-04T00:00:00+05:30
-lastmod = 2023-03-04T21:24:15+05:30
+lastmod = 2023-03-19T23:05:33+05:30
 url = "/emacs/literate_emacs_configuration.html"
 draft = false
 autonumbering = true
@@ -10,7 +10,7 @@ autonumbering = true
 
 This is a copy of my literate configuration for Emacs and if you're
 viewing this anywhere else, don't! Because you can find a readable
-version on my [website](https://peregrinator.srht.site/emacs/literate-emacs-configuration.html). You can also find a source-based version with
+version on my [website](https://peregrinator.srht.site/emacs/literate_emacs_configuration.html). You can also find a source-based version with
 the rest of my `~/.emacs.d` on my [sourcehut](https:git.sr.ht/~peregrinator/.emacs.d).
 
 
@@ -349,6 +349,7 @@ desperately avoiding having to debug init any further.
       org-image-actual-width nil
       org-startup-with-inline-images "inlineimages"
       org-catch-invisible-edits 'smart
+      org-pretty-entities t
 
       ;; sub-headings inherit properties set at parent level
       ;; headings
@@ -394,35 +395,40 @@ desperately avoiding having to debug init any further.
      ;; type `?' for help
      ;; org-use-speed-commands t
      )
+```
 
-    ;;(setq org-modules
-    ;;  '(org-crypt
-    ;;      org-habit
-    ;;      org-bookmark
-    ;;      org-eshell
-    ;;      org-irc))
 
-    (setq org-refile-targets '((nil :maxlevel . 5)
-                               (org-agenda-files :maxlevel . 5)))
+#### <span class="section-num">4.1.1</span> Refile {#refile}
 
-    (setq org-outline-path-complete-in-steps nil)
-    (setq org-refile-use-outline-path t)
+```emacs-lisp
+;;(setq org-modules
+;;  '(org-crypt
+;;      org-habit
+;;      org-bookmark
+;;      org-eshell
+;;      org-irc))
 
-    ;; get something like this for regular emacs bindings
-    ;;(evil-define-key '(normal insert visual) org-mode-map (kbd "C-j") 'org-next-visible-heading)
-    ;;(evil-define-key '(normal insert visual) org-mode-map (kbd "C-k") 'org-previous-visible-heading)
-    ;;(evil-define-key '(normal insert visual) org-mode-map (kbd "M-j") 'org-metadown)
-    ;;(evil-define-key '(normal insert visual) org-mode-map (kbd "M-k") 'org-metaup)
+(setq org-refile-targets '((nil :maxlevel . 5)
+                           (org-agenda-files :maxlevel . 5)))
 
-    ;; Replace list hyphen with dot
-    ;; (font-lock-add-keywords 'org-mode
-    ;;                         '(("^ *\\([-]\\) "
-    ;;                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+(setq org-outline-path-complete-in-steps nil)
+(setq org-refile-use-outline-path t)
+
+;; get something like this for regular emacs bindings
+;;(evil-define-key '(normal insert visual) org-mode-map (kbd "C-j") 'org-next-visible-heading)
+;;(evil-define-key '(normal insert visual) org-mode-map (kbd "C-k") 'org-previous-visible-heading)
+;;(evil-define-key '(normal insert visual) org-mode-map (kbd "M-j") 'org-metadown)
+;;(evil-define-key '(normal insert visual) org-mode-map (kbd "M-k") 'org-metaup)
+
+;; Replace list hyphen with dot
+;; (font-lock-add-keywords 'org-mode
+;;                         '(("^ *\\([-]\\) "
+;;                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
 
 ```
 
 
-#### <span class="section-num">4.1.1</span> Fixed pitch for everything code {#fixed-pitch-for-everything-code}
+#### <span class="section-num">4.1.2</span> Fixed pitch for everything code {#fixed-pitch-for-everything-code}
 
 ```emacs-lisp
 
@@ -443,7 +449,7 @@ desperately avoiding having to debug init any further.
 ```
 
 
-#### <span class="section-num">4.1.2</span> Quick source block templates {#quick-source-block-templates}
+#### <span class="section-num">4.1.3</span> Quick source block templates {#quick-source-block-templates}
 
 These can be run by typing an angle bracket with the shortcut and
 hitting `<TAB>`.
@@ -484,7 +490,7 @@ and needs some debugging.
 ```
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.3</span> Babel {#babel}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.4</span> Babel {#babel}
 
 This might require `org-contrib`.
 
@@ -502,7 +508,7 @@ This might require `org-contrib`.
 ```
 
 
-#### <span class="section-num">4.1.4</span> New folding backend {#new-folding-backend}
+#### <span class="section-num">4.1.5</span> New folding backend {#new-folding-backend}
 
 This came with the Org 9.6 release on <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-29 Tue&gt; </span></span> and I got the
 tea from the Org [changes](https://orgmode.org/Changes.html) post. This is optimised for files that are
@@ -517,34 +523,57 @@ while. Probably some unrelated issue.
 ```
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.5</span> Sources for agenda tasks {#sources-for-agenda-tasks}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">4.1.6</span> Sources for agenda tasks {#sources-for-agenda-tasks}
 
 Generates an agenda from wildcarded org files from the specified
 directory
 
 ```emacs-lisp
 
-;; (setq org-agenda-files
-;;       (file-expand-wildcards "~/org/*.org"))
+(setq org-agenda-files
+      (file-expand-wildcards "~/docmuents/denotes/*.org"))
 
 ```
 
 
-#### <span class="section-num">4.1.6</span> Tags and todo-keywords config {#tags-and-todo-keywords-config}
+#### <span class="section-num">4.1.7</span> Tags and todo-keywords config {#tags-and-todo-keywords-config}
 
 Todo-keywords are things like `TODO` and `DONE` and so on. Tags are for
 classifying stuff by the general theme of what's being talked about.
 
 
-##### <span class="section-num">4.1.6.1</span> todo-keywords {#todo-keywords}
+##### <span class="section-num">4.1.7.1</span> todo-keywords {#todo-keywords}
 
 ```emacs-lisp
+
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "|" "DONE(d!)" "DISABLED(f!)")))
+      '((sequence "TODO(t)" "|" "DISABLED(f)")
+        (sequence "TODO(t)" "|" "CANCELLED(c)")
+        (sequence "DRAFT(e)" "|" "DONE(d)")))
+
+```
+
+Add property drawer disabling source block when `TODO`-state is
+`DISABLED`
+
+```emacs-lisp
+
+(defun peremacs/autodisable-srcblock-on-disabled ()
+  (interactive)
+  (when  (equal (org-get-todo-state) "DISABLED")
+    (org-set-property "HEADER_ARGS" "tangle no"))
+    ;; (org-set-property "VISIBIITY" "folded")
+
+  (unless (equal (org-get-todo-state) "DISABLED")
+    (org-delete-property "HEADER_ARGS")))
+    ;; (org-delete-property "VISIBILITY")))
+
+(add-hook 'org-after-todo-state-change-hook 'peremacs/autodisable-srcblock-on-disabled)
+
 ```
 
 
-##### <span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">4.1.6.2</span> tags {#tags}
+##### <span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">4.1.7.2</span> tags {#tags}
 
 ```emacs-lisp
 (setq org-tag-alist '((("misc" . ?m)
@@ -557,12 +586,14 @@ classifying stuff by the general theme of what's being talked about.
 ```
 
 
-#### <span class="section-num">4.1.7</span> Org-capture {#org-capture}
+#### <span class="section-num">4.1.8</span> Org-capture and agenda {#org-capture-and-agenda}
 
 Global keybinding for org-capture
 
 ```emacs-lisp
 
+;; (global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 
 ```
@@ -576,7 +607,52 @@ place to start. I've also got a simple enough config from a reddit
 post in my [unused local elisp libs](person_el/sample-org-setup.el) too.
 
 
-#### <span class="section-num">4.1.8</span> Display features {#display-features}
+#### <span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">4.1.9</span> em- and en-dashes {#em-and-en-dashes}
+
+I realised I use em-dashes a lot — this is perhaps one way to make
+sure that em-dashes can be generated with double dashes in sequence. I
+actually just use a remapped compose key (`R_ALT` is remapped to
+`compose`) and `compose + ---` gives me an em-dash.
+
+```emacs-lisp
+
+;; Replace two consecutive hyphens with the en-dash
+;; (add-hook 'org-mode-hook (lambda () (push '("--" . ?–) prettify-symbols-alist)))
+
+;; Replace two consecutive hyphens with the em-dash
+(add-hook 'org-mode-hook (lambda () (push '("--" . ?—) prettify-symbols-alist)))
+
+```
+
+
+#### <span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">4.1.10</span> Write org-log into drawer {#write-org-log-into-drawer}
+
+Every time I change the TODO-keywords for a heading, there's a list
+entry added on top of the text under the heading with a state-change
+date stamp and more information. This should ensure such logs should
+be entered into a drawer like those that ox-hugo uses.
+
+```emacs-lisp
+
+(setq org-log-into-drawer LOGBOOK)
+
+```
+
+
+#### <span class="section-num">4.1.11</span> Backlinks / org-super-links {#backlinks-org-super-links}
+
+```emacs-lisp
+
+(use-package org-super-links
+  :straight (org-super-links :type git :host github :repo "toshism/org-super-links" :branch "develop")
+  :bind (("C-c s s" . org-super-links-link)
+         ("C-c s l" . org-super-links-store-link)
+         ("C-c s C-l" . org-super-links-insert-link)))
+
+```
+
+
+#### <span class="section-num">4.1.12</span> Display features {#display-features}
 
 In the spirit of reclaiming some semblance of organisation in this
 file, I've tried to group settings by the what aspect they
@@ -584,12 +660,14 @@ change. Hopefully this continues and the rest of the Org mode
 configuration can be split up.
 
 
-##### <span class="section-num">4.1.8.1</span> Autoindent/autofill turned on automatically {#autoindent-autofill-turned-on-automatically}
+##### <span class="section-num">4.1.12.1</span> Autoindent/autofill turned on automatically {#autoindent-autofill-turned-on-automatically}
 
 ```emacs-lisp
 
 (add-hook 'org-mode-hook 'org-indent-mode)
+(setq org-indent-indentation-per-level 3)
 (setq org-startup-indented t)
+
 
 ;; organise paragraphs automatically
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
@@ -597,7 +675,7 @@ configuration can be split up.
 ```
 
 
-##### <span class="section-num">4.1.8.2</span> Minad's modern UI for org-mode {#minad-s-modern-ui-for-org-mode}
+##### <span class="section-num">4.1.12.2</span> Minad's modern UI for org-mode {#minad-s-modern-ui-for-org-mode}
 
 Was maintaining a [fork](https://github.com/brihadeesh/org-modern) but I guess it's too much work - should
 considering getting back at it sometime. I was having issues with `TODO`
@@ -636,7 +714,7 @@ code segments in text.
 ```
 
 
-##### <span class="section-num">4.1.8.3</span> Display emphasis markers on hover {#display-emphasis-markers-on-hover}
+##### <span class="section-num">4.1.12.3</span> Display emphasis markers on hover {#display-emphasis-markers-on-hover}
 
 This package makes it much easier to edit Org documents when
 org-hide-emphasis-markers is turned on. It temporarily shows the
@@ -650,7 +728,7 @@ characters!
 ```
 
 
-##### <span class="section-num">4.1.8.4</span> Better commenting in org-mode code-blocks {#better-commenting-in-org-mode-code-blocks}
+##### <span class="section-num">4.1.12.4</span> Better commenting in org-mode code-blocks {#better-commenting-in-org-mode-code-blocks}
 
 Got this from a [Stack Exchange answer](https://emacs.stackexchange.com/a/19741/23936) to work around messed up
 commenting using the default `C-x C-;` command. The older/default
@@ -671,7 +749,7 @@ command messes up lines, undos, and sometimes comment syntax as well.
 ```
 
 
-##### <span class="section-num">4.1.8.5</span> TOC for org-mode files {#toc-for-org-mode-files}
+##### <span class="section-num">4.1.12.5</span> TOC for org-mode files {#toc-for-org-mode-files}
 
 ```emacs-lisp
 (use-package toc-org
@@ -687,7 +765,7 @@ Alternatively
 ```
 
 
-##### <span class="section-num">4.1.8.6</span> Convert all org-keywords/block identifiers to lowercase {#convert-all-org-keywords-block-identifiers-to-lowercase}
+##### <span class="section-num">4.1.12.6</span> Convert all org-keywords/block identifiers to lowercase {#convert-all-org-keywords-block-identifiers-to-lowercase}
 
 It's always nice to see random people online that are crazy like you
 and are nice enough to write elisp code for the shit you need. Stolen
@@ -879,19 +957,18 @@ in this configuration somewhere.
   (defun org-hugo-new-post-capture ()
     "Returns `org-capture' template string for new Hugo post.
 See `org-capture-templates' for more information."
-    (let* (;; http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/
-           (date (format-time-string (org-time-stamp-format :long :inactive) (org-current-time)))
+    ;; http://www.holgerschurig.de/en/emacs-blog-from-org-to-hugo/
+    (let* ((date (format-time-string (org-time-stamp-format :long :inactive) (org-current-time)))
            (title (read-from-minibuffer "Post Title: ")) ;Prompt to enter the post title
            (fname (org-hugo-slug title))
-           (section (plist-get org-capture-plist :section))
-           (lastmod (plist-get org-capture-alist :lastmod)))
+           (section (plist-get org-capture-plist :section)))
       (mapconcat #'identity
                  `(
                    ,(concat "* DRAFT " title)
                    ":PROPERTIES:"
                    ,(concat "" section)
                    ,(concat ":EXPORT_FILE_NAME: " fname)
-                   ,(concat ":EXPORT_HUGO_AUTO_SET_LASTMOD: " lastmod)
+                   ;; ,(concat ":EXPORT_HUGO_AUTO_SET_LASTMOD: " lastmod)
                    ;; Enter current date and time
                    ,(concat ":EXPORT_DATE: " date)
                    ":END:"
@@ -901,22 +978,49 @@ See `org-capture-templates' for more information."
 
   (setq org-capture-templates
         ;;`org-capture' binding + h
-        '(("h"
+        '(("b"
            "Hugo blog post"
            entry
-           (file+olp "~/my_gits/brihadeesh.github.io/content-org/blog/posts.org" "Posts")
+           (file+olp "~/my_gits/blog/content-org/blog/posts.org" "Posts")
            (function org-hugo-new-post-capture)
            :section ":EXPORT_HUGO_SECTION: blog"
-           :lastmod "t")
+           )
 
           ;; `org-capture' binding + m
           ("m"
            "Hugo miscellaneous blog post"
            entry
-           (file+olp "~/my_gits/brihadeesh.github.io/content-org/blog/posts.org" "Miscellaneous")
+           (file+olp "~/my_gits/blog/content-org/blog/posts.org" "Miscellaneous")
            (function org-hugo-new-post-capture)
            :section ":EXPORT_HUGO_SECTION: misc"
-           :lastmod "f"))))
+           ))))
+
+```
+
+
+### <span class="section-num">4.6</span> Olivetti / distraction-free writing {#olivetti-distraction-free-writing}
+
+```emacs-lisp
+
+(use-package olivetti
+    :init
+    (setq olivetti-body-width .67)
+    :config
+    (defun distraction-free ()
+      "Distraction-free writing environment"
+      (interactive)
+      (if (equal olivetti-mode nil)
+          (progn
+            (window-configuration-to-register 1)
+            (delete-other-windows)
+            ;; (text-scale-increase 2)
+            (olivetti-mode t))
+        (progn
+          (jump-to-register 1)
+          (olivetti-mode 0)
+          (text-scale-decrease 2))))
+    :bind
+    (("<f9>" . distraction-free)))
 
 ```
 
@@ -1088,7 +1192,7 @@ cluttered and excruciatingly tedious to even get started with.
   (setq denote-directory (expand-file-name "~/documents/denotes/")
 
         ;; keywords
-        denote-known-keywords '("emacs" "r-stats" "work" "thoughts" "politics" "blog-ideas")
+        denote-known-keywords '("emacs" "work" "thoughts" "journal")
 
         ;; check
         denote-infer-keywords t
@@ -1137,7 +1241,47 @@ cluttered and excruciatingly tedious to even get started with.
 ```
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.2</span> Denote templates {#denote-templates}
+### <span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">7.2</span> Keeping my org-agenda updated {#keeping-my-org-agenda-updated}
+
+I've switched to using denote for managing my notes and tasks and
+since I need a reliable system to manage tasks I've decided to give
+`org-agenda` a go. This should make it easier for me to track tasks from
+`TODO` tagged headers in my denote notes.
+
+```emacs-lisp
+
+(defvar peremacs/denote-to-agenda-regexp "_project"
+  "Denote file names that are added to the agenda.
+  See `my-add-denote-to-agenda'.")
+
+(defun peremacs/denote-add-to-agenda ()
+  "Add current file to the `org-agenda-files', if needed.
+  The file's name must match the `peremacs/denote-to-agenda-regexp'.
+
+  Add this to the `after-save-hook' or call it interactively."
+  (interactive)
+  (when-let* ((file (buffer-file-name))
+              ((denote-file-is-note-p file))
+              ((string-match-p peremacs/denote-to-agenda-regexp (buffer-file-name))))
+    (add-to-list 'org-agenda-files file)))
+
+;; Example to add the file automatically.  Uncomment it:
+
+;; (add-hook 'after-save-hook #'my-denote-add-to-agenda)
+
+(defun peremacs/denote-remove-from-agenda ()
+  "Remove current file from the `org-agenda-files'.
+  See `peremacs/denote-add-to-agenda' for how to add files to the Org
+  agenda."
+  (interactive)
+  (when-let* ((file (buffer-file-name))
+              ((string-match-p peremacs/denote-to-agenda-regexp (buffer-file-name))))
+    (setq org-agenda-files (delete file org-agenda-files))))
+
+```
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.3</span> Denote templates {#denote-templates}
 
 This should replace capture templates because the interactive `denote`
 call seems a lot more flexible and versatile. Still WIP
@@ -1152,11 +1296,30 @@ call seems a lot more flexible and versatile. Still WIP
                          "\n\n"))
         (journal-entry . "* Date\n\n** Time")))
 
+```
+
+
+### <span class="section-num">7.4</span> Journaling with Denote {#journaling-with-denote}
+
+```emacs-lisp
+
+(defun peremacs/denote-journal-entry ()
+  "Create an entry tagged 'journal' with the date as its title."
+  (interactive)
+  (denote
+   ;; format like June 14 2022 Tuesday
+   nil
+   '("journal")
+   nil
+   "~/my_gits/journal/entries/")
+
+  ;; multiple keywords are a list of strings: '("one" "two")
+  (insert (concat "* " (format-time-string "(%R)") " ")))
 
 ```
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.3</span> "convenience commands" for journal entries {#convenience-commands-for-journal-entries}
+### <span class="org-todo done DISABLED">DISABLED</span> <span class="section-num">7.5</span> "convenience commands" for journal entries {#convenience-commands-for-journal-entries}
 
 ```emacs-lisp
 
@@ -1191,12 +1354,12 @@ Stolen from somewhere
 
 (defun journal-day-exists-p ( target )
   "check if journal for a day already exists"
-  (file-expand-wildcards (concat "~/journal/entries/" target "*.org")))
+  (file-expand-wildcards (concat "~/my_gits/journal/entries/" target "*.org")))
 
 (defun find-previous-journal ()
   "Find most recent journal"
   (let* ((today (format-time-string "%Y%m%d"))
-         (all_journals (sort (directory-files "~/journal/entries" nil "^[0-9].*.*org$") #'string>)))
+         (all_journals (sort (directory-files "~/my_gits/journal/entries" nil "^[0-9].*.*org$") #'string>)))
     (dolist (journal all_journals)
       (when (string< (substring journal 0 8) today)
         (return journal)))))
@@ -1211,10 +1374,11 @@ Stolen from somewhere
         (find-file filename)
       (progn
         (denote
-         (format-time-string "%a %d %m %Y (%H:%M)")   ; format like Tuesday 14 Jun 2022
-         nil
-         "~/journal/entries")
-        (insert "* THOUGHTS\n\n* IDEAS\n\n* CODE\n\n* TASKS\n\n")
+         (denote--title-prompt)
+         ;; (format-time-string "%d %m %Y %a %H:%M")
+         '("journal")
+         "~/my_gits/journal/entries")
+        (insert "* ")
         (save-buffer)))))
 
 (defun my-denote-journal-date()
@@ -1226,14 +1390,16 @@ Stolen from somewhere
         (find-file filename)
       (progn
         (denote
-         (format-time-string "%a %d %m %Y" date)   ; format like Tuesday 14 June 2022
-         nil
-         "~/journal/entries")))))
+         (denote--title-prompt)
+         ;; (format-time-string "%d %m %Y %a %H:%M")
+         '("journal")
+         "~/my_gits/journal/entries")
+        (insert "* ")))))
 
 ```
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.4</span> Keybindings {#keybindings}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.6</span> Keybindings {#keybindings}
 
 Denote DOES NOT define any key bindings. It requires arguments
 acceptable to the `bind-keys` macro. I'm not entirely sure some of these
@@ -1272,7 +1438,7 @@ are necessary since I'm using a capture template.
 ```
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.5</span> `org-journal` for journaling requirements {#org-journal-for-journaling-requirements}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">7.7</span> `org-journal` for journaling requirements {#org-journal-for-journaling-requirements}
 
 This needs better setting up and integration with either `Orgzly` or
 `GitJournal` for android. iOS seems to have better apps though. Or
@@ -1291,7 +1457,7 @@ just make this workable with the termux version of Emacs.
   :config
   ;; Journal directory and files
   (setq org-journal-dir "~/journal/entries/"
-        org-journal-file-format "%Y/%m/%Y%m%d.org"
+        org-journal-file-format "%Y%m%d.org"
         org-journal-file-type 'daily
         org-journal-find-file 'find-file)
 
@@ -3343,6 +3509,7 @@ see [daviwil's mail.org](https://github.com/daviwil/dotfiles/blob/9776d65c4486f2
 ### <span class="section-num">19.4</span> Elfeed for RSS {#elfeed-for-rss}
 
 ```emacs-lisp
+
 (use-package elfeed
   :commands elfeed
   :config
@@ -3350,7 +3517,9 @@ see [daviwil's mail.org](https://github.com/daviwil/dotfiles/blob/9776d65c4486f2
         '("https://drewdevault.com/blog/index.xml"
           "https://sourcehut.org/blog/index.xml"
           "https://ambikamath.com/feed/"
-          "https://emersion.fr/blog/atom.xml")))
+          "https://emersion.fr/blog/atom.xml"
+          "https://popagandhi.com/index.xml")))
+
 ```
 
 

@@ -46,13 +46,13 @@ The biggest "hit" I've taken is the restrictions on third-party
 content - see [Albums of the Year](/blog/2023/02/albums-of-the-year-2022.html), my last post for example. The
 Sourcehut site documentation states that they disallow external
 style-sheets, especially those accessed via CDNs but crucially
-third-party embedded content[^fn:1]. This shouldn't mean
+third-party embedded content.[^fn:1] This shouldn't mean
 much to most - especially if the content of blog posts is text and
 some code - but since some of my posts are about music, I find that
 this restriction gets in my way. I cannot add embedded albums or
 tracks Bandcamp. Bandcamp is what I prefer when it comes to music
 since they're the most artist-friendly amongst streaming
-platforms[^fn:2].
+platforms.[^fn:2]
 
 I've since changed my Bandcamp shortcode from a minimal, single
 positional argument based kind to one that uses an additional URL

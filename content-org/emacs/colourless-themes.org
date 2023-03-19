@@ -20,7 +20,7 @@ This is a work in progress. You can browse the code on my [[https://git.sr.ht/~p
 ~colourless-themes~ is a collection of “primarily colourless
 themes". This was forked from Tomas Letan's macro of the same
 name.[fn:1: The macro is a rework of theirs — an opinionated take
-perhaps? Find their source code at [[https://git.sr.ht/~lthms/colorless-themes.el][~lthms/colurless-themes.el]]]
+perhaps? Find their source code at [[https://git.sr.ht/~lthms/colorless-themes.el][~lthms/colorless-themes.el]]]
 
 ** Installation
 

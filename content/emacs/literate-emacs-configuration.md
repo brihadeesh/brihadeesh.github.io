@@ -2,7 +2,7 @@
 title = "Literate Emacs Configuration"
 author = ["peregrinator"]
 publishDate = 2021-12-04T00:00:00+05:30
-lastmod = 2023-03-19T23:05:33+05:30
+lastmod = 2023-03-19T23:45:26+05:30
 url = "/emacs/literate_emacs_configuration.html"
 draft = false
 autonumbering = true
@@ -11,7 +11,7 @@ autonumbering = true
 This is a copy of my literate configuration for Emacs and if you're
 viewing this anywhere else, don't! Because you can find a readable
 version on my [website](https://peregrinator.srht.site/emacs/literate_emacs_configuration.html). You can also find a source-based version with
-the rest of my `~/.emacs.d` on my [sourcehut](https:git.sr.ht/~peregrinator/.emacs.d).
+the rest of my `~/.emacs.d` on my [sourcehut](https://git.sr.ht/~peregrinator/.emacs.d).
 
 
 ## <span class="section-num">1</span> Other init files {#other-init-files}

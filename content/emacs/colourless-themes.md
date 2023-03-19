@@ -2,7 +2,7 @@
 title = "Colourless themes for Emacs"
 author = ["peregrinator"]
 publishDate = 2023-03-19T00:00:00+05:30
-lastmod = 2023-03-19T23:30:53+05:30
+lastmod = 2023-03-19T23:45:44+05:30
 url = "/emacs/colourless_themes.html"
 draft = false
 autonumbering = true
@@ -64,4 +64,4 @@ Themes offered besides those from upstream are
 WIP
 
 [^fn:1]: The macro is a rework of theirs — an opinionated take
-    perhaps? Find their source code at [~lthms/colurless-themes.el](https://git.sr.ht/~lthms/colorless-themes.el)
+    perhaps? Find their source code at [~lthms/colorless-themes.el](https://git.sr.ht/~lthms/colorless-themes.el)

@@ -22,6 +22,18 @@
     </div>
     {{ end }}
 
+    <br>
+
+    <h4>Emacs resources</h4>
+    <section class="article-list">
+	{{ range where .Site.RegularPages "Section" "emacs" }}
+	<div class="article">
+	  <span class="date">{{.Lastmod.Format "January 2, 2006"}}</span>
+	  <span class="title"><a href="{{.Permalink}}">{{.Title}}</a></span>
+	</div>
+	{{ end }}
+      </section>
+
   </section>
 
 
@@ -43,8 +55,8 @@
     <dl class="external-links">
       <dt>mastodon</dt>
       <dd><a href="https://fosstodon.org/@peregrinator">@peregrinator 'at' fosstodon.org</a></dd>
-      <!-- <dt>email</dt> -->
-      <!-- <dd><a href="mailto:brihadeesh.s@proton.me">brihadeesh.s@proton.me</a></dd> -->
+      <dt>email</dt>
+      <dd><a href="mailto:brihadeesh.s@proton.me">brihadeesh.s@proton.me</a></dd>
       <dt>sourcehut</dt>
       <dd><a href="https://git.sr.ht/~peregrinator">~peregrinator</a></dd>
       <dt>github</dt>
@@ -59,19 +71,6 @@
     <!-- </small> -->
 
     <!-- <br> -->
-    <br>
-
-    <h5>Emacs resources</h5>
-    <small>
-      <section class="article-list">
-	{{ range where .Site.RegularPages "Section" "emacs" }}
-	<div class="article">
-	  <span class="date">{{.Lastmod.Format "January 2, 2006"}}</span>
-	  <span class="title"><a href="{{.Permalink}}">{{.Title}}</a></span>
-	</div>
-	{{ end }}
-      </section>
-    </small>
 
   </aside>
 </main>

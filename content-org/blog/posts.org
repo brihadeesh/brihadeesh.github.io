@@ -1325,7 +1325,7 @@ lot easier to do now, while I'm in this withdrawal state, for the most
 part. I also find my thoughts to be clearer and that I no longer miss
 out on important cues of various kinds. This is quite irregular but is
 in no way sustainable in the long term for myriad reasons.
-** DRAFT Notes from a withdrawal episode (part 0)
+** DONE Notes from a withdrawal episode (part 0)
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog
 :EXPORT_FILE_NAME: notes-from-a-withdrawal-episode-part-0

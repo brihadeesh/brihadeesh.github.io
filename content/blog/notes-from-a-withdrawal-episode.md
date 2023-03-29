@@ -3,6 +3,7 @@ title = "Notes from a withdrawal episode"
 author = ["peregrinator"]
 date = 2023-03-16T23:57:00+05:30
 draft = false
+series = "Living with ADHD"
 +++
 
 I was reading Adrianna's (or "[Pop22](https://popagandhi.com/)"'s) last blog post '[I Now Have an

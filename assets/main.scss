@@ -201,6 +201,10 @@ article {
     font-size: 0.9rem;
 }
 
+// a.footnote-ref {
+//     text-decoration: underline;
+// }
+
 a.footnote-ref::before {
     content: '[';
 }

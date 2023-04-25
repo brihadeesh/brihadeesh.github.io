@@ -6,9 +6,9 @@ html {
 }
 
 body {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 a {
@@ -22,43 +22,50 @@ a {
     }
 }
 
+hr {
+    margin: 2em 0;
+    border: 0;
+    border-top: 1px solid #aaa;
+}
+
 h1 {
-  margin-top: 0;
-  font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 
-  a {
-      text-decoration: none;
-      border: none;
-      color: #77f !important;
-      transition: color 0.1s ease-in-out;
+    a {
+	text-decoration: none;
+	border: none;
+	color: #77f !important;
+	transition: color 0.1s ease-in-out;
 
-      &:hover {
-	  text-decoration: none;
-	  color: #f77 !important;
-      }
-  }
+	&:hover {
+	    text-decoration: none;
+	    color: #f77 !important;
+	}
+    }
 
-  small {
-      style: regular;
-      display: block;
-      font-size: 1rem;
-      color: #555;
+    small {
+	style: regular;
+	display: block;
+	font-size: 1rem;
+	color: #555;
 
-      .date {
-	  text-transform: uppercase;
-      }
+	.date {
+	    text-transform: uppercase;
+	}
 
-      .site a {
-	  text-decoration: none;
-	  color: #77f !important;
-	  transition: color 0.1s ease-in-out;
+	.site a {
+	    text-decoration: none;
+	    color: #77f !important;
+	    transition: color 0.1s ease-in-out;
 
-	  &:hover {
-	      text-decoration: none;
-	      color: #f77 !important;
-	  }
-      }
-  }
+	    &:hover {
+		text-decoration: none;
+		color: #f77 !important;
+	    }
+	}
+    }
 }
 
 .index {
@@ -84,7 +91,9 @@ h1 {
     }
 
     aside {
-	width: 40%;
+	width: 30%;
+	max-width: 300px;
+	margin-top: 2rem;
 
 	a, a:hover {
 	    text-decoration: none
@@ -97,14 +106,14 @@ h1 {
 	}
 
 	dt {
-	    font-size: 0.9rem;
+	    font-size: 1.1rem;
 	}
 
 	dd {
 	    margin-left: 0;
 
 	    &:not(:last-child) {
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.1rem;
 	    }
 	}
     }
@@ -118,7 +127,7 @@ h1 {
 
 article {
     margin: 0 0;
-    max-width: 620px;
+    max-width: 800px;
     line-height: 1.3;
 
     img, video, iframe, figure {
@@ -194,7 +203,7 @@ article {
     color: #555;
     font-style: italic;
     font-size: 95%;
-    width: 90%;
+    max-width: 800px;
 }
 
 .footnotes {

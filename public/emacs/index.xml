@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on peregrinator&#39;s blog</title>
+    <link>https://peregrinator.srht.site/emacs.html</link>
+    <description>Recent content in Emacs on peregrinator&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Mar 2023 23:45:44 +0530</lastBuildDate>
+    <atom:link href="https://peregrinator.srht.site/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colourless themes for Emacs</title>
+      <link>https://peregrinator.srht.site/emacs/colourless_themes.html</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0530</pubDate>
+      <guid>https://peregrinator.srht.site/emacs/colourless_themes.html</guid>
+      <description>&lt;div class=&#34;alert-info alert&#34;&gt;&#xA;&lt;p&gt;This is a work in progress. You can browse the code on my &lt;a href=&#34;https://git.sr.ht/~peregrinator/colourless-themes&#34;&gt;sourcehut&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;boring-themes-for-the-elitist&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Boring themes for the elitist&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;colourless-themes&lt;/code&gt; is a collection of “primarily colourless&#xA;themes&amp;quot;. This was forked from Tomas Letan&amp;rsquo;s macro of the same&#xA;name.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;installation&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Installation&lt;/h3&gt;&#xA;&lt;p&gt;Install this how you would install a package from github - this varies&#xA;with the flavour of Emacs or the setup in use. If you use a&#xA;Frankenstein&amp;rsquo;s monster like I use, do:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Literate Emacs Configuration</title>
+      <link>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0530</pubDate>
+      <guid>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</guid>
+      <description>&lt;p&gt;This is a copy of my literate configuration for Emacs and if you&amp;rsquo;re&#xA;viewing this anywhere else, don&amp;rsquo;t! Because you can find a readable&#xA;version on my &lt;a href=&#34;https://peregrinator.srht.site/emacs/literate_emacs_configuration.html&#34;&gt;website&lt;/a&gt;. You can also find a source-based version with&#xA;the rest of my &lt;code&gt;~/.emacs.d&lt;/code&gt; on my &lt;a href=&#34;https://git.sr.ht/~peregrinator/.emacs.d&#34;&gt;sourcehut&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;other-init-files&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Other init files&lt;/h2&gt;&#xA;&lt;p&gt;These are in my &lt;code&gt;~/.emacs.d&lt;/code&gt; and help load this main configuration.&lt;/p&gt;&#xA;&lt;h3 id=&#34;early-init&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Early init&lt;/h3&gt;&#xA;&lt;p&gt;This creates a file, &lt;a href=&#34;~/.emacs.d/early-init.el&#34;&gt; &lt;code&gt;early-init.el&lt;/code&gt; &lt;/a&gt;, in &lt;code&gt;~/.emacs.d&lt;/code&gt;. This was stolen&#xA;from Protesilaos some time back. It still needs work - it&amp;rsquo;s not&#xA;tangled (by default) yet.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

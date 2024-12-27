@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Colourless themes for Emacs</title>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://brihadeesh.github.io/blog/index.xml">
+  <link rel="icon" type="image/jpg" href="../avatar.jpg">
+  
+  <link rel="stylesheet" href="../main.min.422b4176f1668b88e7f541a9ec6f627b8ad1afea9c669cd8f946bf0920b641d0.css">
+</head>
+
+
+
+<link rel="stylesheet" href="../nav.min.0fbdf97727e07108a50d9e266b84c87201ffe877b909f204ee822f1261a3428b.css">
+
+<h1>
+  Colourless themes for Emacs
+  <small>
+    <span class="date">Mar 19, 2023</span>
+    on
+    <span class="site"><a href="https://peregrinator.srht.site/">peregrinator&#39;s blog</a></span>
+    / Last updated
+    <span class="date">Mar 19, 2023</span>
+
+  </small>
+</h1>
+
+<main>
+  <article><div class="alert-info alert">
+<p>This is a work in progress. You can browse the code on my <a href="https://git.sr.ht/~peregrinator/colourless-themes">sourcehut</a>.</p>
+</div>
+<h2 id="boring-themes-for-the-elitist"><span class="section-num">1</span> Boring themes for the elitist&nbsp;<a class="hanchor" href="#boring-themes-for-the-elitist">#</a> </h2>
+<p><code>colourless-themes</code> is a collection of “primarily colourless
+themes&quot;. This was forked from Tomas Letan&rsquo;s macro of the same
+name.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h3 id="installation"><span class="section-num">1.1</span> Installation&nbsp;<a class="hanchor" href="#installation">#</a> </h3>
+<p>Install this how you would install a package from github - this varies
+with the flavour of Emacs or the setup in use. If you use a
+Frankenstein&rsquo;s monster like I use, do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">colourless-themes</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:straight</span> <span class="p">(</span><span class="nb">:host</span> <span class="nv">sourcehut</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">:repo</span> <span class="s">&#34;~peregrinator/colourless-themes-el&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;;optionally loading a theme</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;einkless</span> <span class="no">t</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="usage"><span class="section-num">1.2</span> Usage&nbsp;<a class="hanchor" href="#usage">#</a> </h3>
+<p>Temporarily set it the <code>M-x load-theme</code> , or via <code>M-x customize-themes</code>. To make it persistent, see <a href="../emacs/colourless_themes.html#installation">Installation</a>. Disable
+any other themes to ensure a colourless experience.</p>
+<h2 id="featured-themes"><span class="section-num">2</span> Featured themes&nbsp;<a class="hanchor" href="#featured-themes">#</a> </h2>
+<p>Themes offered besides those from upstream are</p>
+<ul>
+<li><code>mephistopheles</code> an original dark theme with yellow and green
+foreground, again inspired by Stanislav Karkavin&rsquo;s vim theme
+mentioned above.</li>
+<li><code>beelzebub</code> A dark, purplish colourscheme based on Stanislav
+Karkavin&rsquo;s vim theme: <a href="https://github.com/xdefrag/vim-beelzebub">vim-beelzebub</a></li>
+<li><code>nofrils</code>, Emacs ports <em>faithful</em> to the <a href="https://github.com/robertmeta/nofrils">original nofrils
+themes</a>. These have a few more colours than the others.</li>
+</ul>
+<h3 id="screenshots"><span class="section-num">2.1</span> Screenshots&nbsp;<a class="hanchor" href="#screenshots">#</a> </h3>
+<p>WIP</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The macro is a rework of theirs — an opinionated take
+perhaps? Find their source code at <a href="https://git.sr.ht/~lthms/colorless-themes.el">~lthms/colorless-themes.el</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</article>
+
+  <nav class="toc">
+    <h4> Sections </h4>
+    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#boring-themes-for-the-elitist"><span class="section-num">1</span> Boring themes for the elitist</a>
+      <ol>
+        <li><a href="#installation"><span class="section-num">1.1</span> Installation</a></li>
+        <li><a href="#usage"><span class="section-num">1.2</span> Usage</a></li>
+      </ol>
+    </li>
+    <li><a href="#featured-themes"><span class="section-num">2</span> Featured themes</a>
+      <ol>
+        <li><a href="#screenshots"><span class="section-num">2.1</span> Screenshots</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+  </nav>
+</main>
+
+<footer>
+  <div style="color: transparent">
+    <a rel="me" href="https://fosstodon.org/@peregrinator"> </a>
+    <a rel="me" href="https://mastodon.social/@peregrinator"> </a>
+  </div>
+  <br>
+
+  The content for this site is
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>.
+  The <a href="https://git.sr.ht/~peregrinator/peregrinator.srht.site">source for this site</a>
+  is <a href="https://opensource.org/licenses/MIT">MIT</a>.
+</footer>
+

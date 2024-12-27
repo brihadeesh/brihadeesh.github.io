@@ -18,7 +18,6 @@ tasks:
     /usr/local/bin/openring \
     -s https://drewdevault.com/blog/index.xml \
     -s https://sourcehut.org/blog/index.xml \
-    -s https://ambikamath.com/feed/ \
     -s https://emersion.fr/blog/atom.xml \
     -s https://popagandhi.com/index.xml \
     < webring-in.template \

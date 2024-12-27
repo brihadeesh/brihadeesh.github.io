@@ -1,7 +1,7 @@
 +++
 title = "How culture has affected natural selection in man"
 author = ["peregrinator"]
-date = 2018-03-06T18:49:00+05:30
+date = 2018-03-06T18:49:00+00:00
 draft = false
 +++
 

@@ -1,8 +1,8 @@
 +++
 title = "Misunderstanding evolution"
 author = ["peregrinator"]
-date = 2017-02-25T00:00:00+05:30
-lastmod = 2022-12-02T11:24:13+05:30
+date = 2017-02-25T00:00:00+00:00
+lastmod = 2024-12-27T01:50:28+00:00
 draft = false
 series = "Evolution Theory"
 +++

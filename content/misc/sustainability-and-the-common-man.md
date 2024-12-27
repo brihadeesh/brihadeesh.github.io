@@ -1,7 +1,7 @@
 +++
 title = "Sustainability and the Common Man"
 author = ["peregrinator"]
-date = 2017-03-20T10:43:00+05:30
+date = 2017-03-20T10:43:00+00:00
 draft = false
 +++
 

@@ -1,8 +1,8 @@
 +++
 title = "A dark side to pets"
 author = ["peregrinator"]
-date = 2016-01-15T00:00:00+05:30
-lastmod = 2023-03-09T22:12:34+05:30
+date = 2016-01-15T00:00:00+00:00
+lastmod = 2024-12-27T01:50:28+00:00
 draft = false
 series = "Responsible Pet Ownership"
 +++

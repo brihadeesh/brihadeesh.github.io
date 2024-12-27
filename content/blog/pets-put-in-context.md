@@ -1,8 +1,8 @@
 +++
 title = "Pets, put in context"
 author = ["peregrinator"]
-date = 2017-06-15T00:00:00+05:30
-lastmod = 2022-12-02T11:23:35+05:30
+date = 2017-06-15T00:00:00+00:00
+lastmod = 2024-12-27T01:50:28+00:00
 draft = false
 series = "Responsible Pet Ownership"
 +++

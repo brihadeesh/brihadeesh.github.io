@@ -2,7 +2,7 @@
 title = "Finding Death metal"
 author = ["peregrinator"]
 date = 2022-12-16T00:00:00+00:00
-lastmod = 2024-12-27T01:03:33+00:00
+lastmod = 2024-12-27T01:50:29+00:00
 draft = true
 +++
 

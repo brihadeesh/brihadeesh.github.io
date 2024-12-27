@@ -1,8 +1,9 @@
 +++
 title = "Having to use Windows, reluctantly"
 author = ["peregrinator"]
-date = 2022-12-09T00:00:00+05:30
+date = 2022-12-09T00:00:00+00:00
 draft = false
+toc = false
 +++
 
 Since my laptop is an ancient clay tablet that can barely run Emacs

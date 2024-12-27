@@ -1,7 +1,7 @@
 +++
 title = "Notes from a withdrawal episode (part 0)"
 author = ["peregrinator"]
-date = 2023-03-30T00:12:00+05:30
+date = 2023-03-30T00:12:00+00:00
 draft = false
 series = "Living with ADHD"
 +++

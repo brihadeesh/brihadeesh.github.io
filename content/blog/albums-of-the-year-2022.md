@@ -1,7 +1,7 @@
 +++
 title = "Albums of the Year (2022)"
 author = ["peregrinator"]
-date = 2023-02-27T17:24:00+05:30
+date = 2023-02-27T17:24:00+00:00
 draft = false
 +++
 

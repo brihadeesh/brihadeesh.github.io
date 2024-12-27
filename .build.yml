@@ -23,7 +23,7 @@ tasks:
     -s https://popagandhi.com/index.xml \
     < webring-in.template \
     > layouts/partials/webring-out.html
-    hugo
+    hugo -v
 - package: |
     cd $site
     tar -C public -cvz . > site.tar.gz

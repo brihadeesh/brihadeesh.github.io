@@ -2,70 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://peregrinator.srht.site/blog.html</loc>
-    <lastmod>2024-12-27T01:03:33+00:00</lastmod>
+    <loc>http://localhost:1313/blog.html</loc>
+    <lastmod>2024-12-27T01:50:29+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</loc>
-    <lastmod>2023-03-30T00:12:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</loc>
+    <lastmod>2023-03-30T00:12:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/</loc>
-    <lastmod>2024-12-27T01:03:33+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-12-27T01:50:29+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/emacs/colourless_themes.html</loc>
+    <loc>http://localhost:1313/emacs/colourless_themes.html</loc>
     <lastmod>2023-03-19T23:45:44+05:30</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/emacs.html</loc>
+    <loc>http://localhost:1313/emacs.html</loc>
     <lastmod>2023-03-19T23:45:44+05:30</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</loc>
-    <lastmod>2023-03-16T23:57:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode.html</loc>
+    <lastmod>2023-03-16T23:57:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</loc>
-    <lastmod>2023-03-04T03:51:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2023/03/moved-to-sourcehut.html</loc>
+    <lastmod>2023-03-04T03:51:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</loc>
-    <lastmod>2023-02-27T17:24:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2023/02/albums-of-the-year-2022.html</loc>
+    <lastmod>2023-02-27T17:24:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</loc>
-    <lastmod>2023-02-23T16:24:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</loc>
+    <lastmod>2023-02-23T16:24:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</loc>
-    <lastmod>2022-12-09T00:00:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2022/12/finding-death-metal.html</loc>
+    <lastmod>2024-12-27T01:50:29+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</loc>
-    <lastmod>2022-12-05T00:00:00+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly.html</loc>
+    <lastmod>2022-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</loc>
+    <loc>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</loc>
+    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/emacs/literate_emacs_configuration.html</loc>
     <lastmod>2023-03-19T23:45:26+05:30</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/misc/2018/03/how-culture-has-affected-natural-selection-in-man.html</loc>
-    <lastmod>2018-03-06T18:49:00+05:30</lastmod>
+    <loc>http://localhost:1313/misc/2018/03/how-culture-has-affected-natural-selection-in-man.html</loc>
+    <lastmod>2018-03-06T18:49:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/misc.html</loc>
-    <lastmod>2018-03-06T18:49:00+05:30</lastmod>
+    <loc>http://localhost:1313/misc.html</loc>
+    <lastmod>2018-03-06T18:49:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</loc>
-    <lastmod>2022-12-02T11:23:35+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2017/06/pets-put-in-context.html</loc>
+    <lastmod>2024-12-27T01:50:28+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/misc/2017/03/sustainability-and-the-common-man.html</loc>
-    <lastmod>2017-03-20T10:43:00+05:30</lastmod>
+    <loc>http://localhost:1313/misc/2017/03/sustainability-and-the-common-man.html</loc>
+    <lastmod>2017-03-20T10:43:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</loc>
-    <lastmod>2022-12-02T11:24:13+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2017/02/misunderstanding-evolution.html</loc>
+    <lastmod>2024-12-27T01:50:28+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</loc>
-    <lastmod>2023-03-09T22:12:34+05:30</lastmod>
+    <loc>http://localhost:1313/blog/2016/01/a-dark-side-to-pets.html</loc>
+    <lastmod>2024-12-27T01:50:28+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/fiction/2012/05/ahab.html</loc>
-    <lastmod>2012-05-01T21:00:00+05:30</lastmod>
+    <loc>http://localhost:1313/fiction/2012/05/ahab.html</loc>
+    <lastmod>2012-05-01T21:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/fiction.html</loc>
-    <lastmod>2012-05-01T21:00:00+05:30</lastmod>
+    <loc>http://localhost:1313/fiction.html</loc>
+    <lastmod>2012-05-01T21:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peregrinator.srht.site/about.html</loc>
+    <loc>http://localhost:1313/about.html</loc>
   </url><url>
-    <loc>https://peregrinator.srht.site/categories.html</loc>
+    <loc>http://localhost:1313/categories.html</loc>
   </url><url>
-    <loc>https://peregrinator.srht.site/tags.html</loc>
+    <loc>http://localhost:1313/tags.html</loc>
   </url>
 </urlset>

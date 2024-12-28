@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>peregrinator&#39;s blog</title>
-    <link>https://peregrinator.srht.site/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on peregrinator&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Thu, 30 Mar 2023 00:12:00 +0530</lastBuildDate>
-    <atom:link href="https://peregrinator.srht.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2024 01:50:29 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes from a withdrawal episode (part 0)</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</link>
-      <pubDate>Thu, 30 Mar 2023 00:12:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</guid>
+      <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</link>
+      <pubDate>Thu, 30 Mar 2023 00:12:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</guid>
       <description>&lt;div class=&#34;alert-info alert&#34;&gt;&#xA;&lt;p&gt;The footnotes point to placeholders currently. I&amp;rsquo;ll fill those in&#xA;soon.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;I was starkly aware of how my last post, &lt;a href=&#34;./blog/2023/03/notes-from-a-withdrawal-episode.html&#34;&gt;Notes from a withdrawal&#xA;episode&lt;/a&gt;, felt somewhat incomplete but couldn&amp;rsquo;t really figure out what&#xA;it was that was &amp;ldquo;missing&amp;rdquo; from it. Someone on twitter had asked&#xA;whether being on the medication was of any help and I responded to&#xA;this saying it was too large a topic to cover in tweets and that it&#xA;wasn&amp;rsquo;t something I could address on twitter — it would involve really&#xA;gathering my thoughts and writing a thread there while doing so&#xA;perhaps felt daunting at that point. It still took me a while to&#xA;figure out what was missing from my last post was something of a&#xA;description of what being on Methylphenidate was like and so I decided&#xA;to write this post about it as something of a &lt;em&gt;prequel&lt;/em&gt; to my last&#xA;post. Like I&amp;rsquo;d mentioned to the person that had asked that it wasn&amp;rsquo;t&#xA;as straightforward an answer as &lt;em&gt;good&lt;/em&gt; or &lt;em&gt;bad&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Colourless themes for Emacs</title>
-      <link>https://peregrinator.srht.site/emacs/colourless_themes.html</link>
+      <link>http://localhost:1313/emacs/colourless_themes.html</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/emacs/colourless_themes.html</guid>
+      <guid>http://localhost:1313/emacs/colourless_themes.html</guid>
       <description>&lt;div class=&#34;alert-info alert&#34;&gt;&#xA;&lt;p&gt;This is a work in progress. You can browse the code on my &lt;a href=&#34;https://git.sr.ht/~peregrinator/colourless-themes&#34;&gt;sourcehut&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;boring-themes-for-the-elitist&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Boring themes for the elitist&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;colourless-themes&lt;/code&gt; is a collection of “primarily colourless&#xA;themes&amp;quot;. This was forked from Tomas Letan&amp;rsquo;s macro of the same&#xA;name.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;installation&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Installation&lt;/h3&gt;&#xA;&lt;p&gt;Install this how you would install a package from github - this varies&#xA;with the flavour of Emacs or the setup in use. If you use a&#xA;Frankenstein&amp;rsquo;s monster like I use, do:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes from a withdrawal episode</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
-      <pubDate>Thu, 16 Mar 2023 23:57:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
+      <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
+      <pubDate>Thu, 16 Mar 2023 23:57:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
       <description>&lt;p&gt;I was reading Adrianna&amp;rsquo;s (or &amp;ldquo;&lt;a href=&#34;https://popagandhi.com/&#34;&gt;Pop22&lt;/a&gt;&amp;quot;&amp;rsquo;s) last blog post &amp;lsquo;&lt;a href=&#34;https://popagandhi.com/posts/2023-02-attention-span/&#34;&gt;I Now Have an&#xA;Attention Span&lt;/a&gt;&amp;rsquo; after they asked for new blog feeds they could follow&#xA;on the fediverse and I realised I wasn&amp;rsquo;t following their blog anywhere&#xA;— I&amp;rsquo;ve since added it everywhere, including in my openring&#xA;configuration — and got thinking about a thing or two about my own&#xA;progress with ADHD over the last four-odd years since my diagnosis. I&#xA;do see something of an arc in my capacity for regular work and keeping&#xA;at doing different kinds of work, similar to what they describe, but&#xA;I&amp;rsquo;m not nearly there yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Moved to Sourcehut!</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</link>
-      <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</guid>
+      <link>http://localhost:1313/blog/2023/03/moved-to-sourcehut.html</link>
+      <pubDate>Sat, 04 Mar 2023 03:51:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023/03/moved-to-sourcehut.html</guid>
       <description>&lt;p&gt;I wrote to Drew DeVault a couple of days back, after much deliberation&#xA;on whether I should really bother him and the like, about free access&#xA;to Sourcehut builds so I could move away from Github and Gitlab. He&#xA;responded soon after that saying that he&amp;rsquo;d given me a year&amp;rsquo;s&#xA;access. And I&amp;rsquo;ve finally done it! The blog that started off titled&#xA;&lt;em&gt;peregrinator&amp;rsquo;s sourcehut site&lt;/em&gt; along with an explanation on why it was&#xA;called that while hosted on Github-pages is finally here! The next&#xA;step would be to move to a personal or custom domain of my own, but&#xA;that&amp;rsquo;s a long way into the future, yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Albums of the Year (2022)</title>
-      <link>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</link>
-      <pubDate>Mon, 27 Feb 2023 17:24:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</guid>
+      <link>http://localhost:1313/blog/2023/02/albums-of-the-year-2022.html</link>
+      <pubDate>Mon, 27 Feb 2023 17:24:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023/02/albums-of-the-year-2022.html</guid>
       <description>&lt;p&gt;I dread publishing lists of this kind especially because ranking&#xA;things was never something I enjoyed and since I have a tendency to&#xA;forget artists and albums, often even those that I listen to&#xA;regularly. I also remember bands by sound and almost inevitably refuse&#xA;to keep track of when artists I like release new music. This is in no&#xA;sense complete nor could I get myself to write about each of the&#xA;albums — I’ll perhaps get down to this sometime later. There is no&#xA;ranking within this list for the same reasons as before&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blog revamp and starting to understand Hugo better</title>
-      <link>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
-      <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
+      <link>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
+      <pubDate>Thu, 23 Feb 2023 16:24:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to make the switch to a blogging workflow that I could use&#xA;with Emacs back in December and &lt;a href=&#34;./blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html&#34;&gt;wrote about&lt;/a&gt; setting it up from&#xA;scratch. Since I wasn&amp;rsquo;t yet acquainted with writing original layout&#xA;templates, style-sheets or with organising content into sections in as&#xA;simple and sane a manner as I wanted to, I&amp;rsquo;d settled for outsourcing&#xA;most of this to a fairly &lt;a href=&#34;https:/github.com/LukasJoswiak/etch&#34;&gt;basic theme&lt;/a&gt;. Over time, I grew dissatisfied&#xA;with how the site looked and how it organised my content and so I&#xA;spent some time customising the theme, which took a while to figure&#xA;out. I wasn&amp;rsquo;t happy with it still. I then tried changing themes a few&#xA;times but couldn&amp;rsquo;t find anything that really worked for me. That I&#xA;didn&amp;rsquo;t want any JavaScript I didn&amp;rsquo;t understand, or could understand&#xA;for that matter, effectively eliminated a lot of the options I had&#xA;considered.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Finding Death metal</title>
+      <link>http://localhost:1313/blog/2022/12/finding-death-metal.html</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022/12/finding-death-metal.html</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been into a &lt;em&gt;lot&lt;/em&gt; of metal for the last 10-odd years of my life and&#xA;has had a way of making some of the most mundane or depressive phases&#xA;bearable, it&amp;rsquo;s sometimes even uplifting. But that&amp;rsquo;s perhaps a shallow&#xA;take on metal given what it means for me. The process of &lt;em&gt;looking&lt;/em&gt; for&#xA;an album or artist to listen to is one of the most surreal experiences&#xA;I&amp;rsquo;ve had the chance to revisit nearly every day. There&amp;rsquo;s my&#xA;(inevitably) long list of favourites to pick from, and with me often&#xA;forgetting names of bands or albums, &lt;em&gt;precisely&lt;/em&gt; when I decide to listen&#xA;to them, it gets even more interesting to dredge though my library on&#xA;Spotify and immensely gratifying to listen to them after I&amp;rsquo;ve found&#xA;them.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Having to use Windows, reluctantly</title>
-      <link>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</link>
-      <pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
+      <link>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly.html</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
       <description>&lt;p&gt;Since my laptop is an ancient clay tablet that can barely run Emacs&#xA;and a couple of other things without everything crashing, I&amp;rsquo;ve had to&#xA;use a lab workstation with about 128 GB RAM and a fairly new Intel&#xA;processor for running some of my analyses. It&amp;rsquo;s phenomenally fast for&#xA;a computer that runs Windows and gets most things done easily. It&amp;rsquo;s&#xA;only when I run something that&amp;rsquo;s something memory intensive when&#xA;things really start to get muddled up. I could just be incredibly bad&#xA;at R programming but boy, it hit 105 GB of the RAM and slowed the hell&#xA;down. It&amp;rsquo;s been like this since last night and now there&amp;rsquo;s nothing I&#xA;can do but wait. Surely a Linux or FreeBSD system would have had lower&#xA;core functioning thresholds for all of this.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo, Org and starting over at a new blog</title>
-      <link>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
-      <pubDate>Mon, 05 Dec 2022 00:00:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
+      <link>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after&#xA;having watched a SystemCrafters &lt;a href=&#34;https://youtu.be/AfkrzFodoNw&#34;&gt;video&lt;/a&gt; on how to blog from Emacs (&lt;em&gt;d&amp;rsquo;oh&lt;/em&gt;,&#xA;I just &lt;em&gt;have&lt;/em&gt; to do everything from Emacs). Of course, daviwil only&#xA;covered the basics of writing and exporting using Emacs&amp;rsquo; built-in&#xA;packages and later for deploying it on GitHub / Sourcehut pages. And&#xA;it took me a good year to get down to making the switch but apparently&#xA;moving to a new place for work is the motivation it required. It felt&#xA;like cheating to use Jekyll on GitHub and I wanted something that&#xA;could be deployed to a Sourcehut site easily too (Sourcehut blocks any&#xA;CDN-based CSS loaded into the site&amp;rsquo;s HTML) and I wanted something&#xA;extremely minimal, like Drew Devault&amp;rsquo;s &lt;a href=&#34;https://drewdevault.com/&#34;&gt;blog&lt;/a&gt; but with even fewer&#xA;frills — no images anywhere except for if a blog post required&#xA;them. Looking at his blog source, however, made me realise that there&#xA;was a lot more to that minimalism than one could see.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Literate Emacs Configuration</title>
-      <link>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</link>
+      <link>http://localhost:1313/emacs/literate_emacs_configuration.html</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/emacs/literate_emacs_configuration.html</guid>
+      <guid>http://localhost:1313/emacs/literate_emacs_configuration.html</guid>
       <description>&lt;p&gt;This is a copy of my literate configuration for Emacs and if you&amp;rsquo;re&#xA;viewing this anywhere else, don&amp;rsquo;t! Because you can find a readable&#xA;version on my &lt;a href=&#34;https://peregrinator.srht.site/emacs/literate_emacs_configuration.html&#34;&gt;website&lt;/a&gt;. You can also find a source-based version with&#xA;the rest of my &lt;code&gt;~/.emacs.d&lt;/code&gt; on my &lt;a href=&#34;https://git.sr.ht/~peregrinator/.emacs.d&#34;&gt;sourcehut&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;other-init-files&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Other init files&lt;/h2&gt;&#xA;&lt;p&gt;These are in my &lt;code&gt;~/.emacs.d&lt;/code&gt; and help load this main configuration.&lt;/p&gt;&#xA;&lt;h3 id=&#34;early-init&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Early init&lt;/h3&gt;&#xA;&lt;p&gt;This creates a file, &lt;a href=&#34;~/.emacs.d/early-init.el&#34;&gt; &lt;code&gt;early-init.el&lt;/code&gt; &lt;/a&gt;, in &lt;code&gt;~/.emacs.d&lt;/code&gt;. This was stolen&#xA;from Protesilaos some time back. It still needs work - it&amp;rsquo;s not&#xA;tangled (by default) yet.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How culture has affected natural selection in man</title>
-      <link>https://peregrinator.srht.site/misc/2018/03/how-culture-has-affected-natural-selection-in-man.html</link>
-      <pubDate>Tue, 06 Mar 2018 18:49:00 +0530</pubDate>
-      <guid>https://peregrinator.srht.site/misc/2018/03/how-culture-has-affected-natural-selection-in-man.html</guid>
-      <description>&lt;p&gt;Culture is arguably unique to humans. It possibly arose from the need&#xA;to manage larger groups of people that congregated near agricultural&#xA;fields as Jared Diamond suggests in Guns, Germs and Steel&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; although it may&#xA;have originated in tribal or hunter-gatherer societies. It is strongly&#xA;linked with religion which can viewed as a cement holding together&#xA;larger population masses. Recent developments in its research suggests&#xA;two perspectives of culture: an outcome of natural selection which&#xA;considers humans part of “nature” and culture as a purely human&#xA;construct which arose as a consequence of advanced emotional&#xA;intelligence which natural selection (according to believers of this&#xA;theory) cannot explain. In order to see the effects on natural&#xA;selection, one has to take a neutral stance.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

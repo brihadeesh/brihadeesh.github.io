@@ -6,19 +6,17 @@
     <description>Recent content posts on peregrinator&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>brihadeesh.s@proton.me (Brihadeesh S)</managingEditor>
-    <webMaster>brihadeesh.s@proton.me (Brihadeesh S)</webMaster>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Thu, 30 Mar 2023 00:12:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 30 Mar 2023 00:12:00 +0000</lastBuildDate>
     
-	<atom:link href="https://peregrinator.srht.site/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Notes from a withdrawal episode (part 0)</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</link>
-      <pubDate>Thu, 30 Mar 2023 00:12:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</guid>
+      <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</link>
+      <pubDate>Thu, 30 Mar 2023 00:12:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</guid>
       <description>&lt;div class=&#34;alert-info alert&#34;&gt;
 &lt;p&gt;The footnotes point to placeholders currently. I&amp;rsquo;ll fill those in
 soon.&lt;/p&gt;
@@ -127,10 +125,10 @@ series I keep adding to periodically.&lt;/p&gt;
 </description>
     </item><item>
       <title>Notes from a withdrawal episode</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
-      <pubDate>Thu, 16 Mar 2023 23:57:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
+      <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode.html</link>
+      <pubDate>Thu, 16 Mar 2023 23:57:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode.html</guid>
       <description>&lt;p&gt;I was reading Adrianna&amp;rsquo;s (or &amp;ldquo;&lt;a href=&#34;https://popagandhi.com/&#34;&gt;Pop22&lt;/a&gt;&amp;quot;&amp;rsquo;s) last blog post &amp;lsquo;&lt;a href=&#34;https://popagandhi.com/posts/2023-02-attention-span/&#34;&gt;I Now Have an
 Attention Span&lt;/a&gt;&amp;rsquo; after they asked for new blog feeds they could follow
 on the fediverse and I realised I wasn&amp;rsquo;t following their blog anywhere
@@ -164,10 +162,10 @@ in no way sustainable in the long term for myriad reasons.&lt;/p&gt;
 </description>
     </item><item>
       <title>Moved to Sourcehut!</title>
-      <link>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</link>
-      <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/03/moved-to-sourcehut.html</guid>
+      <link>http://localhost:1313/blog/2023/03/moved-to-sourcehut.html</link>
+      <pubDate>Sat, 04 Mar 2023 03:51:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/03/moved-to-sourcehut.html</guid>
       <description>&lt;p&gt;I wrote to Drew DeVault a couple of days back, after much deliberation
 on whether I should really bother him and the like, about free access
 to Sourcehut builds so I could move away from Github and Gitlab. He
@@ -234,10 +232,10 @@ affect me as much&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-bac
 </description>
     </item><item>
       <title>Albums of the Year (2022)</title>
-      <link>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</link>
-      <pubDate>Mon, 27 Feb 2023 17:24:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/02/albums-of-the-year-2022.html</guid>
+      <link>http://localhost:1313/blog/2023/02/albums-of-the-year-2022.html</link>
+      <pubDate>Mon, 27 Feb 2023 17:24:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/02/albums-of-the-year-2022.html</guid>
       <description>&lt;p&gt;I dread publishing lists of this kind especially because ranking
 things was never something I enjoyed and since I have a tendency to
 forget artists and albums, often even those that I listen to
@@ -463,10 +461,10 @@ Find them on &lt;a href=&#34;https://purenoise.bandcamp.com/album/altered-pasts&
 </description>
     </item><item>
       <title>Blog revamp and starting to understand Hugo better</title>
-      <link>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
-      <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
+      <link>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</link>
+      <pubDate>Thu, 23 Feb 2023 16:24:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to make the switch to a blogging workflow that I could use
 with Emacs back in December and &lt;a href=&#34;../blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html&#34;&gt;wrote about&lt;/a&gt; setting it up from
 scratch. Since I wasn&amp;rsquo;t yet acquainted with writing original layout
@@ -577,11 +575,196 @@ discussing a bunch of tangential points like design choices and the
 perhaps cover those in later articles.&lt;/p&gt;
 </description>
     </item><item>
+      <title>Finding Death metal</title>
+      <link>http://localhost:1313/blog/2022/12/finding-death-metal.html</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2022/12/finding-death-metal.html</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been into a &lt;em&gt;lot&lt;/em&gt; of metal for the last 10-odd years of my life and
+has had a way of making some of the most mundane or depressive phases
+bearable, it&amp;rsquo;s sometimes even uplifting. But that&amp;rsquo;s perhaps a shallow
+take on metal given what it means for me. The process of &lt;em&gt;looking&lt;/em&gt; for
+an album or artist to listen to is one of the most surreal experiences
+I&amp;rsquo;ve had the chance to revisit nearly every day. There&amp;rsquo;s my
+(inevitably) long list of favourites to pick from, and with me often
+forgetting names of bands or albums, &lt;em&gt;precisely&lt;/em&gt; when I decide to listen
+to them, it gets even more interesting to dredge though my library on
+Spotify and immensely gratifying to listen to them after I&amp;rsquo;ve found
+them.&lt;/p&gt;
+&lt;p&gt;But this article isn&amp;rsquo;t about just &lt;em&gt;all&lt;/em&gt; metal. Death metal is something
+that&amp;rsquo;s fascinated me since I exited my &lt;em&gt;classic&lt;/em&gt;- and &lt;em&gt;nu&lt;/em&gt;-metal-
+phases. It wasn&amp;rsquo;t that bands like Metallica, Judas Priest, or System
+of a Down, which I was really big into until then, had lost their
+charm for me, but with this ever increasing need for titillation (I
+didn&amp;rsquo;t know it to be &amp;ldquo;stimulation&amp;rdquo; in the ADHD sense then), I found
+that I was looking for more intense and fuller sounding music. I liked
+the concept and premise of it from what I&amp;rsquo;d read (on Wikipedia, no
+less), although I didn&amp;rsquo;t particularly like harsh vocals. This is from
+around 2011 and since back then I couldn&amp;rsquo;t just browse youtube, I had
+to read about bands, find those that &lt;em&gt;sounded&lt;/em&gt; interesting, and then get
+their music from somewhere. It was then that I forayed into my first
+&lt;em&gt;extreme&lt;/em&gt;-metal music ever. The Black Dahlia Murder, Arch Enemy (which a
+friend had introduced me to earlier), and Enslaved which &lt;em&gt;really&lt;/em&gt; agreed
+with me, and some Deicide, Decapitated which I had mixed
+feelings. &lt;em&gt;Deathcrush&lt;/em&gt; by Mayhem was another which I&amp;rsquo;d desperately
+wanted to like but have expectedly grown to hate over the
+years. Soilwork, Meshuggah and a few others came by and those
+stuck.&lt;/p&gt;
+&lt;p&gt;It took me a while to really get into the &amp;ldquo;classics&amp;rdquo; of Death metal
+because soon after this, I somehow just stopped looking for new music
+to listen to regularly a while and lapsed into a lazy selection of
+popular prog-metal and a lot of the worst music I&amp;rsquo;ve ever listened to
+(you know, metalcore/deathcore which I think of as junk now). Whatever
+little Death metal I&amp;rsquo;d heard haunted me though. It was like this
+faint, nearly inaudible voice at the back of my head that kept telling
+me to get back to Death metal and that I would be able to find
+something that I really liked. Till date, the &amp;ldquo;voice&amp;rdquo; has only ever
+gotten louder.&lt;/p&gt;
+&lt;p&gt;Most &amp;ldquo;normal&amp;rdquo; people I&amp;rsquo;ve talked to about this fascination only tell
+me that it&amp;rsquo;s sounded forced and describe it as if it were
+self-inflicted torture or something that I&amp;rsquo;ve only gotten accustomed
+to. That&amp;rsquo;s always left me reluctant to talk about it or even
+contemplate what was happening then. Thinking about it today, while
+trying to find something &amp;ldquo;appropriate&amp;rdquo; to listen to for the moment,
+I&amp;rsquo;m reminded of that feeling of oppressive discomfort I&amp;rsquo;d experience
+when I wasn&amp;rsquo;t able to &amp;ldquo;explain&amp;rdquo; my relationship with this kind of
+music to somebody, especially when I was starkly aware of the fact
+that they weren&amp;rsquo;t even into metal. Worse, when they had opinions like
+&amp;ldquo;all metalheads are shit people&amp;rdquo; and sundry variations of &amp;ldquo;the music I
+listen to is better than yours&amp;rdquo;. &amp;ldquo;Metal is attention seeking&amp;rdquo; takes
+the cake though, considering it&amp;rsquo;s sometimes true, unironically. And
+there&amp;rsquo;s some truth to &amp;ldquo;all metalheads are shit people&amp;rdquo; as I&amp;rsquo;ve come to
+realise. I didn&amp;rsquo;t dislike Death metal, nor was I forcing myself
+through something unpleasant. I &lt;em&gt;wanted&lt;/em&gt; to listen to it because I
+instinctively knew it was what I really liked. Anyway I got back to it
+about a year ago when I met JP on twitter and we started loosely
+exchanging recommendations and subsequently interactions with other
+musicians too!&lt;/p&gt;
+&lt;h2 id=&#34;the-death-metal-aesthetic&#34;&gt;the Death metal aesthetic&lt;/h2&gt;
+&lt;p&gt;But to try and understand what it was that I went through that made
+this particular brand of metal hold so powerful an influence over me,
+I think I must try and explore what goes on in my thoughts when I
+listen to it. It&amp;rsquo;s, of course, obvious that people look to music to
+vastly different ends. This is also based on something MR had
+referenced in a response to an earlier draft. I later realised that
+this was part of what I&amp;rsquo;d intended to write about, but had somehow
+overlooked it before prematurely publishing this!&lt;/p&gt;
+&lt;p&gt;Labelling any kind of extreme metal as &amp;ldquo;noise&amp;rdquo; or as any other synonym
+of it is superficial and meaningless because metal has am, often,
+twisted &lt;em&gt;aesthetic&lt;/em&gt;. Keep in mind that &amp;ldquo;aesthetic&amp;rdquo; here is &lt;strong&gt;not&lt;/strong&gt; used in
+the (often erroneous and colloquial) sense of the word implying &lt;em&gt;beauty&lt;/em&gt;
+but more about what it evokes in the mind in terms of what one
+associates with it, much like TM Krishna&amp;rsquo;s description of it&amp;rsquo;s meaning
+in &lt;em&gt;A Southern Music&lt;/em&gt; &lt;strong&gt;&lt;em&gt;CHECK THIS REFERENCE and DEFINITION&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;When I started off with bands like Metallica, Judas Priest and others,
+it felt &lt;em&gt;necessary&lt;/em&gt; for the songs I listened to to be exciting and
+uplifting but also not with outright toasty 190 bpm riffs and harsh
+vocals. They had to sound &amp;ldquo;melodic&amp;rdquo;, in the conventional sense that
+Indian music often adheres to, where there&amp;rsquo;s clean vocals singing a
+tune. I also found that I often couldn&amp;rsquo;t listen to full albums through
+even if I wanted to. There were a handful of songs that I&amp;rsquo;d play over
+and over, and perhaps some other softer music to go back to. I
+wouldn&amp;rsquo;t label bands like Led Zeppelin &amp;ldquo;real&amp;rdquo; metal but back even
+these were quite a good distance away from what most of my friends
+listened to. It makes sense that some of the first extreme metal bands
+I&amp;rsquo;d liked had some parts that were &amp;ldquo;conventionally&amp;rdquo; pleasant.&lt;/p&gt;
+&lt;p&gt;Why scream and rend one&amp;rsquo;s throat &lt;strong&gt;&lt;em&gt;FIND THAT ARCHAIC WORD I WAS LOOKING
+FOR&lt;/em&gt;&lt;/strong&gt; just to make it sound uglier? Why write riffs that are so
+unpleasant to the ear and make no &amp;ldquo;sense&amp;rdquo; harmonically? Let me start
+by saying those constraints were limiting from the start and there is
+an aesthetic to these too.&lt;/p&gt;
+&lt;h3 id=&#34;1-dot-groove&#34;&gt;1. Groove&lt;/h3&gt;
+&lt;p&gt;The first aesthetic that&amp;rsquo;s the most commonly relatable: &lt;em&gt;groove&lt;/em&gt;. Do you
+find your body slowly moving to the rhythm of a riff? Guitars by
+themselves needn&amp;rsquo;t have this. Put a loud, sometimes distorted bass
+playing the same riff on a lower octave. Add a double kick drumkit,
+with not just the clean filtered drums you hear elsewhere. The pedal
+trigger sounds are included in a truly acoustic recording and you&amp;rsquo;ll
+slowly start finding yourself moved by the rapid double bass beat and
+perhaps even tilting your head forward ever so slightly each time the
+snare is hit. This isn&amp;rsquo;t as apparent all the time considering a lot of
+Death metal isn&amp;rsquo;t like conventional songs with a repetitive
+verse-chorus pattern and a lot of riffs tend to be rhythmically
+complex.&lt;/p&gt;
+&lt;h3 id=&#34;2-dot-wholeness-of-sound&#34;&gt;2. Wholeness of sound&lt;/h3&gt;
+&lt;p&gt;For someone that needs a &lt;em&gt;lot&lt;/em&gt; of stimulation, it has a &lt;em&gt;full&lt;/em&gt; sound and
+that is something a lot of other music I listen to doesn&amp;rsquo;t seem to
+have. I often describe the music that Strapping Young Lad makes as
+&amp;ldquo;insane vocals&amp;rdquo; on top of a &amp;ldquo;wall of sound&amp;rdquo; (the latter phrase was
+stolen). The guitars and the other instruments are relatively very
+loud and Devin Townsend layers synthesizers and other sounds on top of
+this making the final sound a complex amalgam that hits all the right
+parts of the ear. Of course, Strapping Young Lad isn&amp;rsquo;t necessarily
+Death metal, except perhaps their self-titled album. A lot of modern
+Death metal has a similar approach, often without synths and other
+instruments. Vocals are loud too but this approach diminishes reliance
+on exclusively vocals for setting the theme. It&amp;rsquo;s as if all
+instruments are involved in developing the final sound, and yes, this
+includes the bass guitar too. This, for me, means I get music that
+tickles all those brain cells simultaneously.&lt;/p&gt;
+&lt;h3 id=&#34;3-dot-mood-based-listening&#34;&gt;3. Mood-based listening&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve never really liked to label bands or albums because most genre
+tags can be reductive and restrictive. To me, Death metal encompasses
+not just conventionally recognised bands such as Deicide, Obituary and
+Death, but others that have a certain sound blended into their own
+styles. I&amp;rsquo;d mentioned &lt;em&gt;SYL&lt;/em&gt; by Strapping Young Lad earlier and that to
+me has elements of this sound. What is this sound? It&amp;rsquo;s one or more
+guitars playing a brand of aggressive, typically complex riffs with a
+lot of &lt;em&gt;chug&lt;/em&gt; and tremolo-picked phrases thrown in. The guitars aren&amp;rsquo;t
+slurred into the ambience like in Black metal but clear enough that it
+doesn&amp;rsquo;t take too much effort to try and figure them out. Additionally,
+there&amp;rsquo;s usually equally aggressive, double kick drums with the
+occasional blast beat with the entire sound of the kicks (including
+the triggers) heard distinctly; and the bass &lt;strong&gt;audibly&lt;/strong&gt; thumping out a
+similar riff as what is played on the guitars, on the lower octave of
+course. It isn&amp;rsquo;t so much about the speed as much as the aggressiveness
+to the sound.&lt;/p&gt;
+&lt;p&gt;But even within Death metal, there&amp;rsquo;s a wide variety of bands to choose
+from, each with a fairly unique sound of their own, but more
+importantly collections vastly different emotions that each of them
+evoke.&lt;/p&gt;
+&lt;p&gt;Imagine two guitarists on the front-facing corners of a stage with a
+drummer somewhere in the middle and a bassist slightly off-centre
+stage. There doesn&amp;rsquo;t even need to be long hair or inverted crosses or
+satanic symbols anywhere. The backdrop could be unintelligible text
+like the Chat Pile logo here&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../images/chat_pile.jpg&#34;&gt;https://imgur.com/gallery/TFUmClD&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;My music tastes are supremely &lt;em&gt;personal&lt;/em&gt; and that I&amp;rsquo;m unabashedly
+selfish about it. I can talk about it, discussing the physical
+experiences and associations I have with the sound on platforms
+like twitter or Mastodon, but never in-person, except with a short
+list of people I know appreciate discussions about this, at varying
+depths.&lt;/li&gt;
+&lt;li&gt;The music I listen to at any given point of time is solely
+dependant on how or what I&amp;rsquo;m feeling at that point of time and that
+it can change without warning. Since I don&amp;rsquo;t only listen to Death
+metal, I could sound entirely disinterested in it occasionally.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But this doesn&amp;rsquo;t end here. Even within Death metal, I often have to
+spend some time to identify what band or album to listen to because I
+form deep-rooted associations with the sound of each album or
+band. Only some bands sound right for me. Before I started writing
+this article, I went though some 20-odd artists looking for one artist
+that was known to make longer and more intricate Death metal songs
+despite being one of the first wave. I haven&amp;rsquo;t found it yet (and
+anyone that reads this, if you know what I&amp;rsquo;m talking about, do hit me
+up on Mastodon). But then I settled into &lt;em&gt;Descend into Depravity&lt;/em&gt; by
+Morbid Angel and &lt;em&gt;Pierced from Within&lt;/em&gt; by Suffocation and they&amp;rsquo;ve worked
+great!&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s when I don&amp;rsquo;t find the right Death metal, and I&amp;rsquo;m incessantly
+shuffling though Spotify&amp;rsquo;s &amp;ldquo;Fans also like&amp;rdquo; or the abomination this is
+their landing screen, on my phone, that I feel like that discomfort
+returns. This must be a neurodivergent thing because no-one else I&amp;rsquo;ve
+met has ever shared anything even remotely similar.&lt;/p&gt;
+</description>
+    </item><item>
       <title>Having to use Windows, reluctantly</title>
-      <link>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</link>
-      <pubDate>Fri, 09 Dec 2022 00:00:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
+      <link>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly.html</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly.html</guid>
       <description>&lt;p&gt;Since my laptop is an ancient clay tablet that can barely run Emacs
 and a couple of other things without everything crashing, I&amp;rsquo;ve had to
 use a lab workstation with about 128 GB RAM and a fairly new Intel
@@ -599,10 +782,10 @@ to change but almost no-one had it figured until I got here.&lt;/p&gt;
 </description>
     </item><item>
       <title>Hugo, Org and starting over at a new blog</title>
-      <link>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
-      <pubDate>Mon, 05 Dec 2022 00:00:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
+      <link>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</link>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after
 having watched a SystemCrafters &lt;a href=&#34;https://youtu.be/AfkrzFodoNw&#34;&gt;video&lt;/a&gt; on how to blog from Emacs (&lt;em&gt;d&amp;rsquo;oh&lt;/em&gt;,
 I just &lt;em&gt;have&lt;/em&gt; to do everything from Emacs). Of course, daviwil only
@@ -760,10 +943,10 @@ Hugo since it doesn&amp;rsquo;t support some basic Org syntax exports&amp;#160;&
 </description>
     </item><item>
       <title>Pets, put in context</title>
-      <link>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</link>
-      <pubDate>Thu, 15 Jun 2017 00:00:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2017/06/pets-put-in-context.html</guid>
+      <link>http://localhost:1313/blog/2017/06/pets-put-in-context.html</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2017/06/pets-put-in-context.html</guid>
       <description>&lt;p&gt;Pets and feral animals have been shown to cause great amounts of
 destruction to native wildlife, but since very little research has
 been done in that field, things remain unclear. Most of the cases
@@ -996,10 +1179,10 @@ rapidly without fail.&lt;/p&gt;
 </description>
     </item><item>
       <title>Misunderstanding evolution</title>
-      <link>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</link>
-      <pubDate>Sat, 25 Feb 2017 00:00:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2017/02/misunderstanding-evolution.html</guid>
+      <link>http://localhost:1313/blog/2017/02/misunderstanding-evolution.html</link>
+      <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2017/02/misunderstanding-evolution.html</guid>
       <description>&lt;p&gt;Who does really understand evolution? (Wait, is it even true?!) Even
 if it is, who really has the better idea? What the hell did Darwin
 really do on the &lt;em&gt;Beagle&lt;/em&gt;? Well, I have some answers. In this
@@ -1199,156 +1382,6 @@ landed on the Galápagos Islands hoping to find of all things Giant
 Tortoises to eat!  What happened next was history. Or rather, what
 happened became history only after several years because Darwin was
 dumb.&lt;/p&gt;
-</description>
-    </item><item>
-      <title>A dark side to pets</title>
-      <link>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</link>
-      <pubDate>Fri, 15 Jan 2016 00:00:00 +0530</pubDate>
-      <author>brihadeesh.s@proton.me (Brihadeesh S)</author>
-      <guid>https://peregrinator.srht.site/blog/2016/01/a-dark-side-to-pets.html</guid>
-      <description>&lt;p&gt;We all love cats, but are they really what we believe them to be? A
-common perception is that cats are lazy animals and prefer sleeping
-though most of the day. But has anyone actually seen a cat hunt? Their
-feline agility coupled with a primal necessity to kill make for an
-extremely dangerous animal to keep.&lt;/p&gt;
-&lt;p&gt;Have any of you wondered what feral cats and many domestic cats do at
-night? Take a look at the leopard. Many of you would have read Jim
-Corbett&amp;rsquo;s stories. One particular book comes to mind: &amp;lsquo;The Man-eating
-Leopard of Rudraprayag&amp;rsquo;. It&amp;rsquo;s a fairly small book that describes a
-leopard whose usual haunts were the villages around Rudraprayag in
-what is now Uttarakhand, Northern India. The man-eater was notorious
-for having killed over a hundred and twenty-five people in its
-&amp;ldquo;career&amp;rdquo; as Corbett describes it. What is most interesting about the
-kills was that not a single one took place in daylight. Felids are
-nocturnal and hence most of the hunting takes place in the
-dark. Similarly, most feral and domesticated cats are active at night
-and that&amp;rsquo;s when most of the hunting happens.&lt;/p&gt;
-&lt;figure&gt;&lt;a href=&#34;../images/20161201_goose_catsnake.jpg&#34;&gt;&lt;img src=&#34;../images/20161201_goose_catsnake.jpg&#34;&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;On the first of December 2016, I was sitting at home in. My father
-said something which at first I ignored. Then, realising that he&amp;rsquo;d
-said Goose (my cat) was killing a snake. I rushed out to see that a
-small brown snake was dangling from Goose&amp;rsquo;s mouth and was struggling
-to escape. Goose then dropped it and picked it up to get a better
-grip. It was my mother who suggested I save the snake. It took me a
-while to get to my senses by which time Goose had inflicted a deep cut
-into the snake&amp;rsquo;s body. I tried pulling Goose away but was a little
-worried about getting scratched and bitten. It was futile and Goose
-was surprisingly intensely focused (which he usually is not) and
-intent on devouring the ophidian. I asked my mother to get some food
-for him from the kitchen while I tried to pull him away. It was only
-after cutting the snake in half that he finally let go. There was
-nothing left to be done and I kept the corpse aside to identify.&lt;/p&gt;
-&lt;p&gt;What happened while trying to identify it is another story for another
-day I found out that it was a Yellow-Green Cat Snake (&lt;em&gt;Boiga
-flaviviridis&lt;/em&gt; Vogel and Ganesh, 2013). Goose, by then, has eaten the
-rear half of the cat snake and disappeared. But what surprised me the
-most was that I didn&amp;rsquo;t know of this side of Goose or of his predatory
-instincts as well as I thought I did. I was, of course, furious at the
-fact that he&amp;rsquo;d killed a snake, but then what next? Should I continue
-feeding him?&lt;/p&gt;
-&lt;h2 id=&#34;a-docile-cat&#34;&gt;A docile cat?&lt;/h2&gt;
-&lt;p&gt;Goose was brought up by my neighbours. He was something of a small guy
-and smaller than most of the other cats around. He was fed rice and
-milk with occasional curds but never meat. He was very social and
-friendly and had no issues with being petted. He was so friendly that
-he would climb up onto our laps and sleep. Since he was isolated from
-his mother, who typically would have taught him all the necessary
-skills to hunt, and also seemed to only sleep all day, I began to
-think he couldn&amp;rsquo;t hunt and get the right nutrition to grow up. I was
-convinced of this when he showed absolutely no interest in birds on
-the ground or in low bushes. Lizards, insects, and spiders were bold
-in his presence because he just refused to go after them. I usually
-had to wave spiders in his face for him to get interested in them, and
-even then he was a clumsy hunter. And for nearly 2 years I was
-convinced that Goose was the ideal pet. I had, of course, heard of
-feral cats hunting and killing, just for the joy of it, wild rodents,
-birds, lizards, and snakes. One of my friends did mention observing a
-full grown cat taking on a cobra. But Goose was different.&lt;/p&gt;
-&lt;p&gt;Seeing Goose kill the snake came as a nasty surprise to me. Even now
-as I write this I am unable to wrap my head around the irony of a cat
-killing a cat snake. Some days later my father told me that he&amp;rsquo;d seen
-Goose carrying a large mouse, and as usual, he &amp;ldquo;showed off&amp;rdquo; his
-(s)kill by dropping it at the doorstep.&lt;/p&gt;
-&lt;h2 id=&#34;hunting-but-it-doesn-t-stop-there&#34;&gt;Hunting, but it doesn&amp;rsquo;t stop there&lt;/h2&gt;
-&lt;p&gt;For three reasons, cats and dogs are more successful at establishing
-themselves over native predators. Cats are protected from disease, not
-limited by the availability of prey, and least of all limited in
-numbers by territoriality. They are also immensely successful in
-places like islands and other naturally predator-free landscapes,
-where native wildlife has close to no adaptations to help avoid
-becoming prey.&lt;/p&gt;
-&lt;p&gt;Patterns of cats hunting wildlife have been well documented. In the
-United States itself, some 12.3 billion mammals and 2.4 billion birds
-are lost to free ranging pets and feral cats every year. There have
-been innumerable instances of this behaviour in cats from around the
-world, and animal protection societies frequently suggest keeping cats
-locked indoors at night or when most wild animals are active (see
-references for more). Naturalists and conservationists all over the
-world urge pet keepers to stay informed of their pet&amp;rsquo;s movements and
-ensure that they are well fed.&lt;/p&gt;
-&lt;p&gt;Other issues with free-ranging carnivorous animals are that they carry
-vastly novel diseases that wild animals they come in close contact
-with are unlikely to have been exposed to. These typically transmit
-from humans and other domestic animals such as cattle. Fragmented
-forest patches often have an inadequate reserves of food for the
-wildlife in it. Animals such as elephants are forced out and to use
-the food grown in crops such as banana plantations and
-sugarcane. Carnivores, due to lack of food venture into human
-habitation for food and are forced to interact with these feral
-animals, from which the diseases are more easily obtained. With
-prevalent fragmentation of forests, wild animals, especially those
-that live in closed social groups such as macaques and Wild Dogs, get
-restricted to fragments and hence are more susceptible to epidemics of
-these diseases. Added to this, certain carnivorous cat species that
-have very low genetic diversity, can suffer a lot of damage with the
-added impact of these introduced diseases. Asiatic lions in Gir are a
-single isolated population and even a few lions contracting something
-like canine distemper could potentially wipe out the entire
-population.&lt;/p&gt;
-&lt;p&gt;Stray and feral dogs that are a very common sight in cities and towns
-not only pose a health hazard to humans by spreading rabies and other
-diseases but also attack and kill children. Adults aren&amp;rsquo;t spared from
-brutal attacks either. Dogs are known to regularly hunt Black-naped
-Hares and other small mammals. Stray dogs at the IIT Madras campus
-have been reported to hunt Spotted Deer and on occasion even the
-endangered Blackbuck. Despite measures taken to capture and relocate
-dogs from inside the campus, a large number of them are hard to catch
-and remain in the wilderness. Regardless of such efforts, stray dogs
-continue to migrate in and out of such places and there&amp;rsquo;s almost no
-shortage of them at any given point of time.&lt;/p&gt;
-&lt;p&gt;Islands are prime examples for cats hunting a species to
-extinction. The best known example of this is the Stephens Island
-Wren. The case of the Rockwren was very similar to that of the dodo in
-the sense that they were found only on a small island. There was a
-light-house on that island and three keepers lived on the island with
-their families and a tutor for their children. One or more cats were
-kept by these families and a cat, known as Tibbles, was notorious for
-having hunted in its career all the endemic Stephens Island Wren
-(&lt;em&gt;Traversia lyalli&lt;/em&gt;). It is said that the bird went extinct,
-while it was being discovered for the first time by one of the keepers
-of the lighthouse. Although this may not be the complete story, it
-serves as an example of how invasive feral carnivores can destroy
-native ecosystems. As I have mentioned earlier this isn&amp;rsquo;t the complete
-story. I will be writing more about this particular case in a later
-article.&lt;/p&gt;
-&lt;p&gt;New Zealand is also home to a very unique series of reptiles not found
-anywhere around the globe. Several species have gone extinct in the
-few thousand years it has been occupied by human beings. There was
-another cat in whose 17 years of life, it hunted over 558 recorded
-animals of which 223 were birds. Although the birds survived, the cat
-is known to have exterminated all the rabbits which it later seemed to
-prefer. It, however, must be noted that it was not merely cats that
-were involved in these extinctions but also household pests that
-accompanied humans onto the islands that played a crucial role.&lt;/p&gt;
-&lt;h2 id=&#34;last-words-responsible-pet-ownership&#34;&gt;Last words: responsible pet ownership&lt;/h2&gt;
-&lt;p&gt;What next? I think the key point to be kept in mind here is
-responsible pet ownership. This is a discussion riddled in ambiguous
-ethical principles and accountability is almost never
-considered. Legal restrictions and various problematic policies on
-dealing with the issue make it harder to address. I&amp;rsquo;ve tried to
-discuss this aspect of the issue in another post.&lt;/p&gt;
 </description>
     </item>
   </channel>

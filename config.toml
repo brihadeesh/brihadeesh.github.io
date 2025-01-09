@@ -40,3 +40,9 @@ endLevel = 6
 
 [outputs]
 section = ["HTML", "RSS"]
+
+[params]
+ogImage = "https://peregrinator.site/avatar.jpg
+ogImagealt = " "
+fediCreator = "@peregrinator@mastodon.social"
+summaryLength = "10"

@@ -110,6 +110,20 @@ sludge record that blows your brains out. Throw it on if you liked
 LLNN's Unmaker and Primitive Man. The album is from June 2018.
 
 
+### MICO - Zigurat {#mico-zigurat}
+
+{{< bandcamp id="2196194472" >}}
+
+I had realised that I hadn't bought Cave Sermon's [latest](https://cavesermon.bandcamp.com/album/divine-laughter) so when I
+went to their Bandcamp page I saw that they'd recommended a few other
+albums. MICO's _Zigurat_ was one of them. What really drew me to this
+project was how they'd infused sludge with grindcore seamlessly and
+much like others that play this kind of metal (like Gaza) they'd
+pulled it off spectacularly. I really don't know much about them but
+they're definitely one of my best finds. The album was released in
+June 2022.
+
+
 ### Luminesce - Mirrored {#luminesce-mirrored}
 
 {{< bandcamp id="2604555405" >}}

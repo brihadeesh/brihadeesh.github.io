@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
-    <lastBuildDate>Fri, 27 Dec 2024 01:50:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2025 17:28:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No more EOY lists for music</title>
+      <link>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music.html</link>
+      <pubDate>Fri, 10 Jan 2025 17:28:00 +0530</pubDate>
+      <guid>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music.html</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote for the blog and even longer since I&#xA;made an end-of-year list but I&amp;rsquo;ve been thinking about these&#xA;lists. I&amp;rsquo;ve published just one from a &lt;a href=&#34;./blog/2023/02/albums-of-the-year-2022.html&#34;&gt;couple of years back&lt;/a&gt; and then&#xA;never really published one on the blog and it has been something of a&#xA;conscious decision. I would perhaps like to move towards writing more&#xA;meaningful pieces on individual albums or sets of albums I&amp;rsquo;ve been&#xA;listening to and have gotten to appreciate. Making EOY lists has been&#xA;exhausting and I&amp;rsquo;m never entirely sure if I&amp;rsquo;ve missed out on any&#xA;albums since I don&amp;rsquo;t really keep track of what I really enjoyed.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Notes from a withdrawal episode (part 0)</title>
       <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0.html</link>
@@ -71,13 +78,6 @@
       <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;d decided to give up on my free WordPress blog a while back, after&#xA;having watched a SystemCrafters &lt;a href=&#34;https://youtu.be/AfkrzFodoNw&#34;&gt;video&lt;/a&gt; on how to blog from Emacs (&lt;em&gt;d&amp;rsquo;oh&lt;/em&gt;,&#xA;I just &lt;em&gt;have&lt;/em&gt; to do everything from Emacs). Of course, daviwil only&#xA;covered the basics of writing and exporting using Emacs&amp;rsquo; built-in&#xA;packages and later for deploying it on GitHub / Sourcehut pages. And&#xA;it took me a good year to get down to making the switch but apparently&#xA;moving to a new place for work is the motivation it required. It felt&#xA;like cheating to use Jekyll on GitHub and I wanted something that&#xA;could be deployed to a Sourcehut site easily too (Sourcehut blocks any&#xA;CDN-based CSS loaded into the site&amp;rsquo;s HTML) and I wanted something&#xA;extremely minimal, like Drew Devault&amp;rsquo;s &lt;a href=&#34;https://drewdevault.com/&#34;&gt;blog&lt;/a&gt; but with even fewer&#xA;frills — no images anywhere except for if a blog post required&#xA;them. Looking at his blog source, however, made me realise that there&#xA;was a lot more to that minimalism than one could see.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Literate Emacs Configuration</title>
-      <link>http://localhost:1313/emacs/literate_emacs_configuration.html</link>
-      <pubDate>Sat, 04 Dec 2021 00:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/emacs/literate_emacs_configuration.html</guid>
-      <description>&lt;p&gt;This is a copy of my literate configuration for Emacs and if you&amp;rsquo;re&#xA;viewing this anywhere else, don&amp;rsquo;t! Because you can find a readable&#xA;version on my &lt;a href=&#34;https://peregrinator.srht.site/emacs/literate_emacs_configuration.html&#34;&gt;website&lt;/a&gt;. You can also find a source-based version with&#xA;the rest of my &lt;code&gt;~/.emacs.d&lt;/code&gt; on my &lt;a href=&#34;https://git.sr.ht/~peregrinator/.emacs.d&#34;&gt;sourcehut&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;other-init-files&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Other init files&lt;/h2&gt;&#xA;&lt;p&gt;These are in my &lt;code&gt;~/.emacs.d&lt;/code&gt; and help load this main configuration.&lt;/p&gt;&#xA;&lt;h3 id=&#34;early-init&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Early init&lt;/h3&gt;&#xA;&lt;p&gt;This creates a file, &lt;a href=&#34;~/.emacs.d/early-init.el&#34;&gt; &lt;code&gt;early-init.el&lt;/code&gt; &lt;/a&gt;, in &lt;code&gt;~/.emacs.d&lt;/code&gt;. This was stolen&#xA;from Protesilaos some time back. It still needs work - it&amp;rsquo;s not&#xA;tangled (by default) yet.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

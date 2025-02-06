@@ -1579,6 +1579,7 @@ indicates.
 ** DONE Moved to Sourcehut!
 :PROPERTIES:
 :EXPORT_FILE_NAME: moved-to-sourcehut
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 3
 :EXPORT_DATE: [2023-03-04 Sat 03:51]
 :END:
 

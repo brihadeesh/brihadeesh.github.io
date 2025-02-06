@@ -2316,6 +2316,7 @@ reactions from people on Bluesky.
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: fiction
 :EXPORT_FILE_NAME: ahab
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :bsky "https://bsky.app/profile/peregrinator.site/post/3lhjohmkz6223"
 :EXPORT_DATE: [2012-05-01 21:00]
 :END:
 

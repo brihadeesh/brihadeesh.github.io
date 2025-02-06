@@ -1,6 +1,6 @@
 #+HUGO_BASE_DIR: ../
 #+HUGO_SECTION: /
-#+HUGO_CUSTOM_FRONT_MATTER: :toc false :layout "about" :showDate false :showAuthor false :showBreadcrumbs true :showReadingTime false
+#+HUGO_CUSTOM_FRONT_MATTER: :toc false :layout "simple" :showDate false :showAuthor false :showBreadcrumbs true :showReadingTime false
 
 #+title: about me
 

@@ -61,7 +61,21 @@
         {{ else }}
           {{ warnf "[CONGO] Comments are enabled for %s but no comments partial exists." .File.Path }}
         {{ end }}
-      {{ end }}
+	  {{ end }}
     </footer>
   </article>
+
+  <section>
+        {{/* Openring articles */}}
+    {{/* Don't load the partial if it doesn't exist */}}
+    {{ if templates.Exists "partials/webring-out.html" }}
+    {{ if .IsPage }}
+    {{/* Only display at the bottom of articles */}}
+    <div class="mt-6">
+      {{ partial "webring-out.html" . }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </section>
+
 {{ end }}

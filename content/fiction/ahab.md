@@ -3,6 +3,7 @@ title = "Ahab"
 author = ["peregrinator"]
 date = 2012-05-01T21:00:00+05:30
 draft = false
+bsky = "https://bsky.app/profile/peregrinator.site/post/3lhjohmkz6223"
 +++
 
 The disturbed man woke from violent sleep. He wondered to himself of

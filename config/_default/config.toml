@@ -19,7 +19,6 @@ blog = "/:section/:year/:month/:filename"
 misc = "/:section/:year/:month/:filename"
 emacs = "/:section/:slug"
 fiction = "/:section/:year/:month/:filename"
-about = "/:filename"
 
 [markup.goldmark.renderer]
 unsafe = true

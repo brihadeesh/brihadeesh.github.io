@@ -2308,6 +2308,17 @@ reactions from people on Bluesky.
 
 #+hugo: {{< bandcamp id="3789263332" >}}
 
+**** Dead In The Dirt - The Blind Hole
+
+#+hugo: {{< bandcamp id="2774521344" >}}
+
+**** me and him call it us - Loss
+
+#+hugo: {{< bandcamp id="1258006007" >}}
+
+**** Stormo - Endocannibalismo
+
+#+hugo: {{< bandcamp id="2419701666" >}}
 
 
 

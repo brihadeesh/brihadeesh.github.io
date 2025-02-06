@@ -31,4 +31,9 @@ lineNos = false
 noClasses = false
 
 [taxonomies]
-  series = "series"
+series = "series"
+
+[params]
+ogImage = "https://peregrinator.site/img/avatar.jpg"
+ogImagealt = "An old photo of me, silhoutted against a sunset and trees"
+fediCreator = "@peregrinator@mastodon.social"

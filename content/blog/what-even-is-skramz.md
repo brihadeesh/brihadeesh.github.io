@@ -115,3 +115,18 @@ reactions from people on Bluesky.
 ### Bloodcrusher - Bloodcrusher {#bloodcrusher-bloodcrusher}
 
 {{< bandcamp id="3789263332" >}}
+
+
+### Dead In The Dirt - The Blind Hole {#dead-in-the-dirt-the-blind-hole}
+
+{{< bandcamp id="2774521344" >}}
+
+
+### me and him call it us - Loss {#me-and-him-call-it-us-loss}
+
+{{< bandcamp id="1258006007" >}}
+
+
+### Stormo - Endocannibalismo {#stormo-endocannibalismo}
+
+{{< bandcamp id="2419701666" >}}

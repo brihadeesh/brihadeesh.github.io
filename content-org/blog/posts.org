@@ -2210,6 +2210,68 @@ metal at some points. The album was released in June 2024
 
 Well, that's all I've got for what I've been listening to off-late. I
 hope I end up making it a habit to write up pieces like this!
+** DRAFT What even is skramz
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: blog
+:EXPORT_FILE_NAME: what-even-is-skramz
+:EXPORT_DATE: [2025-01-23 Thu 12:41]
+:END:
+
+The last week has been eventful and has seen a ton of new releases out
+of which I've listened to probably just an album or two. There was a
+[[https://putriddefecation.bandcamp.com/album/tales-from-the-toilet][toilet themed slam band]] that put out something with some really sick
+riffs. There was the album from Serein that used a painting by Thomas
+Cole called "The Voyage of Life: Old Age" from 1942 as their cover
+art. Most people that checked it out, complained that it had clean
+vocals, something not everyone appreciates in death metal.
+
+[[file:/images/serein_candlemass_cover.jpg]]
+
+This painting, however, was first used by Candlemass on their
+phenomenal 1987 album [[https://peaceville.bandcamp.com/album/nightfall][Nightfall]] and that led to some hilarious
+reactions from people on Bluesky.
+
+#+hugo: {{< bsky link="https://bsky.app/profile/sleepingvillage.bsky.social/post/3lfxa6yo7mk2h" >}}
+
+*** What I've been listening to this week
+
+**** Orphan Donor - Old Patterns 4533026
+
+**** Orphan Donor - Unraveled 3044070440
+
+**** Orphan Donor - Orphan Donor 1668692603
+
+**** Frail Body - Artificial Bouquet 364450411
+
+**** City of Caterpillar - Mystic Sisters 843338322
+
+**** Eyelet - The Devil Shining Out Your Eyes 2675475659
+
+**** Eyelet - Nervewracker 40122527
+
+**** Coup d’etat - What Happens After the Epilogue…? 3734378784
+
+**** Crowning/Oaktails split 2221778912
+
+**** Crowning/Eyelet split 1171973254
+
+**** Crowning - Survival/Sickness 3645740078
+
+**** Ясность - Минское море (Yasnost) 2832940389
+
+**** Wake - Misery Rites 2610366104
+
+**** Anaal Nathrakh - Hell Is Empty, and All the Devils Are Here 492997819
+
+**** Sicarius - Serenade of Slitting Throats 4261813520
+
+**** World Eaters - Hounds of Blood (ampwall) 0193a6f8-0d36-7391-b0ad-c1968e829a0e
+
+**** Bloodcrusher - Voidseeker 3962738927
+
+**** Bloodcrusher - Bloodcrusher 3789263332
+
+
 
 ** DRAFT What even is skramz
 :PROPERTIES:

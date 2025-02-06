@@ -5,12 +5,18 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on peregrinator&#39;s blog</description>
     <generator>Hugo</generator>
+<<<<<<< HEAD
     <language>en</language>
     <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)</copyright>
+=======
+    <language>en-us</language>
+    <copyright>2012-2023 Brihadeesh S All rights reserved</copyright>
+>>>>>>> df32890 (last commit before move)
     <lastBuildDate>Thu, 23 Jan 2025 12:41:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What even is skramz</title>
+<<<<<<< HEAD
       <link>http://localhost:1313/blog/2025/01/what-even-is-skramz/</link>
       <pubDate>Thu, 23 Jan 2025 12:41:00 +0530</pubDate>
       <guid>http://localhost:1313/blog/2025/01/what-even-is-skramz/</guid>
@@ -22,6 +28,19 @@
       <pubDate>Wed, 15 Jan 2025 20:23:00 +0530</pubDate>
       <guid>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</guid>
       <description></description>
+=======
+      <link>http://localhost:1313/blog/2025/01/what-even-is-skramz.html</link>
+      <pubDate>Thu, 23 Jan 2025 12:41:00 +0530</pubDate>
+      <guid>http://localhost:1313/blog/2025/01/what-even-is-skramz.html</guid>
+      <description>&lt;p&gt;The last week has been eventful and has seen a ton of new releases out&#xA;of which I&amp;rsquo;ve listened to probably just an album or two. There was a&#xA;&lt;a href=&#34;https://putriddefecation.bandcamp.com/album/tales-from-the-toilet&#34;&gt;toilet themed slam band&lt;/a&gt; that put out something with some really sick&#xA;riffs. There was the album from Serein that used a painting by Thomas&#xA;Cole called &amp;ldquo;The Voyage of Life: Old Age&amp;rdquo; from 1942 as their cover&#xA;art. Most people that checked it out, complained that it had clean&#xA;vocals, something not everyone appreciates in death metal.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>No more EOY lists for music</title>
+      <link>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music.html</link>
+      <pubDate>Wed, 15 Jan 2025 20:23:00 +0530</pubDate>
+      <guid>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music.html</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote for the blog and even longer since I&#xA;made an end-of-year list but I&amp;rsquo;ve been thinking about these&#xA;lists. I&amp;rsquo;ve published just one from a &lt;a href=&#34;./blog/2023/02/albums-of-the-year-2022.html&#34;&gt;couple of years back&lt;/a&gt; and then&#xA;never really published one on the blog and it has been something of a&#xA;conscious decision. I would perhaps like to move towards writing more&#xA;meaningful pieces on individual albums or sets of albums I&amp;rsquo;ve been&#xA;listening to and have gotten to appreciate. Making EOY lists has been&#xA;exhausting and I&amp;rsquo;m never entirely sure if I&amp;rsquo;ve missed out on any&#xA;albums since I don&amp;rsquo;t really keep track of what I really enjoyed.&lt;/p&gt;</description>
+>>>>>>> df32890 (last commit before move)
     </item>
     <item>
       <title>Notes from a withdrawal episode (part 0)</title>
@@ -79,6 +98,7 @@
       <guid>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly/</guid>
       <description></description>
     </item>
+<<<<<<< HEAD
     <item>
       <title>Hugo, Org and starting over at a new blog</title>
       <link>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/</link>
@@ -142,5 +162,7 @@
       <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
+=======
+>>>>>>> df32890 (last commit before move)
   </channel>
 </rss>

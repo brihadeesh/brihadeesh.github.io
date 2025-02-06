@@ -2007,7 +2007,7 @@ met has ever shared anything even remotely similar.
 ** DONE No more EOY lists for music
 :PROPERTIES:
 :EXPORT_FILE_NAME: no-more-eoy-lists-for-music
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :series_order 1
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :series_order 1 :bsky "https://bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
 :EXPORT_DATE: [2025-01-15 Thu 20:23]
 :END:
 

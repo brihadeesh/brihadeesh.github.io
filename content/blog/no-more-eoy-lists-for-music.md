@@ -3,6 +3,9 @@ title = "No more EOY lists for music"
 author = ["peregrinator"]
 date = 2025-01-15T20:23:00+05:30
 draft = false
+series = "Listening habits"
+series_order = 1
+bsky = "https://bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
 +++
 
 It's been a while since I wrote for the blog and even longer since I

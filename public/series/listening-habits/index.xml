@@ -4,22 +4,17 @@
     <title>Listening Habits on peregrinator&#39;s blog</title>
     <link>http://localhost:1313/series/listening-habits/</link>
     <description>Recent content in Listening Habits on peregrinator&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>home@peregrinator.site (Brihadeesh S)</managingEditor>
-    <webMaster>home@peregrinator.site (Brihadeesh S)</webMaster>
-    
-    <lastBuildDate>Wed, 15 Jan 2025 20:23:00 +0530</lastBuildDate><atom:link href="http://localhost:1313/series/listening-habits/index.xml" rel="self" type="application/rss+xml" />
-    
+    <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)</copyright>
+    <lastBuildDate>Wed, 15 Jan 2025 20:23:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/series/listening-habits/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No more EOY lists for music</title>
-      <link>http://localhost:1313/posts/no-more-eoy-lists-for-music/</link>
+      <link>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</link>
       <pubDate>Wed, 15 Jan 2025 20:23:00 +0530</pubDate>
-      <author>home@peregrinator.site (Brihadeesh S)</author>
-      <guid>http://localhost:1313/posts/no-more-eoy-lists-for-music/</guid>
+      <guid>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</guid>
       <description></description>
-      
     </item>
-    
   </channel>
 </rss>

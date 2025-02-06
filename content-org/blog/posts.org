@@ -2213,6 +2213,7 @@ hope I end up making it a habit to write up pieces like this!
 ** DRAFT What even is skramz
 :PROPERTIES:
 :EXPORT_FILE_NAME: what-even-is-skramz
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :series_order 2
 :EXPORT_DATE: [2025-01-23 Thu 12:41]
 :END:
 

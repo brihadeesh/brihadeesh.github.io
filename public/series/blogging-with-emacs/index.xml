@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)</copyright>
-    <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Feb 2023 16:24:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/series/blogging-with-emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog revamp and starting to understand Hugo better</title>
+      <link>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</link>
+      <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
+      <guid>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo, Org and starting over at a new blog</title>
       <link>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/</link>

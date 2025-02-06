@@ -3,6 +3,8 @@ title = "What even is skramz"
 author = ["peregrinator"]
 date = 2025-01-23T12:41:00+05:30
 draft = true
+series = "Listening habits"
+series_order = 2
 +++
 
 The last week has been eventful and has seen a ton of new releases out

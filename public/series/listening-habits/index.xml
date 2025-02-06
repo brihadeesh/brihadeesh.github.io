@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)</copyright>
-    <lastBuildDate>Wed, 15 Jan 2025 20:23:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2025 12:41:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/series/listening-habits/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What even is skramz</title>
+      <link>http://localhost:1313/blog/2025/01/what-even-is-skramz/</link>
+      <pubDate>Thu, 23 Jan 2025 12:41:00 +0530</pubDate>
+      <guid>http://localhost:1313/blog/2025/01/what-even-is-skramz/</guid>
+      <description></description>
+    </item>
     <item>
       <title>No more EOY lists for music</title>
       <link>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</link>

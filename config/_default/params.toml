@@ -11,7 +11,7 @@ autoSwitchAppearance = true
 
 defaultThemeColor = "#FFFFFF"
 
-enableSearch = false
+enableSearch = true
 enableCodeCopy = true
 enableImageLazyLoading = true
 enableImageWebp = true
@@ -50,7 +50,7 @@ fingerprintAlgorithm = "sha256"
   invertPagination = true
   showReadingTime = true
   showTableOfContents = false
-  showTaxonomies = false
+  showTaxonomies = true
   showWordCount = false
   showComments = true
   # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "threads", "telegram", "line", "weibo"]
@@ -59,7 +59,7 @@ fingerprintAlgorithm = "sha256"
   showBreadcrumbs = false
   showSummary = true
   showTableOfContents = false
-  showTaxonomies = false
+  showTaxonomies = true
   groupByYear = true
   paginationWidth = 1
 

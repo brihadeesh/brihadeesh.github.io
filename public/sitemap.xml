@@ -10,10 +10,14 @@
     
   
     
+  
+    
       <url>
             <loc>http://localhost:1313/</loc>
             <lastmod>2025-01-23T12:41:00+05:30</lastmod>
           </url>
+    
+  
     
   
     
@@ -24,14 +28,10 @@
     
   
     
-  
-    
       <url>
             <loc>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</loc>
             <lastmod>2025-01-15T20:23:00+05:30</lastmod>
           </url>
-    
-  
     
   
     
@@ -81,8 +81,10 @@
     
       <url>
             <loc>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</loc>
-            <lastmod>2023-02-23T16:24:00+00:00</lastmod>
+            <lastmod>2023-02-23T16:24:00+05:30</lastmod>
           </url>
+    
+  
     
   
     
@@ -97,8 +99,6 @@
             <loc>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly/</loc>
             <lastmod>2022-12-09T00:00:00+00:00</lastmod>
           </url>
-    
-  
     
   
     

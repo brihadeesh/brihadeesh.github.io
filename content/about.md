@@ -4,6 +4,10 @@ author = ["peregrinator"]
 draft = false
 toc = false
 layout = "about"
+showDate = false
+showAuthor = false
+showBreadcrumbs = true
+showReadingTime = false
 +++
 
 I'm a 29 year old, neurodivergent, cat supremacist that sometimes

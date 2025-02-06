@@ -1,0 +1,5 @@
+#+HUGO_BASE_DIR: ../../
+#+HUGO_SECTION: emacs
+#+HUGO_CUSTOM_FRONT_MATTER: :toc false
+
+#+title: emacs

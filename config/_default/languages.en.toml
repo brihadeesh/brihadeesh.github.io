@@ -1,0 +1,40 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+title = "peregrinator's blog"
+copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)"
+
+[params]
+  dateFormat = "January 2 2006"
+
+  mainSections = ["blog"]
+  # description = "musings on ecology, music and mental health"
+
+[params.author]
+  name = "Brihadeesh S"
+  image = "img/avatar.jpg"
+  # headline = "I'm only human"
+  # bio = "A little bit about you"
+  links = [
+  { email = "mailto:contact@peregrinator.site" },
+  { sourcehut = "https://git.sr.ht/~peregrinator" },
+  { bluesky = "https://bsky.app/profile/peregrinator.site" },
+  { mastodon = "https://mastodon.social/@peregrinator" },
+  # { github = "https://github.com/brihadeesh" },
+  # { emacs  = "https://git.sr.ht/~peregrinator/.emacs.d" },
+  # { voidlinux = "https://github.com/brihadeesh/void-packages" },
+  { researchgate = "https://www.researchgate.net/profile/Brihadeesh-S" },
+  { lastfm = "https://lastfm.com/user/brihadeesh" },
+  # { linkedin = "https://linkedin.com/in/username" },
+  # { patreon = "https://www.patreon.com/username" },
+  # { soundcloud = "https://soundcloud.com/username" },
+  # { steam = "https://steamcommunity.com/profiles/userid" },
+  # { twitter = "https://twitter.com/username" },
+  # { x-twitter = "https://twitter.com/username" },
+  # { ko-fi = "https://ko-fi.com/username" },
+]
+
+[params.about]
+image = "img/about.jpg"

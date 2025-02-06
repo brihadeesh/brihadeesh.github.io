@@ -1,9 +1,8 @@
 #+HUGO_BASE_DIR: ../
 #+HUGO_SECTION: /
-#+HUGO_CUSTOM_FRONT_MATTER: :toc false :layout "about"
+#+HUGO_CUSTOM_FRONT_MATTER: :toc false :layout "about" :showDate false :showAuthor false :showBreadcrumbs true :showReadingTime false
 
 #+title: about me
-
 
 I'm a 29 year old, neurodivergent, cat supremacist that sometimes
 cosplays as an ecologist. I'm big on F(L)OSS and currently run a [[https://voidlinux.org][Void

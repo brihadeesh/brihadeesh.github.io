@@ -1,0 +1,5 @@
+#+HUGO_BASE_DIR: ../../
+#+HUGO_SECTION: fiction
+#+HUGO_CUSTOM_FRONT_MATTER: :toc false
+
+#+title: fiction

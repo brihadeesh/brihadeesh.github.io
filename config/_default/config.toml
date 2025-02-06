@@ -1,0 +1,35 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+baseURL = "https://peregrinator.srht.site"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+summaryLength = 0
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+blog = "/:section/:year/:month/:filename"
+misc = "/:section/:year/:month/:filename"
+emacs = "/:section/:slug"
+fiction = "/:section/:year/:month/:filename"
+about = "/:filename"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+tabWidth = 2
+codeFences = true
+guessSyntax = true
+lineNos = false
+noClasses = false
+
+[taxonomies]
+  series = "series"

@@ -7,7 +7,7 @@ packages:
 sources:
   - https://git.sr.ht/~sircmpwn/openring
 environment:
-  site: peregrinator.site
+  site: peregrinator.srht.site
 tasks:
 - openring: |
     cd openring
@@ -19,7 +19,7 @@ tasks:
     -s https://drewdevault.com/blog/index.xml \
     -s https://sourcehut.org/blog/index.xml \
     -s https://emersion.fr/blog/atom.xml \
-    -s https://popagandhi.com/index.xml \
+    -s https://popagandhi.com/feed.xml \
     < webring-in.template \
     > layouts/partials/webring-out.html
     hugo

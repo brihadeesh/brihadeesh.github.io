@@ -25,7 +25,6 @@ reactions from people on Bluesky.
 ## What I've been listening to this week {#what-i-ve-been-listening-to-this-week}
 
 
-<<<<<<< HEAD
 ### Orphan Donor - Old Patterns {#orphan-donor-old-patterns}
 
 {{< bandcamp id="4533026" >}}
@@ -114,57 +113,3 @@ reactions from people on Bluesky.
 ### Bloodcrusher - Bloodcrusher {#bloodcrusher-bloodcrusher}
 
 {{< bandcamp id="3789263332" >}}
-=======
-### Orphan Donor - Old Patterns 4533026 {#orphan-donor-old-patterns-4533026}
-
-
-### Orphan Donor - Unraveled 3044070440 {#orphan-donor-unraveled-3044070440}
-
-
-### Orphan Donor - Orphan Donor 1668692603 {#orphan-donor-orphan-donor-1668692603}
-
-
-### Frail Body - Artificial Bouquet 364450411 {#frail-body-artificial-bouquet-364450411}
-
-
-### City of Caterpillar - Mystic Sisters 843338322 {#city-of-caterpillar-mystic-sisters-843338322}
-
-
-### Eyelet - The Devil Shining Out Your Eyes 2675475659 {#eyelet-the-devil-shining-out-your-eyes-2675475659}
-
-
-### Eyelet - Nervewracker 40122527 {#eyelet-nervewracker-40122527}
-
-
-### Coup d’etat - What Happens After the Epilogue…? 3734378784 {#coup-d-etat-what-happens-after-the-epilogue-3734378784}
-
-
-### Crowning/Oaktails split 2221778912 {#crowning-oaktails-split-2221778912}
-
-
-### Crowning/Eyelet split 1171973254 {#crowning-eyelet-split-1171973254}
-
-
-### Crowning - Survival/Sickness 3645740078 {#crowning-survival-sickness-3645740078}
-
-
-### Ясность - Минское море (Yasnost) 2832940389 {#ясность-минское-море--yasnost--2832940389}
-
-
-### Wake - Misery Rites 2610366104 {#wake-misery-rites-2610366104}
-
-
-### Anaal Nathrakh - Hell Is Empty, and All the Devils Are Here 492997819 {#anaal-nathrakh-hell-is-empty-and-all-the-devils-are-here-492997819}
-
-
-### Sicarius - Serenade of Slitting Throats 4261813520 {#sicarius-serenade-of-slitting-throats-4261813520}
-
-
-### World Eaters - Hounds of Blood (ampwall) 0193a6f8-0d36-7391-b0ad-c1968e829a0e {#world-eaters-hounds-of-blood--ampwall--0193a6f8-0d36-7391-b0ad-c1968e829a0e}
-
-
-### Bloodcrusher - Voidseeker 3962738927 {#bloodcrusher-voidseeker-3962738927}
-
-
-### Bloodcrusher - Bloodcrusher 3789263332 {#bloodcrusher-bloodcrusher-3789263332}
->>>>>>> df32890 (last commit before move)

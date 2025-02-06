@@ -27,9 +27,18 @@
 
 [[main]]
   identifier = "search"
-  weight = 99
+  weight = 20
   [main.params]
     action = "search"
+
+[[main]]
+  name = "rss"
+  url = "https://peregrinator.site/index.xml"
+  weight = 40
+  [main.params]
+    icon = "rss"
+    showName = false
+    target = "_self"
 
 # [[main]]
 #   identifier = "series"

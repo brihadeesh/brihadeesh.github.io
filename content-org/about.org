@@ -4,6 +4,26 @@
 
 #+title: about me
 
+* What does /peregrinator/ mean?
+
+Firstly, about the name, /peregrinator/ refers to one of two things,
+both of which I had in mind while selecting the name. I had initially
+wanted to go with Lammergeier (the German name for the [[https://birdsoftheworld.org/bow/species/lammer1/cur/introduction][Bearded
+Vulture]]) but then it was taken on most platforms. /Peregrinator/ is the
+subspecies name for the Shaheen Falcon (/[[https://birdsoftheworld.org/bow/species/perfal/cur/systematics#subsp][Falco peregrinus peregrinator]]/
+— you might have to scroll down here.) It is a beautiful falcon with a
+dark back and upper-wings, a white throat, and vivid rufous
+underparts. It has a typical dark "helmet" as seen in the
+photo. Juveniles have incomplete hemlets and are a paler shade of
+rufous. Shaheen Bagh also happens to be the name of the place chosen
+by the people protesting the unjust implementation of the CAA and NRC
+in 2019. The word /peregrinator/ itself comes from Latin and is
+synonymous with [[https://www.merriam-webster.com/dictionary/peregrinator][traveller or wanderer]].
+
+#+hugo: {{< figure src="img/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
+
+* About me
+
 I'm a 29 year old, neurodivergent, cat supremacist that sometimes
 cosplays as an ecologist. I'm big on F(L)OSS and currently run a [[https://voidlinux.org][Void
 Linux]] installation with a manually compiled version of Emacs 29. I
@@ -22,10 +42,9 @@ exported to markdown via [[https://github.com/kaushalmodi/ox-hugo][ox-hugo]] for
 default [[https://github.com/niklasfasching/go-org][go-org]] parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html][post]] about it.
 
-The source for this website is on my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut]].
-
-I can be contacted at [[mailto:contatn@peregrinator.site][~contact [at] peregrinator.site~]] or through Bluesky
-[[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]].
+I can be contacted at [[mailto:contatn@peregrinator.site][~contact [at] peregrinator.site~]] or through
+Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]]. The
+source for this website is on my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut]].
 
 * Publications
 

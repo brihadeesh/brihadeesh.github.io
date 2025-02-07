@@ -49,7 +49,7 @@ exported to markdown via [ox-hugo](https://github.com/kaushalmodi/ox-hugo) for b
 default [go-org](https://github.com/niklasfasching/go-org) parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html) about it.
 
-I can be contacted at [`contact [at] peregrinator.site`](mailto:contatn@peregrinator.site) or through
+I can be contacted at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
 Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator). The
 source for this website is on my [Sourcehut](https://git.sr.ht/~peregrinator/peregrinator.site).
 

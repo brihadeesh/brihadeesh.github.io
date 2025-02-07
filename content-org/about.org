@@ -42,7 +42,7 @@ exported to markdown via [[https://github.com/kaushalmodi/ox-hugo][ox-hugo]] for
 default [[https://github.com/niklasfasching/go-org][go-org]] parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html][post]] about it.
 
-I can be contacted at [[mailto:contatn@peregrinator.site][~contact [at] peregrinator.site~]] or through
+I can be contacted at [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]] or through
 Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]]. The
 source for this website is on my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut]].
 

@@ -14,7 +14,7 @@ copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons
 
 [params.author]
   name = "Brihadeesh S"
-  image = "img/avatar.jpg"
+  image = "img/avatar.png"
   # headline = "I'm only human"
   # bio = "A little bit about you"
   links = [
@@ -35,6 +35,7 @@ copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons
   # { twitter = "https://twitter.com/username" },
   # { x-twitter = "https://twitter.com/username" },
   # { ko-fi = "https://ko-fi.com/username" },
+  # { buymeacoffee = "https://www.buymeacoffee.com/peregrinator" },
 ]
 
 [params.about]

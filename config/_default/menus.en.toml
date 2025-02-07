@@ -40,6 +40,15 @@
     showName = false
     target = "_self"
 
+[[main]]
+  name = "buymeacoffee"
+  url = "https://www.buymeacoffee.com/peregrinator"
+  weight = 30
+  [main.params]
+    icon = "buymeacoffee"
+    showName = false
+    target = "_blank"
+
 # [[main]]
 #   identifier = "series"
 #   pageref = "series"

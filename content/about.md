@@ -21,14 +21,17 @@ instruments I don't play myself.
 
 This is a _static_ website and is intended to (eventually) be the home
 for my blog, Emacs configuration and work updates. I hope to
-eventually move to or host it there. This website uses a stylised
-version of the theme from [Drew Devault](https://drewdevault.com)'s blog within the same [Hugo](https://gohugo.io)
-framework. Everything you see here was written in [Org-mode](https:orgmode.org) on Emacs,
+eventually move to or host it there. This website uses a [Hugo](https://gohugo.io)
+framework and uses a personalised version of the [Congo](https://github.com/jpanther/congo)
+theme. Everything you see here was written in [Org-mode](https:orgmode.org) on Emacs,
 exported to markdown via [ox-hugo](https://github.com/kaushalmodi/ox-hugo) for better compatibility - the
 default [go-org](https://github.com/niklasfasching/go-org) parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html) about it.
 
 The source for this website is on my [Sourcehut](https://git.sr.ht/~peregrinator/peregrinator.site).
+
+I can be contacted at [`contact [at] peregrinator.site`](mailto:contatn@peregrinator.site) or through Bluesky
+[`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
 
 
 ## Publications {#publications}

@@ -34,6 +34,6 @@ noClasses = false
 series = "series"
 
 [params]
-ogImage = "https://peregrinator.site/img/avatar.jpg"
-ogImagealt = "An old photo of me, silhoutted against a sunset and trees"
+ogImage = "https://peregrinator.site/img/avatar.png"
+ogImagealt = "A silhoutte of a Shaheen falcon"
 fediCreator = "@peregrinator@mastodon.social"

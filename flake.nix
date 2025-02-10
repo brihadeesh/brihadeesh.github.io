@@ -1,4 +1,5 @@
-  description = "brihadeesh.github.io blog";
+{
+description = "brihadeesh.github.io blog";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };

@@ -51,12 +51,12 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build openring
-      - run: |
+        run: |
           sudo apt install go &&
           git clone https://git.sr.ht/~sircmpwn/openring && cd openring &&
           go build -o openring && sudo cp openring /usr/local/bin/
       - name: Run openring
-      - run: |
+        run: |
           /usr/local/bin/openring \
           -s https://drewdevault.com/blog/index.xml \
           -s https://sourcehut.org/blog/index.xml \

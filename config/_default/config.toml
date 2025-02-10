@@ -2,7 +2,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = "https://peregrinator.site"
+baseURL = "https://brihadeesh.github.io"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
@@ -34,6 +34,6 @@ noClasses = false
 series = "series"
 
 [params]
-ogImage = "https://peregrinator.site/img/avatar.png"
+ogImage = "https://brihadeesh.github.io/img/avatar.png"
 ogImagealt = "A silhoutte of a Shaheen falcon"
 fediCreator = "@peregrinator@mastodon.social"

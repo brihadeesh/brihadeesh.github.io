@@ -33,7 +33,7 @@
 
 [[main]]
   name = "rss"
-  url = "https://peregrinator.site/index.xml"
+  url = "/index.xml"
   weight = 40
   [main.params]
     icon = "rss"

@@ -4,7 +4,7 @@ languageDirection = "ltr"
 weight = 1
 
 title = "peregrinator's blog"
-copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)"
+copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://gihttps://github.com/brihadeesh/brihadeesh.github.io/) for this site is [MIT](https://github.com/brihadeesh/brihadeesh.github.io/blob/main/LICENSE)"
 
 [params]
   dateFormat = "January 2 2006"
@@ -23,7 +23,7 @@ copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons
   { bluesky = "https://bsky.app/profile/peregrinator.site" },
   # { mastodon = "https://mastodon.social/@peregrinator" },
   # { mastodon = "https://fosstodon.org/@peregrinator" },
-  # { github = "https://github.com/brihadeesh" },
+  { github = "https://github.com/brihadeesh/" },
   # { emacs  = "https://git.sr.ht/~peregrinator/.emacs.d" },
   # { voidlinux = "https://github.com/brihadeesh/void-packages" },
   { researchgate = "https://www.researchgate.net/profile/Brihadeesh-S" },

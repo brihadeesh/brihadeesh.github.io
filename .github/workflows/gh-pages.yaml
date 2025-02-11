@@ -1,0 +1,35 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy
+  pull_request:
+  workflow_dispatch: {}
+  # deploy bi-weekly (updates openring)
+  schedule:
+    - cron: "0 0 * * MON"
+    - cron: "0 0 * * THU"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      - uses: actions/checkout@v3
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v4
+      - name: Setup cache
+        uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: Build Site
+        run: nix develop --command make build-prod
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        # only deploy if on main branch
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

@@ -134,17 +134,14 @@ h1, h2, h3 {
 }
 
 html {
-    font-family: "Monorale", "sans-serif"";
+    font-family: "Monorale", "sans-serif";
 }
 
 .comment {
-<<<<<<< HEAD
     padding: 5px 0;
     font-size: 12px;
-=======
     padding:5px 0;
     font-size: 11px;
->>>>>>> 1e95909 (changed font)
     line-height: 150%;
 }
 .author {

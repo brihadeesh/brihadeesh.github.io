@@ -2,116 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on peregrinator&#39;s blog</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://brihadeesh.github.io/blog/</link>
     <description>Recent content in blog on peregrinator&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.site) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.site/tree/main/item/LICENSE)</copyright>
-    <lastBuildDate>Thu, 23 Jan 2025 12:41:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What even is skramz</title>
-      <link>http://localhost:1313/blog/2025/01/what-even-is-skramz/</link>
-      <pubDate>Thu, 23 Jan 2025 12:41:00 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2025/01/what-even-is-skramz/</guid>
-      <description></description>
-    </item>
+    <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://github.com/brihadeesh/brihadeesh.github.io/) for this site is [MIT](https://github.com/brihadeesh/brihadeesh.github.io/blob/main/LICENSE)</copyright>
+    <lastBuildDate>Wed, 15 Jan 2025 20:23:00 +0530</lastBuildDate>
+    <atom:link href="https://brihadeesh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No more EOY lists for music</title>
-      <link>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</link>
+      <link>https://brihadeesh.github.io/blog/2025/01/no-more-eoy-lists-for-music/</link>
       <pubDate>Wed, 15 Jan 2025 20:23:00 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2025/01/no-more-eoy-lists-for-music/</guid>
+      <guid>https://brihadeesh.github.io/blog/2025/01/no-more-eoy-lists-for-music/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes from a withdrawal episode (part 0)</title>
-      <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0/</link>
+      <link>https://brihadeesh.github.io/blog/2023/03/notes-from-a-withdrawal-episode-part-0/</link>
       <pubDate>Thu, 30 Mar 2023 00:12:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode-part-0/</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/03/notes-from-a-withdrawal-episode-part-0/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes from a withdrawal episode</title>
-      <link>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode/</link>
+      <link>https://brihadeesh.github.io/blog/2023/03/notes-from-a-withdrawal-episode/</link>
       <pubDate>Thu, 16 Mar 2023 23:57:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023/03/notes-from-a-withdrawal-episode/</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/03/notes-from-a-withdrawal-episode/</guid>
       <description></description>
     </item>
     <item>
       <title>Moved to Sourcehut!</title>
-      <link>http://localhost:1313/blog/2023/03/moved-to-sourcehut/</link>
+      <link>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut/</link>
       <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2023/03/moved-to-sourcehut/</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/03/moved-to-sourcehut/</guid>
       <description></description>
     </item>
     <item>
       <title>Albums of the Year (2022)</title>
-      <link>http://localhost:1313/blog/2023/02/albums-of-the-year-2022/</link>
+      <link>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022/</link>
       <pubDate>Mon, 27 Feb 2023 17:24:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023/02/albums-of-the-year-2022/</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/02/albums-of-the-year-2022/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog revamp and starting to understand Hugo better</title>
-      <link>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</link>
+      <link>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</link>
       <pubDate>Thu, 23 Feb 2023 16:24:00 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Finding Death metal</title>
-      <link>http://localhost:1313/blog/2022/12/finding-death-metal/</link>
-      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022/12/finding-death-metal/</guid>
+      <guid>https://brihadeesh.github.io/blog/2023/02/blog-revamp-and-starting-to-understand-hugo-better/</guid>
       <description></description>
     </item>
     <item>
       <title>Having to use Windows, reluctantly</title>
-      <link>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly/</link>
+      <link>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022/12/having-to-use-windows-reluctantly/</guid>
+      <guid>https://brihadeesh.github.io/blog/2022/12/having-to-use-windows-reluctantly/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo, Org and starting over at a new blog</title>
-      <link>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/</link>
+      <link>https://brihadeesh.github.io/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/</link>
       <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/</guid>
+      <guid>https://brihadeesh.github.io/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/</guid>
       <description></description>
     </item>
     <item>
       <title>How culture has affected natural selection in man</title>
-      <link>http://localhost:1313/blog/2018/03/how-culture-has-affected-natural-selection-in-man/</link>
+      <link>https://brihadeesh.github.io/blog/2018/03/how-culture-has-affected-natural-selection-in-man/</link>
       <pubDate>Tue, 06 Mar 2018 18:49:00 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2018/03/how-culture-has-affected-natural-selection-in-man/</guid>
+      <guid>https://brihadeesh.github.io/blog/2018/03/how-culture-has-affected-natural-selection-in-man/</guid>
       <description></description>
     </item>
     <item>
       <title>Pets, put in context</title>
-      <link>http://localhost:1313/blog/2017/06/pets-put-in-context/</link>
+      <link>https://brihadeesh.github.io/blog/2017/06/pets-put-in-context/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2017/06/pets-put-in-context/</guid>
+      <guid>https://brihadeesh.github.io/blog/2017/06/pets-put-in-context/</guid>
       <description></description>
     </item>
     <item>
       <title>Sustainability and the Common Man</title>
-      <link>http://localhost:1313/blog/2017/03/sustainability-and-the-common-man/</link>
+      <link>https://brihadeesh.github.io/blog/2017/03/sustainability-and-the-common-man/</link>
       <pubDate>Mon, 20 Mar 2017 10:43:00 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2017/03/sustainability-and-the-common-man/</guid>
+      <guid>https://brihadeesh.github.io/blog/2017/03/sustainability-and-the-common-man/</guid>
       <description></description>
     </item>
     <item>
       <title>Misunderstanding evolution</title>
-      <link>http://localhost:1313/blog/2017/02/misunderstanding-evolution/</link>
+      <link>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution/</link>
       <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2017/02/misunderstanding-evolution/</guid>
+      <guid>https://brihadeesh.github.io/blog/2017/02/misunderstanding-evolution/</guid>
       <description></description>
     </item>
     <item>
       <title>A dark side to pets</title>
-      <link>http://localhost:1313/blog/2016/01/a-dark-side-to-pets/</link>
+      <link>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2016/01/a-dark-side-to-pets/</guid>
+      <guid>https://brihadeesh.github.io/blog/2016/01/a-dark-side-to-pets/</guid>
       <description></description>
     </item>
   </channel>

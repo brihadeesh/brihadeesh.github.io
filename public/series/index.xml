@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on peregrinator&#39;s blog</title>
-    <link>https://brihadeesh.github.io/series/</link>
+    <link>http://localhost:1313/series/</link>
     <description>Recent content in Series on peregrinator&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://github.com/brihadeesh/brihadeesh.github.io/) for this site is [MIT](https://github.com/brihadeesh/brihadeesh.github.io/blob/main/LICENSE)</copyright>
-    <lastBuildDate>Wed, 15 Jan 2025 20:23:00 +0530</lastBuildDate>
-    <atom:link href="https://brihadeesh.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jan 2025 12:41:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Listening Habits</title>
-      <link>https://brihadeesh.github.io/series/listening-habits/</link>
-      <pubDate>Wed, 15 Jan 2025 20:23:00 +0530</pubDate>
-      <guid>https://brihadeesh.github.io/series/listening-habits/</guid>
+      <link>http://localhost:1313/series/listening-habits/</link>
+      <pubDate>Thu, 23 Jan 2025 12:41:00 +0530</pubDate>
+      <guid>http://localhost:1313/series/listening-habits/</guid>
       <description></description>
     </item>
     <item>
       <title>Living With ADHD</title>
-      <link>https://brihadeesh.github.io/series/living-with-adhd/</link>
+      <link>http://localhost:1313/series/living-with-adhd/</link>
       <pubDate>Thu, 30 Mar 2023 00:12:00 +0000</pubDate>
-      <guid>https://brihadeesh.github.io/series/living-with-adhd/</guid>
+      <guid>http://localhost:1313/series/living-with-adhd/</guid>
       <description></description>
     </item>
     <item>
       <title>Blogging With Emacs</title>
-      <link>https://brihadeesh.github.io/series/blogging-with-emacs/</link>
+      <link>http://localhost:1313/series/blogging-with-emacs/</link>
       <pubDate>Sat, 04 Mar 2023 03:51:00 +0530</pubDate>
-      <guid>https://brihadeesh.github.io/series/blogging-with-emacs/</guid>
+      <guid>http://localhost:1313/series/blogging-with-emacs/</guid>
       <description></description>
     </item>
     <item>
       <title>Responsible Pet Ownership</title>
-      <link>https://brihadeesh.github.io/series/responsible-pet-ownership/</link>
+      <link>http://localhost:1313/series/responsible-pet-ownership/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://brihadeesh.github.io/series/responsible-pet-ownership/</guid>
+      <guid>http://localhost:1313/series/responsible-pet-ownership/</guid>
       <description></description>
     </item>
     <item>
       <title>Evolution Theory</title>
-      <link>https://brihadeesh.github.io/series/evolution-theory/</link>
+      <link>http://localhost:1313/series/evolution-theory/</link>
       <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://brihadeesh.github.io/series/evolution-theory/</guid>
+      <guid>http://localhost:1313/series/evolution-theory/</guid>
       <description></description>
     </item>
   </channel>

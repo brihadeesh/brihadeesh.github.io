@@ -137,11 +137,10 @@ html {
     font-family: "Monorale", "sans-serif";
 }
 
-.comment {
+.comment
     padding: 5px 0;
-    font-size: 12px;
-    padding:5px 0;
     font-size: 11px;
+    padding:5px 0;
     line-height: 150%;
 }
 .author {

@@ -49,6 +49,13 @@
     showName = false
     target = "_blank"
 
+[[main]]
+  identifier = "search"
+  weight = 99
+  [main.params]
+    action = "search"
+    icon = "search"
+
 # [[main]]
 #   identifier = "series"
 #   pageref = "series"
@@ -68,3 +75,8 @@
 #   name = "Tags"
 #   pageRef = "tags"
 #   weight = 10
+
+[[footer]]
+  identifier = "series"
+  pageref = "series"
+  weight = 10

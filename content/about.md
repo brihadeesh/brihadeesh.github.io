@@ -2,8 +2,8 @@
 title = "about me"
 author = ["peregrinator"]
 draft = false
-toc = false
-layout = "simple"
+toc = true
+layout = "about"
 showDate = false
 showAuthor = false
 showBreadcrumbs = true
@@ -29,6 +29,8 @@ itself comes from Latin and is synonymous with [traveller or wanderer](https://w
 
 
 ## About me {#about-me}
+
+{{< figure src="img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="rounded w-36 overflow-hidden float-left mr-6 !mb-0 !mt-1 mx-auto items-start" >}}
 
 I'm a 29 year old, neurodivergent, cat supremacist that sometimes
 cosplays as an ecologist. I'm big on F(L)OSS and currently run a [Void

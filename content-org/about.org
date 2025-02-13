@@ -6,19 +6,18 @@
 
 * What does /peregrinator/ mean?
 
-Firstly, about the name, /peregrinator/ refers to one of two things,
-both of which I had in mind while selecting the name. I had initially
-wanted to go with Lammergeier (the German name for the [[https://birdsoftheworld.org/bow/species/lammer1/cur/introduction][Bearded
-Vulture]]) but then it was taken on most platforms. /Peregrinator/ is the
-subspecies name for the Shaheen Falcon (/[[https://birdsoftheworld.org/bow/species/perfal/cur/systematics#subsp][Falco peregrinus peregrinator]]/
-— you might have to scroll down here.) It is a beautiful falcon with a
-dark back and upper-wings, a white throat, and vivid rufous
-underparts. It has a typical dark "helmet" as seen in the
-photo. Juveniles have incomplete hemlets and are a paler shade of
-rufous. Shaheen Bagh also happens to be the name of the place chosen
-by the people protesting the unjust implementation of the CAA and NRC
-in 2019. The word /peregrinator/ itself comes from Latin and is
-synonymous with [[https://www.merriam-webster.com/dictionary/peregrinator][traveller or wanderer]].
+/Peregrinator/ refers to one of two things, both of which I had in mind
+while selecting the name. I had initially wanted to go with
+Lammergeier (the German name for the [[https://birdsoftheworld.org/bow/species/lammer1/cur/introduction][Bearded Vulture]]) but then it was
+taken on most platforms. /Peregrinator/ is the subspecies name for the
+Shaheen Falcon (/[[https://birdsoftheworld.org/bow/species/perfal/cur/systematics#subsp][Falco peregrinus peregrinator]]/ — you might have to
+scroll down here.) It is a beautiful falcon with a dark back and
+upper-wings, a white throat, and vivid rufous underparts. It has a
+typical dark "helmet" as seen in the photo. Juveniles have incomplete
+hemlets and are a paler shade of rufous. Shaheen Bagh also happens to
+be the name of the place chosen by the people protesting the unjust
+implementation of the CAA and NRC in 2019. The word /peregrinator/
+itself comes from Latin and is synonymous with [[https://www.merriam-webster.com/dictionary/peregrinator][traveller or wanderer]].
 
 #+hugo: {{< figure src="img/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
 
@@ -44,7 +43,7 @@ adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org
 
 I can be contacted at [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]] or through
 Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]]. The
-source for this website is on my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut]].
+source for this website is on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut]].
 
 * Publications
 

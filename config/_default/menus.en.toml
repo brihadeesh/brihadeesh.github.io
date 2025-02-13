@@ -17,24 +17,28 @@
 
 [[main]]
   name = "emacs"
-  pageRef = "emacs"
-  weight = 10
+  url = "https://emacs.peregrinator.site"
+  weight = 50
+  [main.params]
+    target = "_self"
 
 [[main]]
   name = "about"
-  pageRef = "about"
-  weight = 10
+  url = "https://peregrinator.site"
+  weight = 30
+  [main.params]
+    target = "_self"
 
 [[main]]
   identifier = "search"
-  weight = 20
+  weight = 40
   [main.params]
     action = "search"
 
 [[main]]
   name = "rss"
   url = "/index.xml"
-  weight = 40
+  weight = 50
   [main.params]
     icon = "rss"
     showName = false
@@ -43,7 +47,7 @@
 [[main]]
   name = "buymeacoffee"
   url = "https://www.buymeacoffee.com/peregrinator"
-  weight = 30
+  weight = 60
   [main.params]
     icon = "buymeacoffee"
     showName = false

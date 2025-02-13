@@ -1,3 +1,62 @@
-<div id="comments-section" data-bsky-uri="{{ .Params.bsky }}"></div>
+<div
+  id="comments-bsky"
+  data-bsky-uri="{{ .Params.bsky }}"
+  class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+>
+  <div id="comment-post">
+    <h2 class="comment-post-header font-semibold">
+      Comments via Bluesky
+    </h2>
+
+    <div class="comment-post-meta text-sm">
+      <a
+        class="comment-post-meta-actions text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        href="#"
+        target="_blank"
+      >
+        <span id="likeCount">0</span> likes |
+        <span id="repostCount">0</span> reposts |
+        <span id="replyCount">0</span> replies
+      </a>
+
+      <p class="block" id="comment-post-meta-reply">Join the conversation on
+	<a
+          class="font-semibold text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500"
+          href="#"
+          target="_blank"
+	  >Bluesky</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="comments-container"></div>
+
+  <template id="comment-template">
+    <div class="comment flex items-start space-x-2 my-4">
+      <div class="avatar pt-2 w-[60px] h-[60px] flex-none">
+        <a class="avatar-link w-full" href="" target="_blank">
+          <img
+            class="avatar-img rounded-full overflow-hidden w-[60px] h-[60px] object-cover"
+            src=""
+            alt="avatar"
+          />
+        </a>
+      </div>
+
+      <div class="comment-body">
+        <a class="author-link font-semibold text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="#" target="_blank">
+          <span class="author-name" title=""></span>
+        </a>
+
+        <p class="comment-text text-neutral-700"></p>
+
+        <div class="comment-actions text-xs text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+          <a class="actions-link" href="#" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+
 {{ $comments := resources.Get "js/bsky-comments.js" }}
 <script src="{{ $comments.RelPermalink }}"></script>

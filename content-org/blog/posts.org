@@ -2320,6 +2320,20 @@ reactions from people on Bluesky.
 
 #+hugo: {{< bandcamp id="2419701666" >}}
 
+** DRAFT The Sourcehut builds dilemma
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-sourcehut-builds-dilemma
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4
+:EXPORT_DATE: [2025-02-13 Thu 11:46]
+:END:
+
+I've been deploying this blog using Sourcehut builds from my Sourcehut
+repo for some time now but I've started to have doubts about whether I
+want to stick to this given the [[https://srht.site/limitations][limitations]] on Sourcehut pages. I've
+not had to thing about this a lot until recently since I also switched
+up my Hugo theme to [[https://github.com/jpanther/congo][Congo]], which has a few additional features. These
+in turn inspired me to incorporate comments from Bluesky too but this
+doesn't work on the [[https://peregrinator.site][site]] deployed from my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut repo]].
 
 
 * Fiction

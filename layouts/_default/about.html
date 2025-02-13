@@ -5,16 +5,8 @@
 <article>
   <header class="max-w-prose">
 
-{{ $align := .align | default "start" }}
 <section
-  class="not-prose {{ if eq $align "start" }}
-    items-start
-  {{ else if eq $align "end" }}
-    items-end
-  {{ else }}
-    items-center
-  {{ end }} mb-3 flex flex-col"
->
+  class="not-prose items-start mb-3 flex flex-col">
   {{ $lazy := site.Params.enableImageLazyLoading | default true }}
   {{ $altText := (site.Language.Params.Author.name | default "Author") }}
   {{ with site.Language.Params.Author.image }}

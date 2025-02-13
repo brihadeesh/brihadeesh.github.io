@@ -50,7 +50,7 @@ adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org
 
 I can be contacted at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
 Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator). The
-source for this website is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehut](https://git.sr.ht/~peregrinator/peregrinator.site).
+source for this website is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehut](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
 
 
 ## Publications {#publications}

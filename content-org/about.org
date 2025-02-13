@@ -43,7 +43,7 @@ adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org
 
 I can be contacted at [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]] or through
 Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]]. The
-source for this website is on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut]].
+source for this website is on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Sourcehut]].
 
 * Publications
 

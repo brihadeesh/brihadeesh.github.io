@@ -16,24 +16,17 @@
   weight = 10
 
 [[main]]
+  name = "about"
+  pageRef = "about"
+  weight = 30
+
+
+[[main]]
   name = "emacs"
   url = "https://emacs.peregrinator.site"
   weight = 50
   [main.params]
     target = "_self"
-
-[[main]]
-  name = "about"
-  url = "https://peregrinator.site"
-  weight = 30
-  [main.params]
-    target = "_self"
-
-[[main]]
-  identifier = "search"
-  weight = 40
-  [main.params]
-    action = "search"
 
 [[main]]
   name = "rss"

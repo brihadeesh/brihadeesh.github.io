@@ -53,22 +53,22 @@ source for this website is on my [[https://github.com/brihadeesh/peregrinator.si
 
 [[https://ajcb.in/archive_july_20.php][July 2020: Asian Journal of Conservation Biology 9(1):71-78]]
 
-#+hugo: {{< embed-pdf url="/pdfs/jul2020_AJCB.pdf" >}}
+#+hugo: {{< embed-pdf "/pdfs/jul2020_AJCB.pdf" >}}
 
 ** 2. Focal Plant and Neighbourhood Fruit Crop Size Effects on Fruit Removal by Frugivores in a Semi-Arid Landscape Invaded by Lantana camara L.
 
 [[https://www.jstor.org/stable/e27137849][February 2019: Current Science 116(3):405-411]]
 
-#+hugo: {{< embed-pdf url="/pdfs/feb2019_CurSci.pdf" >}}
+#+hugo: {{< embed-pdf "/pdfs/feb2019_CurSci.pdf" >}}
 
 ** 3. Discourage voice playbacks in the breeding season
 
 [[https://indianbirds.in/vol-10-no-5/][November 2015: Indian BIRDS 10(5):140]]
 
-#+hugo: {{< embed-pdf url="/pdfs/nov2015_IndianBirds.pdf" >}}
+#+hugo: {{< embed-pdf "/pdfs/nov2015_IndianBirds.pdf" >}}
 
 ** 4. Nesting of the Spot-billed Duck Anas poecilorhyncha in Chennai city
 
 [[https://indianbirds.in/vol-10-no-2/][June 2015: Indian BIRDS 10(2):55-56]]
 
-#+hugo: {{< embed-pdf url="/pdfs/jun2015_IndianBirds.pdf" >}}
+#+hugo: {{< embed-pdf "/pdfs/jun2015_IndianBirds.pdf" >}}

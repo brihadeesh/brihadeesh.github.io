@@ -32,7 +32,20 @@ also play the guitar, listen to typically a lot of metal and try to
 make my own music occasionally. I currently use [[https://ardour.org][Ardour 7.0]] for audio
 production, which I'm very new to, and hope to get started with the
 [[https://sonic-pi.net][Sonic Pi]] as both a standalone instrument as well as a synth for
-instruments I don't play myself.
+instruments I don't play myself. I also travel a lot for work and end
+up visiting a lot of new places while I'm working. I will be starting
+working on maintaining a log of that too sometime soon on this
+blog. Especially the birding reports with links to eBird checklists
+since I'm in the habit of maintaining them.
+
+#+hugo: {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V from April 2022" >}}
+
+I have a cat at home and she's called Goose V. Goose the Fifth since
+there have been four "Geese" before her. She's predominantly a stray
+that just comes and hangs out at our place, but I hope to adopt her
+soon. She loves to come and hang out, especially in the winters since
+it gets cold and she needs additional warmth. She doesn't mind jumping
+up next to me on the chair or on the bed even.
 
 * The blog
 

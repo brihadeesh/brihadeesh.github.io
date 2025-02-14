@@ -1,7 +1,7 @@
 +++
 title = "Albums of the Year (2022)"
 author = ["peregrinator"]
-date = 2023-02-27T17:24:00+00:00
+date = 2023-02-27T17:24:00+05:30
 draft = false
 +++
 
@@ -97,7 +97,7 @@ I’m sold on the Purple Man.
 
 I came across them when the Dead Neanderthals tweeted
 
-{{< tweet user="deadneanderthal" id="1620492647025758210" >}}
+{{< x user="deadneanderthal" id="1620492647025758210" >}}
 
 and I’m in full agreement. Being the dedicated Death fan (for life),
 this does indeed sound like Chuck Schuldiner performed the

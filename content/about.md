@@ -45,7 +45,7 @@ working on maintaining a log of that too sometime soon on this
 blog. Especially the birding reports with links to eBird checklists
 since I'm in the habit of maintaining them.
 
-{{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V from April 2022" >}}
+{{< figure src="/img/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V from Jan 2023" >}}
 
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
@@ -53,6 +53,8 @@ that just comes and hangs out at our place, but I hope to adopt her
 soon. She loves to come and hang out, especially in the winters since
 it gets cold and she needs additional warmth. She doesn't mind jumping
 up next to me on the chair or on the bed even.
+
+{{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto rotate-90" caption="Goose V from April 2022" >}}
 
 
 ## The blog {#the-blog}

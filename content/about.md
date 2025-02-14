@@ -51,6 +51,8 @@ on Emacs, exported to markdown via [ox-hugo](https://github.com/kaushalmodi/ox-h
 the default [go-org](https://github.com/niklasfasching/go-org) parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html) about it.
 
+{{< figure src="/img/2023_blog.png" alt="screenshot of the blog from 2023" class="right rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
+
 I initially used a very basic blog-centric layout based off the [Etch](https://github.com/LukasJoswiak/etch/)
 theme, a simple dark theme with just a list of posts on the homepage.
 In 2023, I switched to a theme-agnostic setup based on [Drew Devault's
@@ -60,8 +62,6 @@ me well and I had published this as a Sourcehut page. It took me until
 early this year to switch to this domain. and I have since moved to a
 personalised version of the [Congo](https://github.com/jpanther/congo) theme. The source for this website
 is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehut](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
-
-{{< figure src="/img/2023_blog.png" alt="screenshot of the blog from 2023" class="rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
 
 
 ## Contact {#contact}

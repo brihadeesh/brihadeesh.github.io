@@ -42,3 +42,9 @@ series = "series"
 ogImage = "https://peregrinator.site/img/avatar.png"
 ogImagealt = "A silhoutte of a Shaheen falcon"
 fediCreator = "@peregrinator@mastodon.social"
+
+[privacy]
+  [privacy.x]
+    disable = false
+    enableDNT = true
+    simple = false

@@ -1,17 +1,10 @@
 +++
 title = "Notes from a withdrawal episode (part 0)"
 author = ["peregrinator"]
-date = 2023-03-30T00:12:00+00:00
+date = 2023-03-30T00:12:00+05:30
 draft = false
 series = "Living with ADHD"
 +++
-
-<div class="alert-info alert">
-
-The footnotes point to placeholders currently. I'll fill those in
-soon.
-
-</div>
 
 I was starkly aware of how my last post, [Notes from a withdrawal
 episode](/blog/2023/03/notes-from-a-withdrawal-episode.html), felt somewhat incomplete but couldn't really figure out what
@@ -105,6 +98,13 @@ This doesn't cover everything, nor was it intended to. There are a few
 things I have consciously omitted for the sake of my own
 sanity. Regardless, I hope to make this and the other post into a
 series I keep adding to periodically.
+
+<div class="alert-info alert">
+
+The footnotes point to placeholders currently. I'll fill those in
+soon.
+
+</div>
 
 [^fn:1]: _citation?_
 [^fn:2]: _citation?_

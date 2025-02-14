@@ -1693,12 +1693,6 @@ in no way sustainable in the long term for myriad reasons.
 :EXPORT_DATE: [2023-03-30 Thu 00:12]
 :END:
 
-#+attr_html: :class alert-info
-#+begin_alert
-The footnotes point to placeholders currently. I'll fill those in
-soon.
-#+end_alert
-
 I was starkly aware of how my last post, [[file:/blog/2023/03/notes-from-a-withdrawal-episode.html][Notes from a withdrawal
 episode]], felt somewhat incomplete but couldn't really figure out what
 it was that was "missing" from it. Someone on twitter had asked
@@ -1792,6 +1786,12 @@ This doesn't cover everything, nor was it intended to. There are a few
 things I have consciously omitted for the sake of my own
 sanity. Regardless, I hope to make this and the other post into a
 series I keep adding to periodically.
+
+#+attr_html: :class alert-info
+#+begin_alert
+The footnotes point to placeholders currently. I'll fill those in
+soon.
+#+end_alert
 
 ** DRAFT Finding Death metal
 :PROPERTIES:

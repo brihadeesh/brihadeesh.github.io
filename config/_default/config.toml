@@ -20,8 +20,13 @@ misc = "/:section/:year/:month/:filename"
 emacs = "/:section/:slug"
 fiction = "/:section/:year/:month/:filename"
 
+[markup]
+[markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
 
 [markup.highlight]
 tabWidth = 2

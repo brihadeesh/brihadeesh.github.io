@@ -23,7 +23,7 @@ itself comes from Latin and is synonymous with [[https://www.merriam-webster.com
 
 * About me
 
-#+hugo: {{< figure src="img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="rounded w-36 overflow-hidden float-left mr-6 !mb-0 !mt-1 mx-auto items-start" >}}
+#+hugo: {{< figure src="/img/about.png" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
 
 I'm a 29 year old, neurodivergent, cat supremacist that sometimes
 cosplays as an ecologist. I'm big on F(L)OSS and currently run a [[https://voidlinux.org][Void
@@ -53,22 +53,22 @@ source for this website is on my [[https://github.com/brihadeesh/peregrinator.si
 
 [[https://ajcb.in/archive_july_20.php][July 2020: Asian Journal of Conservation Biology 9(1):71-78]]
 
-#+hugo: {{< embed-pdf "/pdfs/jul2020_AJCB.pdf" >}}
+#+hugo: {{< embed-pdf src="/pdf/jul2020_AJCB.pdf" width="125%" height="500px" >}}
 
 ** 2. Focal Plant and Neighbourhood Fruit Crop Size Effects on Fruit Removal by Frugivores in a Semi-Arid Landscape Invaded by Lantana camara L.
 
 [[https://www.jstor.org/stable/e27137849][February 2019: Current Science 116(3):405-411]]
 
-#+hugo: {{< embed-pdf "/pdfs/feb2019_CurSci.pdf" >}}
+#+hugo: {{< embed-pdf src="/pdf/feb2019_CurSci.pdf" width="125%" height="500px" >}}
 
 ** 3. Discourage voice playbacks in the breeding season
 
 [[https://indianbirds.in/vol-10-no-5/][November 2015: Indian BIRDS 10(5):140]]
 
-#+hugo: {{< embed-pdf "/pdfs/nov2015_IndianBirds.pdf" >}}
+#+hugo: {{< embed-pdf src="/pdf/nov2015_IndianBirds.pdf" width="125%" height="500px" >}}
 
 ** 4. Nesting of the Spot-billed Duck Anas poecilorhyncha in Chennai city
 
 [[https://indianbirds.in/vol-10-no-2/][June 2015: Indian BIRDS 10(2):55-56]]
 
-#+hugo: {{< embed-pdf "/pdfs/jun2015_IndianBirds.pdf" >}}
+#+hugo: {{< embed-pdf src="/pdf/jun2015_IndianBirds.pdf" width="125%" height="500px" >}}

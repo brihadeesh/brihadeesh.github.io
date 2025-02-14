@@ -1,1 +1,10 @@
-<embed src= "{{ .Get 0 }}" width= "100%" height= "1000px" type="application/pdf" >
+<!-- https://tinytip.co/tips/html-pdf-params/ -->
+{{ $pdf_url := .Get "src" }}
+<object
+    data="{{ $pdf_url }}"
+    {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+    {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    type="application/pdf"
+>
+    <p>Unable to display PDF file. <a href="{{ $pdf_url }}">Download</a> instead.</p>
+</object>

@@ -32,7 +32,7 @@ itself comes from Latin and is synonymous with [traveller or wanderer](https://w
 
 {{< figure src="/img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
 
-I'm a 29 year old, neurodivergent, cat supremacist that sometimes
+I'm a 29 year old, neurodivergent, cat person who sometimes
 cosplays as an ecologist. I'm big on F(L)OSS and currently run a [Void
 Linux](https://voidlinux.org) installation with a manually compiled version of Emacs 29. I
 also play the guitar, listen to typically a lot of metal and try to

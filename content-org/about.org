@@ -23,7 +23,7 @@ itself comes from Latin and is synonymous with [[https://www.merriam-webster.com
 
 * About me
 
-#+hugo: {{< figure src="/img/about.png" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
+#+hugo: {{< figure src="/img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
 
 I'm a 29 year old, neurodivergent, cat supremacist that sometimes
 cosplays as an ecologist. I'm big on F(L)OSS and currently run a [[https://voidlinux.org][Void
@@ -43,11 +43,16 @@ since I'm in the habit of maintaining them.
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
 that just comes and hangs out at our place, but I hope to adopt her
-soon. She loves to come and hang out, especially in the winters since
+soon. She loves to be indoors, especially in the winters since
 it gets cold and she needs additional warmth. She doesn't mind jumping
-up next to me on the chair or on the bed even.
+up next to me on the chair or on the bed even. At night sometimes, she
+even likes to sleep next to me. She's a talkative cat and often gets
+very aggressive with the head bumps and the purring. She does get quite loud
+too at times, especially when I per her on her lower back, which she
+loves, incidentally. Occasionally, shes so calm that she lets me
+scratch her belly too, and this is rare apparently.
 
-#+hugo: {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto rotate-90" caption="Goose V from April 2022" >}}
+#+hugo: {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V from Oct 2023" >}}
 
 * The blog
 

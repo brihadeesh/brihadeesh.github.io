@@ -93,28 +93,28 @@ Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). 
 ## Publications {#publications}
 
 
-### 1. A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae) {#1-dot-a-contribution-on-morphology-and-distribution-of-the-rock-toad-duttaphrynus-hololius--günther-1876--with-first-report-on-deformity-calling-and-breeding-behaviours--amphibia-anura-bufonidae}
+1. A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae) {#1-dot-a-contribution-on-morphology-and-distribution-of-the-rock-toad-duttaphrynus-hololius--günther-1876--with-first-report-on-deformity-calling-and-breeding-behaviours--amphibia-anura-bufonidae}
 
 [July 2020: Asian Journal of Conservation Biology 9(1):71-78](https://ajcb.in/archive_july_20.php)
 
 {{< embed-pdf src="/pdf/jul2020_AJCB.pdf" width="125%" height="500px" >}}
 
 
-### 2. Focal Plant and Neighbourhood Fruit Crop Size Effects on Fruit Removal by Frugivores in a Semi-Arid Landscape Invaded by Lantana camara L. {#2-dot-focal-plant-and-neighbourhood-fruit-crop-size-effects-on-fruit-removal-by-frugivores-in-a-semi-arid-landscape-invaded-by-lantana-camara-l-dot}
+2. Focal Plant and Neighbourhood Fruit Crop Size Effects on Fruit Removal by Frugivores in a Semi-Arid Landscape Invaded by Lantana camara L. {#2-dot-focal-plant-and-neighbourhood-fruit-crop-size-effects-on-fruit-removal-by-frugivores-in-a-semi-arid-landscape-invaded-by-lantana-camara-l-dot}
 
 [February 2019: Current Science 116(3):405-411](https://www.jstor.org/stable/e27137849)
 
 {{< embed-pdf src="/pdf/feb2019_CurSci.pdf" width="125%" height="500px" >}}
 
 
-### 3. Discourage voice playbacks in the breeding season {#3-dot-discourage-voice-playbacks-in-the-breeding-season}
+3. Discourage voice playbacks in the breeding season {#3-dot-discourage-voice-playbacks-in-the-breeding-season}
 
 [November 2015: Indian BIRDS 10(5):140](https://indianbirds.in/vol-10-no-5/)
 
 {{< embed-pdf src="/pdf/nov2015_IndianBirds.pdf" width="125%" height="500px" >}}
 
 
-### 4. Nesting of the Spot-billed Duck Anas poecilorhyncha in Chennai city {#4-dot-nesting-of-the-spot-billed-duck-anas-poecilorhyncha-in-chennai-city}
+4. Nesting of the Spot-billed Duck Anas poecilorhyncha in Chennai city {#4-dot-nesting-of-the-spot-billed-duck-anas-poecilorhyncha-in-chennai-city}
 
 [June 2015: Indian BIRDS 10(2):55-56](https://indianbirds.in/vol-10-no-2/)
 

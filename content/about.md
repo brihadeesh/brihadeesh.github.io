@@ -2,7 +2,7 @@
 title = "about me"
 author = ["peregrinator"]
 draft = false
-showTableOfContents = treu
+showTableOfContents = true
 layout = "about"
 showDate = false
 showAuthor = false

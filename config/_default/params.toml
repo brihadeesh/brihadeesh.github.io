@@ -13,7 +13,7 @@ defaultThemeColor = "#FFFFFF"
 
 enableSearch = true
 enableCodeCopy = true
-enableImageLazyLoading = true
+enableImageLazyLoading = false
 enableImageWebp = true
 
 # robots = ""

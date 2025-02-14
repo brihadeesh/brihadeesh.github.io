@@ -41,18 +41,33 @@ production, which I'm very new to, and hope to get started with the
 [Sonic Pi](https://sonic-pi.net) as both a standalone instrument as well as a synth for
 instruments I don't play myself.
 
-This is a _static_ website and is intended to (eventually) be the home
-for my blog, Emacs configuration and work updates. I hope to
-eventually move to or host it there. This website uses a [Hugo](https://gohugo.io)
-framework and uses a personalised version of the [Congo](https://github.com/jpanther/congo)
-theme. Everything you see here was written in [Org-mode](https:orgmode.org) on Emacs,
-exported to markdown via [ox-hugo](https://github.com/kaushalmodi/ox-hugo) for better compatibility - the
-default [go-org](https://github.com/niklasfasching/go-org) parser doesn't appear to handle Org syntax
+
+## The blog {#the-blog}
+
+This is a _static_ website and is intended to be the home for my blog,
+Emacs configuration and work updates. The blog is written and entirely
+works out of my Emacs! Everything you see here was written in [Org-mode](https:orgmode.org)
+on Emacs, exported to markdown via [ox-hugo](https://github.com/kaushalmodi/ox-hugo) for better compatibility -
+the default [go-org](https://github.com/niklasfasching/go-org) parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html) about it.
 
-I can be contacted at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
-Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator). The
-source for this website is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehut](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
+I initially used a very basic blog-centric layout based off the [Etch](https://github.com/LukasJoswiak/etch/)
+theme, a simple dark theme with just a list of posts on the homepage.
+In 2023, I switched to a theme-agnostic setup based on [Drew Devault's
+blog](https://drewdevault.com) because it just looked so good in a ridiculously minimal sense
+that appeals only to someone a little obsessively retro. This served
+me well and I had published this as a Sourcehut page. It took me until
+early this year to switch to this domain. and I have since moved to a
+personalised version of the [Congo](https://github.com/jpanther/congo) theme. The source for this website
+is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehut](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
+
+{{< figure src="/img/2023_blog.png" alt="screenshot of the blog from 2023" class="rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
+
+
+## Contact {#contact}
+
+I can be emailed at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
+Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
 
 
 ## Publications {#publications}

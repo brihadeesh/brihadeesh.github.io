@@ -158,13 +158,12 @@ html {
 /* floating images in text? */
 .right {
     float:right;
-    max-width: 200px;
+    max-width: 400px;
     margin-left: 5px
 }
 
 .left {
     float:left;
     max-width: 200px;
-    max-height: 200px;
     margin-right: 20px
 }

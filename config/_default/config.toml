@@ -8,7 +8,7 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 summaryLength = 0
 
-timeout = 90
+timeout = 60
 
 [pagination]
   pagerSize = 10

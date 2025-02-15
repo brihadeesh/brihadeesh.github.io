@@ -167,3 +167,61 @@ html {
     max-width: 200px;
     margin-right: 20px
 }
+
+.webring {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .articles {
+    display: flex;
+
+    @media(max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .article {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    padding: 0.5rem;
+
+    margin: 0 0.5rem;
+
+    @media(max-width: 640px) {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .article:first-child {
+    margin-left: 0;
+  }
+
+  .article:last-child {
+    margin-right: 0;
+  }
+
+  .summary {
+    font-size: 0.8rem;
+    flex: 1 1 0;
+  }
+
+  .attribution {
+    float: right;
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 3;
+  }
+
+  .date {
+    color: black;
+  }
+}

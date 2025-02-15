@@ -21,12 +21,13 @@
       <h3 class="flex-grow mb-2 text-bold">
         <a class="text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="{{.Link}}" target="_blank" rel="noopener">{{.Title}}</a>
       </h3>
+    <div class=flex-1">
+      <p class="text-sm">{{.Summary}}</p><br>
 
-      <p class="flex-1 text-sm">{{.Summary}}</p><br>
-
-      <p class="flex-1 text-neutral-500 dark:text-neutral-400 pt-3 text-xs">
+      <p class="text-neutral-500 dark:text-neutral-400 pt-3 text-xs">
         via&nbsp<a class="font-semibold text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="{{.SourceLink}}">{{.SourceTitle}}</a></p>
 	<p class="date text-xs">{{.Date | datef "January 2, 2006"}}</p>
+    </div>
     </div>
     {{end}}
   </div>

@@ -2323,7 +2323,7 @@ reactions from people on Bluesky.
 ** DONE The Sourcehut builds dilemma
 :PROPERTIES:
 :EXPORT_FILE_NAME: the-sourcehut-builds-dilemma
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4 :bsky "https://bsky.app/profile/peregrinator.site/post/3li7ezk4mqc26"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4 :bsky "https://bsky.app/profile/peregrinator.site/post/3li7fx3v4m22d"
 :EXPORT_DATE: [2025-02-15 Thu 14:32]
 :END:
 

@@ -38,7 +38,7 @@ working on maintaining a log of that too sometime soon on this
 blog. Especially the birding reports with links to eBird checklists
 since I'm in the habit of maintaining them.
 
-#+hugo: {{< figure src="/img/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V from Jan 2023" >}}
+#+hugo: {{< figure src="/img/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
 
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
@@ -52,7 +52,7 @@ too at times, especially when I per her on her lower back, which she
 loves, incidentally. Occasionally, shes so calm that she lets me
 scratch her belly too, and this is rare apparently.
 
-#+hugo: {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V from Oct 2023" >}}
+#+hugo: {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
 
 * The blog
 

@@ -127,4 +127,4 @@ considering putting up a gallery of some of my photos on this
 site. Perhaps as a subdomain like with my Emacs blog. There's
 hopefully a lot more to come!
 
-{{< figure src="img/bougainvillea_night.jpg" alt="a blooming Bougainvillea tree at night" caption="A blooming bougainvillea tree at night. April 2023" >}}
+{{< figure src="/images/bougainvillea_night.jpg" alt="a blooming Bougainvillea tree at night" caption="A blooming bougainvillea tree at night. Photo by Brihadeesh S, April 2023" >}}

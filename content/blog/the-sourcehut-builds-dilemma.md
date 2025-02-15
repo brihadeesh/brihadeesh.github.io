@@ -5,6 +5,7 @@ date = 2025-02-15T14:32:00+05:30
 draft = false
 series = "Blogging with Emacs"
 series_order = 4
+bsky = "https://bsky.app/profile/peregrinator.site/post/3li7ezk4mqc26"
 +++
 
 I've been deploying this blog using Sourcehut builds from my Sourcehut
@@ -106,7 +107,7 @@ article as
 
 ```yaml
 
-bsky: "https:/bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
+bsky: "https://bsky.app/profile/peregrinator.site/post/3li7ezk4mqc26"
 ```
 
 for example for this page.
@@ -128,3 +129,9 @@ site. Perhaps as a subdomain like with my Emacs blog. There's
 hopefully a lot more to come!
 
 {{< figure src="/images/bougainvillea_night.jpg" alt="a blooming Bougainvillea tree at night" caption="A blooming bougainvillea tree at night. Photo by Brihadeesh S, April 2023" >}}
+
+In other news, I've moved to a new theme for the blog. I now use a
+fully personalised version of the [Congo](https://github.com/jpanther/congo) theme. So now there's an
+optional dark theme too. The blog also uses a new typeface: [Monorale](https://github.com/samvk/monorale-raleway-sober),
+a font based on [Raleway](https://github.com/impallari/Raleway). I find it a lot more comfortable for reading
+online.

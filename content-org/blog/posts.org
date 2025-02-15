@@ -2323,7 +2323,7 @@ reactions from people on Bluesky.
 ** DONE The Sourcehut builds dilemma
 :PROPERTIES:
 :EXPORT_FILE_NAME: the-sourcehut-builds-dilemma
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4 :bsky "https://bsky.app/profile/peregrinator.site/post/3li7ezk4mqc26"
 :EXPORT_DATE: [2025-02-15 Thu 14:32]
 :END:
 
@@ -2427,7 +2427,7 @@ article as
 
 #+begin_src yaml
 
-bsky: "https:/bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
+bsky: "https://bsky.app/profile/peregrinator.site/post/3li7ezk4mqc26"
 
 #+end_src
 
@@ -2450,7 +2450,11 @@ hopefully a lot more to come!
 
 #+hugo: {{< figure src="/images/bougainvillea_night.jpg" alt="a blooming Bougainvillea tree at night" caption="A blooming bougainvillea tree at night. Photo by Brihadeesh S, April 2023" >}}
 
-
+In other news, I've moved to a new theme for the blog. I now use a
+fully personalised version of the [[https://github.com/jpanther/congo][Congo]] theme. So now there's an
+optional dark theme too. The blog also uses a new typeface: [[https://github.com/samvk/monorale-raleway-sober][Monorale]],
+a font based on [[https://github.com/impallari/Raleway][Raleway]]. I find it a lot more comfortable for reading
+online.
 
 * Fiction
 ** DONE Ahab

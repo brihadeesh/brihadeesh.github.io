@@ -182,3 +182,28 @@ html {
       flex-direction: column;
     }
   }
+
+      .article:first-child {
+    margin-left: 0;
+  }
+
+  .article:last-child {
+    margin-right: 0;
+  }
+
+  .summary {
+    font-size: 0.8rem;
+    flex: 1 1 0;
+  }
+
+  .attribution {
+    float: right;
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 3;
+  }
+
+  .date {
+    color: black;
+  }
+}

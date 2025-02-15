@@ -33,7 +33,7 @@ nocturnal and hence most of the hunting takes place in the
 dark. Similarly, most feral and domesticated cats are active at night
 and that's when most of the hunting happens.
 
-[[/images/20161201_goose_catsnake.jpg][file:/images/20161201_goose_catsnake.jpg]]
+#+hugo: {{< figure src="/images/20161201_goose_catsnake.jpg" alt="Grey and white tabby cat killing a small snake" caption="Goose I in the process of killing a cat snake" >}}
 
 On the first of December 2016, I was sitting at home in. My father
 said something which at first I ignored. Then, realising that he'd
@@ -2320,11 +2320,11 @@ reactions from people on Bluesky.
 
 #+hugo: {{< bandcamp id="2419701666" >}}
 
-** DRAFT The Sourcehut builds dilemma
+** DONE The Sourcehut builds dilemma
 :PROPERTIES:
 :EXPORT_FILE_NAME: the-sourcehut-builds-dilemma
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4
-:EXPORT_DATE: [2025-02-13 Thu 11:46]
+:EXPORT_DATE: [2025-02-15 Thu 14:32]
 :END:
 
 I've been deploying this blog using Sourcehut builds from my Sourcehut
@@ -2333,8 +2333,122 @@ want to stick to this given the [[https://srht.site/limitations][limitations]] o
 not had to thing about this a lot until recently since I also switched
 up my Hugo theme to [[https://github.com/jpanther/congo][Congo]], which has a few additional features. These
 in turn inspired me to incorporate comments from Bluesky too but this
-doesn't work on the [[https://peregrinator.site][site]] deployed from my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut repo]].
+didn't work on the version of this site deployed from my [[https://git.sr.ht/~peregrinator/peregrinator.site][Sourcehut
+repo]]. I've anyway been working on other things on the blog so I
+decided to fix this and rearrange how I present the blog a little
+while at it.
 
+So now the blog is split into two parts: the main blog, of which you
+can see articles like this one, and the [[https://emacs.peregrinator.site/][Emacs blog]] on a
+subdomain. This part of the blog is hosted on my Github and deploys
+with Github Pages to allow Bluesky comments adopted from [[https://kau.sh/blog/bluesky-comments-for-hugo/][Kaushik
+Gopal's blog post]].
+
+
+*** Comments from Bluesky
+
+It has a very basic setup. There is a [[https://github.com/brihadeesh/peregrinator.site/blob/main/layouts/partials/comments.html][~comments.html~]] partial in
+=~/layouts/partials/= that basically just references a JavaScript script
+at =~/assets/js/bsky-comments.js=. The comments partial is as displayed
+below. It is a very basic HTML script with Tailwind CSS built in.
+
+#+begin_src html :tangle no
+
+<div
+  id="comments-bsky"
+  data-bsky-uri="{{ .Params.bsky }}"
+  class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+>
+  <div id="comment-post">
+    <h2 class="comment-post-header font-semibold">
+      Comments via Bluesky
+    </h2>
+
+    <div class="comment-post-meta text-sm">
+      <a
+        class="comment-post-meta-actions text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        href="#"
+        target="_blank"
+      >
+        <span id="likeCount">0</span> likes |
+        <span id="repostCount">0</span> reposts |
+        <span id="replyCount">0</span> replies
+      </a>
+
+      <p class="block">Join the conversation on
+	<a
+	  id="comment-post-meta-reply"
+          class="font-semibold text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500"
+          href="#"
+          target="_blank"
+	  >Bluesky</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="comments-container"></div>
+
+  <template id="comment-template">
+    <div class="comment flex items-start space-x-2 m-20 my-10">
+      <div class="avatar pt-2 w-[50px] h-[50px] flex-none">
+        <a class="avatar-link w-full" href="" target="_blank">
+          <img
+            class="avatar-img rounded-full overflow-hidden w-[50px] h-[50px] object-cover"
+            src=""
+            alt="avatar"
+          />
+        </a>
+      </div>
+
+      <div class="comment-body text-sm m-20 p-10">
+        <a class="author-link font-semibold text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="#" target="_blank">
+          <span class="author-name" title=""></span>
+        </a>
+
+        <p class="comment-text text-primary"></p>
+
+        <div class="comment-actions text-xs text-neutral-500 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+          <a class="actions-link" href="#" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+
+{{ $comments := resources.Get "js/bsky-comments.js" }}
+<script src="{{ $comments.RelPermalink }}"></script>
+
+#+end_src
+
+It has a very simple working principle. It gathers comments using the
+JS script from a regular Bluesky post that references the article at
+hand, the link to which is provided in the Hugo front-matter for the
+article as
+
+#+begin_src yaml
+
+bsky: "https:/bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
+
+#+end_src
+
+for example for this page.
+
+The [[https://github.com/brihadeesh/peregrinator.site/blob/main/assets/js/bsky-comments.js][~bsky-comments.js~]] script is a little longer so I won't be
+displaying it here. It is more or less unmodified from that provided
+on Kaushik Gopal's Github.
+
+The comments partial is called from the [[https://github.com/brihadeesh/peregrinator.site/blob/main/layouts/_default/single.html][~single.html~]] template in
+=~/layouts/_default=.
+
+*** Other changes, and those planned
+
+I've updated my [[/about.md][about page]] with a little more about myself and my
+publications. There are now photos of Goose, my cat, too. I am
+considering putting up a gallery of some of my photos on this
+site. Perhaps as a subdomain like with my Emacs blog. There's
+hopefully a lot more to come!
+
+#+hugo: {{< figure src="img/bougainvillea_night.jpg" alt="a blooming Bougainvillea tree at night" caption="A blooming bougainvillea tree at night. April 2023" >}}
 
 * Fiction
 ** DONE Ahab

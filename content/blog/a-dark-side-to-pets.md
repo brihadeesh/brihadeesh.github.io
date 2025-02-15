@@ -1,10 +1,11 @@
 +++
 title = "A dark side to pets"
 author = ["peregrinator"]
-date = 2016-01-15T00:00:00+00:00
-lastmod = 2024-12-27T01:50:28+00:00
+date = 2016-01-15T00:00:00+05:30
+lastmod = 2025-02-15T13:12:20+05:30
 draft = false
 series = "Responsible Pet Ownership"
+series_order = 1
 +++
 
 We all love cats, but are they really what we believe them to be? A
@@ -26,7 +27,7 @@ nocturnal and hence most of the hunting takes place in the
 dark. Similarly, most feral and domesticated cats are active at night
 and that's when most of the hunting happens.
 
-{{< figure src="/images/20161201_goose_catsnake.jpg" link="/images/20161201_goose_catsnake.jpg" >}}
+{{< figure src="/images/20161201_goose_catsnake.jpg" alt="Grey and white tabby cat killing a small snake" caption="Goose I in the process of killing a cat snake" >}}
 
 On the first of December 2016, I was sitting at home in. My father
 said something which at first I ignored. Then, realising that he'd

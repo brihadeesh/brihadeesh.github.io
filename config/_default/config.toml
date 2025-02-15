@@ -43,7 +43,7 @@ series = "series"
 [params]
 ogImage = "https://peregrinator.site/img/avatar.png"
 ogImagealt = "A silhoutte of a Shaheen falcon"
-fediCreator = "@peregrinator@mastodon.social"
+fediCreator = "@peregrinator@fosstodon.org"
 
 [privacy]
   [privacy.x]

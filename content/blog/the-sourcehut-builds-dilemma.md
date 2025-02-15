@@ -102,12 +102,12 @@ below. It is a very basic HTML script with Tailwind CSS built in.
 
 It has a very simple working principle. It gathers comments using the
 JS script from a regular Bluesky post that references the article at
-hand, the link to which is provided in the Hugo front-matter for the
+hand, the link to which is provided in the Org metadata for the
 article as
 
 ```yaml
 
-bsky: "https://bsky.app/profile/peregrinator.site/post/3li7ezk4mqc26"
+:bsky "https://bsky.app/profile/peregrinator.site/post/3li7fx3v4m22d"
 ```
 
 for example for this page.

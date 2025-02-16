@@ -11,7 +11,7 @@ summaryLength = 0
 timeout = 60
 
 [pagination]
-  pagerSize = 10
+  pagerSize = 100
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

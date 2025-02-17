@@ -14,6 +14,7 @@ copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons
 
 [params.author]
   name = "Brihadeesh S"
+  email = "contact@peregrinator.site"
   image = "img/avatar.png"
   # headline = "I'm only human"
   # bio = "A little bit about you"

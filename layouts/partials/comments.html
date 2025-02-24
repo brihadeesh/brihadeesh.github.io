@@ -5,7 +5,16 @@
 >
   <div id="comment-post">
     <h2 class="comment-post-header font-semibold">
-      Comments via Bluesky
+      Join the conversation on
+	<a
+	  id="comment-post-meta-reply"
+          class="font-semibold m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="#"
+          target="_blank"
+	  >Bluesky</a>
+	or reply via
+	<a class="font-semibold m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+	   href="mailto:{{ $.Site.Params.Author.email }}?subject={{ replace (printf "Re: %s" .Page.Title) "\"" "'" }}">email</a>
     </h2>
 
     <div class="comment-post-meta text-sm">
@@ -18,18 +27,6 @@
         <span id="repostCount">0</span> reposts |
         <span id="replyCount">0</span> replies
       </a>
-
-      <p class="block">Join the conversation on
-	<a
-	  id="comment-post-meta-reply"
-          class="font-semibold m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="#"
-          target="_blank"
-	  >Bluesky</a>;
-	or, reply via
-	<a class="font-semibold m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-	   href="mailto:{{ $.Site.Params.Author.email }}?subject={{ replace (printf "Re: %s" .Page.Title) "\"" "'" }}">email</a>
-														      </p>
     </div>
   </div>
 

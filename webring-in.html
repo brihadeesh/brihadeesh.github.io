@@ -20,7 +20,7 @@
         via <a class="text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="{{.SourceLink}}">{{.SourceTitle}}</a>
       </p>
       <p class="date text-xs text-"><time datetime="{{ .Date }}">  
-{{ .Date | datef .Site.Params.dateFormat }}
+{{ .Date | datef (return time.Format (site.Params.dateFormat)) }}
 </time>
     </p>
     </div>

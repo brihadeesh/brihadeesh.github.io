@@ -19,7 +19,8 @@
       <p class="source text-sm font-semibold">
         via <a class="text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="{{.SourceLink}}">{{.SourceTitle}}</a>
       </p>
-      <p class="date text-xs text-">{ partial "meta/date.html" .Date }</p>
+      {{ $format := "02.01.2006" }}
+      <p class="date text-xs text-">{{ .Date.Format $format }}</p>
     </div>}
     {{end}}
   </section>

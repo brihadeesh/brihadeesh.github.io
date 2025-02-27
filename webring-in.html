@@ -19,9 +19,9 @@
       <p class="source text-sm font-semibold">
         via <a class="text-neutral-700 transition-transform hover:-translate-x-[2px] hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400 hover:underline hover:decoration-primary-500" href="{{.SourceLink}}">{{.SourceTitle}}</a>
       </p>
-      <p class="date text-xs text-"><time datetime="{{ .Date }}">{{ .Date | date }}</time>
+      <p class="date text-xs text-"><time datetime="{{ .Date }}">{{ dict "Date" (partial "functions/date.html" .) }}</time>
     </p>
-    </div>}
+    </div>
     {{end}}
   </section>
 </section>

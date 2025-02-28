@@ -56,5 +56,4 @@
     </item>
     {{- end }}
   </channel>
-</rs
-  s>
+</rss>

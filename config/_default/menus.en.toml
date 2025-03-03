@@ -15,10 +15,10 @@
   pageRef = "about"
   weight = 10
 
-[[main]]
-  identifier = "series"
-  pageref = "series"
-  weight = 20
+# [[main]]
+#   identifier = "series"
+#   pageref = "series"
+#   weight = 20
 
 [[main]]
   name = "fiction"

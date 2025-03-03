@@ -10,22 +10,22 @@ environment:
   site: peregrinator.srht.site
 tasks:
 - openring: |
-    cd openring
-    go build -o openring
-    sudo cp openring /usr/local/bin/
+    # cd openring
+    # go build -o openring
+    # sudo cp openring /usr/local/bin/
 - build: |
     cd $site
-    /usr/local/bin/openring \
-    -s https://drewdevault.com/blog/index.xml \
-    -s https://popagandhi.com/feed.xml \
-    -s https://kevquirk.com/posts-feed \
-    -s https://amandaswritingblog9.wordpress.com/feed \
-    -s https://ambikamath.com/feed \
-    -s https://noobheavy.com/feed \
-    -s https://www.sleepingvillagereviews.com/14/feed \
-    -s https://torontopubliclibra.substack.com/feed \
-    < webring-in.html \
-    > layouts/partials/webring-out.html
+    # /usr/local/bin/openring \
+    # -s https://drewdevault.com/blog/index.xml \
+    # -s https://popagandhi.com/feed.xml \
+    # -s https://kevquirk.com/posts-feed \
+    # -s https://amandaswritingblog9.wordpress.com/feed \
+    # -s https://ambikamath.com/feed \
+    # -s https://noobheavy.com/feed \
+    # -s https://www.sleepingvillagereviews.com/14/feed \
+    # -s https://torontopubliclibra.substack.com/feed \
+    # < webring-in.html \
+    # > layouts/partials/webring-out.html
     hugo
 - package: |
     cd $site

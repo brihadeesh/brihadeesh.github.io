@@ -3,7 +3,18 @@
         {{ partial "social.html" . }}
     {{ end }}
 
-    <div class="copyright">
+    <div class="social" align="center">
+      <p>
+	Sponsor my work
+	and <a href="https://buymeacoffee.com/peregrinator">buymeacoffee</a>.
+      </p>
+      <p>
+	<a href="https://emacs.peregrinator.site">Emacs</a> |
+	<a href="https://git.sr.ht/~peregrinator">Sourcehut</a> | <a href="https://github.com/brihadeesh">Github</a>
+      </p>
+      </div>
+
+    <div class="copyright" align="center">
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ end }}

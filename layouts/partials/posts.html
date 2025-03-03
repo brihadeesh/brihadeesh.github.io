@@ -1,5 +1,3 @@
-<h1> {{ i18n "posts.title" }} </h1>
-
 {{ range (.Paginate ((where .Site.RegularPages "Type" "in" .Site.MainSections).GroupByDate "2006")).PageGroups }}
 <h2> {{ .Key }} </h2>
 
@@ -8,9 +6,9 @@
 
   {{ range .Pages }}
   <li>
-      <a href="{{ .Permalink }}"> {{ .Title }}</a>
-      <br>
-      <small><time>{{ .Date | time.Format (i18n "posts.date") }}</time></small>
+    <a href="{{ .Permalink }}"> {{ .Title }}</a>
+    <small><time>{{ .Date | time.Format (i18n "posts.date") }}</time></small>
+    <br>
   </li>
   {{ end }}
 

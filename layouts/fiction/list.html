@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<h1> {{ .Title }} </h1>
+
+{{ if .Data.Pages }}
+<ul id="posts">
+
+  {{ range (.Paginate .Pages).Pages }}
+  <li>
+    <a href="{{ .Permalink }}"> {{ .Title }}</a>
+    <small><time>{{ .Date | time.Format (i18n "posts.date") }}</time></small>
+    <br>
+  </li>
+  {{ end }}
+
+</ul>
+{{ end }}
+
+<br>
+
+{{ end }}

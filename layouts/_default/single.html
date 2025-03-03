@@ -14,8 +14,21 @@
     </header>
     {{ partial "series.html" . }}
     {{- .Content -}}
+    <br>
 </article>
 
+<section class="comments">
+  <h3>
+    {{ if .Params.bsky }}
+      Join the conversation on
+      <a href="{{ .Params.bsky }}" target="_blank">Bluesky</a>
+      or
+      {{ end }}
+      reply via
+      <a href="mailto:{{ $.Site.Params.email }}?subject={{ replace (printf "Re: %s" .Page.Title) "\"" "'" }}">email</a>
+													     </h3>
+<br>
+</section>
 
 <section>
   {{/* Openring articles */}}
@@ -29,4 +42,5 @@
   {{ end }}
   {{ end }}
 </section>
+
 {{ end }}

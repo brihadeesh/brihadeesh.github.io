@@ -25,12 +25,12 @@
   pageRef = "fiction"
   weight = 30
 
-[[main]]
-  name = "emacs"
-  url = "https://emacs.peregrinator.site"
-  weight = 50
-  [main.params]
-    target = "_self"
+# [[main]]
+#   name = "emacs"
+#   url = "https://emacs.peregrinator.site"
+#   weight = 50
+#   [main.params]
+#     target = "_self"
 
 [[main]]
   name = "rss"

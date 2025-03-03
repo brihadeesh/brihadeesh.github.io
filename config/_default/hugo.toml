@@ -3,8 +3,7 @@
 # https://jpanther.github.io/congo/docs/getting-started/
 
 baseURL = "https://peregrinator.srht.site"
-# theme = "hugo-theme-mini"
-title = "peregrinator's testing site"
+title = "peregrinator's test site"
 
 dateFormat = "02.01.2006"
 
@@ -29,10 +28,11 @@ pygmentsCodeFences = true
   ogImagealt = "A silhoutte of a Shaheen falcon"
   # Site Author
   author = "Brihadeesh S"
+  email = "contact@peregrinator.site"
   # Author biography
-  bio = "Ecologist who's also into loud and dark music"
+  # bio = "Ecologist who's also into loud and dark music"
   # Site Description, used in HTML meat
-  description = "thoughts and musings about Ecology, Open Source software, music and mental health"
+  # description = "thoughts and musings about Ecology, Open Source software, music and mental health"
   # Website copyright, default: '© Copyright 2021 ❤️ {params.author}'
   copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://github.com/brihadeesh/peregrinator.site/) for this site is [MIT](https://github.com/brihadeesh/peregrinator.site/blob/main/LICENSE)"
   # dark = "off"

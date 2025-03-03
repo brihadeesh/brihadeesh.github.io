@@ -13,7 +13,7 @@ tasks:
 #     cd openring
 #     go build -o openring
 #     sudo cp openring /usr/local/bin/
-# - build: |
+- build: |
 #     cd $site
 #     /usr/local/bin/openring \
 #     -s https://drewdevault.com/blog/index.xml \

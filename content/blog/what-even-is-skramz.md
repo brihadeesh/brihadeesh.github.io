@@ -4,7 +4,6 @@ author = ["peregrinator"]
 date = 2025-01-23T12:41:00+05:30
 draft = true
 series = "Listening habits"
-series_order = 2
 +++
 
 {{< figure src="https://f4.bcbits.com/img/a2964742903_10.jpg" class="left" alt="album cover for Serein's Rivers of Living Water" caption="[Serein - Rivers of Living Water](https://sereinthemetalband.bandcamp.com/album/rivers-of-living-water)" >}}

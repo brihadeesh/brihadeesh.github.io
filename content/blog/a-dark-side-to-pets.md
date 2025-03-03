@@ -2,10 +2,9 @@
 title = "A dark side to pets"
 author = ["peregrinator"]
 date = 2016-01-15T00:00:00+05:30
-lastmod = 2025-02-15T13:12:20+05:30
+lastmod = 2025-03-02T20:59:44+05:30
 draft = false
 series = "Responsible Pet Ownership"
-series_order = 1
 +++
 
 We all love cats, but are they really what we believe them to be? A

@@ -4,7 +4,6 @@ author = ["peregrinator"]
 date = 2025-02-15T14:32:00+05:30
 draft = false
 series = "Blogging with Emacs"
-series_order = 4
 bsky = "https://bsky.app/profile/peregrinator.site/post/3li7fx3v4m22d"
 +++
 

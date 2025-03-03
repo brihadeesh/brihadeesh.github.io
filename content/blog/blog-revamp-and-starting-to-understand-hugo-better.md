@@ -4,7 +4,6 @@ author = ["peregrinator"]
 date = 2023-02-23T16:24:00+05:30
 draft = false
 series = "Blogging with Emacs"
-series_order = 2
 +++
 
 I'd decided to make the switch to a blogging workflow that I could use

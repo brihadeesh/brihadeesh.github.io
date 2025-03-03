@@ -1,0 +1,7 @@
+{{ if .Params.series }}
+<div class="info">
+
+  <p>This article is part of the <a href="/series/{{ .Params.series | urlize }}">{{ .Params.series }}</a> series.</p>
+
+</div>
+{{ end }}

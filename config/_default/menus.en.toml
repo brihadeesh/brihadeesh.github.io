@@ -11,15 +11,19 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "fiction"
-  pageRef = "fiction"
+  name = "about"
+  pageRef = "about"
   weight = 10
 
 [[main]]
-  name = "about"
-  pageRef = "about"
-  weight = 30
+  identifier = "series"
+  pageref = "series"
+  weight = 20
 
+[[main]]
+  name = "fiction"
+  pageRef = "fiction"
+  weight = 30
 
 [[main]]
   name = "emacs"
@@ -37,26 +41,21 @@
     showName = false
     target = "_self"
 
-[[main]]
-  name = "buymeacoffee"
-  url = "https://www.buymeacoffee.com/peregrinator"
-  weight = 60
-  [main.params]
-    icon = "buymeacoffee"
-    showName = false
-    target = "_blank"
-
-[[main]]
-  identifier = "search"
-  weight = 99
-  [main.params]
-    action = "search"
-    icon = "search"
+# [[main]]
+#   name = "buymeacoffee"
+#   url = "https://www.buymeacoffee.com/peregrinator"
+#   weight = 60
+#   [main.params]
+#     icon = "buymeacoffee"
+#     showName = false
+#     target = "_blank"
 
 # [[main]]
-#   identifier = "series"
-#   pageref = "series"
-#   weight = 10
+#   identifier = "search"
+#   weight = 99
+#   [main.params]
+#     action = "search"
+#     icon = "search"
 
 # [[main]]
 #   identifier = "locale"

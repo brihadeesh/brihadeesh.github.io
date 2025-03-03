@@ -1,10 +1,9 @@
 +++
 title = "Misunderstanding evolution"
 author = ["peregrinator"]
-date = 2017-02-25T00:00:00+00:00
-lastmod = 2024-12-27T01:50:28+00:00
+date = 2017-02-25T00:00:00+05:30
+lastmod = 2025-03-02T20:59:51+05:30
 draft = false
-series = "Evolution Theory"
 +++
 
 Who does really understand evolution? (Wait, is it even true?!) Even

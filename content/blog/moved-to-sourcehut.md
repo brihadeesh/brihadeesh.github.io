@@ -4,7 +4,6 @@ author = ["peregrinator"]
 date = 2023-03-04T03:51:00+05:30
 draft = false
 series = "Blogging with Emacs"
-series_order = 3
 +++
 
 I wrote to Drew DeVault a couple of days back, after much deliberation

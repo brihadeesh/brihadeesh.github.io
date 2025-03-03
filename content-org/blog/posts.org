@@ -10,7 +10,7 @@
 ** DONE A dark side to pets
 :PROPERTIES:
 :EXPORT_FILE_NAME: a-dark-side-to-pets
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Responsible Pet Ownership" :series_order 1
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Responsible Pet Ownership"
 :EXPORT_HUGO_AUTO_SET_LASTMOD: t
 :EXPORT_DATE: [2016-01-15]
 :END:
@@ -175,7 +175,6 @@ discuss this aspect of the issue in another post.
 ** DONE Misunderstanding evolution
 :PROPERTIES:
 :EXPORT_FILE_NAME: misunderstanding-evolution
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Evolution Theory"
 :EXPORT_HUGO_AUTO_SET_LASTMOD: t
 :EXPORT_DATE: [2017-02-25]
 :END:
@@ -711,7 +710,7 @@ articles that should be up later.
 ** DONE Pets, put in context
 :PROPERTIES:
 :EXPORT_FILE_NAME: pets-put-in-context
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Responsible Pet Ownership" :series_order 2
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Responsible Pet Ownership"
 :EXPORT_HUGO_AUTO_SET_LASTMOD: t
 :EXPORT_DATE: [2017-06-15]
 :END:
@@ -1038,7 +1037,7 @@ of natural selection.
 ** DONE Hugo, Org and starting over at a new blog
 :PROPERTIES:
 :EXPORT_FILE_NAME: hugo-org-and-starting-over-at-a-new-blog
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 1
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs"
 :EXPORT_DATE: [2022-12-05]
 :END:
 
@@ -1246,7 +1245,7 @@ to change but almost no-one had it figured until I got here.
 ** DONE Blog revamp and starting to understand Hugo better
 :PROPERTIES:
 :EXPORT_FILE_NAME: blog-revamp-and-starting-to-understand-hugo-better
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 2
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs"
 :EXPORT_DATE: [2023-02-23 Thu 16:24]
 :END:
 
@@ -1579,7 +1578,7 @@ indicates.
 ** DONE Moved to Sourcehut!
 :PROPERTIES:
 :EXPORT_FILE_NAME: moved-to-sourcehut
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 3
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs"
 :EXPORT_DATE: [2023-03-04 Sat 03:51]
 :END:
 
@@ -2008,7 +2007,7 @@ met has ever shared anything even remotely similar.
 ** DONE No more EOY lists for music
 :PROPERTIES:
 :EXPORT_FILE_NAME: no-more-eoy-lists-for-music
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :series_order 1 :bsky "https://bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :bsky "https://bsky.app/profile/peregrinator.site/post/3lfs43xp5vk2s"
 :EXPORT_DATE: [2025-01-15 Thu 20:23]
 :END:
 
@@ -2214,7 +2213,7 @@ hope I end up making it a habit to write up pieces like this!
 ** DONE The Sourcehut builds dilemma
 :PROPERTIES:
 :EXPORT_FILE_NAME: the-sourcehut-builds-dilemma
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :series_order 4 :bsky "https://bsky.app/profile/peregrinator.site/post/3li7fx3v4m22d"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :bsky "https://bsky.app/profile/peregrinator.site/post/3li7fx3v4m22d"
 :EXPORT_DATE: [2025-02-15 Thu 14:32]
 :END:
 
@@ -2350,7 +2349,7 @@ online.
 ** DRAFT What even is skramz
 :PROPERTIES:
 :EXPORT_FILE_NAME: what-even-is-skramz
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :series_order 2
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits"
 :EXPORT_DATE: [2025-01-23 Thu 12:41]
 :END:
 

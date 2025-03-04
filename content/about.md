@@ -87,8 +87,8 @@ is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehu
 ## Contact {#contact}
 
 I can be emailed at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
-Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). My Sourcehut is at [`~peregrinator`](https://git.sr.ht/~peregrinator)
-and my Github is at [`brihadeesh`](https://github.com/brihadeesh). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
+Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). My Sourcehut is at
+[`~peregrinator`](https://git.sr.ht/~peregrinator). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
 
 
 ## Publications {#publications}

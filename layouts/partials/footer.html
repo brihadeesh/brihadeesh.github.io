@@ -1,28 +1,26 @@
+<footer id="social">
+    <nav>
+      <ul>
+        {{ range .Site.Menus.footer.ByWeight -}}
+        <li>
+          {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
+        </li>
+        {{- end }}
+      </ul>
+    </nav>
+</footer>
+
 <footer id="footer">
-    {{ if .Site.Params.Social }}
-        {{ partial "social.html" . }}
-    {{ end }}
-
-    <div class="social">
-      <p>
-	<a href="https://emacs.peregrinator.site">Emacs</a> |
-	<a href="https://bsky.app/profile/peregrinator.site">Bluesky</a> |
-	<a href="https://git.sr.ht/~peregrinator">Sourcehut</a> |
-	<a href="https://github.com/brihadeesh">Github</a> |
-	<a href="https://buymeacoffee.com/peregrinator">Buymeacoffee</a>
-      </p>
-      </div>
-
-    <div class="copyright">
+  <div class="copyright">
     {{ with .Site.Params.copyright }}
-        {{ . | markdownify }}
+    {{ . | markdownify }}
     {{ end }}
-    </div>
+  </div>
 
-    <div class="subscribe">
-      <p>
-	<a href="/index.xml">RSS</a>
-      </p>
-    </div>
+  <div class="subscribe">
+    <p>
+      <a href="/index.xml">Subscribe</a>
+    </p>
+  </div>
 
 </footer>

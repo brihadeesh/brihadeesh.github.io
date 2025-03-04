@@ -26,31 +26,6 @@
   weight = 30
 
 # [[main]]
-#   name = "emacs"
-#   url = "https://emacs.peregrinator.site"
-#   weight = 50
-#   [main.params]
-#     target = "_self"
-
-# [[main]]
-#   name = "rss"
-#   url = "/index.xml"
-#   weight = 50
-#   [main.params]
-#     icon = "rss"
-#     showName = false
-#     target = "_self"
-
-# [[main]]
-#   name = "buymeacoffee"
-#   url = "https://www.buymeacoffee.com/peregrinator"
-#   weight = 60
-#   [main.params]
-#     icon = "buymeacoffee"
-#     showName = false
-#     target = "_blank"
-
-# [[main]]
 #   identifier = "search"
 #   weight = 99
 #   [main.params]
@@ -76,3 +51,46 @@
 #   identifier = "series"
 #   pageref = "series"
 #   weight = 10
+
+[[footer]]
+  name = "emacs"
+  title = "Emacs"
+  url = "https://emacs.peregrinator.site"
+  weight = 10
+  [footer.params]
+    target = "_self"
+
+# [[footer]]
+#   name = "Email"
+#   url = "mailto:contact@peregrinator.site"
+#   weight = 20
+#   [footer.params]
+#     target = "_blank"
+
+[[footer]]
+  name = "Bluesky"
+  url = "https://bsky.app/profile/peregrinator.site"
+  weight = 30
+  [footer.params]
+    target = "_blank"
+
+[[footer]]
+  name = "Sourcehut"
+  url = "https://git.sr.ht/~peregrinator"
+  weight = 40
+  [footer.params]
+    target = "_blank"
+
+# [[footer]]
+#   name = "Github"
+#   url = "https://github.com/brihadeesh"
+#   weight = 50
+#   [footer.params]
+#     target = "_blank"
+
+[[footer]]
+  name = "buymeacoffee"
+  url = "https://www.buymeacoffee.com/peregrinator"
+  weight = 60
+  [footer.params]
+    target = "_blank"

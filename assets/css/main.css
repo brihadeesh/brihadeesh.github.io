@@ -753,6 +753,49 @@ footer {
     padding-right: 20px;
 }
 
+/* footer menu */
+
+footer#social {
+    margin: 25px 0;
+}
+
+footer#social a {
+    color: #313a3d;
+    text-decoration: none;
+}
+
+footer#social a:hover {
+    text-decoration: underline;
+}
+
+footer#social h2 {
+    display: inline;
+    font-size: 21px;
+    font-size: 2.1rem;
+    margin: 0 8px 0 0;
+}
+
+footer#social nav {
+    display: inline-block;
+}
+
+footer#social nav ul {
+    list-style-type: none;
+    font-size: 1.05em;
+    text-transform: lowercase;
+    margin: 0;
+    padding: 0;
+}
+
+footer#social nav ul li {
+    display: inline;
+    margin: 0 3px;
+}
+
+footer#social nav ul li a {
+    color: #ccc;
+}
+
 /* Openring */
 /* .webring { */
 /*     margin-top: 2rem; */

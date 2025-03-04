@@ -43,8 +43,6 @@ black metal acts such as [Lamp of Murmuur](https://lampofmurmuur.bandcamp.com) a
 
 ## What I've really been listening to {#what-i-ve-really-been-listening-to}
 
-{{< figure src="/images/week2_2025.png" >}}
-
 What really has kept me going through this weird time is at the
 intersection of sludge, hardcore, death metal and black metal. Here's
 a sample of what kind of music I've been listening to over the last

@@ -50,13 +50,13 @@ since I'm in the habit of maintaining them.
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
 that just comes and hangs out at our place, but I hope to adopt her
-soon. She loves to be indoors, especially in the winters since
-it gets cold and she needs additional warmth. She doesn't mind jumping
-up next to me on the chair or on the bed even. At night sometimes, she
-even likes to sleep next to me. She's a talkative cat and often gets
-very aggressive with the head bumps and the purring. She does get quite loud
-too at times, especially when I per her on her lower back, which she
-loves, incidentally. Occasionally, shes so calm that she lets me
+soon. She loves to be indoors, especially in the winters since it gets
+cold and she needs additional warmth. She doesn't mind jumping up next
+to me on the chair or on the bed even. At night sometimes, she even
+likes to sleep next to me. She's a talkative cat and often gets very
+aggressive with the head bumps and the purring. She does get quite
+loud too at times, especially when I pet her on her lower back, which
+she loves, incidentally. Occasionally, shes so calm that she lets me
 scratch her belly too, and this is rare apparently.
 
 {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
@@ -87,7 +87,8 @@ is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehu
 ## Contact {#contact}
 
 I can be emailed at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
-Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
+Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). My Sourcehut is at [`~peregrinator`](https://git.sr.ht/~peregrinator)
+and my Github is at [`brihadeesh`](https://github.com/brihadeesh). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
 
 
 ## Publications {#publications}

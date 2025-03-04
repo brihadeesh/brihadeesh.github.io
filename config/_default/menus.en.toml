@@ -32,14 +32,14 @@
 #   [main.params]
 #     target = "_self"
 
-[[main]]
-  name = "rss"
-  url = "/index.xml"
-  weight = 50
-  [main.params]
-    icon = "rss"
-    showName = false
-    target = "_self"
+# [[main]]
+#   name = "rss"
+#   url = "/index.xml"
+#   weight = 50
+#   [main.params]
+#     icon = "rss"
+#     showName = false
+#     target = "_self"
 
 # [[main]]
 #   name = "buymeacoffee"
@@ -72,7 +72,7 @@
 #   pageRef = "tags"
 #   weight = 10
 
-[[footer]]
-  identifier = "series"
-  pageref = "series"
-  weight = 10
+# [[footer]]
+#   identifier = "series"
+#   pageref = "series"
+#   weight = 10

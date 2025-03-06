@@ -32,18 +32,18 @@ itself comes from Latin and is synonymous with [traveller or wanderer](https://w
 
 {{< figure src="/img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
 
-I'm a 29 year old, neurodivergent, cat person who sometimes
-cosplays as an ecologist. I'm big on F(L)OSS and currently run a [Void
-Linux](https://voidlinux.org) installation with a manually compiled version of Emacs 29. I
-also play the guitar, listen to typically a lot of metal and try to
-make my own music occasionally. I currently use [Ardour 7.0](https://ardour.org) for audio
-production, which I'm very new to, and hope to get started with the
-[Sonic Pi](https://sonic-pi.net) as both a standalone instrument as well as a synth for
-instruments I don't play myself. I also travel a lot for work and end
-up visiting a lot of new places while I'm working. I will be starting
-working on maintaining a log of that too sometime soon on this
-blog. Especially the birding reports with links to eBird checklists
-since I'm in the habit of maintaining them.
+I'm a 29 year old, neurodivergent, cat person who sometimes cosplays
+as an ecologist. I'm big on F(L)OSS and currently run a [Void Linux](https://voidlinux.org)
+installation with the pure-gtk version of Emacs 30. I also play the
+guitar, listen to typically a lot of metal and try to make my own
+music occasionally. I currently use [Ardour 7.0](https://ardour.org) for audio production,
+which I'm very new to, and hope to get started with the [Sonic Pi](https://sonic-pi.net) as
+both a standalone instrument as well as a synth for instruments I
+don't play myself. I also travel a lot for work and end up visiting a
+lot of new places while I'm working. I will be starting working on
+maintaining a log of that too sometime soon on this blog. Especially
+the birding reports with links to eBird checklists since I'm in the
+habit of maintaining them.
 
 {{< figure src="/img/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
 
@@ -93,25 +93,29 @@ Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). 
 
 ## Publications {#publications}
 
-1.  A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae)
+
+### A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae) {#a-contribution-on-morphology-and-distribution-of-the-rock-toad-duttaphrynus-hololius--günther-1876--with-first-report-on-deformity-calling-and-breeding-behaviours--amphibia-anura-bufonidae}
 
 [July 2020: Asian Journal of Conservation Biology 9(1):71-78](https://ajcb.in/archive_july_20.php)
 
 {{< embed-pdf src="/pdf/jul2020_AJCB.pdf" width="100%" height="500px" >}}
 
-1.  Focal Plant and Neighbourhood Fruit Crop Size Effects on Fruit Removal by Frugivores in a Semi-Arid Landscape Invaded by Lantana camara L.
+
+### Focal Plant and Neighbourhood Fruit Crop Size Effects on Fruit Removal by Frugivores in a Semi-Arid Landscape Invaded by Lantana camara L. {#focal-plant-and-neighbourhood-fruit-crop-size-effects-on-fruit-removal-by-frugivores-in-a-semi-arid-landscape-invaded-by-lantana-camara-l-dot}
 
 [February 2019: Current Science 116(3):405-411](https://www.jstor.org/stable/e27137849)
 
 {{< embed-pdf src="/pdf/feb2019_CurSci.pdf" width="100%" height="500px" >}}
 
-1.  Discourage voice playbacks in the breeding season
+
+### Discourage voice playbacks in the breeding season {#discourage-voice-playbacks-in-the-breeding-season}
 
 [November 2015: Indian BIRDS 10(5):140](https://indianbirds.in/vol-10-no-5/)
 
 {{< embed-pdf src="/pdf/nov2015_IndianBirds.pdf" width="100%" height="500px" >}}
 
-1.  Nesting of the Spot-billed Duck Anas poecilorhyncha in Chennai city
+
+### Nesting of the Spot-billed Duck Anas poecilorhyncha in Chennai city {#nesting-of-the-spot-billed-duck-anas-poecilorhyncha-in-chennai-city}
 
 [June 2015: Indian BIRDS 10(2):55-56](https://indianbirds.in/vol-10-no-2/)
 

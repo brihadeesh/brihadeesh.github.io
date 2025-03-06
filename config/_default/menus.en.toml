@@ -13,61 +13,7 @@
 [[main]]
   name = "about"
   pageRef = "about"
-<<<<<<< HEAD
   weight = 10
-=======
-  weight = 20
-
-[[main]]
-  name = "emacs"
-  url = "https://emacs.peregrinator.site"
-  weight = 30
-  [main.params]
-    target = "_self"
-
-[[main]]
-   name = "Sourcehut"
-   url = "https://git.sr.ht/~peregrinator"
-   weight = 40
-   [[main.params]]
-   target = "_blank"
-   icon = "sourcehut"
-   showName = false
-
-[[main]]
-   name = "Github"
-   url = "https://github.com/brihadeesh"
-   weight = 50
-   [[main.params]]
-   target = "_blank"
-   icon = "github"
-   showName = false
-
-[[main]]
-  name = "rss"
-  url = "/index.xml"
-  weight = 60
-  [main.params]
-    icon = "rss"
-    showName = false
-    target = "_self"
-
-[[main]]
-  name = "buymeacoffee"
-  url = "https://www.buymeacoffee.com/peregrinator"
-  weight = 70
-  [main.params]
-    icon = "buymeacoffee"
-    showName = false
-    target = "_blank"
-
-[[main]]
-  identifier = "search"
-  weight = 99
-  [main.params]
-    action = "search"
-    icon = "search"
->>>>>>> 72547b9 (added srht and gh to menu)
 
 # [[main]]
 #   identifier = "series"

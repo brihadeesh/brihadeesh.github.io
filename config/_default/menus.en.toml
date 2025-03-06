@@ -75,22 +75,29 @@
     target = "_blank"
 
 [[footer]]
+  name = "public inbox"
+  url = "https://lists.sr.ht/~peregrinator/public_inbox"
+  weight = 40
+  [footer.params]
+    target = "_blank"
+
+[[footer]]
   name = "Sourcehut"
   url = "https://git.sr.ht/~peregrinator"
-  weight = 40
+  weight = 50
   [footer.params]
     target = "_blank"
 
 # [[footer]]
 #   name = "Github"
 #   url = "https://github.com/brihadeesh"
-#   weight = 50
+#   weight = 60
 #   [footer.params]
 #     target = "_blank"
 
 [[footer]]
   name = "buymeacoffee"
   url = "https://www.buymeacoffee.com/peregrinator"
-  weight = 60
+  weight = 70
   [footer.params]
     target = "_blank"

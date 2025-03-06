@@ -1,7 +1,3 @@
-# -- Site Configuration --
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/getting-started/
-
 baseURL = "https://peregrinator.srht.site"
 title = "peregrinator's test site"
 
@@ -37,9 +33,6 @@ pygmentsCodeFences = true
   copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://git.sr.ht/~peregrinator/peregrinator.srht.site/) for this site is [MIT](https://git.sr.ht/~peregrinator/peregrinator.srht.site/tree/main/item/LICENSE)"
   # dark = "off"
   highlight = true
-
-[social]
-  github = "https://github.com/brihadeesh"
 
 [pagination]
   pagerSize = 100

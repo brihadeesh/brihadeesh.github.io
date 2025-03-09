@@ -20,7 +20,7 @@ pygmentsCodeFences = true
 
 # Site parameters
 [params]
-  ogImage = "images/avatar.png"
+  ogImage = "/images/avatar.png"
   ogImagealt = "A silhoutte of a Shaheen falcon"
   # Site Author
   author = "Brihadeesh S"

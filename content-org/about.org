@@ -19,11 +19,11 @@ be the name of the place chosen by the people protesting the unjust
 implementation of the CAA and NRC in 2019. The word /peregrinator/
 itself comes from Latin and is synonymous with [[https://www.merriam-webster.com/dictionary/peregrinator][traveller or wanderer]].
 
-#+hugo: {{< figure src="img/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
+#+hugo: {{< figure src="/images/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
 
 * About me
 
-#+hugo: {{< figure src="/img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
+#+hugo: {{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
 
 I'm a 29 year old, neurodivergent, cat person who sometimes cosplays
 as an ecologist. I'm big on F(L)OSS and currently run a [[https://voidlinux.org][Void Linux]]
@@ -38,7 +38,7 @@ maintaining a log of that too sometime soon on this blog. Especially
 the birding reports with links to eBird checklists since I'm in the
 habit of maintaining them.
 
-#+hugo: {{< figure src="/img/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
+#+hugo: {{< figure src="/images/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
 
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
@@ -52,7 +52,7 @@ loud too at times, especially when I pet her on her lower back, which
 she loves, incidentally. Occasionally, shes so calm that she lets me
 scratch her belly too, and this is rare apparently.
 
-#+hugo: {{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
+#+hugo: {{< figure src="/images/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
 
 * The blog
 
@@ -63,7 +63,7 @@ on Emacs, exported to markdown via [[https://github.com/kaushalmodi/ox-hugo][ox-
 the default [[https://github.com/niklasfasching/go-org][go-org]] parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html][post]] about it.
 
-#+hugo: {{< figure src="/img/2023_blog.png" alt="screenshot of the blog from 2023" class="right rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
+#+hugo: {{< figure src="/images/2023_blog.png" alt="screenshot of the blog from 2023" class="right rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
 
 I initially used a very basic blog-centric layout based off the [[https://github.com/LukasJoswiak/etch/][Etch]]
 theme, a simple dark theme with just a list of posts on the homepage.
@@ -77,8 +77,8 @@ is on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https
 
 * Contact
 
-I can be emailed at [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]] or through
-Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. My Sourcehut is at
+I can be emailed at [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]] or contacted
+through Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. My Sourcehut is at
 [[https://git.sr.ht/~peregrinator][~~peregrinator~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]].
 
 * Publications

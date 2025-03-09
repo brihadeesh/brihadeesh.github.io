@@ -2347,7 +2347,7 @@ online.
 ** DONE Potentially returning to Sourcehut and my FOSS roots
 :PROPERTIES:
 :EXPORT_FILE_NAME: potentially-returning-to-sourcehut-and-my-foss-roots
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :bsky "https://bsky.app/profile/peregrinator.site/post/3ljxapqi2j22q"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :bsky "https://bsky.app/profile/peregrinator.site/post/3ljxbvqdljk2o"
 :EXPORT_DATE: [2025-03-09 Sun 19:36]
 :END:
 

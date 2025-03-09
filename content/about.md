@@ -25,12 +25,12 @@ be the name of the place chosen by the people protesting the unjust
 implementation of the CAA and NRC in 2019. The word _peregrinator_
 itself comes from Latin and is synonymous with [traveller or wanderer](https://www.merriam-webster.com/dictionary/peregrinator).
 
-{{< figure src="img/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
+{{< figure src="/images/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
 
 
 ## About me {#about-me}
 
-{{< figure src="/img/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
+{{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
 
 I'm a 29 year old, neurodivergent, cat person who sometimes cosplays
 as an ecologist. I'm big on F(L)OSS and currently run a [Void Linux](https://voidlinux.org)
@@ -45,7 +45,7 @@ maintaining a log of that too sometime soon on this blog. Especially
 the birding reports with links to eBird checklists since I'm in the
 habit of maintaining them.
 
-{{< figure src="/img/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
+{{< figure src="/images/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
 
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
@@ -59,7 +59,7 @@ loud too at times, especially when I pet her on her lower back, which
 she loves, incidentally. Occasionally, shes so calm that she lets me
 scratch her belly too, and this is rare apparently.
 
-{{< figure src="/img/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
+{{< figure src="/images/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
 
 
 ## The blog {#the-blog}
@@ -71,7 +71,7 @@ on Emacs, exported to markdown via [ox-hugo](https://github.com/kaushalmodi/ox-h
 the default [go-org](https://github.com/niklasfasching/go-org) parser doesn't appear to handle Org syntax
 adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog.html) about it.
 
-{{< figure src="/img/2023_blog.png" alt="screenshot of the blog from 2023" class="right rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
+{{< figure src="/images/2023_blog.png" alt="screenshot of the blog from 2023" class="right rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
 
 I initially used a very basic blog-centric layout based off the [Etch](https://github.com/LukasJoswiak/etch/)
 theme, a simple dark theme with just a list of posts on the homepage.
@@ -86,8 +86,8 @@ is on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehu
 
 ## Contact {#contact}
 
-I can be emailed at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or through
-Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). My Sourcehut is at
+I can be emailed at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or contacted
+through Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). My Sourcehut is at
 [`~peregrinator`](https://git.sr.ht/~peregrinator). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
 
 

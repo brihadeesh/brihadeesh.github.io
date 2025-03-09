@@ -2631,7 +2631,7 @@ highlights.
 ** DONE Should I still be using Firefox?
 :PROPERTIES:
 :EXPORT_FILE_NAME: should-i-still-be-using-firefox
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :bsky ""
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :bsky "https://bsky.app/profile/peregrinator.site/post/3ljxjgnqedc2i"
 :EXPORT_DATE: [2025-03-09 Sun 22:22]
 :END:
 

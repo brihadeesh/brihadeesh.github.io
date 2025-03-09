@@ -3,7 +3,7 @@ title = "Should I still be using Firefox?"
 author = ["peregrinator"]
 date = 2025-03-09T22:22:00+05:30
 draft = false
-bsky = ""
+bsky = "https://bsky.app/profile/peregrinator.site/post/3ljxjgnqedc2i"
 +++
 
 I've been using Firefox ever since I got my first laptop back in 2017,

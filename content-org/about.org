@@ -71,9 +71,10 @@ In 2023, I switched to a theme-agnostic setup based on [[https://drewdevault.com
 blog]] because it just looked so good in a ridiculously minimal sense
 that appeals only to someone a little obsessively retro. This served
 me well and I had published this as a Sourcehut page. It took me until
-early this year to switch to this domain. and I have since moved to a
-personalised version of the [[https://github.com/jpanther/congo][Congo]] theme. The source for this website
-is on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Sourcehut]].
+early this year to switch to this domain. I was using the [[https://github.com/jpanther/congo][Congo]] theme
+until the beginning of March 2025 but I have since moved to a
+personalised version of the [[https://github.com/LukasJoswiak/etch/][Etch]] theme. The source for this website is
+on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Sourcehut]].
 
 * Contact
 

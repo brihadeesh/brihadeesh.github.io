@@ -42,7 +42,6 @@ pygmentsCodeFences = true
 
 [permalinks]
 blog = "/:section/:year/:month/:filename"
-misc = "/:section/:year/:month/:filename"
 fiction = "/:section/:year/:month/:filename"
 
 [markup]

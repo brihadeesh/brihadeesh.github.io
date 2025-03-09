@@ -17,12 +17,11 @@ pygmentsUseClasses = true
 # enable GitHub style code snippets
 pygmentsCodeFences = true
 
-# images in links, i guess
-ogImage = "https://peregrinator.site/img/avatar.png"
-ogImagealt = "A silhoutte of a Shaheen falcon"
 
 # Site parameters
 [params]
+  ogImage = "https://peregrinator.site/img/avatar.png"
+  ogImagealt = "A silhoutte of a Shaheen falcon"
   # Site Author
   author = "Brihadeesh S"
   email = "contact@peregrinator.site"

@@ -30,7 +30,7 @@ itself comes from Latin and is synonymous with [traveller or wanderer](https://w
 
 ## About me {#about-me}
 
-{{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left rounded border-solid border-2 w-40 h-auto" >}}
+{{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left" alt="a photo of me holding my cat Goose" >}}
 
 I'm a 29 year old, neurodivergent, cat person who sometimes cosplays
 as an ecologist. I'm big on F(L)OSS and currently run a [Void Linux](https://voidlinux.org)

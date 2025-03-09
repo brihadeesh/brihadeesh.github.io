@@ -21,7 +21,7 @@ pygmentsCodeFences = true
 # Site parameters
 [params]
   ogImage = "/images/avatar.jpg"
-  ogImagealt = "A silhoutte of a Shaheen falcon"
+  ogImagealt = "a photo of me holding my cat, Goose"
   # Site Author
   author = "Brihadeesh S"
   email = "contact@peregrinator.site"

@@ -4,6 +4,7 @@ author = ["peregrinator"]
 date = 2025-03-09T19:36:00+05:30
 draft = false
 series = "Blogging with Emacs"
+bsky = "https://bsky.app/profile/peregrinator.site/post/3ljxapqi2j22q"
 +++
 
 I wrote about why I'd been considering [moving back to Github](/blog/2025/02/the-sourcehut-builds-dilemma/) to host

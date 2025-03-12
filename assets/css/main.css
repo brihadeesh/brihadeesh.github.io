@@ -756,7 +756,7 @@ footer#social {
 }
 
 footer#social a {
-    color: #313a3d;
+    color: #454545;
     text-decoration: none;
 }
 
@@ -786,10 +786,6 @@ footer#social nav ul {
 footer#social nav ul li {
     display: inline;
     margin: 0 3px;
-}
-
-footer#social nav ul li a {
-    color: #ccc;
 }
 
 /* Openring */

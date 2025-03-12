@@ -30,7 +30,7 @@ pygmentsCodeFences = true
   # Site Description, used in HTML meat
   # description = "thoughts and musings about Ecology, Open Source software, music and mental health"
   # Website copyright, default: '© Copyright 2021 ❤️ {params.author}'
-  copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the [source code](https://github.com/brihadeesh/peregrinator.site) for this site is [MIT](https://github.com/brihadeesh/peregrinator.site/blob/main/LICENSE)"
+  copyright = "The content for this site is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) or [GNU GPL Version 3 or later](https://www.gnu.org/licenses/gpl-3.0.html), the [source code](https://github.com/brihadeesh/peregrinator.site) for this site is [MIT](https://github.com/brihadeesh/peregrinator.site/blob/main/LICENSE)"
   # dark = "off"
   highlight = true
 

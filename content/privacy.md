@@ -63,6 +63,9 @@ Under the following terms:
     technological measures that legally restrict others from doing
     anything the license permits.
 
+All of the Emacs code on this blog is produced under the [GNU GPL
+Version 3 or later](https://www.gnu.org/licenses/gpl-3.0.html) per Emacs convention.
+
 
 ### Source Code {#source-code}
 

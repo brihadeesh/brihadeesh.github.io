@@ -29,7 +29,7 @@ I don't shove cookies down anyone's throat. You're free to use any
 tools to check this. For example [Cookie Metrix](https://www.cookiemetrix.com/) reports that there are
 none.
 
-{{< figure src="/img/cookie_metrix.png" alt="Cookie Metrix report for this website" class="rounded border-solid border-2 w-40 h-auto" caption="Cookie Metrix report for this website" >}}
+{{< figure src="/images/cookie_metrix.png" alt="Cookie Metrix report for this website" class="rounded border-solid border-2 w-40 h-auto" caption="Cookie Metrix report for this website" >}}
 
 
 ## Licenses {#licenses}

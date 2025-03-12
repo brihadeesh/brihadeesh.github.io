@@ -4,6 +4,7 @@ author = ["peregrinator"]
 date = 2025-03-12T17:16:00+05:30
 draft = false
 series = "Listening habits"
+bsky = "https://bsky.app/profile/peregrinator.site/post/3lk6yzb53vc2f"
 +++
 
 {{< figure src="https://f4.bcbits.com/img/a2964742903_10.jpg" class="left" alt="album cover for Serein's Rivers of Living Water" caption="[Serein - Rivers of Living Water](https://sereinthemetalband.bandcamp.com/album/rivers-of-living-water)" >}}
@@ -335,7 +336,10 @@ The album was released through Level Plane Records in August 2003.
 album with a slide (?) and he describes it as an "improvised, fully
 unhinged" one. Alice Simard, who I'd talked about on my [last article](/blog/2025/01/no-more-eoy-lists-for-music/)
 on music also performs an "unhinged" solo on this. It is a sort of
-techy, brutal death metal project with a lot of weird stuff happening.
+techy, brutal death metal project with a lot of weird stuff
+happening. What's even more interesting is that this album was
+recorded live and in one sitting, and all the songs were written in
+one sitting.
 
 The album was released independently in February 2025.
 

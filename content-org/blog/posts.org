@@ -2553,7 +2553,7 @@ without the AI bloat and everything else that's wrong with it?
 ** DONE What even is skramz
 :PROPERTIES:
 :EXPORT_FILE_NAME: what-even-is-skramz
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Listening habits" :bsky "https://bsky.app/profile/peregrinator.site/post/3lk6yzb53vc2f"
 :EXPORT_DATE: [2025-03-12 Tue 17:16]
 :END:
 
@@ -2868,7 +2868,10 @@ The album was released through Level Plane Records in August 2003.
 album with a slide (?) and he describes it as an "improvised, fully
 unhinged" one. Alice Simard, who I'd talked about on my [[/blog/2025/01/no-more-eoy-lists-for-music/][last article]]
 on music also performs an "unhinged" solo on this. It is a sort of
-techy, brutal death metal project with a lot of weird stuff happening.
+techy, brutal death metal project with a lot of weird stuff
+happening. What's even more interesting is that this album was
+recorded live and in one sitting, and all the songs were written in
+one sitting.
 
 The album was released independently in February 2025.
 

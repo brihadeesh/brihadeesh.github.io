@@ -1,5 +1,7 @@
+<h2>Posts Archive</h2>
+
 {{ range (.Paginate ((where .Site.RegularPages "Type" "in" .Site.MainSections).GroupByDate "2006")).PageGroups }}
-<h2> {{ .Key }} </h2>
+<h3> {{ .Key }} </h3>
 
 <ul id="posts">
 
@@ -12,5 +14,5 @@
   {{ end }}
 
 </ul>
-<br>
+
 {{- end }}

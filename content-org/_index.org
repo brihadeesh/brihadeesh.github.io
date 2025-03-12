@@ -11,15 +11,17 @@ hosted on a free Wordpress site. Later events, however, got me
 interested in computers and open source software so I let that wave
 take me to writing about my experiences with it and he rest is what
 you see on this website. I moved from Wordpress to what I'm using
-currently in 2022 and [[/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/][wrote about the move]] too! I've not organised
-posts with tags, or in any way really, but some of them are parts of
-series, as you might discover as you read.
+currently in 2022 and [[/blog/2022/12/hugo-org-and-starting-over-at-a-new-blog/][wrote about the move]] too! I've been listening to
+all kinds of music since fairly early on and I've more recently
+started writing about that too.
 
-I don't intent to have comments displayed on posts but you can [[mailto:~peregrinator/public_inbox@lists.sr.ht][write]]
-to my [[https://lists.sr.ht/~peregrinator/public_inbox][public inbox]] or use the link at the bottom of every article to
-reference specific pieces. I do intend to bring the comments from the old
-Wordpress blog to somewhere everyone can see them but I've not made up
-my mind on how to do that.
+I've not organised posts with tags, or in any way really, but some of
+them are parts of series, as you might discover as you read. I don't
+intent to have comments displayed on posts either but you can [[mailto:~peregrinator/public_inbox@lists.sr.ht][write]] to
+my [[https://lists.sr.ht/~peregrinator/public_inbox][public inbox]] or use the link at the bottom of every article to
+reference specific pieces. I do intend to bring the comments from the
+old Wordpress blog to somewhere everyone can see them but I've not
+made up my mind on how to do that.
 
 I am a little unclear on how to organise articles I've written for the
 blog that have to do with how I use Emacs as yet — i.e whether to have

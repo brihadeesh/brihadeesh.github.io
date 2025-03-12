@@ -50,7 +50,7 @@
     }
 
     footer#social a {
-	color: #cccccc
+	color: #cccccc;
     }
     {{- if not (eq .Site.Params.dark "on") -}}
 }

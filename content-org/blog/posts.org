@@ -2947,6 +2947,15 @@ The album was released independently in October 2017.
 Well, that's it for this time. I hope to write more such pieces
 covering stuff I generally listen to along with newer releases from
 small projects that caught my attention.
+** DRAFT Very little birding in Jharkhand
+:PROPERTIES:
+:EXPORT_FILE_NAME: very-little-birding-in-jharkhand
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Birding journals"
+:EXPORT_DATE: [2025-03-13 Thu 01:48]
+:END:
+
+I recently had the chance to visit and stay at a friend's place in a
+small mining district of Jharkhand called Koderma.
 
 
 

@@ -24,6 +24,7 @@ tasks:
     # -s https://noobheavy.com/feed \
     # -s https://www.sleepingvillagereviews.com/14/feed \
     # -s https://torontopubliclibra.substack.com/feed \
+    # -s https://medium.com/feed/@seemamundoli \
     # < webring-in.html \
     # > layouts/partials/webring-out.html
     hugo

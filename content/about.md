@@ -10,6 +10,9 @@ showBreadcrumbs = true
 showReadingTime = false
 +++
 
+{{< figure src="/images/GK_shaheen-2.jpg" alt="juvenile Shaheen Falcon with a Pond Heron kill" class="right" caption="Photo by Gnanaskandan Kesavabharathi. Aug 2020, Chennai outskirts." >}}
+
+
 ## What does _peregrinator_ mean? {#what-does-peregrinator-mean}
 
 _Peregrinator_ refers to one of two things, both of which I had in mind
@@ -23,14 +26,17 @@ typical dark "helmet" as seen in the photo. Juveniles have incomplete
 hemlets and are a paler shade of rufous. Shaheen Bagh also happens to
 be the name of the place chosen by the people protesting the unjust
 implementation of the CAA and NRC in 2019. The word _peregrinator_
-itself comes from Latin and is synonymous with [traveller or wanderer](https://www.merriam-webster.com/dictionary/peregrinator).
+itself comes from Latin and is synonymous with [traveller or
+wanderer](https://www.merriam-webster.com/dictionary/peregrinator). The photo in the website logo is of a juvenile Shaheen,
+displaying most of the characteristic features mentioned before, with
+a Pond Heron kill.
 
-{{< figure src="/images/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. July 2016, Chennai outskirts." >}}
+{{< figure src="/images/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. Jul 2016, Chennai outskirts." >}}
+
+{{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left" alt="a photo of me holding my cat Goose" >}}
 
 
 ## About me {#about-me}
-
-{{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left" alt="a photo of me holding my cat Goose" >}}
 
 I'm a 29 year old, neurodivergent, cat person who sometimes cosplays
 as an ecologist. I'm big on F(L)OSS and currently run a [Void Linux](https://voidlinux.org)
@@ -45,7 +51,7 @@ maintaining a log of that too sometime soon on this blog. Especially
 the birding reports with links to eBird checklists since I'm in the
 habit of maintaining them.
 
-{{< figure src="/images/goose_IV-2.jpg" alt="A white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Jan 2023" >}}
+{{< figure src="/images/goose_V-2.jpg" alt="me holding a white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Me holding a bleppy Goose V. Photo by Brihadeesh S, Jan 2024" >}}
 
 I have a cat at home and she's called Goose V. Goose the Fifth since
 there have been four "Geese" before her. She's predominantly a stray
@@ -56,10 +62,20 @@ to me on the chair or on the bed even. At night sometimes, she even
 likes to sleep next to me. She's a talkative cat and often gets very
 aggressive with the head bumps and the purring. She does get quite
 loud too at times, especially when I pet her on her lower back, which
-she loves, incidentally. Occasionally, shes so calm that she lets me
+she loves, incidentally. Occasionally, she's so calm that she lets me
 scratch her belly too, and this is rare apparently.
 
-{{< figure src="/images/goose_IV-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
+{{< figure src="/images/goose_V-1.jpg" alt="A white and gray cat with pale green eyes" class="rounded border-solid border-2 w-40 h-auto" caption="Goose V. Photo by Brihadeesh S, Oct 2023" >}}
+
+My last cat was also a stray and he was called Goose IV. He was so
+incredibly affectionate that he would literally climb on top of me and
+sleep in the winters, something Goose V has never done. He was a male
+and so he would often end up in gruesome fights with a ginger cat,
+whose territory overlapped with his, and ultimately he succumbed to
+injuries after a particularly bad fight. He was also a small cat, much
+like Goose V, and quite loud too.
+
+{{< figure src="/images/goose_IV.jpg" alt="A lean gray tabby with green eyes and an open mouth showing his bottom teeth" class="rounded border-solid border-2 w-40 h-auto" caption="Goose IV. Photo by Brihadeesh S, Oct 2019" >}}
 
 
 ## The blog {#the-blog}

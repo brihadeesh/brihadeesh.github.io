@@ -39,6 +39,14 @@
     <meta property="og:image:alt" content="{{ .Site.Params.ogImagealt }}" />
     <meta name="fediverse:creator" content="@peregrinator@hachyderm.io">
 
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="{{ page.canonical_url }}">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Summary }}">
+    <meta name="twitter:image" content="{{ .Site.Params.ogImage }}">
+
     <div style="color: transparent">
       <a rel="me" href="https://hachyderm.io/@peregrinator"> </a>
       <a rel="me" href="https://lemmy.ml/@peregrinator"> </a>

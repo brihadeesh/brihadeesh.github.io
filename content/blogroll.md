@@ -44,3 +44,7 @@ of really cool people whose blogs you should also read.
     instance on Mastodon. He writes about a variety of stuff but mostly
     just life, and watches.
 10. [False Knees](https://falseknees.com/): the hilarious bird comic!
+11. [View from Elephant Hills](https://shankarraman.in/): TR Shankar Raman has been an old family
+    friend and he used to go birding with my father. He has been
+    writing this blog for quite some time now and usually talks about
+    ecological issues and bird-watching.

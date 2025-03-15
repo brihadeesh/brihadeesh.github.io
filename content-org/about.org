@@ -102,19 +102,19 @@ on my Sourcehut for the [[https://git.sr.ht/~peregrinator/peregrinator.site][blo
 </style>
 #+end_export
 #+attr_html: :class contact
-|-------------+---------------------------------------|
-|             |                                       |
-|-------------+---------------------------------------|
-| Email       | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]      |
-|-------------+---------------------------------------|
-| Bluesky     | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]              |
-|-------------+---------------------------------------|
-| Mastodon    | [[https://hachyderm.io/@peregrinator][~[at] peregrinator [at] hachyderm.io~]] |
-|-------------+---------------------------------------|
-| Sourcehut   | [[https://git.sr.ht/~peregrinator][~~peregrinator~]]                       |
-|-------------+---------------------------------------|
-| Support me  | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]]                          |
-|-------------+---------------------------------------|
+|------------+-----------------------------------|
+|            |                                   |
+|------------+-----------------------------------|
+| Email      | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]  |
+|------------+-----------------------------------|
+| Bluesky    | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]          |
+|------------+-----------------------------------|
+| Mastodon   | [[https://toot.cat/@peregrinator][~[at] peregrinator [at] toot.cat~]] |
+|------------+-----------------------------------|
+| Sourcehut  | [[https://git.sr.ht/~peregrinator][~~peregrinator~]]                   |
+|------------+-----------------------------------|
+| Support me | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]]                    |
+|------------+-----------------------------------|
 * Publications
 
 ** A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae)

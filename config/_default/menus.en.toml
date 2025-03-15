@@ -81,7 +81,7 @@
 
 [[footer]]
   name = "Mastodon"
-  url = "https://hachyderm.io/@peregrinator"
+  url = "https://toot.cat/@peregrinator"
   weight = 50
   [footer.params]
     target = "_blank"

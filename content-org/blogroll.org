@@ -37,3 +37,4 @@ of really cool people whose blogs you should also read.
 9. [[https://kevquirk.com/][Kev Quirk]]: Kev is a tech guy and he maintains the [[https:fosstodon.org][fosstodon]]
    instance on Mastodon. He writes about a variety of stuff but mostly
    just life, and watches.
+10. [[https://falseknees.com/][False Knees]]: the hilarious bird comic!

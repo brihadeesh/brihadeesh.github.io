@@ -60,33 +60,45 @@
   [footer.params]
     target = "_self"
 
+[[footer]]
+  name = "blogroll"
+  pageRef = "blogroll"
+  weight = 20
+
 # [[footer]]
 #   name = "Email"
 #   url = "mailto:contact@peregrinator.site"
-#   weight = 20
+#   weight = 30
 #   [footer.params]
 #     target = "_blank"
 
 [[footer]]
   name = "Bluesky"
   url = "https://bsky.app/profile/peregrinator.site"
-  weight = 30
+  weight = 40
+  [footer.params]
+    target = "_blank"
+
+[[footer]]
+  name = "Mastodon"
+  url = "https://hachyderm.io/@peregrinator"
+  weight = 50
   [footer.params]
     target = "_blank"
 
 [[footer]]
   name = "public inbox"
   url = "https://lists.sr.ht/~peregrinator/public_inbox"
-  weight = 40
+  weight = 60
   [footer.params]
     target = "_blank"
 
-[[footer]]
-  name = "Sourcehut"
-  url = "https://git.sr.ht/~peregrinator"
-  weight = 50
-  [footer.params]
-    target = "_blank"
+# [[footer]]
+#   name = "Sourcehut"
+#   url = "https://git.sr.ht/~peregrinator"
+#   weight = 70
+#   [footer.params]
+#     target = "_blank"
 
 # [[footer]]
 #   name = "Github"
@@ -98,6 +110,6 @@
 [[footer]]
   name = "buymeacoffee"
   url = "https://www.buymeacoffee.com/peregrinator"
-  weight = 70
+  weight = 80
   [footer.params]
     target = "_blank"

@@ -2348,6 +2348,7 @@ online.
 :PROPERTIES:
 :EXPORT_FILE_NAME: potentially-returning-to-sourcehut-and-my-foss-roots
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :series "Blogging with Emacs" :bsky "https://bsky.app/profile/peregrinator.site/post/3ljxcd3k5js2o"
+:EXPORT_HUGO_AUTO_SET_LASTMOD: t
 :EXPORT_DATE: [2025-03-09 Sun 19:36]
 :END:
 
@@ -2488,10 +2489,18 @@ Well, that's it for now. I hope to get back to writing that article
 I'd started on skramz last month but at this point, I have no idea
 when that'll be ready.
 
+#+begin_info
+~Update on 15.03.2025~:
+I've moved back to Sourcehut for builds and hosting the git repository
+for the blog. I'll figure out the issues with the feeds later. I've
+added a [[/about#blogroll][blogroll]] to list out all the blogs I read.
+#+end_info
+
 ** DONE Should I still be using Firefox?
 :PROPERTIES:
 :EXPORT_FILE_NAME: should-i-still-be-using-firefox
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :bsky "https://bsky.app/profile/peregrinator.site/post/3ljxjgnqedc2i"
+:EXPORT_HUGO_AUTO_SET_LASTMOD: t
 :EXPORT_DATE: [2025-03-09 Sun 22:22]
 :END:
 
@@ -2549,6 +2558,11 @@ believe this is a fork of Chrome.
 
 Are there really any alternatives that work as well as Firefox did,
 without the AI bloat and everything else that's wrong with it?
+
+#+begin_info
+~Update on 15.03.2025~:
+I've moved to Librewolf on Void Linux and [[https://gitlab.com/ironfox-oss/IronFox][IronFox]] on Android.
+#+end_info
 
 ** DONE What even is skramz
 :PROPERTIES:

@@ -89,14 +89,32 @@ me well and I had published this as a Sourcehut page. It took me until
 early this year to switch to this domain. I was using the [[https://github.com/jpanther/congo][Congo]] theme
 until the beginning of March 2025 but I have since moved to a
 personalised version of the [[https://github.com/LukasJoswiak/etch/][Etch]] theme. The source for this website is
-on my [[https://github.com/brihadeesh/peregrinator.site][Github]] and [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Sourcehut]].
+on my Sourcehut for the [[https://git.sr.ht/~peregrinator/peregrinator.site][blog]] and for my [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Emacs]].
 
 * Contact
 
-I can be emailed at [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]] or contacted
-through Bluesky [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]. My Sourcehut is at
-[[https://git.sr.ht/~peregrinator][~~peregrinator~]]. Support me at [[https://www.buymeacoffee.com/peregrinator][buymeacoffee]].
-
+#+begin_export hugo
+<style>
+.contact
+.table-number {
+  display: none;
+}
+</style>
+#+end_export
+#+attr_html: :class contact
+|-------------+---------------------------------------|
+|             |                                       |
+|-------------+---------------------------------------|
+| Email       | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]      |
+|-------------+---------------------------------------|
+| Bluesky     | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]              |
+|-------------+---------------------------------------|
+| Mastodon    | [[https://hachyderm.io/@peregrinator][~[at] peregrinator [at] hachyderm.io~]] |
+|-------------+---------------------------------------|
+| Sourcehut   | [[https://git.sr.ht/~peregrinator][~~peregrinator~]]                       |
+|-------------+---------------------------------------|
+| Support me  | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]]                          |
+|-------------+---------------------------------------|
 * Publications
 
 ** A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae)

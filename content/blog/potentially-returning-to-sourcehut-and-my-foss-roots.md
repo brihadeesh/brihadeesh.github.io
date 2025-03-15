@@ -2,6 +2,7 @@
 title = "Potentially returning to Sourcehut and my FOSS roots"
 author = ["peregrinator"]
 date = 2025-03-09T19:36:00+05:30
+lastmod = 2025-03-15T07:46:41+05:30
 draft = false
 series = "Blogging with Emacs"
 bsky = "https://bsky.app/profile/peregrinator.site/post/3ljxcd3k5js2o"
@@ -143,3 +144,12 @@ Sourcehut builds.
 Well, that's it for now. I hope to get back to writing that article
 I'd started on skramz last month but at this point, I have no idea
 when that'll be ready.
+
+<div class="info">
+
+`Update on 15.03.2025`:
+I've moved back to Sourcehut for builds and hosting the git repository
+for the blog. I'll figure out the issues with the feeds later. I've
+added a [blogroll](/about#blogroll) to list out all the blogs I read.
+
+</div>

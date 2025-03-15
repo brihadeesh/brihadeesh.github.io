@@ -98,14 +98,29 @@ me well and I had published this as a Sourcehut page. It took me until
 early this year to switch to this domain. I was using the [Congo](https://github.com/jpanther/congo) theme
 until the beginning of March 2025 but I have since moved to a
 personalised version of the [Etch](https://github.com/LukasJoswiak/etch/) theme. The source for this website is
-on my [Github](https://github.com/brihadeesh/peregrinator.site) and [Sourcehut](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
+on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/peregrinator.site) and for my [Emacs](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
 
 
 ## Contact {#contact}
 
-I can be emailed at [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site) or contacted
-through Bluesky [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site). My Sourcehut is at
-[`~peregrinator`](https://git.sr.ht/~peregrinator). Support me at [buymeacoffee](https://www.buymeacoffee.com/peregrinator).
+<style>
+.contact
+.table-number {
+  display: none;
+}
+</style>
+
+<div class="ox-hugo-table contact">
+
+|            |                                                                             |
+|------------|-----------------------------------------------------------------------------|
+| Email      | [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site)        |
+| Bluesky    | [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site)      |
+| Mastodon   | [`[at] peregrinator [at] hachyderm.io`](https://hachyderm.io/@peregrinator) |
+| Sourcehut  | [`~peregrinator`](https://git.sr.ht/~peregrinator)                          |
+| Support me | [`buymeacoffee`](https://www.buymeacoffee.com/peregrinator)                 |
+
+</div>
 
 
 ## Publications {#publications}

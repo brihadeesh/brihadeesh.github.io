@@ -2,6 +2,7 @@
 title = "Should I still be using Firefox?"
 author = ["peregrinator"]
 date = 2025-03-09T22:22:00+05:30
+lastmod = 2025-03-15T07:50:05+05:30
 draft = false
 bsky = "https://bsky.app/profile/peregrinator.site/post/3ljxjgnqedc2i"
 +++
@@ -59,6 +60,13 @@ believe this is a fork of Chrome.
 
 Are there really any alternatives that work as well as Firefox did,
 without the AI bloat and everything else that's wrong with it?
+
+<div class="info">
+
+`Update on 15.03.2025`:
+I've moved to Librewolf on Void Linux and [IronFox](https://gitlab.com/ironfox-oss/IronFox) on Android.
+
+</div>
 
 [^fn:1]: I'm sure there are adequate articles about
     this

@@ -107,9 +107,9 @@
 #   [footer.params]
 #     target = "_blank"
 
-[[footer]]
-  name = "buymeacoffee"
-  url = "https://www.buymeacoffee.com/peregrinator"
-  weight = 80
-  [footer.params]
-    target = "_blank"
+# [[footer]]
+#   name = "buymeacoffee"
+#   url = "https://www.buymeacoffee.com/peregrinator"
+#   weight = 80
+#   [footer.params]
+#     target = "_blank"

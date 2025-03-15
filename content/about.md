@@ -119,6 +119,7 @@ on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/peregrinator.site
 | Mastodon   | [`[at] peregrinator [at] toot.cat`](https://toot.cat/@peregrinator)    |
 | Sourcehut  | [`~peregrinator`](https://git.sr.ht/~peregrinator)                     |
 | Support me | [`buymeacoffee`](https://www.buymeacoffee.com/peregrinator)            |
+|            | [`ko-fi`](https://ko-fi.com/peregrinator)                              |
 
 </div>
 

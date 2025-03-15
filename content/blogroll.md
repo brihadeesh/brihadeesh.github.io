@@ -22,7 +22,7 @@ of really cool people whose blogs you should also read.
 2.  [Propagandhi](https://popagandhi.com/): Adrianna Tan is someone I met and got to know on
     Mastodon and she writes a lot about food and what it's like to be
     neurodivergent.
-3.  [Amanda's Writing Corner](https://amandaswritingblog9.wordpress.com/feed): Amanda is a musician and plays black/death
+3.  [Amanda's Writing Corner](https://amandaswritingblog9.wordpress.com/): Amanda is a musician and plays black/death
     metal. She writes fiction and set up this blog to put it out
     there. We've been friends for a while from Twitter (now Bluesky).
 4.  [Ambika Kamath](https://ambikamath.com/): Ambika is an ecologist and has worked on lizards for

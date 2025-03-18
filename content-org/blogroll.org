@@ -29,12 +29,17 @@ of really cool people whose blogs you should also read.
    don't know his name, but well we've been friend for quite some time
    now from Twitter to now Bluesky. We discuss a lot of metal and he
    writes reviews for, well, all kinds of metal. You know the drill.
-7. [[https://torontopubliclibra.substack.com/][The Toronto Public Libra]]: Dana "Rusty" Rosamund Teagle is a friend
+7. [[https://torontopubliclibra.com/][The Toronto Public Libra]]: Dana "Rusty" Rosamund Teagle is a friend
    from Bluesky and she has "spent her entire life being gay on a
-   computer." You can also find her on her [[https://torontopubliclibra.com/][work website]].
+   computer." Her blog is linked on her website.[fn:1:Dana uses a
+   Substack and I feel like I shouldn't be providing the blogging
+   service any traffic from my end since "its chief executive defended
+   hosting and handling payments for “Nazis” on its platform, citing
+   anti-censorship reasons." See [[https://www.theguardian.com/media/2024/jan/03/substack-user-revolt-anti-censorship-stance-neo-nazis][this article]] from The Guardian. Hence
+   I've not provided a direct link to her Substack.]
 8. [[https://medium.com/@seemamundoli][Seema Mundoli]]: Seema writes about her three quirky cats, CI Mykah,
    Fuzzu and Noori. They're a LOT of fun.
-9. [[https://kevquirk.com/][Kev Quirk]]: Kev is a tech guy and he maintains the [[https:fosstodon.org][fosstodon]]
+9. [[https://kevquirk.com/][Kev Quirk]]: Kev is a tech guy and he maintains the [[https:fosstodon.org][fosstodon.org]]
    instance on Mastodon. He writes about a variety of stuff but mostly
    just life, and watches.
 10. [[https://falseknees.com/][False Knees]]: the hilarious bird comic!

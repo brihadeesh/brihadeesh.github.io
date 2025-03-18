@@ -25,45 +25,31 @@
   pageRef = "fiction"
   weight = 30
 
-# [[main]]
-#   identifier = "search"
-#   weight = 99
-#   [main.params]
-#     action = "search"
-#     icon = "search"
+[[main]]
+  name = "blogroll"
+  pageRef = "blogroll"
+  weight = 40
 
-# [[main]]
-#   identifier = "locale"
-#   weight = 100
-#   [main.params]
-#     action = "locale"
-
-# -- Footer Menu --
-# The footer menu is displayed at the bottom of the page, just before
-# the copyright notice. Configure as per the main menu above.
-
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
-
-# [[footer]]
-#   identifier = "series"
-#   pageref = "series"
-#   weight = 10
-
-[[footer]]
+# -- Secondary Menu --
+# The secondary menu is displayed next to the title in the header
+[[secondary]]
   name = "emacs"
   title = "Emacs"
   url = "https://emacs.peregrinator.site"
   weight = 10
-  [footer.params]
+  [secondary.params]
     target = "_self"
 
-[[footer]]
-  name = "blogroll"
-  pageRef = "blogroll"
+[[secondary]]
+  name = "Sourcehut"
+  url = "https://git.sr.ht/~peregrinator"
   weight = 20
+  [secondary.params]
+    target = "_blank"
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
 
 # [[footer]]
 #   name = "Email"
@@ -72,33 +58,31 @@
 #   [footer.params]
 #     target = "_blank"
 
+# [[footer]]
+#   name = "Tags"
+#   pageRef = "tags"
+#   weight = 10
+
 [[footer]]
   name = "Bluesky"
   url = "https://bsky.app/profile/peregrinator.site"
-  weight = 40
+  weight = 20
   [footer.params]
     target = "_blank"
 
 [[footer]]
   name = "Mastodon"
   url = "https://toot.cat/@peregrinator"
-  weight = 50
+  weight = 30
   [footer.params]
     target = "_blank"
 
 [[footer]]
   name = "public inbox"
   url = "https://lists.sr.ht/~peregrinator/public_inbox"
-  weight = 60
+  weight = 40
   [footer.params]
     target = "_blank"
-
-# [[footer]]
-#   name = "Sourcehut"
-#   url = "https://git.sr.ht/~peregrinator"
-#   weight = 70
-#   [footer.params]
-#     target = "_blank"
 
 # [[footer]]
 #   name = "Github"
@@ -110,6 +94,6 @@
 # [[footer]]
 #   name = "buymeacoffee"
 #   url = "https://www.buymeacoffee.com/peregrinator"
-#   weight = 80
+#   weight = 70
 #   [footer.params]
 #     target = "_blank"

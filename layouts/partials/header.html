@@ -1,0 +1,38 @@
+<header id="banner">
+
+  {{/* logo or something */}}
+  {{- if .Site.Params.logo }}
+  <img
+    src="{{ .Site.Params.logo }}"
+    class="siteLogo"
+    alt="{{ .Site.Params.ogImagealt }}"
+    />
+  {{- end }}
+
+  <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
+
+  {{/* secondary menu */}}
+  <nav>
+    <ul>
+      {{ range .Site.Menus.secondary.ByWeight -}}
+      <li>
+        {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}" class="secondary">{{- .Name -}}</a>{{ .Post }}
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
+
+  <nav>
+    <ul>
+      {{ range .Site.Menus.main.ByWeight -}}
+      <li>
+        {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+</header>

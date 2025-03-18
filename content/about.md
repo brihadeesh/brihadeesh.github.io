@@ -10,10 +10,9 @@ showBreadcrumbs = true
 showReadingTime = false
 +++
 
-{{< figure src="/images/GK_shaheen-2.jpg" alt="juvenile Shaheen Falcon with a Pond Heron kill" class="right" caption="Photo by Gnanaskandan Kesavabharathi. Aug 2020, Chennai outskirts." >}}
-
-
 ## What does _peregrinator_ mean? {#what-does-peregrinator-mean}
+
+{{< figure src="/images/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon adult with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. Jul 2016, Chennai outskirts." >}}
 
 _Peregrinator_ refers to one of two things, both of which I had in mind
 while selecting the name. I had initially wanted to go with
@@ -27,11 +26,11 @@ hemlets and are a paler shade of rufous. Shaheen Bagh also happens to
 be the name of the place chosen by the people protesting the unjust
 implementation of the CAA and NRC in 2019. The word _peregrinator_
 itself comes from Latin and is synonymous with [traveller or
-wanderer](https://www.merriam-webster.com/dictionary/peregrinator). The photo in the website logo is of a juvenile Shaheen,
-displaying most of the characteristic features mentioned before, with
-a Pond Heron kill.
+wanderer](https://www.merriam-webster.com/dictionary/peregrinator). The photo in the favicon and the logo in the header is of a
+juvenile Shaheen, displaying most of the characteristic features
+mentioned before, with a Pond Heron kill.
 
-{{< figure src="/images/GK_shaheen.jpeg" alt="Shaheen Falcon with a Parakeet kill" caption="Shaheen Falcon with a Parakeet kill. Photo by Gnanaskandan Kesavabharathi. Jul 2016, Chennai outskirts." >}}
+{{< figure src="/images/GK_shaheen-2.jpg" alt="juvenile Shaheen Falcon with a Pond Heron kill" caption="Photo by Gnanaskandan Kesavabharathi. Aug 2020, Chennai outskirts." >}}
 
 {{< figure src="/images/about.jpg" alt="Author wearing a red t-shirt with their hair down" class="left" alt="a photo of me holding my cat Goose" >}}
 
@@ -89,14 +88,14 @@ adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org
 
 {{< figure src="/images/2023_blog.png" alt="screenshot of the blog from 2023" class="right rounded border-solid border-2 w-auto h-auto" caption="A screenshot of my blog from 2023">}}
 
-I initially used a very basic blog-centric layout based off the [Etch](https://github.com/LukasJoswiak/etch/)
+I initially used a very basic blog-centric layout based off the Etch
 theme, a simple dark theme with just a list of posts on the homepage.
 In 2023, I switched to a theme-agnostic setup based on [Drew Devault's
 blog](https://drewdevault.com) because it just looked so good in a ridiculously minimal sense
 that appeals only to someone a little obsessively retro. This served
 me well and I had published this as a Sourcehut page. It took me until
 early this year to switch to this domain. I was using the [Congo](https://github.com/jpanther/congo) theme
-until the beginning of March 2025 but I have since moved to a
+until the beginning of March 2025 but I have since moved back to a
 personalised version of the [Etch](https://github.com/LukasJoswiak/etch/) theme. The source for this website is
 on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/peregrinator.site) and for my [Emacs](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
 

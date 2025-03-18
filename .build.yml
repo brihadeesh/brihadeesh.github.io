@@ -20,7 +20,6 @@ tasks:
     -s https://popagandhi.com/feed.xml \
     -s https://kevquirk.com/posts-feed \
     -s https://www.sleepingvillagereviews.com/14/feed \
-    -s https://torontopubliclibra.substack.com/feed \
     -s https://medium.com/feed/@seemamundoli \
     -s https://falseknees.com/rss.xml \
     < webring-in.html \

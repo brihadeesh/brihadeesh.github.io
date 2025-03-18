@@ -20,9 +20,10 @@ pygmentsCodeFences = true
 
 # Site parameters
 [params]
+  logo="/images/logo.jpg"
   ogImage = "/images/og_image.jpg"
   twtImage = "/images/twitter_image.jpg"
-  ogImagealt = "a juvenile Shaheen with a Pond heron Kill. Photo by GK; see [about me](https://peregrinator.site/about/)"
+  ogImagealt = "a juvenile Shaheen with a Pond heron Kill. Photo by GK; see https://peregrinator.site/about/"
   # Site Author
   author = "Brihadeesh S"
   email = "contact@peregrinator.site"

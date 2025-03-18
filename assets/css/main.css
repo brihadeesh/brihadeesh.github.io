@@ -128,7 +128,7 @@
     --font-display: "Monorale", "sans-serif";
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Monorale", "sans-serif";
     font-weight: 600;
 }
@@ -449,7 +449,8 @@ header#banner a {
 }
 
 header#banner a:hover {
-    text-decoration: underline;
+    color: #007dfa;
+    text-decoration: none;
 }
 
 header#banner h2 {
@@ -477,7 +478,11 @@ header#banner nav ul li {
 }
 
 header#banner nav ul li a {
-    color: #454545;
+    color: #007dfa;
+
+    &:hover {
+	color: #369aff;
+    }
 }
 
 main#content a {
@@ -636,12 +641,11 @@ main#content figure img {
 }
 
 main#content figure figcaption {
-    font-size: 0.92em;
-    font-style: italic;
-    line-height: 22px;
+    display: block;
+    font-size: 0.8em;
+    line-height: 15px;
     text-align: center;
-    margin-top: 6px;
-    padding: 0 10px;
+    margin-top: 3px;
 }
 
 main#content figure figcaption h4 {
@@ -709,7 +713,7 @@ footer {
     }
 
     a:hover {
-	color: #21c7ff;
+	color: #369aff;
 	text-decoration: none;
     }
 }
@@ -751,6 +755,14 @@ footer {
     padding-right: 20px;
 }
 
+.siteLogo {
+    float:left;
+    max-width: 100px;
+    margin-right: 20px;
+    margin-left: -25px;
+    border-radius: 10px;
+}
+
 /* heading anchors */
 
 main#content .hanchor {
@@ -765,22 +777,6 @@ main#content .hanchor {
 
 footer#social {
     margin: 25px 0;
-}
-
-footer#social a {
-    color: #454545;
-    text-decoration: none;
-}
-
-footer#social a:hover {
-    text-decoration: underline;
-}
-
-footer#social h2 {
-    display: inline;
-    font-size: 21px;
-    font-size: 2.1rem;
-    margin: 0 8px 0 0;
 }
 
 footer#social nav {
@@ -798,6 +794,14 @@ footer#social nav ul {
 footer#social nav ul li {
     display: inline;
     margin: 0 3px;
+}
+
+footer#social nav ul li a {
+    color: #454545;
+
+    &:hover {
+	color: #369aff;
+    }
 }
 
 /* Openring */

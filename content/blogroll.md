@@ -35,12 +35,12 @@ of really cool people whose blogs you should also read.
     don't know his name, but well we've been friend for quite some time
     now from Twitter to now Bluesky. We discuss a lot of metal and he
     writes reviews for, well, all kinds of metal. You know the drill.
-7.  [The Toronto Public Libra](https://torontopubliclibra.substack.com/): Dana "Rusty" Rosamund Teagle is a friend
+7.  [The Toronto Public Libra](https://torontopubliclibra.com/): Dana "Rusty" Rosamund Teagle is a friend
     from Bluesky and she has "spent her entire life being gay on a
-    computer." You can also find her on her [work website](https://torontopubliclibra.com/).
+    computer." Her blog is linked on her website.[^fn:1]
 8.  [Seema Mundoli](https://medium.com/@seemamundoli): Seema writes about her three quirky cats, CI Mykah,
     Fuzzu and Noori. They're a LOT of fun.
-9.  [Kev Quirk](https://kevquirk.com/): Kev is a tech guy and he maintains the [fosstodon](https:fosstodon.org)
+9.  [Kev Quirk](https://kevquirk.com/): Kev is a tech guy and he maintains the [fosstodon.org](https:fosstodon.org)
     instance on Mastodon. He writes about a variety of stuff but mostly
     just life, and watches.
 10. [False Knees](https://falseknees.com/): the hilarious bird comic!
@@ -48,3 +48,10 @@ of really cool people whose blogs you should also read.
     friend and he used to go birding with my father. He has been
     writing this blog for quite some time now and usually talks about
     ecological issues and bird-watching.
+
+[^fn:1]: Dana uses a
+    Substack and I feel like I shouldn't be providing the blogging
+    service any traffic from my end since "its chief executive defended
+    hosting and handling payments for “Nazis” on its platform, citing
+    anti-censorship reasons." See [this article](https://www.theguardian.com/media/2024/jan/03/substack-user-revolt-anti-censorship-stance-neo-nazis) from The Guardian. Hence
+    I've not provided a direct link to her Substack.

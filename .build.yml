@@ -23,6 +23,7 @@ tasks:
     -s https://medium.com/feed/@seemamundoli \
     -s https://falseknees.com/rss.xml \
     -s https://neilzone.co.uk/index.xml \
+    -s https://sourcehut.org/blog/index.xml \
     < webring-in.html \
     > layouts/partials/webring-out.html
     hugo

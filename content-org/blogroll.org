@@ -47,3 +47,7 @@ of really cool people whose blogs you should also read.
     friend and he used to go birding with my father. He has been
     writing this blog for quite some time now and usually talks about
     ecological issues and bird-watching.
+12. [[https://neilzone.co.uk/index.xml][Neil's blog]]: Neil Brown writes about tech and is very vocal about
+    stuff that has to do with the internet. He's also very active on
+    the Fediverse. His blog was one of the key contributors to my
+    switching back to the Etch theme.

@@ -22,6 +22,7 @@ tasks:
     -s https://www.sleepingvillagereviews.com/14/feed \
     -s https://medium.com/feed/@seemamundoli \
     -s https://falseknees.com/rss.xml \
+    -s https://neilzone.co.uk/index.xml \
     < webring-in.html \
     > layouts/partials/webring-out.html
     hugo

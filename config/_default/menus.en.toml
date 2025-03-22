@@ -40,13 +40,6 @@
   [secondary.params]
     target = "_self"
 
-[[secondary]]
-  name = "Sourcehut"
-  url = "https://git.sr.ht/~peregrinator"
-  weight = 20
-  [secondary.params]
-    target = "_blank"
-
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
@@ -78,9 +71,16 @@
     target = "_blank"
 
 [[footer]]
+  name = "Sourcehut"
+  url = "https://git.sr.ht/~peregrinator"
+  weight = 40
+  [footer.params]
+    target = "_blank"
+
+[[footer]]
   name = "public inbox"
   url = "https://lists.sr.ht/~peregrinator/public_inbox"
-  weight = 40
+  weight = 50
   [footer.params]
     target = "_blank"
 

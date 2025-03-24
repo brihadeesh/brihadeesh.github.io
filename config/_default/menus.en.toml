@@ -78,7 +78,7 @@
     target = "_blank"
 
 [[footer]]
-  name = "public inbox"
+  name = "Public inbox"
   url = "https://lists.sr.ht/~peregrinator/public_inbox"
   weight = 50
   [footer.params]

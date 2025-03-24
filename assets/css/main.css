@@ -417,7 +417,6 @@ footer#footer {
     font-size: 1.4rem;
     font-weight: 400;
     color: #b3b3b3;
-    margin: 40px 0;
 }
 
 *, *:before, *:after {
@@ -698,12 +697,14 @@ main#content .footnotes {
     font-size: 0.9em;
 }
 
-footer#footer {
+footer {
     font-size: 14px;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+footer#footer {
     color: #b3b3b3;
-    margin: 40px 0;
 }
 
 footer {
@@ -775,28 +776,26 @@ main#content .hanchor {
 }
 
 footer#social {
-    margin: 25px 0;
+    margin: 40px 0 0 0;
 }
 
-footer#social nav {
+footer#social {
     display: inline-block;
 }
 
-footer#social nav ul {
+footer#social ul {
     list-style-type: none;
-    font-size: 1.05em;
-    text-transform: lowercase;
     margin: 0;
     padding: 0;
 }
 
-footer#social nav ul li {
+footer#social ul li {
     display: inline;
     margin: 0 3px;
 }
 
-footer#social nav ul li a {
-    color: #454545;
+footer#social ul li a {
+    color: #007dfa;
 
     &:hover {
 	color: #369aff;

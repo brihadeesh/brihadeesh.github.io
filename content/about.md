@@ -90,7 +90,7 @@ adequately. Read more about my blogging flow on my [post](/blog/2022/12/hugo-org
 
 I initially used a very basic blog-centric layout based off the Etch
 theme, a simple dark theme with just a list of posts on the homepage.
-In 2023, I switched to a theme-agnostic setup based on [Drew Devault's
+In 2023, I switched to a [theme-agnostic setup](https://web.archive.org/web/20230428184913/https://peregrinator.srht.site/) based on [Drew Devault's
 blog](https://drewdevault.com) because it just looked so good in a ridiculously minimal sense
 that appeals only to someone a little obsessively retro. This served
 me well and I had published this as a Sourcehut page. It took me until
@@ -111,14 +111,14 @@ on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/peregrinator.site
 
 <div class="ox-hugo-table contact">
 
-|            |                                                                        |
-|------------|------------------------------------------------------------------------|
-| Email      | [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site)   |
-| Bluesky    | [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site) |
-| Mastodon   | [`[at] peregrinator [at] toot.cat`](https://toot.cat/@peregrinator)    |
-| Sourcehut  | [`~peregrinator`](https://git.sr.ht/~peregrinator)                     |
-| Support me | [`buymeacoffee`](https://www.buymeacoffee.com/peregrinator)            |
-|            | [`ko-fi`](https://ko-fi.com/peregrinator)                              |
+|            |                                                                                                         |
+|------------|---------------------------------------------------------------------------------------------------------|
+| Email      | [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site)                                    |
+| Bluesky    | [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site)                                  |
+| Mastodon   | [`[at] peregrinator [at] toot.cat`](https://toot.cat/@peregrinator)                                     |
+| Sourcehut  | [`~peregrinator`](https://git.sr.ht/~peregrinator)                                                      |
+| Support me | [`buymeacoffee`](https://www.buymeacoffee.com/peregrinator) / [`ko-fi`](https://ko-fi.com/peregrinator) |
+|            |                                                                                                         |
 
 </div>
 

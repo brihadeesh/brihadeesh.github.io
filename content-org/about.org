@@ -82,7 +82,7 @@ adequately. Read more about my blogging flow on my [[file:/blog/2022/12/hugo-org
 
 I initially used a very basic blog-centric layout based off the Etch
 theme, a simple dark theme with just a list of posts on the homepage.
-In 2023, I switched to a theme-agnostic setup based on [[https://drewdevault.com][Drew Devault's
+In 2023, I switched to a [[https://web.archive.org/web/20230428184913/https://peregrinator.srht.site/][theme-agnostic setup]] based on [[https://drewdevault.com][Drew Devault's
 blog]] because it just looked so good in a ridiculously minimal sense
 that appeals only to someone a little obsessively retro. This served
 me well and I had published this as a Sourcehut page. It took me until
@@ -102,21 +102,20 @@ on my Sourcehut for the [[https://git.sr.ht/~peregrinator/peregrinator.site][blo
 </style>
 #+end_export
 #+attr_html: :class contact
-|---------------+--------------------------------------------|
-|               |                                            |
-|---------------+--------------------------------------------|
-| Email         | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]           |
-|---------------+--------------------------------------------|
-| Bluesky       | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]                   |
-|---------------+--------------------------------------------|
-| Mastodon      | [[https://toot.cat/@peregrinator][~[at] peregrinator [at] toot.cat~]]          |
-|---------------+--------------------------------------------|
-| Sourcehut     | [[https://git.sr.ht/~peregrinator][~~peregrinator~]]                            |
-|---------------+--------------------------------------------|
-| Support me    | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]]                             |
-|---------------+--------------------------------------------|
-|               | [[https://ko-fi.com/peregrinator][~ko-fi~]]                                    |
-|---------------+--------------------------------------------|
+|------------+--------------------------------------------|
+|            |                                            |
+|------------+--------------------------------------------|
+| Email      | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]           |
+|------------+--------------------------------------------|
+| Bluesky    | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]                   |
+|------------+--------------------------------------------|
+| Mastodon   | [[https://toot.cat/@peregrinator][~[at] peregrinator [at] toot.cat~]]          |
+|------------+--------------------------------------------|
+| Sourcehut  | [[https://git.sr.ht/~peregrinator][~~peregrinator~]]                            |
+|------------+--------------------------------------------|
+| Support me | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]] / [[https://ko-fi.com/peregrinator][~ko-fi~]]                   |
+|            |                                            |
+|------------+--------------------------------------------|
 * Publications
 
 ** A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae)

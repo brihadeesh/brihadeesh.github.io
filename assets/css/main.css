@@ -166,6 +166,10 @@ header#banner a {
 }
 
 header#banner a:hover {
+    color: #007dfa;
+}
+
+header#banner a:hover {
     text-decoration: underline;
 }
 
@@ -438,52 +442,6 @@ body {
     overflow-wrap: break-word;
 }
 
-header#banner {
-    margin: 25px 0;
-}
-
-header#banner a {
-    color: #313a3d;
-    text-decoration: none;
-}
-
-header#banner a:hover {
-    color: #007dfa;
-    text-decoration: none;
-}
-
-header#banner h2 {
-    display: inline;
-    font-size: 21px;
-    font-size: 2.1rem;
-    margin: 0 8px 0 0;
-}
-
-header#banner nav {
-    display: inline-block;
-}
-
-header#banner nav ul {
-    list-style-type: none;
-    font-size: 1.05em;
-    text-transform: lowercase;
-    margin: 0;
-    padding: 0;
-}
-
-header#banner nav ul li {
-    display: inline;
-    margin: 0 3px;
-}
-
-header#banner nav ul li a {
-    color: #007dfa;
-
-    &:hover {
-	color: #369aff;
-    }
-}
-
 main#content a {
     color: #007dfa;
     text-decoration: none;
@@ -715,7 +673,7 @@ footer {
 
     a:hover {
 	color: #369aff;
-	text-decoration: none;
+	text-decoration: underline;
     }
 }
 
@@ -728,6 +686,7 @@ footer {
 .comment {
     padding: 10px 0;
 }
+
 .avatar {
     width: 40px;
     height: 40px;
@@ -735,10 +694,12 @@ footer {
     vertical-align: middle;
     margin-right: 10px;
 }
+
 .nested-replies {
     margin-left: 20px;
     padding-left: 10px;
 }
+
 .nested-replies .comment {
     margin-bottom: 0;
 }
@@ -767,11 +728,9 @@ footer {
 
 main#content .hanchor {
     color: #313a3d;
-    transition: color 0.1s ease-in-out;
 
     &:hover {
-	color: #b3b3b3;
-	text-decoration: none;
+	color: #007dfa;
     }
 }
 

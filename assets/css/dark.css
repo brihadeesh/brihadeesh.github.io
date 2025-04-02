@@ -18,7 +18,7 @@
     }
 
     header#banner nav ul li a {
-	color: #007dfa;
+	color: #e0e0e0;
 
 	&:hover {
 	    color: #369aff;
@@ -55,22 +55,21 @@
 
     /* heading anchors */
     main#content .hanchor {
-	color: #a7a7a7;
-	transition: color 0.1s ease-in-out;
+	color: #ebebeb;
 
 	&:hover {
-	    color: #ffffff;
-	    text-decoration: none;
+	    color: #00b1ed;
 	}
     }
 
-    footer#social nav ul li a {
+    .top-anchor {
 	color: #cccccc;
-
-	&:hover {
-	    color: #007dfa;
-	}
     }
+
+    .top-anchor:hover {
+	color: #21c7ff;
+    }
+
     {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}

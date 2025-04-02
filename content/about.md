@@ -4,10 +4,7 @@ author = ["peregrinator"]
 draft = false
 showTableOfContents = true
 layout = "about"
-showDate = false
-showAuthor = false
-showBreadcrumbs = true
-showReadingTime = false
+type = "about"
 +++
 
 ## What does _peregrinator_ mean? {#what-does-peregrinator-mean}

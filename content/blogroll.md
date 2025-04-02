@@ -4,10 +4,7 @@ author = ["peregrinator"]
 draft = false
 showTableOfContents = true
 layout = "about"
-showDate = false
-showAuthor = false
-showBreadcrumbs = true
-showReadingTime = false
+type = "blogroll"
 +++
 
 I've only just started learning about things like the blogroll after

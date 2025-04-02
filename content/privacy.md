@@ -4,10 +4,7 @@ author = ["peregrinator"]
 draft = false
 showTableOfContents = true
 layout = "about"
-showDate = false
-showAuthor = false
-showBreadcrumbs = true
-showReadingTime = false
+type = "privacy"
 +++
 
 Being the weird privacy nerd that I am, I've taken steps to ensure

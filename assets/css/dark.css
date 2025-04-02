@@ -17,11 +17,23 @@
 	text-decoration: none;
     }
 
+    header#banner a:hover {
+	color: #00b1ed;
+    }
+
+    header#banner > div {
+	color: #a7a7a7;
+    }
+
+    header#banner > div a {
+	color: #00b1ed;
+    }
+
     header#banner nav ul li a {
 	color: #e0e0e0;
 
 	&:hover {
-	    color: #369aff;
+	    color: #00b1ed;
 	}
     }
 

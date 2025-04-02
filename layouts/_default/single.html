@@ -1,15 +1,5 @@
 {{ define "main" }}
 <article>
-    <header id="post-header">
-        <h1>{{ .Title }}</h1>
-        <div>
-	  <time>{{ .Date | time.Format (i18n "post.created") }}</time>
-          {{ if eq .Lastmod .Date }}
-	  {{ else }}
-          | <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
-          {{ end }}
-        </div>
-    </header>
     {{ partial "series.html" . }}
     {{- .Content -}}
     <br>

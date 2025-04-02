@@ -9,6 +9,19 @@
     />
   {{- end }}
 
+  {{ if or (eq .Type "about") (eq .Type "blogroll") (eq .Type "privacy") }}
+
+  <h2>{{ .Title }}</h2>
+  <div>
+    on
+    <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+  </div>
+  <br>
+  <br>
+
+
+  {{ else if or .IsHome .IsSection }}
+
   <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
 
   {{/* secondary menu */}}
@@ -21,7 +34,9 @@
       {{- end }}
     </ul>
   </nav>
-<br>
+
+  <br>
+
   <nav>
     <ul>
       {{ range .Site.Menus.main.ByWeight -}}
@@ -35,4 +50,23 @@
   <br>
   <br>
   <br>
+
+  {{ else }}
+
+  <h2>{{ .Title }}</h2>
+  <div>
+    <time>{{ .Date | time.Format (i18n "post.created") }}</time>
+    {{ if eq .Lastmod .Date }}
+    {{ else }}
+    | <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
+    {{ end }}
+    on
+    <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+  </div>
+
+  <br>
+  <br>
+
+  {{ end }}
+
 </header>

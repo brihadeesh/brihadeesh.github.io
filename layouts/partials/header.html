@@ -20,7 +20,7 @@
   <br>
 
 
-  {{ else if or .IsHome .IsSection }}
+  {{ else if or .IsHome .IsSection (eq .Type "series") }}
 
   <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
 

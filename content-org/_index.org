@@ -32,3 +32,5 @@ with Emacs]] here.
 I've also included a single piece of (fan)fiction I wrote as part of
 an English assignment, inspired by Herman Melville's /Moby Dick/ in the
 [[/fiction/2012/05/ahab/][fiction]] section of the website.
+
+You can also browse articles by [[/series][series]].

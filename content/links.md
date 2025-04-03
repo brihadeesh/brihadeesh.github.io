@@ -1,5 +1,5 @@
 +++
-title = "interesting links"
+title = "Interesting links"
 author = ["peregrinator"]
 draft = false
 showTableOfContents = true

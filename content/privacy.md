@@ -1,5 +1,5 @@
 +++
-title = "privacy"
+title = "Privacy"
 author = ["peregrinator"]
 draft = false
 showTableOfContents = true

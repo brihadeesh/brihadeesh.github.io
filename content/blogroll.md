@@ -1,5 +1,5 @@
 +++
-title = "blogroll"
+title = "Blogroll"
 author = ["peregrinator"]
 draft = false
 showTableOfContents = true

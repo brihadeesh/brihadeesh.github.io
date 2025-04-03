@@ -1,5 +1,5 @@
 +++
-title = "about me"
+title = "About me"
 author = ["peregrinator"]
 draft = false
 showTableOfContents = true
@@ -34,18 +34,18 @@ mentioned before, with a Pond Heron kill.
 
 ## About me {#about-me}
 
-I'm a 29 year old, neurodivergent, cat person who sometimes cosplays
-as an ecologist. I'm big on F(L)OSS and currently run a [Void Linux](https://voidlinux.org)
-installation with the pure-gtk version of Emacs 30. I also play the
-guitar, listen to typically a lot of metal and try to make my own
-music occasionally. I currently use [Ardour 7.0](https://ardour.org) for audio production,
-which I'm very new to, and hope to get started with the [Sonic Pi](https://sonic-pi.net) as
-both a standalone instrument as well as a synth for instruments I
-don't play myself. I also travel a lot for work and end up visiting a
-lot of new places while I'm working. I will be starting working on
-maintaining a log of that too sometime soon on this blog. Especially
-the birding reports with links to eBird checklists since I'm in the
-habit of maintaining them.
+My name is Brihadeesh and I'm a 29 year old, neurodivergent, cat
+person who sometimes cosplays as an ecologist. I'm big on F(L)OSS and
+currently run a [Void Linux](https://voidlinux.org) installation with the pure-gtk version of
+Emacs 30. I also play the guitar, listen to typically a lot of metal
+and try to make my own music occasionally. I currently use [Ardour 7.0](https://ardour.org)
+for audio production, which I'm very new to, and hope to get started
+with the [Sonic Pi](https://sonic-pi.net) as both a standalone instrument as well as a synth
+for instruments I don't play myself. I also travel a lot for work and
+end up visiting a lot of new places while I'm working. I will be
+starting working on maintaining a log of that too sometime soon on
+this blog. Especially the birding reports with links to eBird
+checklists since I'm in the habit of maintaining them.
 
 {{< figure src="/images/goose_V-2.jpg" alt="me holding a white and gray cat with pale green eyes" class="right rounded border-solid border-2 w-40 h-auto" caption="Me holding a bleppy Goose V. Photo by Brihadeesh S, Jan 2024" >}}
 

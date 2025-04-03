@@ -2,7 +2,7 @@
 #+HUGO_SECTION: /
 #+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "misc"
 
-#+title: interesting links
+#+title: Interesting links
 
 #+attr_html: :class info
 #+begin_alert

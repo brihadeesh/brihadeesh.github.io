@@ -2,7 +2,7 @@
 #+HUGO_SECTION: /
 #+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "misc"
 
-#+title: privacy
+#+title: Privacy
 
 Being the weird privacy nerd that I am, I've taken steps to ensure
 that there is very little date about myself on this site that can be

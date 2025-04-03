@@ -47,5 +47,3 @@ an English assignment, inspired by Herman Melville's _Moby Dick_ in the
 3.  [Useful links](/links) — various blog posts and other useful links I've found
     over time
 4.  [Emacs resources](https://emacs.peregrinator.site/resources) over on the Emacs section of the website
-
-You can also browse articles by [series](/series).

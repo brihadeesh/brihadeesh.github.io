@@ -65,6 +65,10 @@
 	color: #a7a7a7;
     }
 
+    .comments > div {
+	color: #a7a7a7;
+    }
+
     /* heading anchors */
     main#content .hanchor {
 	color: #ebebeb;
@@ -80,6 +84,13 @@
 
     .top-anchor:hover {
 	color: #21c7ff;
+    }
+
+    /* Openring */
+    .webring {
+	small {
+	    color: #a7a7a7;
+	}
     }
 
     {{- if not (eq .Site.Params.dark "on") -}}

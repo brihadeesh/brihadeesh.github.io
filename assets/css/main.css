@@ -808,3 +808,21 @@ footer#social ul li a {
     color: #369aff;
 
 }
+
+/* Openring */
+.webring {
+    small {
+	color: #767676;
+    }
+}
+
+/* summary { */
+/*     cursor: pointer; */
+/*     padding: 0.25rem 1rem; */
+/*     margin: 0 -1rem; */
+/* } */
+
+/* details[open] { */
+/*     margin: 0 -1rem 1rem; */
+/*     padding: 0 1rem; */
+/* } */

@@ -1,5 +1,7 @@
 <h2 id="posts-archive">Posts Archive</h2>
 
+<p>You can also browse articles by <a href="/series">series</a>.</p>
+
 {{ range (.Paginate ((where .Site.RegularPages "Type" "in" .Site.MainSections).GroupByDate "2006")).PageGroups }}
 <h3> {{ .Key }} </h3>
 

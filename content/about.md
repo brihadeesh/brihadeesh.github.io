@@ -4,7 +4,7 @@ author = ["peregrinator"]
 draft = false
 showTableOfContents = true
 layout = "about"
-type = "about"
+type = "misc"
 +++
 
 ## What does _peregrinator_ mean? {#what-does-peregrinator-mean}

@@ -349,6 +349,10 @@ main#content #toc ol li:before {
     counter-increment: item;
 }
 
+main#content ol > li {
+    padding: 5px;
+}
+
 main#content img {
     max-width: 100%;
     margin: 0 auto;

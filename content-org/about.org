@@ -1,6 +1,6 @@
 #+HUGO_BASE_DIR: ../
 #+HUGO_SECTION: /
-#+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "about"
+#+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "misc"
 
 #+title: about me
 

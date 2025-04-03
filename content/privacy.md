@@ -4,7 +4,7 @@ author = ["peregrinator"]
 draft = false
 showTableOfContents = true
 layout = "about"
-type = "privacy"
+type = "misc"
 +++
 
 Being the weird privacy nerd that I am, I've taken steps to ensure

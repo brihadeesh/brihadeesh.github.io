@@ -24,6 +24,8 @@ tasks:
     -s https://falseknees.com/rss.xml \
     -s https://neilzone.co.uk/index.xml \
     -s https://sourcehut.org/blog/index.xml \
+    -s https://write.as/enbyspaceperson/feed \
+    -s https://feeds.feedburner.com/RBloggers \
     < webring-in.html \
     > layouts/partials/webring-out.html
     hugo

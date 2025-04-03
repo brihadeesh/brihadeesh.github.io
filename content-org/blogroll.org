@@ -1,6 +1,6 @@
 #+HUGO_BASE_DIR: ../
 #+HUGO_SECTION: /
-#+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "blogroll"
+#+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "misc"
 
 #+title: Blogroll
 
@@ -13,16 +13,16 @@ of really cool people whose blogs you should also read.
    writes about a variety of topics I find that his takes on political
    issues really resonate with mine. He truly embraces the open source
    philosophy in all of the ways I wish I could.
-2. [[https://popagandhi.com/][Propagandhi]]: Adrianna Tan is someone I met and got to know on
+2. [[https://popagandhi.com/][Propagandhi]]: [[https://hachyderm.io/@skinnylatte][Adrianna Tan]] is someone I met and got to know on
    Mastodon and she writes a lot about food and what it's like to be
    neurodivergent.
-3. [[https://amandaswritingblog9.wordpress.com/][Amanda's Writing Corner]]: Amanda is a musician and plays black/death
+3. [[https://amandaswritingblog9.wordpress.com/][Amanda's Writing Corner]]: [[https:bsky.app/profile/amandak6647.bsky.social][Amanda]] is a musician and plays black/death
    metal. She writes fiction and set up this blog to put it out
    there. We've been friends for a while from Twitter (now Bluesky).
-4. [[https://ambikamath.com/][Ambika Kamath]]: Ambika is an ecologist and has worked on lizards for
+4. [[https://ambikamath.com/][Ambika Kamath]]: [[https://bsky.app/profile/ammbikamath.bsky.social][Ambika]] is an ecologist and has worked on lizards for
    her PhD. She writes about ecology and has currently co-authored a
    book called Feminism in the Wild.
-5. [[https://noobheavy.com/][Noob Heavy]]: Kep, Westin, Ellis and Kirk run this wonderful blog on
+5. [[https://noobheavy.com/][Noob Heavy]]: [[https:bsky.app/profile/theoriginalkep.bsky.social][Kep]], [[https:bsky.app/profile/westinplaying.bsky.social][Westin]], Ellis and Kirk run this wonderful blog on
    new and upcoming releases in the metal world. If you're also into
    metal, this is a must follow.
 6. [[https://www.sleepingvillagereviews.com/][Sleeping Village Reviews]]: I've been friends with... erm... well I
@@ -39,15 +39,22 @@ of really cool people whose blogs you should also read.
    I've not provided a direct link to her Substack.]
 8. [[https://medium.com/@seemamundoli][Seema Mundoli]]: Seema writes about her three quirky cats, CI Mykah,
    Fuzzu and Noori. They're a LOT of fun.
-9. [[https://kevquirk.com/][Kev Quirk]]: Kev is a tech guy and he maintains the [[https:fosstodon.org][fosstodon.org]]
+9. [[https://kevquirk.com/][Kev Quirk]]: [[https://fosstodon.org/@kev][Kev]] is a tech guy and he maintains the [[https:fosstodon.org][fosstodon.org]]
    instance on Mastodon. He writes about a variety of stuff but mostly
    just life, and watches.
 10. [[https://falseknees.com/][False Knees]]: the hilarious bird comic!
-11. [[https://shankarraman.in/][View from Elephant Hills]]: TR Shankar Raman has been an old family
+11. [[https://shankarraman.in/][View from Elephant Hills]]: [[https://biodiversity.social/@mizoraman][TR Shankar Raman]] has been an old family
     friend and he used to go birding with my father. He has been
     writing this blog for quite some time now and usually talks about
     ecological issues and bird-watching.
-12. [[https://neilzone.co.uk/index.xml][Neil's blog]]: Neil Brown writes about tech and is very vocal about
+12. [[https://neilzone.co.uk/index.xml][Neil's blog]]: [[https://mastodon.neilzone.co.uk/@neil][Neil Brown]] writes about tech and is very vocal about
     stuff that has to do with the internet. He's also very active on
     the Fediverse. His blog was one of the key contributors to my
     switching back to the Etch theme.
+13. [[https://write.as/enbyspaceperson/][EnbySpacePerson]]: [[https://toot.cat/@EveHasWords][Eve]] writes about various topics and I'm typically
+    most interested in their posts on using the fediverse. They also
+    write [[https://chantingluretales.writeas.com/][adult fiction]].
+14. [[https://www.r-bloggers.com][R-bloggers]]: This is a collection of articles on how people use R
+    and other allied data science tools written by various
+    contributors. This is an invaluable resource if you're looking to
+    learn advanced R.

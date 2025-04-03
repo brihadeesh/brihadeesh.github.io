@@ -1,0 +1,15 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: /
+#+HUGO_CUSTOM_FRONT_MATTER: :showTableOfContents true :layout "about" :type "misc"
+
+#+title: Books I've read
+
+#+attr_html: :class info
+#+begin_alert
+This is a work in progress!
+#+end_alert
+
+A list of books I'm reading, have read, or plan to read. I will be
+organising this better soon.
+
+1. Novella: /Tomorrow is One More Day/  by G Nagarajan:

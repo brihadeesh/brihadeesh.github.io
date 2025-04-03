@@ -5,6 +5,8 @@ draft = false
 toc = false
 +++
 
+Skip ahead to the [posts](/#posts-archive) directly
+
 I've been writing since 2016 when I first wanted to talk about ecology
 and natural history in a less technical fashion so it would be more
 approachable for people without training in the field. That blog was
@@ -24,6 +26,9 @@ reference specific posts. I do intend to bring the comments from the
 old Wordpress blog to somewhere everyone can see them but I've not
 made up my mind on how to do that.
 
+
+## Emacs {#emacs}
+
 I am a little unclear on how to organise articles I've written for the
 blog that have to do with how I use Emacs as yet — i.e whether to have
 them on the [Emacs](https://emacs.peregrinator.site) section of this website or here, on the blog itself
@@ -33,5 +38,11 @@ with Emacs](/series/blogging-with-emacs) here.
 I've also included a single piece of (fan)fiction I wrote as part of
 an English assignment, inspired by Herman Melville's _Moby Dick_ in the
 [fiction](/fiction/2012/05/ahab/) section of the website.
+
+
+## Other lists {#other-lists}
+
+1.  [Books I've read](/books) or those I'm reading
+2.  [Useful links](/links)
 
 You can also browse articles by [series](/series).

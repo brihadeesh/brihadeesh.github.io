@@ -9,7 +9,7 @@
     />
   {{- end }}
 
-  {{ if or (eq .Type "about") (eq .Type "blogroll") (eq .Type "privacy") }}
+  {{ if eq .Type "misc" }}
 
   <h2>{{ .Title }}</h2>
   <div>

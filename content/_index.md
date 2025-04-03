@@ -42,7 +42,10 @@ an English assignment, inspired by Herman Melville's _Moby Dick_ in the
 
 ## Other lists {#other-lists}
 
-1.  [Books I've read](/books) or those I'm reading
-2.  [Useful links](/links)
+1.  [Blogroll](/blogroll) of all the places I read articles from
+2.  [Books I've read](/books) or those I'm reading
+3.  [Useful links](/links) — various blog posts and other useful links I've found
+    over time
+4.  [Emacs resources](https://emacs.peregrinator.site/resources) over on the Emacs section of the website
 
 You can also browse articles by [series](/series).

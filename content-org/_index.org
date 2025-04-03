@@ -39,7 +39,10 @@ an English assignment, inspired by Herman Melville's /Moby Dick/ in the
 
 * Other lists
 
-1. [[/books][Books I've read]] or those I'm reading
-2. [[/links][Useful links]]
+1. [[/blogroll][Blogroll]] of all the places I read articles from
+2. [[/books][Books I've read]] or those I'm reading
+3. [[/links][Useful links]] — various blog posts and other useful links I've found
+   over time
+4. [[https://emacs.peregrinator.site/resources][Emacs resources]] over on the Emacs section of the website
 
 You can also browse articles by [[/series][series]].

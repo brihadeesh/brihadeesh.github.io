@@ -1,4 +1,4 @@
-<h2>Posts Archive</h2>
+<h2 id="posts-archive">Posts Archive</h2>
 
 {{ range (.Paginate ((where .Site.RegularPages "Type" "in" .Site.MainSections).GroupByDate "2006")).PageGroups }}
 <h3> {{ .Key }} </h3>

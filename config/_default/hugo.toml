@@ -63,7 +63,7 @@ noClasses = false
 
 [taxonomies]
 series = "series"
-authors = "authors"
+authors = "author"
 
 [privacy]
   [privacy.x]

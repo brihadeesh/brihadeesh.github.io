@@ -1,14 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* @font-face { */
+/*     font-family: 'Bitter Regular'; */
+/*     font-style: normal; */
+/*     font-weight: normal; */
+/*     src: url('/fonts/Bitter-Regular.woff') format('woff'); */
+/* } */
+
+
+/* @font-face { */
+/*     font-family: 'Bitter Italic'; */
+/*     font-style: normal; */
+/*     font-weight: normal; */
+/*     src: url('/fonts/Bitter-Italic.woff') format('woff'); */
+/* } */
+
+
+/* @font-face { */
+/*     font-family: 'Bitter Thin'; */
+/*     font-style: normal; */
+/*     font-weight: normal; */
+/*     src: url('/fonts/Bitter[wght].woff') format('woff'); */
+/* } */
+
+
+/* @font-face { */
+/*     font-family: 'Bitter Thin Italic'; */
+/*     font-style: normal; */
+/*     font-weight: normal; */
+/*     src: url('/fonts/Bitter-Italic[wght].woff') format('woff'); */
+/* } */
+
+
+/* @font-face { */
+/*     font-family: 'Bitter Bold'; */
+/*     font-style: normal; */
+/*     font-weight: normal; */
+/*     src: url('/fonts/Bitter-Bold.woff') format('woff'); */
+/* } */
+
+
+/* @font-face { */
+/*     font-family: 'Bitter Bold Italic'; */
+/*     font-style: normal; */
+/*     font-weight: normal; */
+/*     src: url('/fonts/Bitter-BoldItalic.woff') format('woff'); */
+/* } */
+
+
 @theme {
     --font-display: "Bitter", "serif";
 }
 
 h1, h2, h3, h4 {
     font-family: "Bitter", "serif";
-    font-weight: 500;
+    font-weight: 400;
 }
 
 html, body {
     font-family: "Bitter", "serif";
+    /* font-weight: 300; */
 }
 
 *, *:before, *:after {
@@ -28,6 +79,7 @@ body {
     padding: 0 16px;
     line-height: 1.6;
     overflow-wrap: break-word;
+    /* background-color: #fff7f3; */
 }
 
 header#banner {

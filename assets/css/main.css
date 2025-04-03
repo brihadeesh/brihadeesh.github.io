@@ -663,8 +663,18 @@ main#content pre code {
     padding: 0;
 }
 
+.comments > div {
+    display: block;
+    color: #767676;
+}
+
 main#content .footnotes {
     font-size: 0.9em;
+}
+
+main#content .footnotes ol,
+main#content .footnotes li {
+    padding: 0px;
 }
 
 footer {

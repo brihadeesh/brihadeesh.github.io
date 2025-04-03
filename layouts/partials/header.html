@@ -56,10 +56,6 @@
   <h2>{{ .Title }}</h2>
   <div>
     <time>{{ .Date | time.Format (i18n "post.created") }}</time>
-    {{ if eq .Lastmod .Date }}
-    {{ else }}
-    | <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
-    {{ end }}
     on
     <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
   </div>

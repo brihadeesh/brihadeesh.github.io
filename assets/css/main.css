@@ -47,16 +47,16 @@
 
 
 @theme {
-    --font-display: "Bitter", "serif";
+    --font-display: "IBM Plex Serif", "serif";
 }
 
 h1, h2, h3, h4 {
-    font-family: "Bitter", "serif";
+    font-family: "IBM Plex Serif", "serif";
     font-weight: 400;
 }
 
 html, body {
-    font-family: "Bitter", "serif";
+    font-family: "IBM Plex Serif", "serif";
     /* font-weight: 300; */
 }
 

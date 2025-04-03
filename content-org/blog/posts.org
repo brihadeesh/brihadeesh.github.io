@@ -2508,8 +2508,8 @@ I've been using Firefox ever since I got my first laptop back in 2017,
 mostly since it comes with most Linux distributions' own package
 repositories. It was around the same time that I decided that I
 wouldn't use Chrome because of all the ways in which it collects and
-abuses personal data[fn:1: I'm sure there are adequate articles about
-this]. Recent events with Mozilla that have changed the way Firefox
+abuses personal data.[fn:1: I'm sure there are adequate articles about
+this] Recent events with Mozilla that have changed the way Firefox
 handles data have left me concerned about whether the browser is still
 "better" than Chrome in that regard. My doubts started with actually a
 meme that was circling around on Twitter that a friend had retweeted

@@ -2,7 +2,7 @@
 title = "Should I still be using Firefox?"
 author = ["peregrinator"]
 date = 2025-03-09T22:22:00+05:30
-lastmod = 2025-03-15T07:50:05+05:30
+lastmod = 2025-04-03T14:50:40+05:30
 draft = false
 bsky = "https://bsky.app/profile/peregrinator.site/post/3ljxjgnqedc2i"
 +++
@@ -11,7 +11,7 @@ I've been using Firefox ever since I got my first laptop back in 2017,
 mostly since it comes with most Linux distributions' own package
 repositories. It was around the same time that I decided that I
 wouldn't use Chrome because of all the ways in which it collects and
-abuses personal data[^fn:1]. Recent events with Mozilla that have changed the way Firefox
+abuses personal data.[^fn:1] Recent events with Mozilla that have changed the way Firefox
 handles data have left me concerned about whether the browser is still
 "better" than Chrome in that regard. My doubts started with actually a
 meme that was circling around on Twitter that a friend had retweeted

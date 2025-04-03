@@ -94,13 +94,25 @@ me well and I had published this as a Sourcehut page. It took me until
 early this year to switch to this domain. I was using the [Congo](https://github.com/jpanther/congo) theme
 until the beginning of March 2025 but I have since moved back to a
 personalised version of the [Etch](https://github.com/LukasJoswiak/etch/) theme. The source for this website is
-on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/blog.peregrinator.site) and for my [Emacs](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
+on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/peregrinator.site) and for my [Emacs](https://git.sr.ht/~peregrinator/emacs.peregrinator.site).
 
 
 ## Contact {#contact}
 
+Reach me via email or through the Fediverse since I tend to respond on
+those the quickest.
+
 <style>
-.contact
+.contact {
+  border-collapse: collapse;
+}
+thead {
+    display: none;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
 .table-number {
   display: none;
 }
@@ -108,14 +120,14 @@ on my Sourcehut for the [blog](https://git.sr.ht/~peregrinator/blog.peregrinator
 
 <div class="ox-hugo-table contact">
 
-|            |                                                                                                                                                      |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Email      | [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site)                                                                                 |
-| Bluesky    | [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site)                                                                               |
-| Mastodon   | [`[at] peregrinator [at] toot.cat`](https://toot.cat/@peregrinator) or [`[at] peregrinator [at] ecoevo.social`](https://ecoeco.social/@peregrinator) |
-| Sourcehut  | [`~peregrinator`](https://git.sr.ht/~peregrinator)                                                                                                   |
-| Support me | [`buymeacoffee`](https://www.buymeacoffee.com/peregrinator) / [`ko-fi`](https://ko-fi.com/peregrinator)                                              |
-|            |                                                                                                                                                      |
+|              |                                                                                                                                  |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------|
+| `Email`      | [`contact [at] peregrinator.site`](mailto:contact@peregrinator.site)                                                             |
+| `Bluesky`    | [`[at] peregrinator.site`](https://bsky.app/profile/peregrinator.site)                                                           |
+| `Mastodon`   | `[at] peregrinator on`  [`toot.cat`](https://toot.cat/@peregrinator) `or` [`ecoevo.social`](https://ecoeco.social/@peregrinator) |
+| `IRC`        | `peregrinator on` [`libera.chat`](https://libera.chat)                                                                           |
+| `Sourcehut`  | [`sr.ht/~peregrinator`](https://sr.ht/~peregrinator)                                                                             |
+| `Support me` | [`buymeacoffee`](https://www.buymeacoffee.com/peregrinator) / [`ko-fi`](https://ko-fi.com/peregrinator)                          |
 
 </div>
 

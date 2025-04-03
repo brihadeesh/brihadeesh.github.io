@@ -89,33 +89,46 @@ me well and I had published this as a Sourcehut page. It took me until
 early this year to switch to this domain. I was using the [[https://github.com/jpanther/congo][Congo]] theme
 until the beginning of March 2025 but I have since moved back to a
 personalised version of the [[https://github.com/LukasJoswiak/etch/][Etch]] theme. The source for this website is
-on my Sourcehut for the [[https://git.sr.ht/~peregrinator/blog.peregrinator.site][blog]] and for my [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Emacs]].
+on my Sourcehut for the [[https://git.sr.ht/~peregrinator/peregrinator.site][blog]] and for my [[https://git.sr.ht/~peregrinator/emacs.peregrinator.site][Emacs]].
 
 * Contact
 
+Reach me via email or through the Fediverse since I tend to respond on
+those the quickest.
+
 #+begin_export hugo
 <style>
-.contact
+.contact {
+  border-collapse: collapse;
+}
+thead {
+    display: none;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
 .table-number {
   display: none;
 }
 </style>
 #+end_export
 #+attr_html: :class contact
-|------------+-----------------------------------------------------------------------------|
-|            |                                                                             |
-|------------+-----------------------------------------------------------------------------|
-| Email      | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]                                            |
-|------------+-----------------------------------------------------------------------------|
-| Bluesky    | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]                                                    |
-|------------+-----------------------------------------------------------------------------|
-| Mastodon   | [[https://toot.cat/@peregrinator][~[at] peregrinator [at] toot.cat~]] or [[https://ecoeco.social/@peregrinator][~[at] peregrinator [at] ecoevo.social~]] |
-|------------+-----------------------------------------------------------------------------|
-| Sourcehut  | [[https://git.sr.ht/~peregrinator][~~peregrinator~]]                                                             |
-|------------+-----------------------------------------------------------------------------|
-| Support me | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]] / [[https://ko-fi.com/peregrinator][~ko-fi~]]                                                    |
-|            |                                                                             |
-|------------+-----------------------------------------------------------------------------|
+|------------+-----------------------------------------------------|
+|            |                                                     |
+|------------+-----------------------------------------------------|
+| ~Email~      | [[mailto:contact@peregrinator.site][~contact [at] peregrinator.site~]]                    |
+|------------+-----------------------------------------------------|
+| ~Bluesky~    | [[https://bsky.app/profile/peregrinator.site][~[at] peregrinator.site~]]                            |
+|------------+-----------------------------------------------------|
+| ~Mastodon~   | ~[at] peregrinator on~  [[https://toot.cat/@peregrinator][~toot.cat~]] ~or~ [[https://ecoeco.social/@peregrinator][~ecoevo.social~]] |
+|------------+-----------------------------------------------------|
+| ~IRC~        | ~peregrinator on~ [[https://libera.chat][~libera.chat~]]                       |
+|------------+-----------------------------------------------------|
+| ~Sourcehut~  | [[https://sr.ht/~peregrinator][~sr.ht/~peregrinator~]]                               |
+|------------+-----------------------------------------------------|
+| ~Support me~ | [[https://www.buymeacoffee.com/peregrinator][~buymeacoffee~]] / [[https://ko-fi.com/peregrinator][~ko-fi~]]                            |
+|------------+-----------------------------------------------------|
 * Publications
 
 ** A contribution on morphology and distribution of the Rock Toad Duttaphrynus hololius (Günther, 1876) with first report on deformity, calling and breeding behaviours (Amphibia: Anura: Bufonidae)

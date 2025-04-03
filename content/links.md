@@ -1,5 +1,5 @@
 +++
-title = "Interesting Links"
+title = "interesting links"
 author = ["peregrinator"]
 draft = false
 showTableOfContents = true
@@ -18,7 +18,7 @@ on the internet.
 
 1.  Blog post: [Please stop externalizing your costs directly into my
     face](https://drewdevault.com/2025/03/17/2025-03-17-Stop-externalizing-your-costs-on-me.html). Drew DeVault writes about how AI/LLM crawlers unfairly get to
-    overload small code repositories such as SourceHut and dump the
+    overload small code repositories such as Sourcehut and dump the
     costs of this onto people who want nothing to have to do with
     LLMS. This has been a long standing issue with the ethics of AI
     usage. The Wikimedia Foundation also reported an [increase in their

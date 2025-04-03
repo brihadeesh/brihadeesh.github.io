@@ -1,5 +1,5 @@
 +++
-title = "Blogroll"
+title = "blogroll"
 author = ["peregrinator"]
 draft = false
 showTableOfContents = true
@@ -11,7 +11,7 @@ I've only just started learning about things like the blogroll after
 nearly 10 years of having a blog and I love reading so here's a bunch
 of really cool people whose blogs you should also read.
 
-1.  [Drew Devault's blog](https://drewdevault.com/): Drew founded Sourcehut, the Sway window
+1.  [Drew DeVault's blog](https://drewdevault.com/): Drew founded Sourcehut, the Sway window
     manager, a lot more software and now maintains all of them. He
     writes about a variety of topics I find that his takes on political
     issues really resonate with mine. He truly embraces the open source
@@ -45,14 +45,17 @@ of really cool people whose blogs you should also read.
     friend and he used to go birding with my father. He has been
     writing this blog for quite some time now and usually talks about
     ecological issues and bird-watching.
-12. [Neil's blog](https://neilzone.co.uk/index.xml): [Neil Brown](https://mastodon.neilzone.co.uk/@neil) writes about tech and is very vocal about
+12. [Sutirtha's blog](https://sutirthalahiri.wordpress.com): Sutirtha is a birder and I've known him as a
+    classmate too. He writes about, well, birding and wherever work
+    takes him.
+13. [Neil's blog](https://neilzone.co.uk/index.xml): [Neil Brown](https://mastodon.neilzone.co.uk/@neil) writes about tech and is very vocal about
     stuff that has to do with the internet. He's also very active on
     the Fediverse. His blog was one of the key contributors to my
     switching back to the Etch theme.
-13. [EnbySpacePerson](https://write.as/enbyspaceperson/): [Eve](https://toot.cat/@EveHasWords) writes about various topics and I'm typically
+14. [EnbySpacePerson](https://write.as/enbyspaceperson/): [Eve](https://toot.cat/@EveHasWords) writes about various topics and I'm typically
     most interested in their posts on using the fediverse. They also
     write [adult fiction](https://chantingluretales.writeas.com/).
-14. [R-bloggers](https://www.r-bloggers.com): This is a collection of articles on how people use R
+15. [R-bloggers](https://www.r-bloggers.com): This is a collection of articles on how people use R
     and other allied data science tools written by various
     contributors. This is an invaluable resource if you're looking to
     learn advanced R.

@@ -1,63 +1,78 @@
 @font-face {
-    font-family: 'Bitter Regular';
+    font-family: 'Bitter Thin';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 100;
+    src: url('/fonts/Bitter-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bitter ExtraLight';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/fonts/Bitter-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bitter Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/Bitter-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
     src: url('/fonts/Bitter-Regular.woff') format('woff');
 }
 
-
 @font-face {
-    font-family: 'Bitter Italic';
+    font-family: 'Bitter Medium';
     font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/Bitter-Italic.woff') format('woff');
+    font-weight: 500;
+    src: url('/fonts/Bitter-Medium.woff') format('woff');
 }
 
-
 @font-face {
-    font-family: 'Bitter Thin';
+    font-family: 'Bitter SemiBold';
     font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/Bitter[wght].woff') format('woff');
+    font-weight: 600;
+    src: url('/fonts/Bitter-SemiBold.woff') format('woff');
 }
-
-
-@font-face {
-    font-family: 'Bitter Thin Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/Bitter-Italic[wght].woff') format('woff');
-}
-
 
 @font-face {
     font-family: 'Bitter Bold';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     src: url('/fonts/Bitter-Bold.woff') format('woff');
 }
 
-
 @font-face {
-    font-family: 'Bitter Bold Italic';
+    font-family: 'Bitter ExtraBold';
     font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/Bitter-BoldItalic.woff') format('woff');
+    font-weight: 800;
+    src: url('/fonts/Bitter-ExtraBold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Bitter Black';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/Bitter-Black.woff') format('woff');
+}
 
 @theme {
-    --font-display: "Bitter Thin", "serif";
+    --font-display: "Bitter", "serif";
 }
 
 h1, h2, h3, h4 {
-    font-family: "Bitter Thin", "serif";
+    font-family: "Bitter", "serif";
     font-weight: 400;
 }
 
 html, body {
-    font-family: "Bitter Thin", "serif";
-    /* font-weight: 300; */
+    font-family: "Bitter", "serif";
+    font-weight: 300;
 }
 
 *, *:before, *:after {

@@ -1,140 +1,14 @@
-@font-face {
-    font-family: Monorale;
-    font-weight: 100;
-    font-style: normal;
-    src: url('/fonts/Monorale-Thin.woff') format('woff');
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 100;
-    font-style: italic;
-    src: url('/fonts/Monorale-ThinItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 200;
-    font-style: normal;
-    src: url('/fonts/Monorale-ExtraLight.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 200;
-    font-style: italic;
-    src: url('/fonts/Monorale-ExtraLightItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 300;
-    font-style: normal;
-    src: url('/fonts/Monorale-Light.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 300;
-    font-style: italic;
-    src: url('/fonts/Monorale-LightItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 400;
-    font-style: normal;
-    src: url('/fonts/Monorale-Regular.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 400;
-    font-style: italic;
-    src: url('/fonts/Monorale-Italic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 500;
-    font-style: normal;
-    src: url('/fonts/Monorale-Medium.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 500;
-    font-style: italic;
-    src: url('/fonts/Monorale-MediumItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 600;
-    font-style: normal;
-    src: url('/fonts/Monorale-SemiBold.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 600;
-    font-style: italic;
-    src: url('/fonts/Monorale-SemiBoldItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 700;
-    font-style: normal;
-    src: url('/fonts/Monorale-Bold.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 700;
-    font-style: italic;
-    src: url('/fonts/Monorale-BoldItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 800;
-    font-style: normal;
-    src: url('/fonts/Monorale-ExtraBold.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 800;
-    font-style: italic;
-    src: url('/fonts/Monorale-ExtraBoldItalic.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 900;
-    font-style: normal;
-    src: url('/fonts/Monorale-Black.woff') format('woff');
-
-}
-@font-face {
-    font-family: Monorale;
-    font-weight: 900;
-    font-style: italic;
-    src: url('/fonts/Monorale-BlackItalic.woff') format('woff');
-
-}
-
 @theme {
-    --font-display: "Monorale", "sans-serif";
+    --font-display: "Bitter", "serif";
 }
 
 h1, h2, h3, h4 {
-    font-family: "Monorale", "sans-serif";
+    font-family: "Bitter", "serif";
     font-weight: 400;
 }
 
 html, body {
-    font-family: "Monorale", "sans-serif";
+    font-family: "Bitter", "serif";
 }
 
 *, *:before, *:after {

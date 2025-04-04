@@ -61,17 +61,24 @@
     src: url('/fonts/Bitter-Black.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Copse Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/Copse-Regular.woff') format('woff');
+}
+
 @theme {
-    --font-display: "Bitter", "serif";
+    --font-display: "Copse Regular", "serif";
 }
 
 h1, h2, h3, h4 {
-    font-family: "Bitter", "serif";
+    font-family: "Copse Regular", "serif";
     font-weight: 400;
 }
 
 html, body {
-    font-family: "Bitter", "serif";
+    font-family: "Copse Regular", "serif";
     font-weight: 300;
 }
 

@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
+  <article>
+    <header class="single-intro-container">
+      {{- /* Title and Summary */}}
+
+      <h1 class="single-title">{{ .Title }}</h1>
+
+      <div class="single-subsummary">
+        <p class="single-date">
+          {{- with .Date }}
+          {{- $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{- $dateHuman := . | time.Format (default ":date_long" $.Site.Params.singleDateFormat) }}
+          <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          {{- end }}
+
+          {{- if .Param "readTime" }}
+          &nbsp; · &nbsp;
+          {{- .ReadingTime }} min read
+          {{- end }}
+        </p>
+      </div>
+    </header>
+</div>
+
+
+</header>
+
+    {{- /* Page content */}}
+
+    <div class="single-content">
+      {{ .Content }}
+    </div>
+  </article>
+
+  {{- /* Comments */}}
+
+  {{- if and .Site.Params.giscus.enable (not .Params.disableComment) }}
+    <div class="single-comments">
+      {{ partial "comments.html" . }}
+    </div>
+  {{- end }}
+
+  {{/* Next prev controls */}}
+
+  {{ if not (.Param "hidePagination") }}
+  {{ partial "pagination-single.html" . }}
+  {{ end }}
+
+  {{/* Back to top */}}
+    <div class="back-to-top">
+      <a href="#top">
+	back to top
+      </a>
+    </div>
+
+</div>
+
+{{ end }}

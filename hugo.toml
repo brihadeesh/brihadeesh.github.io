@@ -1,0 +1,71 @@
+baseURL = "https://reveristdarkmoth.github.io"
+languageCode = "en-US"
+
+# Load the theme
+[module]
+  [[module.imports]]
+    path = 'github.com/tomfran/typo'
+
+# [OPTIONAL]
+# [taxonomies]
+# tag = 'tags'
+
+[params]
+siteTitle = "Reverist Dark Moth's Blog"
+
+# Meta description
+description = "Anonymised writings by a woman."
+
+footerContent = "&copy; 2025 Reverist Dark Moth"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = "2 Jan 2006"
+singleDateFormat = "2 Jan 2006"
+
+# [OPTIONAL] Social icons
+# [[params.social]]
+# name = "linkedin"
+# url = "https://www.linkedin.com/in/user/"
+
+# [[params.social]]
+# name = "medium"
+# url = "https://medium.com/@user"
+
+# [[params.social]]
+# name = "github"
+# url = "https://github.com/user"
+
+# Main menu pages
+[[params.menu]]
+name = "Reverist Dark Moth's blog"
+url = "/"
+
+# [[params.menu]]
+# name = "posts"
+# url = "/posts"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"

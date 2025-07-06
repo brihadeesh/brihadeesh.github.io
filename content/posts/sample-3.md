@@ -1,12 +1,11 @@
 +++
-date = '2025-07-03T16:02:38+05:30'
+date = "2025-07-06T09:02:38+05:30"
 draft = false
 title = 'Lorem Ipsum'
 
 section = "posts"
 
 author = "reverist dark moth"
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu turpis urna."
 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu turpis urna."
 readTime = true
 tags = ["samples", "trial pieces"]

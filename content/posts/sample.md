@@ -1,7 +1,7 @@
 +++
-date = '2025-07-03T16:02:38+05:30'
+date = '2025-07-07T13:02:38+05:30'
 draft = false
-title = 'Lorem Ipsum'
+title = 'Markdown Guide'
 
 section = "posts"
 
@@ -12,29 +12,48 @@ readTime = true
 tags = ["samples", "trial pieces"]
 +++
 
-> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-> consectetur, adipisci velit...
+{{<epigraph author="Anonymous" cite="Some book or article">}}
+*Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+consectetur, adipisci velit...*
+{{</epigraph>}}
 
-> There is no one who loves pain itself, who seeks after it and wants
-> to have it, simply because it is pain...
+{{<epigraph author="Anonymous" cite="Some book or article">}}
+*There is no one who loves pain itself, who seeks after it and wants to
+have it, simply because it is pain...*
+{{</epigraph>}}
+
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu
 turpis urna. Proin arcu sem, imperdiet et tempus a, suscipit et
-felis. Ut commodo gravida turpis non rutrum. Sed lacus ipsum,
-porttitor in interdum a, pellentesque nec nisi. Suspendisse
-potenti. Nulla facilisi. Phasellus sodales lobortis elit dictum
-porta. Nam molestie ante vel mauris varius blandit. Ut laoreet odio
-vel tortor placerat, eget condimentum sem aliquet. Etiam quis pulvinar
-magna. Morbi fringilla neque non consequat varius. Cras quis aliquam
-felis. Cras egestas sodales pretium. Praesent vitae metus id mauris
-elementum fermentum.
+felis.{{<marginnote>}}This is a marginnote.{{</marginnote>}} Ut
+commodo gravida turpis non rutrum. Sed lacus ipsum, porttitor in
+interdum a, pellentesque nec nisi. Suspendisse potenti. Nulla
+facilisi. Phasellus sodales lobortis elit dictum porta. Nam molestie
+ante vel mauris varius blandit. Ut laoreet odio vel tortor placerat,
+eget condimentum sem aliquet. Etiam quis pulvinar magna. Morbi
+fringilla neque non consequat varius. Cras quis aliquam felis. Cras
+egestas sodales pretium. Praesent vitae metus id mauris elementum
+fermentum. ({{<cite>}}Someone & Someone else,
+2025{{</cite>}}{{<marginnote>}}This can be the details of the
+citation{{</marginnote>}})
+
+
+{{<figure
+  src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/exports-imports.png"
+  title="The image title"
+  label="mn-export-import"
+  caption="This is the image caption. [Image attribution](#)"
+  link="link"
+>}}
 
 Donec at felis non urna pellentesque imperdiet. Duis at dignissim
 tellus, sed laoreet mi. Mauris ac interdum lorem. Suspendisse ut diam
 a libero feugiat pellentesque. Nulla eros enim, pretium ut mi sed,
 dictum posuere lacus. Nulla facilisi. Donec sit amet enim vehicula,
 tempus leo id, dignissim mi. Duis sem libero, posuere et vulputate eu,
-pharetra vitae nibh.
+pharetra vitae nibh.{{<sidenote>}}This is a sidenote! It has
+a little number.{{</sidenote>}}
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
 posuere cubilia curae; Praesent gravida, mi et aliquet pulvinar, lacus
@@ -47,7 +66,34 @@ fermentum est. Donec ullamcorper libero ligula, eu tempor eros
 lobortis at. Mauris et turpis sit amet turpis mollis faucibus quis non
 purus. Nulla finibus odio quis mauris interdum, eu rutrum diam
 rutrum. Sed eget mi nec magna ornare egestas id ac justo. Sed iaculis
-magna ut quam vulputate congue.
+magna ut quam vulputate congue.{{<sidenote>}}This is a sidenote! It has
+a little number.{{</sidenote>}}
+
+
+**Full-width figure:**
+
+{{<figure
+  src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/napoleons-march.png"
+  type="full"
+  label="mn-napoleonic-wars"
+  title="Napoleonic wars"
+  caption="This the image caption. [Image attribution](#)"
+  alt="Napoleonic wars"
+  link="#"
+>}}
+
+**Margin figure:**
+
+Margin figures appear on the margin. Highly logical.
+{{<figure
+  src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/rhino.png"
+  type="margin"
+  label="mn-rhino"
+  title="The image title"
+  caption="This is the image caption. [Image attribution](https://edwardtufte.github.io/tufte-css)"
+  alt="alt"
+  link="#"
+>}}
 
 In hac habitasse platea dictumst. Suspendisse consectetur, tortor ut
 feugiat porttitor, est tortor elementum ante, sit amet auctor nisi

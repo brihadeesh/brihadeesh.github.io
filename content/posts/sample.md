@@ -2,15 +2,22 @@
 date = '2025-07-07T13:02:38+05:30'
 draft = false
 title = 'Markdown Guide'
-
 section = "posts"
 
 author = "reverist dark moth"
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu turpis urna."
 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu turpis urna."
-readTime = true
-tags = ["samples", "trial pieces"]
 +++
+
+## Introduction
+
+### Epigraphs
+
+{{<epigraph author="Anonymous" cite="Some book or article">}}
+*This is an epigraph or quote at the beginning of a section. Remember
+to use the asterisk before and after the text otherwise it wont appear
+in italics.*
+{{</epigraph>}}
 
 {{<epigraph author="Anonymous" cite="Some book or article">}}
 *Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
@@ -22,22 +29,51 @@ consectetur, adipisci velit...*
 have it, simply because it is pain...*
 {{</epigraph>}}
 
+### Regular paragraphs
+
+{{<newthought>}}Start the sentence with small caps,{{</newthought>}}
+and if you want to create other emphasis types, there is **Bold** and
+*italic*.
+
+### Links
+
+[the text that will be visible](https://the-link.com/)
+
+
+### Blockquotes
+
+{{<blockquote author="Anonymous" cite="Some book or article">}}
+Blah blah blah blah
+{{</blockquote>}}
+
+## Let me know if you have doubts.
+
+## Images are below Only the `src` attribute is necessary.
+
+{{<figure
+  src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/exports-imports.png"
+>}}
+
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu
-turpis urna. Proin arcu sem, imperdiet et tempus a, suscipit et
-felis.{{<marginnote>}}This is a marginnote.{{</marginnote>}} Ut
-commodo gravida turpis non rutrum. Sed lacus ipsum, porttitor in
-interdum a, pellentesque nec nisi. Suspendisse potenti. Nulla
-facilisi. Phasellus sodales lobortis elit dictum porta. Nam molestie
-ante vel mauris varius blandit. Ut laoreet odio vel tortor placerat,
-eget condimentum sem aliquet. Etiam quis pulvinar magna. Morbi
-fringilla neque non consequat varius. Cras quis aliquam felis. Cras
-egestas sodales pretium. Praesent vitae metus id mauris elementum
+turpis urna. roin arcu sem, imperdiet et tempus a, suscipit et
+felis.{{<marginnote>}}This is a marginnote. It will appear on the
+right of the text{{</marginnote>}} Ut commodo gravida turpis non
+rutrum. Sed lacus ipsum, porttitor in interdum a, pellentesque nec
+nisi. Suspendisse potenti. Nulla facilisi.{{<sidenote>}}This is a
+sidenote. It has a number and you can use it like you would use
+footnotes or to show something you referred to.{{</sidenote>}}
+Phasellus sodales lobortis elit dictum porta. Nam molestie ante vel
+mauris varius blandit. Ut laoreet odio vel tortor placerat, eget
+condimentum sem aliquet. Etiam quis pulvinar magna. Morbi fringilla
+neque non consequat varius. Cras quis aliquam felis. Cras egestas
+sodales pretium. Praesent vitae metus id mauris elementum
 fermentum. ({{<cite>}}Someone & Someone else,
 2025{{</cite>}}{{<marginnote>}}This can be the details of the
 citation{{</marginnote>}})
 
+## The same image with `title` and `caption`
 
 {{<figure
   src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/exports-imports.png"
@@ -55,6 +91,8 @@ tempus leo id, dignissim mi. Duis sem libero, posuere et vulputate eu,
 pharetra vitae nibh.{{<sidenote>}}This is a sidenote! It has
 a little number.{{</sidenote>}}
 
+## Use second and third level headings only
+
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
 posuere cubilia curae; Praesent gravida, mi et aliquet pulvinar, lacus
 lectus pellentesque mi, sed porttitor nibh nisi eget dui. Cras
@@ -69,6 +107,7 @@ rutrum. Sed eget mi nec magna ornare egestas id ac justo. Sed iaculis
 magna ut quam vulputate congue.{{<sidenote>}}This is a sidenote! It has
 a little number.{{</sidenote>}}
 
+### This is a third level heading
 
 **Full-width figure:**
 

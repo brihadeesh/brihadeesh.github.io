@@ -5,6 +5,14 @@ type: misc
 layout: "misc"
 ---
 
-## Intro about you
+## About you
 
-Intro text
+{{<figure
+  src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/exports-imports.png"
+  title="The image title"
+  label="mn-export-import"
+  caption="This is the image caption. [Image attribution](#)"
+  link="link"
+>}}
+
+Text or whatever.

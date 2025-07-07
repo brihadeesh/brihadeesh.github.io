@@ -1,8 +1,8 @@
 ---
-title: "Insha's blog"
+title: "Homepage"
 draft: false
 ---
 
-## Intro about you
+## Intro
 
 Intro text

@@ -8,3 +8,5 @@ github.com/brihadeesh/hugo-tufte v0.0.0-20250707122056-1e2ea56a00c3 h1:4ppoxSjOa
 github.com/brihadeesh/hugo-tufte v0.0.0-20250707122056-1e2ea56a00c3/go.mod h1:GYpXrHRRhIV2pMJDPorSPJ73R6HpYAsZqQOnydASdCY=
 github.com/brihadeesh/hugo-tufte v0.0.0-20250707130327-9213a855d280 h1:bJyPEWFPcmHMuY1feZXhzYEaQO/D2JQu7lwZi141TJg=
 github.com/brihadeesh/hugo-tufte v0.0.0-20250707130327-9213a855d280/go.mod h1:GYpXrHRRhIV2pMJDPorSPJ73R6HpYAsZqQOnydASdCY=
+github.com/brihadeesh/hugo-tufte v0.0.0-20250707130611-3e9e56f91b80 h1:Giq73h/dS9ad/brCyFjOfsSuNF9HzQcPFwYAQKUn6mc=
+github.com/brihadeesh/hugo-tufte v0.0.0-20250707130611-3e9e56f91b80/go.mod h1:GYpXrHRRhIV2pMJDPorSPJ73R6HpYAsZqQOnydASdCY=
